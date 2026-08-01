@@ -1,0 +1,82 @@
+name: Render index
+
+# The index is a generated file, not a service. This job reads every Approved
+# version out of Baserow, renders it, and deploys it to Pages.
+#
+# Three triggers on purpose:
+#   repository_dispatch  Baserow's webhook fires this the moment someone flips
+#                        a version to Approved, so publishing feels immediate
+#   schedule             a nightly safety net, so a missed webhook delays the
+#                        index by hours rather than indefinitely
+#   workflow_dispatch    manual re-render when you want one
+on:
+  repository_dispatch:
+    types: [registry-changed]
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two renders race to deploy. Newer wins.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # BASEROW_URL is a repository variable rather than a committed setting, so
+      # this public repo never carries the catalogue hostname. With neither it nor
+      # the table ids configured, render_index.py falls back to seed/.
+      - name: Render index
+        env:
+          BASEROW_URL: ${{ vars.BASEROW_URL }}
+          BASEROW_TOKEN: ${{ secrets.BASEROW_TOKEN }}
+        run: |
+          python tools/render_index.py \
+            --source auto \
+            --out site/index.plPackageIndex \
+            --stamp "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+      - name: Show what changed
+        run: |
+          echo '--- index ---'
+          head -c 2000 site/index.plPackageIndex
+          echo
+          git diff --stat -- site/index.plPackageIndex || true
+
+      # Signing is optional until a keypair exists. Once REGISTRY_SIGNING_KEY is
+      # set, an unsigned index should be treated as a failure rather than a warning:
+      # blob hashes only protect you if the hashes themselves are trustworthy.
+      - name: Sign index
+        if: ${{ env.REGISTRY_SIGNING_KEY != '' }}
+        env:
+          REGISTRY_SIGNING_KEY: ${{ secrets.REGISTRY_SIGNING_KEY }}
+        run: |
+          python -m pip install --quiet cryptography
+          python tools/sign_index.py site/index.plPackageIndex
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: render
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

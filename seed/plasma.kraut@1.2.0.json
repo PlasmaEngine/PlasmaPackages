@@ -1,0 +1,436 @@
+{
+  "package": {
+    "Id": "plasma.kraut",
+    "Version": "1.2.0",
+    "Publisher": "PlasmaTech",
+    "License": "MIT",
+    "Homepage": "https://plasmagameengine.com",
+    "RepoUrl": null,
+    "MinEngineVersion": "0.7.0",
+    "MaxEngineVersion": "0.7.0",
+    "AbiTag": "win64-msvc-0.7.0-PLACEHOLDER",
+    "DisplayName": "Kraut Tree",
+    "Category": "Rendering",
+    "Description": "Adds support for procedurally generated trees.",
+    "Provides": null
+  },
+  "key": "plasma.kraut@1.2.0",
+  "requires": [
+    {
+      "id": "plasma.assets",
+      "range": "^1.0"
+    }
+  ],
+  "mounts": [
+    {
+      "path": "Assets",
+      "rootName": "plasma.kraut",
+      "writable": false
+    }
+  ],
+  "components": [
+    {
+      "name": "manifest",
+      "platform": "any",
+      "optional": false,
+      "label": null,
+      "files": [
+        "Package.plPackage",
+        "Package.sha256"
+      ],
+      "sha256": "4c0b8dca5f48bffa4fc8c08947338e939e32e62333eba2caa767a675fdf0ccea",
+      "bytes": 3120,
+      "shard": "blobs-4c",
+      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-4c/4c0b8dca5f48bffa4fc8c08947338e939e32e62333eba2caa767a675fdf0ccea.plpkg"
+    },
+    {
+      "name": "editor-win64",
+      "platform": "win64",
+      "optional": false,
+      "label": null,
+      "files": [
+        "Bin/Windows_x64_Development/plEditorPluginKraut.dll",
+        "Bin/Windows_x64_Development/plEnginePluginKraut.dll"
+      ],
+      "sha256": "c56232e37246cce5eaed5aa824b9c5e545704a2007763d43ee2bc51d32c38ebb",
+      "bytes": 491828,
+      "shard": "blobs-c5",
+      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-c5/c56232e37246cce5eaed5aa824b9c5e545704a2007763d43ee2bc51d32c38ebb.plpkg"
+    },
+    {
+      "name": "runtime-win64",
+      "platform": "win64",
+      "optional": false,
+      "label": null,
+      "files": [
+        "Bin/Windows_x64_Development/plKrautPlugin.dll"
+      ],
+      "sha256": "0001d7d6027466c366d6f133d2ab656514b37d43c3388234e5cae7ebd1d859e0",
+      "bytes": 263296,
+      "shard": "blobs-00",
+      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-00/0001d7d6027466c366d6f133d2ab656514b37d43c3388234e5cae7ebd1d859e0.plpkg"
+    },
+    {
+      "name": "runtime-linux64",
+      "platform": "linux64",
+      "optional": false,
+      "label": null,
+      "files": [],
+      "sha256": null,
+      "bytes": 0,
+      "shard": null,
+      "url": null
+    },
+    {
+      "name": "assets",
+      "platform": "any",
+      "optional": false,
+      "label": null,
+      "files": [
+        "Assets/Kraut/BillboardImpostor.plMaterial",
+        "Assets/Kraut/Branch.plMaterial",
+        "Assets/Kraut/Frond.plMaterial",
+        "Assets/Kraut/Kraut.plShader",
+        "Assets/Kraut/KrautFrond.plMaterialAsset",
+        "Assets/Kraut/KrautLeaf.plMaterialAsset",
+        "Assets/Kraut/KrautStem.plMaterialAsset",
+        "Assets/Kraut/Leaf.plMaterial",
+        "Assets/Kraut/StaticImpostor.plMaterial"
+      ],
+      "sha256": "93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92",
+      "bytes": 26124,
+      "shard": "blobs-93",
+      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-93/93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92.plpkg"
+    },
+    {
+      "name": "localization",
+      "platform": "any",
+      "optional": false,
+      "label": null,
+      "files": [
+        "Localization/en/KrautPlugin.txt"
+      ],
+      "sha256": "93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb",
+      "bytes": 6419,
+      "shard": "blobs-93",
+      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-93/93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb.plpkg"
+    },
+    {
+      "name": "icon",
+      "platform": "any",
+      "optional": false,
+      "label": null,
+      "files": [
+        "Branding/KrautIcon.png"
+      ],
+      "sha256": "c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79",
+      "bytes": 2665,
+      "shard": "blobs-c3",
+      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-c3/c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79.plpkg"
+    },
+    {
+      "name": "banner",
+      "platform": "any",
+      "optional": false,
+      "label": null,
+      "files": [
+        "Branding/KrautBanner.png"
+      ],
+      "sha256": "7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c",
+      "bytes": 19687,
+      "shard": "blobs-74",
+      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-74/7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c.plpkg"
+    },
+    {
+      "name": "tool-krauteditor",
+      "platform": "win64",
+      "optional": true,
+      "label": "Kraut tree authoring tool",
+      "files": [],
+      "sha256": null,
+      "bytes": 0,
+      "shard": null,
+      "url": null
+    }
+  ],
+  "files": [
+    {
+      "path": "Assets/Kraut/BillboardImpostor.plMaterial",
+      "sha256": "70e11381126c6d5356839227d7e9b58b5e2feba446ad3dbb92e82bfd42839e3b",
+      "bytes": 491
+    },
+    {
+      "path": "Assets/Kraut/Branch.plMaterial",
+      "sha256": "29d55c36d6e5de960227e86ef1884dc7aca6a20cafff53311e90076f7bb74346",
+      "bytes": 493
+    },
+    {
+      "path": "Assets/Kraut/Frond.plMaterial",
+      "sha256": "25bb99521c2b93180478c823b86d097706758d09ceee2843340f6df7231da801",
+      "bytes": 490
+    },
+    {
+      "path": "Assets/Kraut/Kraut.plShader",
+      "sha256": "35e13ecc9b321a02e674cd364d9e1a4257aada5e0a6f9d34a195ecd68b961f68",
+      "bytes": 16398
+    },
+    {
+      "path": "Assets/Kraut/KrautFrond.plMaterialAsset",
+      "sha256": "df01c0fdcd45350bdb0f4ec94c84e64b4d513f2284358a2f1e9a3738aed2a755",
+      "bytes": 42176
+    },
+    {
+      "path": "Assets/Kraut/KrautLeaf.plMaterialAsset",
+      "sha256": "fd7ef107984424902c9cc4c2cec0419a5bb8666761a6ead975fa2cfb5fcf9551",
+      "bytes": 42175
+    },
+    {
+      "path": "Assets/Kraut/KrautStem.plMaterialAsset",
+      "sha256": "50af69f85d40cd52f7285750e3cd86598524c4756cfbe64892561a0bd2a06ea2",
+      "bytes": 42177
+    },
+    {
+      "path": "Assets/Kraut/Leaf.plMaterial",
+      "sha256": "3c7f8b7047dd4dec799731a321e7b80ff301216a68beba1b92d93e3582e0c4dd",
+      "bytes": 491
+    },
+    {
+      "path": "Assets/Kraut/StaticImpostor.plMaterial",
+      "sha256": "b597a8c9f976d42ab1a1e5db17493ec16c3a3dbdd8bc06795f70855c38c13267",
+      "bytes": 490
+    },
+    {
+      "path": "Bin/Windows_x64_Development/plEditorPluginKraut.dll",
+      "sha256": "1d0de8f3a3da3565ebff1e582b3d78f5746260b08ba8339ae9a17c94667a34b4",
+      "bytes": 1504256
+    },
+    {
+      "path": "Bin/Windows_x64_Development/plEnginePluginKraut.dll",
+      "sha256": "4372ef66e8bee959585cba1c1ef69c73f91268111078e69a6cd43816d0527af8",
+      "bytes": 755200
+    },
+    {
+      "path": "Bin/Windows_x64_Development/plKrautPlugin.dll",
+      "sha256": "679fb623743d208e2d6696c169cbb153130ba59dc8528a1aa04d6991526db865",
+      "bytes": 1188864
+    },
+    {
+      "path": "Branding/KrautBanner.png",
+      "sha256": "1f70d355ada4a9cb912556c9f6fe73e0a1dd7bcaee4acae7ebe35343016dc25f",
+      "bytes": 23798
+    },
+    {
+      "path": "Branding/KrautIcon.png",
+      "sha256": "4c50c6fbcd352b604be7bc9075035163365a14efecf89c5c48398922eb04c9d5",
+      "bytes": 2518
+    },
+    {
+      "path": "Localization/en/KrautPlugin.txt",
+      "sha256": "544af8c62c34c31dee0811e8e2b2a6ea1c4759244e89513b7dee41cdf346b9c7",
+      "bytes": 23146
+    },
+    {
+      "path": "Package.plPackage",
+      "sha256": "3613027d138b545fe161cbb165c88cf2cedbf5f5dddd5c320d9c4cd2fd56106d",
+      "bytes": 5292
+    },
+    {
+      "path": "Package.sha256",
+      "sha256": "921212adb90f3925adcbb18dd4b83e6c46a007c5732002f31ead03c3670a4294",
+      "bytes": 1621
+    }
+  ],
+  "validation": [
+    {
+      "result": "PASS",
+      "check": "required field Id",
+      "detail": "plasma.kraut"
+    },
+    {
+      "result": "PASS",
+      "check": "required field Version",
+      "detail": "1.2.0"
+    },
+    {
+      "result": "PASS",
+      "check": "required field Publisher",
+      "detail": "PlasmaTech"
+    },
+    {
+      "result": "PASS",
+      "check": "required field License",
+      "detail": "MIT"
+    },
+    {
+      "result": "PASS",
+      "check": "required field DisplayName",
+      "detail": "Kraut Tree"
+    },
+    {
+      "result": "PASS",
+      "check": "required field Description",
+      "detail": "Adds support for procedurally generated trees."
+    },
+    {
+      "result": "PASS",
+      "check": "required field Category",
+      "detail": "Rendering"
+    },
+    {
+      "result": "PASS",
+      "check": "Version is strict semver",
+      "detail": "1.2.0"
+    },
+    {
+      "result": "PASS",
+      "check": "Id is lowercase and namespaced",
+      "detail": "plasma.kraut"
+    },
+    {
+      "result": "PASS",
+      "check": "at least one engine bound",
+      "detail": "0.7.0 - 0.7.0"
+    },
+    {
+      "result": "PASS",
+      "check": "has at least one payload",
+      "detail": "binaries"
+    },
+    {
+      "result": "PASS",
+      "check": "AbiTag present (required for native payloads)",
+      "detail": "win64-msvc-0.7.0-PLACEHOLDER"
+    },
+    {
+      "result": "PASS",
+      "check": "Package.sha256 present",
+      "detail": ""
+    },
+    {
+      "result": "PASS",
+      "check": "every file matches Package.sha256",
+      "detail": "16 files verified"
+    },
+    {
+      "result": "PASS",
+      "check": "no file missing from Package.sha256",
+      "detail": ""
+    },
+    {
+      "result": "PASS",
+      "check": "Icon resolves inside the package",
+      "detail": "Branding/KrautIcon.png"
+    },
+    {
+      "result": "PASS",
+      "check": "Banner resolves inside the package",
+      "detail": "Branding/KrautBanner.png"
+    },
+    {
+      "result": "PASS",
+      "check": "mount Assets exists",
+      "detail": "root :plasma.kraut"
+    },
+    {
+      "result": "WARN",
+      "check": "every declared component has files",
+      "detail": "empty: runtime-linux64, tool-krauteditor"
+    }
+  ],
+  "valid": true,
+  "baserow": {
+    "packages": {
+      "Id": "plasma.kraut",
+      "DisplayName": "Kraut Tree",
+      "Category": "Rendering",
+      "Description": "Adds support for procedurally generated trees.",
+      "Publisher ->": "PlasmaTech",
+      "License": "MIT",
+      "Homepage": "https://plasmagameengine.com",
+      "RepoUrl": "",
+      "Provides": "(empty)",
+      "Mandatory": "false",
+      "Visibility": "Public"
+    },
+    "versions": {
+      "Key": "plasma.kraut@1.2.0",
+      "Package ->": "plasma.kraut",
+      "Version": "1.2.0",
+      "Status": "Pending",
+      "Channel": "stable",
+      "MinEngine": "0.7.0",
+      "MaxEngine": "0.7.0",
+      "AbiTag": "win64-msvc-0.7.0-PLACEHOLDER",
+      "Requires": "[{\"id\":\"plasma.assets\",\"range\":\"^1.0\"}]",
+      "IconSha": "c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79",
+      "BannerSha": "7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c",
+      "PublishedBy ->": "PlasmaTech"
+    },
+    "components": [
+      {
+        "Sha256": "4c0b8dca5f48bffa4fc8c08947338e939e32e62333eba2caa767a675fdf0ccea",
+        "Version": "plasma.kraut@1.2.0",
+        "Name": "manifest",
+        "Platform": "any",
+        "Bytes": 3120,
+        "Optional": false,
+        "Label": null
+      },
+      {
+        "Sha256": "c56232e37246cce5eaed5aa824b9c5e545704a2007763d43ee2bc51d32c38ebb",
+        "Version": "plasma.kraut@1.2.0",
+        "Name": "editor-win64",
+        "Platform": "win64",
+        "Bytes": 491828,
+        "Optional": false,
+        "Label": null
+      },
+      {
+        "Sha256": "0001d7d6027466c366d6f133d2ab656514b37d43c3388234e5cae7ebd1d859e0",
+        "Version": "plasma.kraut@1.2.0",
+        "Name": "runtime-win64",
+        "Platform": "win64",
+        "Bytes": 263296,
+        "Optional": false,
+        "Label": null
+      },
+      {
+        "Sha256": "93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92",
+        "Version": "plasma.kraut@1.2.0",
+        "Name": "assets",
+        "Platform": "any",
+        "Bytes": 26124,
+        "Optional": false,
+        "Label": null
+      },
+      {
+        "Sha256": "93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb",
+        "Version": "plasma.kraut@1.2.0",
+        "Name": "localization",
+        "Platform": "any",
+        "Bytes": 6419,
+        "Optional": false,
+        "Label": null
+      },
+      {
+        "Sha256": "c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79",
+        "Version": "plasma.kraut@1.2.0",
+        "Name": "icon",
+        "Platform": "any",
+        "Bytes": 2665,
+        "Optional": false,
+        "Label": null
+      },
+      {
+        "Sha256": "7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c",
+        "Version": "plasma.kraut@1.2.0",
+        "Name": "banner",
+        "Platform": "any",
+        "Bytes": 19687,
+        "Optional": false,
+        "Label": null
+      }
+    ]
+  },
+  "indexFragment": "Package {\n  string %Id{\"plasma.kraut\"}   string %DisplayName{\"Kraut Tree\"}\n  string %Category{\"Rendering\"} string %Publisher{\"PlasmaTech\"}\n  string %License{\"MIT\"}\n  string %Description{\"Adds support for procedurally generated trees.\"}\n\n  Version {\n    string %Version{\"1.2.0\"}   string %Channel{\"stable\"}\n    string %MinEngine{\"0.7.0\"} string %MaxEngine{\"0.7.0\"}\n    string %AbiTag{\"win64-msvc-0.7.0-PLACEHOLDER\"}\n    Requires  { string %Id{\"plasma.assets\"} string %Range{\"^1.0\"} }\n    Component { string %Name{\"manifest\"} string %Sha256{\"4c0b8dca5f48bffa4fc8c08947338e939e32e62333eba2caa767a675fdf0ccea\"} int32 %Bytes{3120} }\n    Component { string %Name{\"editor-win64\"} string %Sha256{\"c56232e37246cce5eaed5aa824b9c5e545704a2007763d43ee2bc51d32c38ebb\"} int32 %Bytes{491828} }\n    Component { string %Name{\"runtime-win64\"} string %Sha256{\"0001d7d6027466c366d6f133d2ab656514b37d43c3388234e5cae7ebd1d859e0\"} int32 %Bytes{263296} }\n    Component { string %Name{\"assets\"} string %Sha256{\"93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92\"} int32 %Bytes{26124} }\n    Component { string %Name{\"localization\"} string %Sha256{\"93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb\"} int32 %Bytes{6419} }\n    Component { string %Name{\"icon\"} string %Sha256{\"c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79\"} int32 %Bytes{2665} }\n    Component { string %Name{\"banner\"} string %Sha256{\"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c\"} int32 %Bytes{19687} }\n  }\n}"
+}

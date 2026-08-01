@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plasma Packages</title>
+<style>
+  :root{
+    --paper:#eceef2;--card:#f6f7f9;--sunken:#e2e5ea;--ink:#13161c;--body:#2c323c;
+    --muted:#667283;--faint:#98a2b1;--hairline:#dde1e7;--accent:#8a3cbd;--accent-dim:#b98ad4;
+    --mono:ui-monospace,"Cascadia Mono","JetBrains Mono",Consolas,monospace;
+    --sans:system-ui,"Segoe UI",Roboto,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#0e1116;--card:#161a21;--sunken:#1b202a;--ink:#eef1f6;--body:#c3cbd6;
+    --muted:#8d97a6;--faint:#667283;--hairline:#232935;--accent:#c47cec;--accent-dim:#7d4ea0;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--body);font-family:var(--sans);
+       font-size:15.5px;line-height:1.62}
+  .wrap{max-width:860px;margin:0 auto;padding:0 26px}
+  header{padding:64px 0 30px;border-bottom:1px solid var(--hairline)}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+           color:var(--accent);margin:0 0 16px}
+  h1{font-family:var(--mono);font-weight:600;font-size:clamp(26px,4.6vw,38px);letter-spacing:-.025em;
+     color:var(--ink);margin:0 0 14px}
+  .lede{max-width:62ch;margin:0;color:var(--muted)}
+  section{padding:38px 0;border-bottom:1px solid var(--hairline)}
+  section:last-of-type{border-bottom:0}
+  h2{font-family:var(--mono);font-weight:600;font-size:17px;color:var(--ink);margin:0 0 12px}
+  p{max-width:62ch}
+  a{color:var(--accent);text-underline-offset:2px}
+  code{font-family:var(--mono);font-size:.87em;background:var(--sunken);color:var(--ink);
+       padding:1px 5px;border-radius:3px;border:1px solid var(--hairline)}
+  pre{font-family:var(--mono);font-size:12.5px;background:var(--card);border:1px solid var(--hairline);
+      border-left:2px solid var(--accent-dim);padding:15px 17px;overflow-x:auto;border-radius:2px}
+  .files{display:grid;gap:9px;padding:0;margin:0;list-style:none}
+  .files li{border:1px solid var(--hairline);background:var(--card);border-radius:3px;padding:12px 15px}
+  .files .n{font-family:var(--mono);font-size:13.5px;color:var(--ink);font-weight:600}
+  .files .d{font-size:13.5px;color:var(--muted);margin-top:2px}
+  footer{padding:34px 0 60px;font-family:var(--mono);font-size:11.5px;color:var(--faint)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <p class="eyebrow">PlasmaEngine</p>
+  <h1>Plasma Packages</h1>
+  <p class="lede">
+    The package registry for PlasmaEngine plugins. This site serves one generated file; the editor reads it,
+    resolves what a project needs, and fetches the rest by content hash.
+  </p>
+</div></header>
+
+<main>
+  <section><div class="wrap">
+    <h2>What is served here</h2>
+    <ul class="files">
+      <li>
+        <div class="n"><a href="index.plPackageIndex">index.plPackageIndex</a></div>
+        <div class="d">Every approved package and version, with dependencies, engine bounds and component
+          hashes. Regenerated whenever the catalogue changes.</div>
+      </li>
+      <li>
+        <div class="n"><a href="index.plPackageIndex.sig">index.plPackageIndex.sig</a></div>
+        <div class="d">Detached Ed25519 signature over the index.</div>
+      </li>
+      <li>
+        <div class="n"><a href="registry.pub">registry.pub</a></div>
+        <div class="d">Public half of the signing key. The engine ships a copy and refuses an index that
+          does not verify against it.</div>
+      </li>
+    </ul>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Where the packages themselves live</h2>
+    <p>
+      Not here. Artifacts are content-addressed blobs attached to releases in this repository, sharded by the
+      first byte of their hash, so a download URL is computable from the hash alone with no lookup:
+    </p>
+<pre>https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-&lt;hh&gt;/&lt;sha256&gt;.plpkg</pre>
+    <p>
+      A package is split into components — editor binaries, runtime binaries per platform, assets,
+      localization, artwork — so a client fetches only what its platform and role need.
+    </p>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Using it</h2>
+    <p>Add this registry as a source in the editor's Plugin Manager, or by hand:</p>
+<pre>Source
+{
+	string %Name{"plasma-official"}
+	string %Index{"https://plasmaengine.github.io/PlasmaPackages/index.plPackageIndex"}
+}</pre>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  Generated from the registry catalogue &middot;
+  <a href="https://github.com/PlasmaEngine/PlasmaPackages">PlasmaEngine/PlasmaPackages</a>
+</div></footer>
+
+</body>
+</html>

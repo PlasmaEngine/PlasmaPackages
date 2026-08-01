@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local, untracked overrides for the catalogue host and any other machine-specific
+# settings. Keeps the internal hostname out of this public repo while still letting
+# the tools run locally without exporting environment variables every session.
+registry.local.json
+.env
+
+# Staged packages and blobs are release assets, never repository content.
+*.plpkg
+_blobs/

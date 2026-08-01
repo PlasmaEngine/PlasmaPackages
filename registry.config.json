@@ -1,0 +1,25 @@
+{
+  "registry": "plasma-official",
+  "schema": "1",
+
+  "blobBase": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download",
+  "blobLayout": "shard2",
+  "artifactRepo": "PlasmaEngine/PlasmaPackages",
+
+  "baserow": {
+    "baseUrl": "",
+    "_baseUrlComment": "Deliberately empty: this repo is public, so the catalogue host is supplied at run time via the BASEROW_URL environment variable (a repository variable in CI). Setting it here would publish your internal hostname.",
+
+    "databaseId": 268,
+    "_tablesComment": "Open a table and read the ids straight off the URL: /database/<databaseId>/table/<tableId>/<viewId>. Only the table id matters here. A 0 means not created yet - the tools fall back to seed/ until all four are set.",
+    "tables": {
+      "publishers": 852,
+      "packages": 849,
+      "versions": 850,
+      "components": 851
+    }
+  },
+
+  "channels": ["stable", "beta"],
+  "_channelsComment": "Only versions on these channels reach the published index. 'dev' is deliberately excluded."
+}
