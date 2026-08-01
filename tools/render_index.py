@@ -242,6 +242,8 @@ def main():
     ap.add_argument("--source", choices=["auto", "baserow", "seed"], default="auto")
     ap.add_argument("--stamp", metavar="ISO8601",
                     help="embed a Generated timestamp; omit to keep output byte-stable")
+    ap.add_argument("--allow-empty", action="store_true",
+                    help="permit an index with no packages (normally a misconfiguration)")
     args = ap.parse_args()
 
     cfg = load_config()
@@ -268,6 +270,18 @@ def main():
         entries, revoked = from_baserow(cfg, token)
     else:
         entries, revoked = from_seed(cfg)
+
+    # An index that renders to nothing is almost always a misconfiguration - a
+    # catalogue with no Approved rows yet, or the wrong table ids - rather than a
+    # deliberate purge. Deploying it would silently unpublish every package, so
+    # refuse unless it is explicitly asked for.
+    if not entries and not args.allow_empty:
+        sys.exit(
+            "refusing to write an index with no packages (source: %s).\n"
+            "  If the catalogue is not populated yet, render from the seed instead:\n"
+            "      python tools/render_index.py --source seed\n"
+            "  If you really do mean to publish an empty registry, pass --allow-empty."
+            % source)
 
     text = render(cfg, entries, revoked, args.stamp)
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)

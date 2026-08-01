@@ -37,11 +37,13 @@ jobs:
           python-version: '3.12'
 
       # BASEROW_URL is a repository variable rather than a committed setting, so
-      # this public repo never carries the catalogue hostname. With neither it nor
-      # the table ids configured, render_index.py falls back to seed/.
+      # this public repo never carries the catalogue hostname. It is read from
+      # either vars or secrets: it belongs in vars (it is a hostname, not a
+      # credential), but putting it in secrets is an easy mistake and would
+      # otherwise fail silently by falling back to seed/.
       - name: Render index
         env:
-          BASEROW_URL: ${{ vars.BASEROW_URL }}
+          BASEROW_URL: ${{ vars.BASEROW_URL || secrets.BASEROW_URL }}
           BASEROW_TOKEN: ${{ secrets.BASEROW_TOKEN }}
         run: |
           python tools/render_index.py \
