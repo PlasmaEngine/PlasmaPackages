@@ -94,9 +94,18 @@ def select_text(cell):
 
 def from_baserow(cfg, token):
     t = cfg["baserow"]["tables"]
-    packages = {r["Id"]: r for r in baserow_rows(cfg, t["packages"], token) if r.get("Id")}
+    raw_packages = baserow_rows(cfg, t["packages"], token)
+    packages = {r["Id"]: r for r in raw_packages if r.get("Id")}
     versions = baserow_rows(cfg, t["versions"], token)
     components = baserow_rows(cfg, t["components"], token)
+
+    # Counts for the funnel report - "0 packages" on its own is never actionable.
+    stats = {"rows": {"packages": len(raw_packages), "versions": len(versions),
+                      "components": len(components)},
+             "skipped": {}, "statuses": {}, "accepted": 0}
+
+    def skip(reason):
+        stats["skipped"][reason] = stats["skipped"].get(reason, 0) + 1
 
     by_version = {}
     for c in components:
@@ -107,20 +116,32 @@ def from_baserow(cfg, token):
     for v in versions:
         status = select_text(v.get("Status"))
         key = v.get("Key") or ""
+        stats["statuses"][status or "(blank)"] = stats["statuses"].get(status or "(blank)", 0) + 1
         if status == "Yanked":
             revoked.append((key, (v.get("YankReason") or "").strip()))
             continue
         if status != "Approved":
+            skip("status is %s, not Approved" % (status or "blank"))
             continue
-        if select_text(v.get("Channel")) not in cfg["channels"]:
+        channel = select_text(v.get("Channel"))
+        if channel not in cfg["channels"]:
+            skip("channel %s not published" % (channel or "blank"))
             continue
         pkg_ids = link_text(v.get("Package"))
-        if not pkg_ids or pkg_ids[0] not in packages:
-            sys.stderr.write("skip %s: package row missing\n" % key)
+        if not pkg_ids:
+            skip("Package link is empty")
+            continue
+        if pkg_ids[0] not in packages:
+            skip("no Packages row with Id %s" % pkg_ids[0])
             continue
         p = packages[pkg_ids[0]]
         if select_text(p.get("Visibility")) not in ("", "Public"):
+            skip("package Visibility is %s" % select_text(p.get("Visibility")))
             continue
+        if not by_version.get(key):
+            skip("no Components rows linked to %s" % (key or "(blank Key)"))
+            continue
+        stats["accepted"] += 1
         comps = []
         for c in sorted(by_version.get(key, []), key=lambda x: x.get("Sha256") or ""):
             comps.append({
@@ -141,7 +162,38 @@ def from_baserow(cfg, token):
             "requires": json.loads(v.get("Requires") or "[]"),
             "components": comps,
         })
-    return entries, revoked
+    return entries, revoked, stats
+
+
+def report(stats):
+    if not stats:
+        return ""
+    L = ["  rows found      packages=%d versions=%d components=%d"
+         % (stats["rows"]["packages"], stats["rows"]["versions"], stats["rows"]["components"])]
+    if stats["statuses"]:
+        L.append("  version status  " + ", ".join("%s=%d" % kv for kv in sorted(stats["statuses"].items())))
+    L.append("  accepted        %d" % stats["accepted"])
+    for reason, n in sorted(stats["skipped"].items()):
+        L.append("  skipped %-4d    %s" % (n, reason))
+    return "\n".join(L)
+
+
+def diagnose(stats):
+    """The most likely cause, phrased as the next thing to do."""
+    if not stats:
+        return "seed/ contains no usable package JSON."
+    r = stats["rows"]
+    if r["versions"] == 0:
+        return ("The Versions table is empty. Add the package's rows - or if you have not "
+                "populated the catalogue yet, render from seed/ for now.")
+    if r["packages"] == 0:
+        return "The Packages table is empty, so no version can resolve to a package."
+    if r["components"] == 0:
+        return "The Components table is empty, so every version was skipped as having no blobs."
+    if stats["skipped"]:
+        reason, n = max(stats["skipped"].items(), key=lambda kv: kv[1])
+        return "Most versions were skipped because: %s (%d of them)." % (reason, n)
+    return "Rows exist but none were accepted; check the funnel above."
 
 
 # ------------------------------------------------------------------ seed
@@ -171,7 +223,7 @@ def from_seed(cfg):
             "abiTag": p.get("AbiTag") or "", "iconSha": icon, "bannerSha": banner,
             "requires": d.get("requires", []), "components": comps,
         })
-    return entries, revoked
+    return entries, revoked, None
 
 
 # ------------------------------------------------------------------ render
@@ -267,9 +319,12 @@ def main():
         if missing:
             sys.exit("these table ids are still 0 in registry.config.json: %s\ncurrent: %s"
                      % (", ".join(missing), describe_tables(cfg)))
-        entries, revoked = from_baserow(cfg, token)
+        entries, revoked, stats = from_baserow(cfg, token)
     else:
-        entries, revoked = from_seed(cfg)
+        entries, revoked, stats = from_seed(cfg)
+
+    if stats:
+        print(report(stats))
 
     # An index that renders to nothing is almost always a misconfiguration - a
     # catalogue with no Approved rows yet, or the wrong table ids - rather than a
@@ -277,11 +332,13 @@ def main():
     # refuse unless it is explicitly asked for.
     if not entries and not args.allow_empty:
         sys.exit(
-            "refusing to write an index with no packages (source: %s).\n"
-            "  If the catalogue is not populated yet, render from the seed instead:\n"
+            "\nrefusing to write an index with no packages (source: %s).\n\n"
+            "  %s\n\n"
+            "  To publish from seed/ until the catalogue is populated:\n"
             "      python tools/render_index.py --source seed\n"
-            "  If you really do mean to publish an empty registry, pass --allow-empty."
-            % source)
+            "  To publish a genuinely empty registry:\n"
+            "      python tools/render_index.py --allow-empty"
+            % (source, diagnose(stats)))
 
     text = render(cfg, entries, revoked, args.stamp)
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
