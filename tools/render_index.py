@@ -326,19 +326,25 @@ def main():
     if stats:
         print(report(stats))
 
-    # An index that renders to nothing is almost always a misconfiguration - a
-    # catalogue with no Approved rows yet, or the wrong table ids - rather than a
-    # deliberate purge. Deploying it would silently unpublish every package, so
-    # refuse unless it is explicitly asked for.
+    # An empty index is only alarming if it is a REGRESSION. A registry with nothing
+    # approved yet is simply empty, and should publish cleanly rather than failing
+    # every scheduled run. Going from N packages to zero is the dangerous case,
+    # because it silently unpublishes everything.
     if not entries and not args.allow_empty:
-        sys.exit(
-            "\nrefusing to write an index with no packages (source: %s).\n\n"
-            "  %s\n\n"
-            "  To publish from seed/ until the catalogue is populated:\n"
-            "      python tools/render_index.py --source seed\n"
-            "  To publish a genuinely empty registry:\n"
-            "      python tools/render_index.py --allow-empty"
-            % (source, diagnose(stats)))
+        previously = 0
+        if os.path.isfile(args.out):
+            with io.open(args.out, encoding="utf-8") as fh:
+                previously = fh.read().count("\nPackage\n")
+        if previously:
+            sys.exit(
+                "\nrefusing to publish an empty index: the current one has %d package(s), "
+                "so this would unpublish them.\n\n"
+                "  %s\n\n"
+                "  If the catalogue really should be empty now:\n"
+                "      python tools/render_index.py --allow-empty"
+                % (previously, diagnose(stats)))
+        print("\nnote: the registry is empty - nothing is approved yet.")
+        print("      %s" % diagnose(stats))
 
     text = render(cfg, entries, revoked, args.stamp)
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
