@@ -54,6 +54,7 @@ site/                    what GitHub Pages serves
   index.plPackageIndex   generated
   index.html             landing page
 tools/
+  check_schema.py        verify the catalogue schema before publishing
   render_index.py        catalogue (or seed) -> index
   publish_package.py     upload blobs, record the release
   sign_index.py          Ed25519 detached signature
@@ -117,6 +118,17 @@ URL when a table is open.
 
 The publishing token is separate and narrower: create + read on the release tables only. Neither token should
 ever be granted update on a release's status, so that no automation can approve its own publish.
+
+Then verify the schema matches what the tooling writes, **before** publishing anything:
+
+```bash
+python tools/check_schema.py
+```
+
+It reports every missing field, wrong type and missing select option across all four tables in one pass.
+Names and select values are matched exactly, so a `Catagory` typo, a `Publishers` where the tooling expects
+`Publisher`, or a `Stable` option where it writes `stable` all mean a failed publish. Cheaper to see them
+together than one rejected request at a time.
 
 ### 3. Signing keypair
 

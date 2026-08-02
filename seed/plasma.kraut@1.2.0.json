@@ -2,7 +2,7 @@
   "package": {
     "Id": "plasma.kraut",
     "Version": "1.2.0",
-    "Publisher": "PlasmaTech",
+    "Publisher": "PlasmaTechnology",
     "License": "MIT",
     "Homepage": "https://plasmagameengine.com",
     "RepoUrl": null,
@@ -38,10 +38,10 @@
         "Package.plPackage",
         "Package.sha256"
       ],
-      "sha256": "4c0b8dca5f48bffa4fc8c08947338e939e32e62333eba2caa767a675fdf0ccea",
-      "bytes": 3120,
-      "shard": "blobs-4c",
-      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-4c/4c0b8dca5f48bffa4fc8c08947338e939e32e62333eba2caa767a675fdf0ccea.plpkg"
+      "sha256": "11ebb04941fb40ae583df801545e53b9b54d90ac11c37754d2c84393b1a3649f",
+      "bytes": 3167,
+      "shard": "blobs-11",
+      "url": "https://github.com/PlasmaEngine/PlasmaPackages/releases/download/blobs-11/11ebb04941fb40ae583df801545e53b9b54d90ac11c37754d2c84393b1a3649f.plpkg"
     },
     {
       "name": "editor-win64",
@@ -231,12 +231,12 @@
     },
     {
       "path": "Package.plPackage",
-      "sha256": "3613027d138b545fe161cbb165c88cf2cedbf5f5dddd5c320d9c4cd2fd56106d",
-      "bytes": 5292
+      "sha256": "8c5c8cf30d032f332203f9429e42f4131eb5c0463127c37241ea82c6b9c47a3b",
+      "bytes": 5381
     },
     {
       "path": "Package.sha256",
-      "sha256": "921212adb90f3925adcbb18dd4b83e6c46a007c5732002f31ead03c3670a4294",
+      "sha256": "064dab13f76f4c78d2fb9f0c11757eeb5a20ff8cca630d196727210fe3b403f4",
       "bytes": 1621
     }
   ],
@@ -254,7 +254,7 @@
     {
       "result": "PASS",
       "check": "required field Publisher",
-      "detail": "PlasmaTech"
+      "detail": "PlasmaTechnology"
     },
     {
       "result": "PASS",
@@ -344,7 +344,7 @@
       "DisplayName": "Kraut Tree",
       "Category": "Rendering",
       "Description": "Adds support for procedurally generated trees.",
-      "Publisher ->": "PlasmaTech",
+      "Publisher ->": "PlasmaTechnology",
       "License": "MIT",
       "Homepage": "https://plasmagameengine.com",
       "RepoUrl": "",
@@ -364,15 +364,15 @@
       "Requires": "[{\"id\":\"plasma.assets\",\"range\":\"^1.0\"}]",
       "IconSha": "c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79",
       "BannerSha": "7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c",
-      "PublishedBy ->": "PlasmaTech"
+      "PublishedBy ->": "PlasmaTechnology"
     },
     "components": [
       {
-        "Sha256": "4c0b8dca5f48bffa4fc8c08947338e939e32e62333eba2caa767a675fdf0ccea",
+        "Sha256": "11ebb04941fb40ae583df801545e53b9b54d90ac11c37754d2c84393b1a3649f",
         "Version": "plasma.kraut@1.2.0",
         "Name": "manifest",
         "Platform": "any",
-        "Bytes": 3120,
+        "Bytes": 3167,
         "Optional": false,
         "Label": null
       },
@@ -432,5 +432,5 @@
       }
     ]
   },
-  "indexFragment": "Package {\n  string %Id{\"plasma.kraut\"}   string %DisplayName{\"Kraut Tree\"}\n  string %Category{\"Rendering\"} string %Publisher{\"PlasmaTech\"}\n  string %License{\"MIT\"}\n  string %Description{\"Adds support for procedurally generated trees.\"}\n\n  Version {\n    string %Version{\"1.2.0\"}   string %Channel{\"stable\"}\n    string %MinEngine{\"0.7.0\"} string %MaxEngine{\"0.7.0\"}\n    string %AbiTag{\"win64-msvc-0.7.0-PLACEHOLDER\"}\n    Requires  { string %Id{\"plasma.assets\"} string %Range{\"^1.0\"} }\n    Component { string %Name{\"manifest\"} string %Sha256{\"4c0b8dca5f48bffa4fc8c08947338e939e32e62333eba2caa767a675fdf0ccea\"} int32 %Bytes{3120} }\n    Component { string %Name{\"editor-win64\"} string %Sha256{\"c56232e37246cce5eaed5aa824b9c5e545704a2007763d43ee2bc51d32c38ebb\"} int32 %Bytes{491828} }\n    Component { string %Name{\"runtime-win64\"} string %Sha256{\"0001d7d6027466c366d6f133d2ab656514b37d43c3388234e5cae7ebd1d859e0\"} int32 %Bytes{263296} }\n    Component { string %Name{\"assets\"} string %Sha256{\"93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92\"} int32 %Bytes{26124} }\n    Component { string %Name{\"localization\"} string %Sha256{\"93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb\"} int32 %Bytes{6419} }\n    Component { string %Name{\"icon\"} string %Sha256{\"c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79\"} int32 %Bytes{2665} }\n    Component { string %Name{\"banner\"} string %Sha256{\"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c\"} int32 %Bytes{19687} }\n  }\n}"
+  "indexFragment": "Package {\n  string %Id{\"plasma.kraut\"}   string %DisplayName{\"Kraut Tree\"}\n  string %Category{\"Rendering\"} string %Publisher{\"PlasmaTechnology\"}\n  string %License{\"MIT\"}\n  string %Description{\"Adds support for procedurally generated trees.\"}\n\n  Version {\n    string %Version{\"1.2.0\"}   string %Channel{\"stable\"}\n    string %MinEngine{\"0.7.0\"} string %MaxEngine{\"0.7.0\"}\n    string %AbiTag{\"win64-msvc-0.7.0-PLACEHOLDER\"}\n    Requires  { string %Id{\"plasma.assets\"} string %Range{\"^1.0\"} }\n    Component { string %Name{\"manifest\"} string %Sha256{\"11ebb04941fb40ae583df801545e53b9b54d90ac11c37754d2c84393b1a3649f\"} int32 %Bytes{3167} }\n    Component { string %Name{\"editor-win64\"} string %Sha256{\"c56232e37246cce5eaed5aa824b9c5e545704a2007763d43ee2bc51d32c38ebb\"} int32 %Bytes{491828} }\n    Component { string %Name{\"runtime-win64\"} string %Sha256{\"0001d7d6027466c366d6f133d2ab656514b37d43c3388234e5cae7ebd1d859e0\"} int32 %Bytes{263296} }\n    Component { string %Name{\"assets\"} string %Sha256{\"93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92\"} int32 %Bytes{26124} }\n    Component { string %Name{\"localization\"} string %Sha256{\"93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb\"} int32 %Bytes{6419} }\n    Component { string %Name{\"icon\"} string %Sha256{\"c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79\"} int32 %Bytes{2665} }\n    Component { string %Name{\"banner\"} string %Sha256{\"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c\"} int32 %Bytes{19687} }\n  }\n}"
 }

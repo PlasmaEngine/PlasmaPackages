@@ -150,9 +150,17 @@ def write_rows(cfg, doc, token, dry):
         sys.exit("%s is already published.\nVersions are immutable - publish %s instead."
                  % (key, bump_hint(doc)))
 
+    # Link fields resolve by the target row's primary-field text, so both of these
+    # must already exist. Checking up front turns a mid-POST 400 into a clear message.
     pid = b["packages"]["Id"]
     if not find_row(cfg, t["packages"], token, "Id", pid):
-        print("  package row %s does not exist yet - create it in Baserow first" % pid)
+        print("  no Packages row with Id '%s' - create it first" % pid)
+        if not dry:
+            sys.exit(1)
+
+    pub = b["versions"].get("PublishedBy ->") or b["packages"].get("Publisher ->")
+    if pub and t.get("publishers") and not find_row(cfg, t["publishers"], token, "Name", pub):
+        print("  no Publishers row named '%s' - create it, or change Publisher in the manifest" % pub)
         if not dry:
             sys.exit(1)
 
@@ -193,6 +201,8 @@ def main():
                          "(default: $PLASMA_BLOB_DIR)")
     ap.add_argument("--dry-run", action="store_true", help="show what would happen, change nothing")
     ap.add_argument("--skip-baserow", action="store_true", help="upload blobs only")
+    ap.add_argument("--skip-blobs", action="store_true",
+                    help="write catalogue rows only; useful before gh is authenticated")
     args = ap.parse_args()
 
     cfg = load_config()
@@ -203,14 +213,18 @@ def main():
         fails = [v["check"] for v in doc.get("validation", []) if v["result"] == "FAIL"]
         sys.exit("package failed validation, refusing to publish:\n  " + "\n  ".join(fails))
 
-    blob_dir = args.blobs or os.environ.get("PLASMA_BLOB_DIR", "").strip()
-    if not blob_dir:
-        sys.exit("where are the blobs? pass --blobs DIR or export PLASMA_BLOB_DIR "
-                 "(the packaging step writes them next to the staged package)")
-
     print("%s  (%d blobs)" % (doc["key"], sum(1 for c in doc["components"] if c.get("sha256"))))
-    print("\nblobs -> %s" % cfg["artifactRepo"])
-    upload_blobs(cfg, doc, os.path.abspath(blob_dir), args.dry_run)
+
+    if args.skip_blobs:
+        print("\nskipping blob upload")
+    else:
+        blob_dir = args.blobs or os.environ.get("PLASMA_BLOB_DIR", "").strip()
+        if not blob_dir:
+            sys.exit("where are the blobs? pass --blobs DIR or export PLASMA_BLOB_DIR "
+                     "(the packaging step writes them next to the staged package).\n"
+                     "To write catalogue rows without uploading anything, pass --skip-blobs.")
+        print("\nblobs -> %s" % cfg["artifactRepo"])
+        upload_blobs(cfg, doc, os.path.abspath(blob_dir), args.dry_run)
 
     if args.skip_baserow:
         print("\nskipping Baserow")
