@@ -296,6 +296,10 @@ def main():
                     help="embed a Generated timestamp; omit to keep output byte-stable")
     ap.add_argument("--allow-empty", action="store_true",
                     help="permit an index with no packages (normally a misconfiguration)")
+    ap.add_argument("--keep-existing", action="store_true",
+                    help="if the render is empty but an index already exists, leave it alone and "
+                         "succeed instead of failing. What scheduled runs should do: nothing "
+                         "approved yet is a no-op, not a breakage.")
     args = ap.parse_args()
 
     cfg = load_config()
@@ -325,6 +329,7 @@ def main():
 
     if stats:
         print(report(stats))
+    sys.stdout.flush()   # keep the funnel above any message written to stderr below
 
     # An empty index is only alarming if it is a REGRESSION. A registry with nothing
     # approved yet is simply empty, and should publish cleanly rather than failing
@@ -335,13 +340,18 @@ def main():
         if os.path.isfile(args.out):
             with io.open(args.out, encoding="utf-8") as fh:
                 previously = fh.read().count("\nPackage\n")
+        if previously and args.keep_existing:
+            print("\nnothing to publish - leaving the existing index (%d package(s)) in place." % previously)
+            print("  %s" % diagnose(stats))
+            return 0
         if previously:
             sys.exit(
                 "\nrefusing to publish an empty index: the current one has %d package(s), "
                 "so this would unpublish them.\n\n"
                 "  %s\n\n"
-                "  If the catalogue really should be empty now:\n"
-                "      python tools/render_index.py --allow-empty"
+                "  For scheduled runs, prefer --keep-existing: nothing approved yet is a\n"
+                "  no-op rather than a failure.\n"
+                "  If the catalogue really should be empty now, use --allow-empty."
                 % (previously, diagnose(stats)))
         print("\nnote: the registry is empty - nothing is approved yet.")
         print("      %s" % diagnose(stats))
