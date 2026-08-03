@@ -11,30 +11,941 @@ IndexInfo
 
 Package
 {
+	string %Id{"plasma.ai"}
+	string %DisplayName{"AI Plugin"}
+	string %Category{"AI"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Adds support for dynamic navmeshes and other AI functionality.
+
+Recast and Detour are compiled into the plugin, so there is nothing else to install."}
+	string %Provides{"bundle:AI"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"48df21076548b071f004b05d42d30f31382f3c2784082c66d29f9dc7e0fbcdd4"}
+		string %BannerSha{"52c560424c549d3af058f27e9634077c266280f38226ad247fc67ab9391fb8b5"}
+		Component { string %Name{"manifest"} string %Sha256{"19343cec62bb52ff7ba75bfdd986b83969210547c0e97d6ae74e2aaf5502f532"} int32 %Bytes{1646} }
+		Component { string %Name{"icon"} string %Sha256{"48df21076548b071f004b05d42d30f31382f3c2784082c66d29f9dc7e0fbcdd4"} int32 %Bytes{164146} }
+		Component { string %Name{"banner"} string %Sha256{"52c560424c549d3af058f27e9634077c266280f38226ad247fc67ab9391fb8b5"} int32 %Bytes{317751} }
+		Component { string %Name{"editor-win64"} string %Sha256{"bc741daf2f27f7940ab2de868d825235312fb517e81ca20f09d2dfb41b6a2ffb"} int32 %Bytes{526619} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"f6953a3160d6fc6cb012c943a91c5b1a3c473912b5f416b2246b6c1dc20c5aac"} int32 %Bytes{1070842} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"48df21076548b071f004b05d42d30f31382f3c2784082c66d29f9dc7e0fbcdd4"}
+		string %BannerSha{"52c560424c549d3af058f27e9634077c266280f38226ad247fc67ab9391fb8b5"}
+		Component { string %Name{"manifest"} string %Sha256{"011afc0def0fe3aa24d178ebc36965a38ea5f02a0642ded334ba9801c0c4ca18"} int32 %Bytes{1645} }
+		Component { string %Name{"editor-win64"} string %Sha256{"26ac504f206024dc13440a192d4a68c3608484e35ee12bc6c5d05a57512a8ad1"} int32 %Bytes{525923} }
+		Component { string %Name{"icon"} string %Sha256{"48df21076548b071f004b05d42d30f31382f3c2784082c66d29f9dc7e0fbcdd4"} int32 %Bytes{164146} }
+		Component { string %Name{"banner"} string %Sha256{"52c560424c549d3af058f27e9634077c266280f38226ad247fc67ab9391fb8b5"} int32 %Bytes{317751} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"5640ab75cb03affafad187b71c6ee3c3dd60717ce0bda00b1826bf689a0bc62f"} int32 %Bytes{1070842} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.amplitude"}
+	string %DisplayName{"Amplitude Audio"}
+	string %Category{"Audio"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"Other"}
+	string %Description{"A fully-featured audio system middleware powered by the Amplitude Audio SDK.
+
+Everything needed is included - Amplitude is Apache-2.0, so its runtime library ships with this package and nothing has to be installed separately.
+
+Plays sound through the engine's audio system, so it replaces rather than accompanies the other audio backends."}
+	string %Provides{"bundle:AmplitudeAudio"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"cf7b0c3d091b9e693731be6efbe8e3284f7d298829de986ae90cd5b0fc56625c"}
+		string %BannerSha{"f246af5451d8b2a57bf6ccce8eeca6df9ae37ec7fa57e4d26fd9294aebfd63c1"}
+		Component { string %Name{"editor-win64"} string %Sha256{"1df617aa747cd464ede37b05f7059b405d0e534c52036a8747e6763302a517a3"} int32 %Bytes{309233} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"8d6e5e95ff4e3529c08bb76e1aceb1d97624d93906e33bcd0361a6e1d6bd30c7"} int32 %Bytes{734300} }
+		Component { string %Name{"manifest"} string %Sha256{"c79c9df232633cf589e38804a4eee39217d6e424e03050763128ef23f1799b70"} int32 %Bytes{2724} }
+		Component { string %Name{"icon"} string %Sha256{"cf7b0c3d091b9e693731be6efbe8e3284f7d298829de986ae90cd5b0fc56625c"} int32 %Bytes{8232} }
+		Component { string %Name{"banner"} string %Sha256{"f246af5451d8b2a57bf6ccce8eeca6df9ae37ec7fa57e4d26fd9294aebfd63c1"} int32 %Bytes{4472} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"cf7b0c3d091b9e693731be6efbe8e3284f7d298829de986ae90cd5b0fc56625c"}
+		string %BannerSha{"f246af5451d8b2a57bf6ccce8eeca6df9ae37ec7fa57e4d26fd9294aebfd63c1"}
+		Component { string %Name{"runtime-win64"} string %Sha256{"3e45793f477579599aab30a9db00429a6d30227ec3ec2bc8755760eae5e6e7ee"} int32 %Bytes{734308} }
+		Component { string %Name{"manifest"} string %Sha256{"6a51f78cc4559a3155cb13c0d7bfad8b9c9dec3b87131c530a866e06cbd15bca"} int32 %Bytes{2723} }
+		Component { string %Name{"editor-win64"} string %Sha256{"9bfaaf7acb752168c2080012ca38f06dd19729b2bf41dfe9b21daa26971c3f7d"} int32 %Bytes{308592} }
+		Component { string %Name{"icon"} string %Sha256{"cf7b0c3d091b9e693731be6efbe8e3284f7d298829de986ae90cd5b0fc56625c"} int32 %Bytes{8232} }
+		Component { string %Name{"banner"} string %Sha256{"f246af5451d8b2a57bf6ccce8eeca6df9ae37ec7fa57e4d26fd9294aebfd63c1"} int32 %Bytes{4472} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.angelscript"}
+	string %DisplayName{"AngelScript"}
+	string %Category{"Scripting"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"AngelScript scripting, with an editor asset type for authoring scripts and attaching them to components.
+
+The AngelScript library is compiled into the plugin, so there is nothing else to install."}
+	string %Provides{"bundle:AngelScript"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"2ec6b2127f05ab7a5f9c8405b127ae006a082bba40f32322bf079a137d8feddd"}
+		string %BannerSha{"a0b6746220ba61d9adb6baf67ca793aa37ff2289b1acb96769c87f93d65ede90"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"manifest"} string %Sha256{"2b3a12ee7c7ddcd3ca40ad80218140b69c5a2e8087dbcf1f1992b6c99b5bbc0c"} int32 %Bytes{2172} }
+		Component { string %Name{"icon"} string %Sha256{"2ec6b2127f05ab7a5f9c8405b127ae006a082bba40f32322bf079a137d8feddd"} int32 %Bytes{143464} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"56b7e84fcc6649f0bc41a47cf11674e486ba4b4e440719fd2e19f7f5e4d13fd5"} int32 %Bytes{860719} }
+		Component { string %Name{"editor-win64"} string %Sha256{"5b1b222f612a07ad0dfe8f8af0fa517e28977b17ddd53ecb1465a1e38cc0e13c"} int32 %Bytes{1261195} }
+		Component { string %Name{"banner"} string %Sha256{"a0b6746220ba61d9adb6baf67ca793aa37ff2289b1acb96769c87f93d65ede90"} int32 %Bytes{276366} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"2ec6b2127f05ab7a5f9c8405b127ae006a082bba40f32322bf079a137d8feddd"}
+		string %BannerSha{"a0b6746220ba61d9adb6baf67ca793aa37ff2289b1acb96769c87f93d65ede90"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"icon"} string %Sha256{"2ec6b2127f05ab7a5f9c8405b127ae006a082bba40f32322bf079a137d8feddd"} int32 %Bytes{143464} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"9a3c5934fc393b8a013291c223c27c4c54d496ec9249e67102eff649900db5a7"} int32 %Bytes{860724} }
+		Component { string %Name{"banner"} string %Sha256{"a0b6746220ba61d9adb6baf67ca793aa37ff2289b1acb96769c87f93d65ede90"} int32 %Bytes{276366} }
+		Component { string %Name{"manifest"} string %Sha256{"a5d970ddadeb3de316b2fe590fef7ac174a9e6a71a596ad5f9abe97505a6aad0"} int32 %Bytes{2171} }
+		Component { string %Name{"editor-win64"} string %Sha256{"d91c1a2813ed84c42f015f9fc332a71e1764cf8f3e3fa631aae4bb39d842da4c"} int32 %Bytes{1260377} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.csharp"}
+	string %DisplayName{"C#"}
+	string %Category{"Scripting"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"C# scripting hosted on .NET 10, with an editor asset type for script projects and live reload of compiled assemblies.
+
+The .NET runtime itself is an optional component. Install it and the package is self-contained; skip it and the plugin uses a .NET 10 runtime installed on the machine."}
+	string %Provides{"bundle:CSharp"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"932804454888ec51da9bcf7b69e18eedd5c80b1b503cfb05b3155abd2afeaa98"}
+		string %BannerSha{"cc042884d7a1bd5755511c51e713ac11bdc7ab32f7ad4e50e9ef38e2fd769c12"}
+		Component { string %Name{"tool"} string %Sha256{"72989ef53ff4bdae5275c2e62932af1f3366026ac88716d94cbd0916aa4d1581"} int32 %Bytes{36835802} bool %Optional{true} string %Label{"Bundled .NET 10 runtime (77 MB)"} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"7d233e1de3251444dd60840ef31190b3147cdba9f0155f0a35e0e854d265b569"} int32 %Bytes{508582} }
+		Component { string %Name{"icon"} string %Sha256{"932804454888ec51da9bcf7b69e18eedd5c80b1b503cfb05b3155abd2afeaa98"} int32 %Bytes{10195} }
+		Component { string %Name{"manifest"} string %Sha256{"9af61e6591b88af1cf0c64a14c66bb5fe3d796130531edeb88af7344d494d26e"} int32 %Bytes{12491} }
+		Component { string %Name{"editor-win64"} string %Sha256{"9d9fa6b69af0b22882a49c32b9a1aa3eee753f1b368878fd01fa1d4ab78a29ec"} int32 %Bytes{255569} }
+		Component { string %Name{"banner"} string %Sha256{"cc042884d7a1bd5755511c51e713ac11bdc7ab32f7ad4e50e9ef38e2fd769c12"} int32 %Bytes{24513} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"932804454888ec51da9bcf7b69e18eedd5c80b1b503cfb05b3155abd2afeaa98"}
+		string %BannerSha{"cc042884d7a1bd5755511c51e713ac11bdc7ab32f7ad4e50e9ef38e2fd769c12"}
+		Component { string %Name{"manifest"} string %Sha256{"1f3a92abdc61c65b0e4d3a55443edf1a31065bce8b5dc8bc0e83779628fdc7e3"} int32 %Bytes{12500} }
+		Component { string %Name{"editor-win64"} string %Sha256{"56993a3eec207194797ad201ce0f728ca1cf3b95de75e6f6f7a0c3d4f1690652"} int32 %Bytes{254708} }
+		Component { string %Name{"tool"} string %Sha256{"72989ef53ff4bdae5275c2e62932af1f3366026ac88716d94cbd0916aa4d1581"} int32 %Bytes{36835802} bool %Optional{true} string %Label{"Bundled .NET 10 runtime (77 MB)"} }
+		Component { string %Name{"icon"} string %Sha256{"932804454888ec51da9bcf7b69e18eedd5c80b1b503cfb05b3155abd2afeaa98"} int32 %Bytes{10195} }
+		Component { string %Name{"banner"} string %Sha256{"cc042884d7a1bd5755511c51e713ac11bdc7ab32f7ad4e50e9ef38e2fd769c12"} int32 %Bytes{24513} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"e091bf47a4cadaba38dec65100122b81bb4d44e2a2dcaa7aedf44cc578a8d376"} int32 %Bytes{509344} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.fmod"}
+	string %DisplayName{"FMOD Studio"}
+	string %Category{"Audio"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"Proprietary"}
+	string %Description{"Sound and music via FMOD Studio, with editor support for sound banks and sound events.
+
+Requires FMOD to be installed separately. FMOD is licensed middleware, so this package ships only Plasma's own plugin binaries - not FMOD itself. Download the FMOD Studio API for Windows from fmod.com, then place fmod.dll and fmodstudio.dll next to the editor executable (or anywhere on the library search path). Without them this plugin will fail to load.
+
+Building against a different FMOD version is supported: set FMOD_SDK_PATH to your API directory."}
+	string %Provides{"bundle:Fmod"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"80012749ad95dd6a5ad703e751d3a005b89a84b5b47dc1c4105eb548a96795cd"}
+		string %BannerSha{"9e43279759b3abb361ca40368e9dfe93b983d4d26aad0d6609f8660bdc5833ec"}
+		Component { string %Name{"runtime-win64"} string %Sha256{"713000fc690e9ad4f7bc96d7bf4ec5b3b874d08b6d7aa3a32eccfb7df2716e70"} int32 %Bytes{188015} }
+		Component { string %Name{"manifest"} string %Sha256{"7d31689f48ef22929de5a4f89da77893777b86f95f50392ca8985b9333b7d14a"} int32 %Bytes{2534} }
+		Component { string %Name{"icon"} string %Sha256{"80012749ad95dd6a5ad703e751d3a005b89a84b5b47dc1c4105eb548a96795cd"} int32 %Bytes{2291} }
+		Component { string %Name{"banner"} string %Sha256{"9e43279759b3abb361ca40368e9dfe93b983d4d26aad0d6609f8660bdc5833ec"} int32 %Bytes{7378} }
+		Component { string %Name{"editor-win64"} string %Sha256{"bc3078b679bf2bd224a52f5e475d0d9cb7176ae7d21dc157a38649000e11eda4"} int32 %Bytes{153855} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"80012749ad95dd6a5ad703e751d3a005b89a84b5b47dc1c4105eb548a96795cd"}
+		string %BannerSha{"9e43279759b3abb361ca40368e9dfe93b983d4d26aad0d6609f8660bdc5833ec"}
+		Component { string %Name{"editor-win64"} string %Sha256{"5c749373f1d38e041a6f76370c7d95ff0c8b59071e3e92b40e34c6e7a9f1880c"} int32 %Bytes{154045} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"75f7305662eaf15056d28ad6213701bcd6050fabd26212aa162265bca1761ea0"} int32 %Bytes{188018} }
+		Component { string %Name{"icon"} string %Sha256{"80012749ad95dd6a5ad703e751d3a005b89a84b5b47dc1c4105eb548a96795cd"} int32 %Bytes{2291} }
+		Component { string %Name{"banner"} string %Sha256{"9e43279759b3abb361ca40368e9dfe93b983d4d26aad0d6609f8660bdc5833ec"} int32 %Bytes{7378} }
+		Component { string %Name{"manifest"} string %Sha256{"cb15f3ac02146141e3d5af9abba903244891485117dc6e645c9b9f33b9507736"} int32 %Bytes{2538} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.gamecomponents"}
+	string %DisplayName{"Game Components"}
+	string %Category{"Gameplay"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"General gameplay components - spawners, triggers, timed behaviours and text meshes.
+
+FreeType ships with the package under the FreeType License; plTextMeshComponent uses it to read the glyph outlines it extrudes into a mesh."}
+	string %Provides{"bundle:GameComponents"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"2608c95d55a95f8e132b2c4a01008b04a732c0cc1d391b24dd93582688804886"}
+		string %BannerSha{"3a81e41ce8eec1aea7adb52432de8f5262c74ffa7280f5d50a8c614c2c243379"}
+		Component { string %Name{"icon"} string %Sha256{"2608c95d55a95f8e132b2c4a01008b04a732c0cc1d391b24dd93582688804886"} int32 %Bytes{193824} }
+		Component { string %Name{"manifest"} string %Sha256{"31fafb56b7dd60d7767c36c1ad45fc352c0c9f7bceb0c77ed9fbc845a3ac31e9"} int32 %Bytes{1801} }
+		Component { string %Name{"banner"} string %Sha256{"3a81e41ce8eec1aea7adb52432de8f5262c74ffa7280f5d50a8c614c2c243379"} int32 %Bytes{323923} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"8cf682a33d01d43808e11e91cd1f3fb14098b06521454881a7ab47e5dc8207a0"} int32 %Bytes{798601} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"2608c95d55a95f8e132b2c4a01008b04a732c0cc1d391b24dd93582688804886"}
+		string %BannerSha{"3a81e41ce8eec1aea7adb52432de8f5262c74ffa7280f5d50a8c614c2c243379"}
+		Component { string %Name{"manifest"} string %Sha256{"1dbeaec23019b2c577585082336856703a17caac9bc3db35fc47e8752b35361d"} int32 %Bytes{1801} }
+		Component { string %Name{"icon"} string %Sha256{"2608c95d55a95f8e132b2c4a01008b04a732c0cc1d391b24dd93582688804886"} int32 %Bytes{193824} }
+		Component { string %Name{"banner"} string %Sha256{"3a81e41ce8eec1aea7adb52432de8f5262c74ffa7280f5d50a8c614c2c243379"} int32 %Bytes{323923} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"d2eabdfa9b7cde6a6b263b22ef0742618695b6e1b21565a081cff6d10769feb3"} int32 %Bytes{798601} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.gameui"}
+	string %DisplayName{"Game UI"}
+	string %Category{"UI"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Engine-native game UI framework: UI Document assets, widget tree, batched 2D renderer and canvas components.
+
+FreeType ships with the package under the FreeType License; the font asset uses it to rasterise glyphs."}
+	string %Provides{"bundle:GameUi"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"3d2563d2cd2f5f9c7a3df346dbc212ffb5c849a8faa5aca6b4092717106add23"}
+		string %BannerSha{"af96496eade6e7d975239c1f3bf183fa43590360d4538ce22ecbce049271a0d0"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"icon"} string %Sha256{"3d2563d2cd2f5f9c7a3df346dbc212ffb5c849a8faa5aca6b4092717106add23"} int32 %Bytes{7375} }
+		Component { string %Name{"manifest"} string %Sha256{"57c683814f3083890afa4355ba14ca336b1a76487cd764e43edcb461aeae3819"} int32 %Bytes{2052} }
+		Component { string %Name{"banner"} string %Sha256{"af96496eade6e7d975239c1f3bf183fa43590360d4538ce22ecbce049271a0d0"} int32 %Bytes{26453} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"c7701c4bc6c751926e9e03771bb7ffbc50c79f3fbf0d6c43c0da934a10bb7f6b"} int32 %Bytes{787679} }
+		Component { string %Name{"editor-win64"} string %Sha256{"d98b8f41e4be1bc450446e11d9f5a105b842171327b536b3354e57b9397289a4"} int32 %Bytes{802533} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"3d2563d2cd2f5f9c7a3df346dbc212ffb5c849a8faa5aca6b4092717106add23"}
+		string %BannerSha{"af96496eade6e7d975239c1f3bf183fa43590360d4538ce22ecbce049271a0d0"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"editor-win64"} string %Sha256{"09d71cb1470f727008adb294445a7ad0913575e534a9553e796fde414f8aa2ee"} int32 %Bytes{803001} }
+		Component { string %Name{"icon"} string %Sha256{"3d2563d2cd2f5f9c7a3df346dbc212ffb5c849a8faa5aca6b4092717106add23"} int32 %Bytes{7375} }
+		Component { string %Name{"manifest"} string %Sha256{"48f1cdf0080a59f58a3689bad28aeb0fd654125b5dac225df5e804a0fc5d7a1b"} int32 %Bytes{2053} }
+		Component { string %Name{"banner"} string %Sha256{"af96496eade6e7d975239c1f3bf183fa43590360d4538ce22ecbce049271a0d0"} int32 %Bytes{26453} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"af9d25c61df7095ddc883902f2d463ddd04fe0b5c51dfcfc94d39c3ff9b65327"} int32 %Bytes{787679} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.jolt"}
+	string %DisplayName{"Jolt Physics"}
+	string %Category{"Physics"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Rigid body physics, character controllers, ragdolls, cloth and collision cooking, powered by Jolt Physics.
+
+Jolt is compiled into the plugin, so there is nothing else to install."}
+	string %Provides{"bundle:Jolt"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"19cee3c37468280e8608b83200d223a3619269b60ad6a870af2f5dd469634038"}
+		string %BannerSha{"7a7ba335d17b2fac509db4428d5020debd9af0f10e62f7bf9d5de1e6f4a7b4e8"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"icon"} string %Sha256{"19cee3c37468280e8608b83200d223a3619269b60ad6a870af2f5dd469634038"} int32 %Bytes{2476836} }
+		Component { string %Name{"editor-win64"} string %Sha256{"37819d5fb49b3e423282891e15f2d7afde8fb8ff9275cbb67817386abbd1d8ba"} int32 %Bytes{2657560} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"3fb34bd5b8d60ed16851032d0146b0030975ec820f86cf741643f42981fe37b5"} int32 %Bytes{1931469} }
+		Component { string %Name{"banner"} string %Sha256{"7a7ba335d17b2fac509db4428d5020debd9af0f10e62f7bf9d5de1e6f4a7b4e8"} int32 %Bytes{388970} }
+		Component { string %Name{"manifest"} string %Sha256{"f3b5e1c73efda4397aa5aea36363fd2e301f740a68afd2b797fb93bc22f2e89d"} int32 %Bytes{1877} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"19cee3c37468280e8608b83200d223a3619269b60ad6a870af2f5dd469634038"}
+		string %BannerSha{"7a7ba335d17b2fac509db4428d5020debd9af0f10e62f7bf9d5de1e6f4a7b4e8"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"icon"} string %Sha256{"19cee3c37468280e8608b83200d223a3619269b60ad6a870af2f5dd469634038"} int32 %Bytes{2476836} }
+		Component { string %Name{"editor-win64"} string %Sha256{"1d20cce109754cf69abf0837bdbfac9950be904a0face71d96b6779b4c2b6e3a"} int32 %Bytes{2656895} }
+		Component { string %Name{"banner"} string %Sha256{"7a7ba335d17b2fac509db4428d5020debd9af0f10e62f7bf9d5de1e6f4a7b4e8"} int32 %Bytes{388970} }
+		Component { string %Name{"manifest"} string %Sha256{"c2644ad001eb7a64a061d43fe5f61fcfbfe198c6b0011dbf399168ca4f6b5662"} int32 %Bytes{1878} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"d79d791846e8a1e080b46843501432c4e78b39766f32f3e3b7698e8c246563fc"} int32 %Bytes{1931469} }
+	}
+}
+
+Package
+{
 	string %Id{"plasma.kraut"}
 	string %DisplayName{"Kraut Tree"}
 	string %Category{"Rendering"}
 	string %Publisher{"PlasmaTechnology"}
 	string %License{"MIT"}
 	string %Description{"Adds support for procedurally generated trees."}
+	string %Provides{"bundle:Kraut"}
 
 	Version
 	{
-		string %Version{"1.2.0"}
+		string %Version{"1.2.2"}
 		string %Channel{"stable"}
 		string %MinEngine{"0.7.0"}
 		string %MaxEngine{"0.7.0"}
-		string %AbiTag{"win64-msvc-0.7.0-PLACEHOLDER"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
 		string %IconSha{"c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79"}
 		string %BannerSha{"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c"}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
-		Component { string %Name{"runtime-win64"} string %Sha256{"0001d7d6027466c366d6f133d2ab656514b37d43c3388234e5cae7ebd1d859e0"} int32 %Bytes{263296} }
-		Component { string %Name{"manifest"} string %Sha256{"11ebb04941fb40ae583df801545e53b9b54d90ac11c37754d2c84393b1a3649f"} int32 %Bytes{3167} }
+		Component { string %Name{"manifest"} string %Sha256{"063a275bf6f97a19f0851d9450c4168697b2850ed2edceaf2cc21edbf56d0bcc"} int32 %Bytes{3681} }
+		Component { string %Name{"editor-win64"} string %Sha256{"35bfbef342d657e016d880ef6731b5d38b33f05a768b97d0aae3f54e46780524"} int32 %Bytes{368268} }
 		Component { string %Name{"banner"} string %Sha256{"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c"} int32 %Bytes{19687} }
 		Component { string %Name{"localization"} string %Sha256{"93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb"} int32 %Bytes{6419} }
 		Component { string %Name{"assets"} string %Sha256{"93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92"} int32 %Bytes{26124} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"b64e4887e9288f26bff33c7b06271cf7d70b889614e10a60e14b9aff0941c8cb"} int32 %Bytes{198921} }
 		Component { string %Name{"icon"} string %Sha256{"c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79"} int32 %Bytes{2665} }
-		Component { string %Name{"editor-win64"} string %Sha256{"c56232e37246cce5eaed5aa824b9c5e545704a2007763d43ee2bc51d32c38ebb"} int32 %Bytes{491828} }
+	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79"}
+		string %BannerSha{"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"banner"} string %Sha256{"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c"} int32 %Bytes{19687} }
+		Component { string %Name{"manifest"} string %Sha256{"82458624bd3a743a16ad24fa4a008c801727abde62657337529857104453e65f"} int32 %Bytes{3684} }
+		Component { string %Name{"localization"} string %Sha256{"93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb"} int32 %Bytes{6419} }
+		Component { string %Name{"assets"} string %Sha256{"93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92"} int32 %Bytes{26124} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"bc882efacfd9b80ca781b97be98b845a503f1fe907c7387b11498c58217b95e9"} int32 %Bytes{198922} }
+		Component { string %Name{"icon"} string %Sha256{"c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79"} int32 %Bytes{2665} }
+		Component { string %Name{"editor-win64"} string %Sha256{"ccb82f38fe4b9c0e2e25c24a6ca629face88805594d74a3a7dff648795ecb957"} int32 %Bytes{368381} }
 	}
 }
+
+Package
+{
+	string %Id{"plasma.miniaudio"}
+	string %DisplayName{"MiniAudio"}
+	string %Category{"Audio"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Adds support for sound via MiniAudio.
+
+MiniAudio is compiled into the plugin, so there is nothing else to install."}
+	string %Provides{"bundle:MiniAudio"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"ac8412a172d0a281ae4eb17d46921b861bf07f2d1b9e73cbf974cc2b68a82007"}
+		string %BannerSha{"4563c3411885a467f56d8df2173d07083d569a72dcf40543d67e48e461a2cca3"}
+		Component { string %Name{"banner"} string %Sha256{"4563c3411885a467f56d8df2173d07083d569a72dcf40543d67e48e461a2cca3"} int32 %Bytes{323772} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"4c8f8d174ff288436b566a3a302517edef3721a01bd66c0eac141ad26b61de71"} int32 %Bytes{375667} }
+		Component { string %Name{"manifest"} string %Sha256{"ac56ea3631eee857cb7e496b494f8b6fb22ab6a651148cbe83bf9af1ff00d8e1"} int32 %Bytes{1644} }
+		Component { string %Name{"icon"} string %Sha256{"ac8412a172d0a281ae4eb17d46921b861bf07f2d1b9e73cbf974cc2b68a82007"} int32 %Bytes{179519} }
+		Component { string %Name{"editor-win64"} string %Sha256{"ce8a39947e7f807fdede0e543d42e0ea1b598c8f275609309ccee01194b2270b"} int32 %Bytes{406707} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"ac8412a172d0a281ae4eb17d46921b861bf07f2d1b9e73cbf974cc2b68a82007"}
+		string %BannerSha{"4563c3411885a467f56d8df2173d07083d569a72dcf40543d67e48e461a2cca3"}
+		Component { string %Name{"manifest"} string %Sha256{"0eaba96a29c15c154082dbc3eb8a246bc92d477af6dc21d2505c36c6b4906eb5"} int32 %Bytes{1645} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"0eebf52b7c8e66498578d57374d9a4c326858b657b2427c3ee4072ad26515e0f"} int32 %Bytes{375668} }
+		Component { string %Name{"banner"} string %Sha256{"4563c3411885a467f56d8df2173d07083d569a72dcf40543d67e48e461a2cca3"} int32 %Bytes{323772} }
+		Component { string %Name{"editor-win64"} string %Sha256{"63327124f8967053953eea28e510910562104d11b3dd3d017b4acbad3ae4bf94"} int32 %Bytes{405931} }
+		Component { string %Name{"icon"} string %Sha256{"ac8412a172d0a281ae4eb17d46921b861bf07f2d1b9e73cbf974cc2b68a82007"} int32 %Bytes{179519} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.networking"}
+	string %DisplayName{"Networking"}
+	string %Category{"Networking"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Multiplayer networking - client/server sessions, replicated components and property replication.
+
+Physics-aware, so it expects the Jolt plugin to be enabled. Jolt ships with the engine and does not need installing."}
+	string %Provides{"bundle:NetworkPlugin"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"c0bed0d3a1199af0eb76023349610048a90415b3c38317176619ee9825483201"}
+		string %BannerSha{"32547ce3497fad5c3d5412521362f0bd3dd6002c31d0c3c43c8c1513390b047b"}
+		Component { string %Name{"manifest"} string %Sha256{"25371710afec48fa21a11c9c3b21d06cda02626657bc3ed10a7bfa98787073ce"} int32 %Bytes{2211} }
+		Component { string %Name{"banner"} string %Sha256{"32547ce3497fad5c3d5412521362f0bd3dd6002c31d0c3c43c8c1513390b047b"} int32 %Bytes{273393} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"4a45c6c9ec8c84e06f9a26c8bde979b92b4780669e223e022dc74158daf15142"} int32 %Bytes{521576} }
+		Component { string %Name{"icon"} string %Sha256{"c0bed0d3a1199af0eb76023349610048a90415b3c38317176619ee9825483201"} int32 %Bytes{175740} }
+		Component { string %Name{"editor-win64"} string %Sha256{"c8179109c1706b0dd44dfbf6d9f93d34acf633df88874bbdff309f68ee680021"} int32 %Bytes{62128} }
+	}
+
+	Version
+	{
+		string %Version{"1.0.2"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"c0bed0d3a1199af0eb76023349610048a90415b3c38317176619ee9825483201"}
+		string %BannerSha{"32547ce3497fad5c3d5412521362f0bd3dd6002c31d0c3c43c8c1513390b047b"}
+		Requires { string %Id{"plasma.jolt"} string %Range{"^1.0"} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"0c75ca85379f468bd97c6380fa4d5a47ac564d0ecb8c3890cf32eb83eed0544b"} int32 %Bytes{521579} }
+		Component { string %Name{"banner"} string %Sha256{"32547ce3497fad5c3d5412521362f0bd3dd6002c31d0c3c43c8c1513390b047b"} int32 %Bytes{273393} }
+		Component { string %Name{"manifest"} string %Sha256{"8ee4a6db773fa3857fcebce5fadffed2023b864e6576ad6bccdf94aab3b9deb2"} int32 %Bytes{2192} }
+		Component { string %Name{"editor-win64"} string %Sha256{"a10ca61b7cad6d508a4d10b972ab65bfb3a1f5601c716c993a4bd7ef44605cb6"} int32 %Bytes{62130} }
+		Component { string %Name{"icon"} string %Sha256{"c0bed0d3a1199af0eb76023349610048a90415b3c38317176619ee9825483201"} int32 %Bytes{175740} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"c0bed0d3a1199af0eb76023349610048a90415b3c38317176619ee9825483201"}
+		string %BannerSha{"32547ce3497fad5c3d5412521362f0bd3dd6002c31d0c3c43c8c1513390b047b"}
+		Requires { string %Id{"plasma.jolt"} string %Range{"^1.0"} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"1736a7f44a6624378fb3d4acaf2cbac17525738f9d5b2a407a95f66e47d580b8"} int32 %Bytes{521579} }
+		Component { string %Name{"banner"} string %Sha256{"32547ce3497fad5c3d5412521362f0bd3dd6002c31d0c3c43c8c1513390b047b"} int32 %Bytes{273393} }
+		Component { string %Name{"editor-win64"} string %Sha256{"afb5fbc99a04396f50019f7b88b1d32f51895037271adc8771bf5016cead3724"} int32 %Bytes{62163} }
+		Component { string %Name{"icon"} string %Sha256{"c0bed0d3a1199af0eb76023349610048a90415b3c38317176619ee9825483201"} int32 %Bytes{175740} }
+		Component { string %Name{"manifest"} string %Sha256{"f5030482d79f495085083206bab2db42dacc51ef3b2a57bbe15112931799fbde"} int32 %Bytes{2193} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.openxr"}
+	string %DisplayName{"OpenXR"}
+	string %Category{"XR"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Virtual and mixed reality through OpenXR, rendering via Vulkan.
+
+The OpenXR loader ships with the package. A runtime for the headset - SteamVR, Oculus, Windows Mixed Reality or similar - has to be installed and set as the active OpenXR runtime."}
+	string %Provides{"bundle:OpenXR"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"f954170feb0e9d75d5383c4162e1193948607abe49c2382c934b3c60e418ef07"}
+		string %BannerSha{"59664fa46794eff99d2a5b3dfcf08c17b69ee680491645ddf9c3e3bc1e64806b"}
+		Component { string %Name{"runtime-win64"} string %Sha256{"3da19a7a12b2b7bd33bc2818fed53e01dcdb4ff4cb730b9233a8d58cc509f2d6"} int32 %Bytes{474422} }
+		Component { string %Name{"banner"} string %Sha256{"59664fa46794eff99d2a5b3dfcf08c17b69ee680491645ddf9c3e3bc1e64806b"} int32 %Bytes{18387} }
+		Component { string %Name{"manifest"} string %Sha256{"cc55b2e05afd48ddddddfe2bdb6d829ae3dc9d97ecbb732eaf0f04955b071536"} int32 %Bytes{2400} }
+		Component { string %Name{"icon"} string %Sha256{"f954170feb0e9d75d5383c4162e1193948607abe49c2382c934b3c60e418ef07"} int32 %Bytes{730} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"f954170feb0e9d75d5383c4162e1193948607abe49c2382c934b3c60e418ef07"}
+		string %BannerSha{"59664fa46794eff99d2a5b3dfcf08c17b69ee680491645ddf9c3e3bc1e64806b"}
+		Component { string %Name{"manifest"} string %Sha256{"3a20d2b35e53e8c6d7554e634bdcb17611bdb26f4da818a9a6da498d27e1e6f9"} int32 %Bytes{2400} }
+		Component { string %Name{"banner"} string %Sha256{"59664fa46794eff99d2a5b3dfcf08c17b69ee680491645ddf9c3e3bc1e64806b"} int32 %Bytes{18387} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"e1cf9627619e4ff6d9d7b994d0b1c5dfa983f042a0b67aba05019fa89f131910"} int32 %Bytes{474423} }
+		Component { string %Name{"icon"} string %Sha256{"f954170feb0e9d75d5383c4162e1193948607abe49c2382c934b3c60e418ef07"} int32 %Bytes{730} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.particles"}
+	string %DisplayName{"Particles"}
+	string %Category{"Rendering"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Adds support for particle effects.
+
+The particle shaders ship with the engine, so installing this needs nothing further."}
+	string %Provides{"bundle:Particles"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"f787059e29e3973bfe61e5542c2cc11527c3beddbca33cd246566b9d53746366"}
+		string %BannerSha{"d912e7c05feca9706d216f193af21cf1740fe37187c9c8797b4414e4a572074f"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"editor-win64"} string %Sha256{"1bd2cc711efdd121351dbf5ce0e0404d0127f220cafc3e43355e1a08e7a800dc"} int32 %Bytes{195027} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"4c05f39b74983fc9fc2c6ec7aa7aae326af4996cbb7dec52205fcbdd6b9cb04c"} int32 %Bytes{691669} }
+		Component { string %Name{"manifest"} string %Sha256{"d3428662f1178eaaf7dcf8210bffd13401261bdb1f6cca65091fa5d957922502"} int32 %Bytes{1828} }
+		Component { string %Name{"banner"} string %Sha256{"d912e7c05feca9706d216f193af21cf1740fe37187c9c8797b4414e4a572074f"} int32 %Bytes{321259} }
+		Component { string %Name{"icon"} string %Sha256{"f787059e29e3973bfe61e5542c2cc11527c3beddbca33cd246566b9d53746366"} int32 %Bytes{173512} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"f787059e29e3973bfe61e5542c2cc11527c3beddbca33cd246566b9d53746366"}
+		string %BannerSha{"d912e7c05feca9706d216f193af21cf1740fe37187c9c8797b4414e4a572074f"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"86e5f7267ba25524cf6e8ab76ad0ca56cbade9788b9ea84afaa49379f2f73ecf"} int32 %Bytes{691672} }
+		Component { string %Name{"manifest"} string %Sha256{"b6b81f42acebed731d773ceafa31bbbab1a6fe32fa8328fc4f7ebb1cbb962178"} int32 %Bytes{1826} }
+		Component { string %Name{"editor-win64"} string %Sha256{"bd802c995c0a0b0bd24b1c0bacbfdddf4d71d034b704b1579524be00d2e10787"} int32 %Bytes{195126} }
+		Component { string %Name{"banner"} string %Sha256{"d912e7c05feca9706d216f193af21cf1740fe37187c9c8797b4414e4a572074f"} int32 %Bytes{321259} }
+		Component { string %Name{"icon"} string %Sha256{"f787059e29e3973bfe61e5542c2cc11527c3beddbca33cd246566b9d53746366"} int32 %Bytes{173512} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.procgen"}
+	string %DisplayName{"Procedural Generation"}
+	string %Category{"Rendering"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Adds support for placing objects procedurally."}
+	string %Provides{"bundle:ProcGen"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"91d189872ddf6dfa32752f5d422e785c494ded2262af627b8e071d44beb7d5b8"}
+		string %BannerSha{"74c8246b8f2b68d0dec54ba898aafc3972ca421a8513cdb89294b96155edd767"}
+		Component { string %Name{"editor-win64"} string %Sha256{"0623c31a2ad60278c97bc7be379ff285386d9408888c9fea27160ac97082d124"} int32 %Bytes{210353} }
+		Component { string %Name{"banner"} string %Sha256{"74c8246b8f2b68d0dec54ba898aafc3972ca421a8513cdb89294b96155edd767"} int32 %Bytes{319600} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"8decef02869a38cd52a14567ac7fd0e2a9b7420728d02779b20953152bc59d07"} int32 %Bytes{309151} }
+		Component { string %Name{"icon"} string %Sha256{"91d189872ddf6dfa32752f5d422e785c494ded2262af627b8e071d44beb7d5b8"} int32 %Bytes{189883} }
+		Component { string %Name{"manifest"} string %Sha256{"a8561e70a24814cf5c0da2d0ae2de1b94fed0f094f6b8136a926df12b4078e9d"} int32 %Bytes{1629} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"91d189872ddf6dfa32752f5d422e785c494ded2262af627b8e071d44beb7d5b8"}
+		string %BannerSha{"74c8246b8f2b68d0dec54ba898aafc3972ca421a8513cdb89294b96155edd767"}
+		Component { string %Name{"manifest"} string %Sha256{"309a5ccbf1cded6a59c35f5edd74d209b1f8ceac9aa54fbba85c2e08b2fcd8e8"} int32 %Bytes{1628} }
+		Component { string %Name{"editor-win64"} string %Sha256{"33cfb34d1f987a7915e1f1bfe26ade3626c67eece876de81dda270da21941b54"} int32 %Bytes{209748} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"34df734f8a088f97c4e8cfa0a5d7f13ec244cc9f778c94c7c0e18c8586ab2276"} int32 %Bytes{309150} }
+		Component { string %Name{"banner"} string %Sha256{"74c8246b8f2b68d0dec54ba898aafc3972ca421a8513cdb89294b96155edd767"} int32 %Bytes{319600} }
+		Component { string %Name{"icon"} string %Sha256{"91d189872ddf6dfa32752f5d422e785c494ded2262af627b8e071d44beb7d5b8"} int32 %Bytes{189883} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.renderdoc"}
+	string %DisplayName{"RenderDoc"}
+	string %Category{"Tools"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Records GPU commands for investigation with RenderDoc. Intended to be enabled only while it is needed - it hooks the graphics device."}
+	string %Provides{"bundle:RenderDoc"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"1a71d8d6b7d4ce6c0db892bfa985c30502382c5f0257f1a74e3f81dec55fb5d9"}
+		string %BannerSha{"c7bc02245e24a41d4c22d544e44e141c2743bbe5f535c1eec370e19dc4fbe3b8"}
+		Component { string %Name{"manifest"} string %Sha256{"0cd11e51a9f159b1200c50c0a7d222f3e4544e5c65b7ba617620bd343211904c"} int32 %Bytes{2711} }
+		Component { string %Name{"icon"} string %Sha256{"1a71d8d6b7d4ce6c0db892bfa985c30502382c5f0257f1a74e3f81dec55fb5d9"} int32 %Bytes{5463} }
+		Component { string %Name{"banner"} string %Sha256{"c7bc02245e24a41d4c22d544e44e141c2743bbe5f535c1eec370e19dc4fbe3b8"} int32 %Bytes{49004} }
+		Component { string %Name{"tool"} string %Sha256{"d4354e2163bd84dede6cba5ea15beab9ec81abcd15eae839b0e274a9380e4053"} int32 %Bytes{9591367} bool %Optional{true} string %Label{"RenderDoc capture library (26 MB)"} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"fa8f200585a2a576ca063cc3b8f134f3e4c0784c54a7abf49fb3fbe773017b3e"} int32 %Bytes{22882} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"1a71d8d6b7d4ce6c0db892bfa985c30502382c5f0257f1a74e3f81dec55fb5d9"}
+		string %BannerSha{"c7bc02245e24a41d4c22d544e44e141c2743bbe5f535c1eec370e19dc4fbe3b8"}
+		Component { string %Name{"icon"} string %Sha256{"1a71d8d6b7d4ce6c0db892bfa985c30502382c5f0257f1a74e3f81dec55fb5d9"} int32 %Bytes{5463} }
+		Component { string %Name{"manifest"} string %Sha256{"5ca098a9ab5da8f11334483adbf662dce1911d2e40494fe13a0000ad4f30f868"} int32 %Bytes{2712} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"922568fa4fa8e310d05aeaec56937fde6641ccedaff81bd286bc9c81d3415b93"} int32 %Bytes{22883} }
+		Component { string %Name{"banner"} string %Sha256{"c7bc02245e24a41d4c22d544e44e141c2743bbe5f535c1eec370e19dc4fbe3b8"} int32 %Bytes{49004} }
+		Component { string %Name{"tool"} string %Sha256{"d4354e2163bd84dede6cba5ea15beab9ec81abcd15eae839b0e274a9380e4053"} int32 %Bytes{9591367} bool %Optional{true} string %Label{"RenderDoc capture library (26 MB)"} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.rmlui"}
+	string %DisplayName{"RML UI"}
+	string %Category{"UI"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"In-game user interface built from HTML and CSS-like documents, powered by RmlUi.
+
+Self-contained: RmlUi and its SVG support are compiled into the plugin, and the FreeType font library ships with it under the FreeType License."}
+	string %Provides{"bundle:RmlUi"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"06170fc136b7ca9e65882b0dff0df89e27c5aab90e4b10d8de32f4dcee8e8981"}
+		string %BannerSha{"53e756735924f5ae5da4d67b5decbd39f739720006cc8246c17a2ec2531f41ae"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"icon"} string %Sha256{"06170fc136b7ca9e65882b0dff0df89e27c5aab90e4b10d8de32f4dcee8e8981"} int32 %Bytes{54005} }
+		Component { string %Name{"manifest"} string %Sha256{"24581d1d888a63a0addb1fe89ce104ba872754336efb061551998760db3debf8"} int32 %Bytes{2542} }
+		Component { string %Name{"banner"} string %Sha256{"53e756735924f5ae5da4d67b5decbd39f739720006cc8246c17a2ec2531f41ae"} int32 %Bytes{89478} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"7f8671b9d7f9c6b1cf4e19c4c8d3ac86d338db11a6ff758a91510b0633b185db"} int32 %Bytes{2135148} }
+		Component { string %Name{"editor-win64"} string %Sha256{"a57efb0fd1ba3581e5db959f36cc2556e5fa55e703b7935c396bdf8ac19a4fd7"} int32 %Bytes{3148621} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"06170fc136b7ca9e65882b0dff0df89e27c5aab90e4b10d8de32f4dcee8e8981"}
+		string %BannerSha{"53e756735924f5ae5da4d67b5decbd39f739720006cc8246c17a2ec2531f41ae"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"icon"} string %Sha256{"06170fc136b7ca9e65882b0dff0df89e27c5aab90e4b10d8de32f4dcee8e8981"} int32 %Bytes{54005} }
+		Component { string %Name{"banner"} string %Sha256{"53e756735924f5ae5da4d67b5decbd39f739720006cc8246c17a2ec2531f41ae"} int32 %Bytes{89478} }
+		Component { string %Name{"manifest"} string %Sha256{"92763d88b335b08f0ebf67c081ada477068b5c1ee96d3449dc8abc86769f324f"} int32 %Bytes{2545} }
+		Component { string %Name{"editor-win64"} string %Sha256{"9add790b11ce81af1c265ce76bde99f6ebb1d53ee6d1057a73c31e0b6fb4ea3b"} int32 %Bytes{3148623} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"a7b02313361376831cda5d3ac093a008376426cd08e1e2de1a2ff3911c2651e2"} int32 %Bytes{2135151} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.terrain"}
+	string %DisplayName{"Terrain"}
+	string %Category{"Rendering"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Heightfield terrain with layered materials, plus the editor tooling to sculpt and paint it.
+
+The terrain shaders ship with the engine, so installing this needs nothing further."}
+	string %Provides{"bundle:Terrain"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"de92ccfd6bd7bc6d59e60f695183992f5e7efef35aac58b2eba988b66560e4d5"}
+		string %BannerSha{"a8900e3b7a74f9cf66970f2f2973e9a9d43e08d96472eba3d5350a93cf430b4f"}
+		Component { string %Name{"editor-win64"} string %Sha256{"0cbf99b6f95f88134ca3270e542d35b31c067005f4b4aec77fc98617b6dc50c2"} int32 %Bytes{11331} }
+		Component { string %Name{"manifest"} string %Sha256{"2b6753a51bc5a40823c4729f45541f3605ab82752d62e4346ffba04c451750d7"} int32 %Bytes{1740} }
+		Component { string %Name{"banner"} string %Sha256{"a8900e3b7a74f9cf66970f2f2973e9a9d43e08d96472eba3d5350a93cf430b4f"} int32 %Bytes{16093} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"d59321c017d66eda362064470d0ea5b41141d1c0b8968e56953263ff47525eaa"} int32 %Bytes{195873} }
+		Component { string %Name{"icon"} string %Sha256{"de92ccfd6bd7bc6d59e60f695183992f5e7efef35aac58b2eba988b66560e4d5"} int32 %Bytes{6903} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"de92ccfd6bd7bc6d59e60f695183992f5e7efef35aac58b2eba988b66560e4d5"}
+		string %BannerSha{"a8900e3b7a74f9cf66970f2f2973e9a9d43e08d96472eba3d5350a93cf430b4f"}
+		Component { string %Name{"manifest"} string %Sha256{"11d804ee7a6112e94058fb56c90d608e73f498c3fcd8726d7b861b04cec56c97"} int32 %Bytes{1741} }
+		Component { string %Name{"editor-win64"} string %Sha256{"3caf7ea1e8abccbfa72ee33f8b3b496cbb19b04d79a81f7a68777893ebf3341c"} int32 %Bytes{11349} }
+		Component { string %Name{"banner"} string %Sha256{"a8900e3b7a74f9cf66970f2f2973e9a9d43e08d96472eba3d5350a93cf430b4f"} int32 %Bytes{16093} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"b339c0c7c17fa52ec386c91047e971282d8f09585422ed3fbb31198acf6cbf63"} int32 %Bytes{195873} }
+		Component { string %Name{"icon"} string %Sha256{"de92ccfd6bd7bc6d59e60f695183992f5e7efef35aac58b2eba988b66560e4d5"} int32 %Bytes{6903} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.visualscript"}
+	string %DisplayName{"VisualScript"}
+	string %Category{"Scripting"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Adds support for scripting via node based visual scripting."}
+	string %Provides{"bundle:VisualScript"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"3d5fa2b337e27caf6e48aa069596e63086852f0aa408b7e4c810603575841b58"}
+		string %BannerSha{"15803fb9b391c4f1902233fa8db8eafb6a4a76d7e0ce2f5fa20b9fefcecf7e60"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"editor-win64"} string %Sha256{"0000eb4c95d28e3bccf54d0a25b7cd12a9c3c574bd5c9e4671a20ecd9f0f32e9"} int32 %Bytes{325527} }
+		Component { string %Name{"banner"} string %Sha256{"15803fb9b391c4f1902233fa8db8eafb6a4a76d7e0ce2f5fa20b9fefcecf7e60"} int32 %Bytes{322531} }
+		Component { string %Name{"icon"} string %Sha256{"3d5fa2b337e27caf6e48aa069596e63086852f0aa408b7e4c810603575841b58"} int32 %Bytes{190549} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"7286f906dfb452b8044af7b4e983488d9c1ed2a1a991dc7cff36ccbf4334cd9d"} int32 %Bytes{186591} }
+		Component { string %Name{"manifest"} string %Sha256{"d2eee21ca9394eeacafa4b764f1c14aabfd3dae85dfc031f13f827366268b633"} int32 %Bytes{1721} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"3d5fa2b337e27caf6e48aa069596e63086852f0aa408b7e4c810603575841b58"}
+		string %BannerSha{"15803fb9b391c4f1902233fa8db8eafb6a4a76d7e0ce2f5fa20b9fefcecf7e60"}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"manifest"} string %Sha256{"14310b99243a026507ca6de0f066bc3d8f2aa14ca2ac7a356cd249784f8d2741"} int32 %Bytes{1723} }
+		Component { string %Name{"banner"} string %Sha256{"15803fb9b391c4f1902233fa8db8eafb6a4a76d7e0ce2f5fa20b9fefcecf7e60"} int32 %Bytes{322531} }
+		Component { string %Name{"icon"} string %Sha256{"3d5fa2b337e27caf6e48aa069596e63086852f0aa408b7e4c810603575841b58"} int32 %Bytes{190549} }
+		Component { string %Name{"editor-win64"} string %Sha256{"633e586071fa23819f790a5831bf1c1ddb09a8ab625788384f30bd3dddabfb55"} int32 %Bytes{323979} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"882468ed666670832618582dc27a2d2f348ee85a98c46658c8a1a32070504414"} int32 %Bytes{186591} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.water"}
+	string %DisplayName{"Water"}
+	string %Category{"Rendering"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Profile-driven oceans, rivers and lakes, with junctions, wave interaction, buoyancy hooks and underwater rendering.
+
+The water shaders and the default Ocean/River/Lake profiles ship with the engine rather than with this package, so installing it needs nothing further."}
+	string %Provides{"bundle:Water"}
+
+	Version
+	{
+		string %Version{"1.0.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"ac2a9910bd88e980e1bb4b89b1ed52f6d8c479fd64fbf92a2f4c38f62a88c59c"}
+		string %BannerSha{"12291564ba9d015b49471bd24e04cda4595312950dfd62826501b93342511b52"}
+		Component { string %Name{"banner"} string %Sha256{"12291564ba9d015b49471bd24e04cda4595312950dfd62826501b93342511b52"} int32 %Bytes{38458} }
+		Component { string %Name{"manifest"} string %Sha256{"6cc539d3defbeef503a709c4437bad69b4a74bbe8c76cdf309a729a657f0c778"} int32 %Bytes{2483} }
+		Component { string %Name{"icon"} string %Sha256{"ac2a9910bd88e980e1bb4b89b1ed52f6d8c479fd64fbf92a2f4c38f62a88c59c"} int32 %Bytes{27450} }
+		Component { string %Name{"editor-win64"} string %Sha256{"b6e5a154eef1f0c682c1b6f31a9f933600e321aa2ed1e51159912760593e1724"} int32 %Bytes{291732} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"bca2dd0a73456ff64c38cab271c5c4a791d8ffc09c2a9ecc0cbc75b2596b5072"} int32 %Bytes{444687} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"ac2a9910bd88e980e1bb4b89b1ed52f6d8c479fd64fbf92a2f4c38f62a88c59c"}
+		string %BannerSha{"12291564ba9d015b49471bd24e04cda4595312950dfd62826501b93342511b52"}
+		Component { string %Name{"banner"} string %Sha256{"12291564ba9d015b49471bd24e04cda4595312950dfd62826501b93342511b52"} int32 %Bytes{38458} }
+		Component { string %Name{"manifest"} string %Sha256{"557d7b6791ab80914d738d6b5206fb6e11afe69e18262b5fdaf87ee79b37b248"} int32 %Bytes{2482} }
+		Component { string %Name{"icon"} string %Sha256{"ac2a9910bd88e980e1bb4b89b1ed52f6d8c479fd64fbf92a2f4c38f62a88c59c"} int32 %Bytes{27450} }
+		Component { string %Name{"editor-win64"} string %Sha256{"dcb6960661df548dc67b4985d27e71846afb8a6a7c2b44ebc8c5d92a6fcfde88"} int32 %Bytes{292381} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"ddcfbabf5153cc8aee2c119c376424b1e00dbb332edbccd380220690af643aaf"} int32 %Bytes{444690} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.xboxcontroller"}
+	string %DisplayName{"XBox Controller"}
+	string %Category{"Input"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"Gamepad input through XInput, exposing controller state as input slots.
+
+Windows only, and binds to the system XInput library - nothing to install."}
+	string %Provides{"bundle:XBoxController"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.7.0"}
+		string %MaxEngine{"0.7.0"}
+		string %AbiTag{"win64-msvc19-0.7.0-dev"}
+		string %IconSha{"c2cdf56b31166b51ebf277089fcdfd84dbd837075ceb3b18694fcd903d57485d"}
+		string %BannerSha{"0c200adddf5426e6ccc63a975ad17a8396fe63ad0de86df99644ec275bad0efc"}
+		Component { string %Name{"banner"} string %Sha256{"0c200adddf5426e6ccc63a975ad17a8396fe63ad0de86df99644ec275bad0efc"} int32 %Bytes{28770} }
+		Component { string %Name{"manifest"} string %Sha256{"572407ac60281b24bc7d9a1a8132a7b199886fc60ba5cac3c232fc276ee649af"} int32 %Bytes{1684} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"9157ad5711cfd6310907a5d59e7918bbecbf0e9c1b4a21abe9b746ef0014c57b"} int32 %Bytes{26144} }
+		Component { string %Name{"icon"} string %Sha256{"c2cdf56b31166b51ebf277089fcdfd84dbd837075ceb3b18694fcd903d57485d"} int32 %Bytes{10298} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.8.0"}
+		string %MaxEngine{"0.8.0"}
+		string %AbiTag{"win64-msvc19-0.8.0-dev"}
+		string %IconSha{"c2cdf56b31166b51ebf277089fcdfd84dbd837075ceb3b18694fcd903d57485d"}
+		string %BannerSha{"0c200adddf5426e6ccc63a975ad17a8396fe63ad0de86df99644ec275bad0efc"}
+		Component { string %Name{"manifest"} string %Sha256{"0b1e48ac68d75d2850eb13341fee50451e64b2c3d81c3ff0659e4fca6f37d0ea"} int32 %Bytes{1684} }
+		Component { string %Name{"banner"} string %Sha256{"0c200adddf5426e6ccc63a975ad17a8396fe63ad0de86df99644ec275bad0efc"} int32 %Bytes{28770} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"158dc3391a7ab0edb646b19d25ed82da115d29489a7f17bdd0f81fa763d8b7d7"} int32 %Bytes{26144} }
+		Component { string %Name{"icon"} string %Sha256{"c2cdf56b31166b51ebf277089fcdfd84dbd837075ceb3b18694fcd903d57485d"} int32 %Bytes{10298} }
+	}
+}
+
+Revoked { string %Key{"plasma.amplitude@1.0.0"} string %Reason{""} }
+Revoked { string %Key{"plasma.angelscript@1.0.0"} string %Reason{""} }
+Revoked { string %Key{"plasma.csharp@1.0.0"} string %Reason{""} }
+Revoked { string %Key{"plasma.fmod@1.0.0"} string %Reason{""} }
+Revoked { string %Key{"plasma.kraut@1.2.0"} string %Reason{"Was used for development of package system. Not fully configured for user release"} }
+Revoked { string %Key{"plasma.kraut@1.2.1"} string %Reason{""} }
+Revoked { string %Key{"plasma.networking@1.0.0"} string %Reason{""} }
+Revoked { string %Key{"plasma.openxr@1.0.0"} string %Reason{""} }
+Revoked { string %Key{"plasma.renderdoc@1.0.0"} string %Reason{""} }
+Revoked { string %Key{"plasma.rmlui@1.0.0"} string %Reason{""} }
+Revoked { string %Key{"plasma.water@1.0.0"} string %Reason{""} }
 
