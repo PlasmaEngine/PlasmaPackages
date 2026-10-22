@@ -119,11 +119,16 @@ def api(cfg, method, path, token, body=None):
 
 
 def find_row(cfg, table, token, field, value):
-    q = "database/rows/table/%d/?user_field_names=true&size=200" % table
-    payload = api(cfg, "GET", q, token)
-    for row in payload.get("results", []):
-        if row.get(field) == value:
-            return row
+    page = 1
+    while True:
+        q = "database/rows/table/%d/?user_field_names=true&size=200&page=%d" % (table, page)
+        payload = api(cfg, "GET", q, token)
+        for row in payload.get("results", []):
+            if row.get(field) == value:
+                return row
+        if not payload.get("next"):
+            break
+        page += 1
     return None
 
 

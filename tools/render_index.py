@@ -68,14 +68,19 @@ def describe_tables(cfg):
 def baserow_rows(cfg, table_id, token):
     """Fetch every row of a table, following pagination."""
     base = catalogue_url(cfg)
-    url = "%s/api/database/rows/table/%d/?user_field_names=true&size=200" % (base, table_id)
+    page = 1
     out = []
-    while url:
+    while True:
+        # Build pagination URLs from the configured host. Reverse proxies may return an HTTP
+        # next link, which would downgrade the connection carrying the catalogue token.
+        url = "%s/api/database/rows/table/%d/?user_field_names=true&size=200&page=%d" % (base, table_id, page)
         req = urllib.request.Request(url, headers={"Authorization": "Token %s" % token})
         with urllib.request.urlopen(req, timeout=30) as r:
             payload = json.loads(r.read().decode("utf-8"))
         out.extend(payload.get("results", []))
-        url = payload.get("next")
+        if not payload.get("next"):
+            break
+        page += 1
     return out
 
 
