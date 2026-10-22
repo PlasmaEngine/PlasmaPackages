@@ -1,0 +1,190 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlasmaEngine 0.11.0 package changelists</title>
+<style>body{max-width:900px;margin:40px auto;padding:0 24px;font:16px/1.65 system-ui;background:#10131a;color:#d9e0ec}a{color:#c89af0}h1,h2{color:#fff;line-height:1.25}section{border-top:1px solid #39404e;margin-top:32px;padding-top:20px}li{margin:8px 0}nav{columns:3;column-width:200px}.meta{color:#a7b4c6}code{font-size:.9em}</style></head><body>
+<a href="../index.html">Plasma Packages</a><h1>PlasmaEngine 0.11.0 package changelists</h1>
+<p>Compared with each package&#x27;s latest previously approved registry release. These notes describe the published 0.11.0 artifacts; adding notes does not replace their blobs.</p><p>All packages in this release:</p><ul>
+<li>Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.</li>
+<li>Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions.</li>
+</ul><nav><ul>
+<li><a href="#plasma.ai">plasma.ai 1.2.0</a></li>
+<li><a href="#plasma.amplitude">plasma.amplitude 1.2.0</a></li>
+<li><a href="#plasma.angelscript">plasma.angelscript 1.2.0</a></li>
+<li><a href="#plasma.audio">plasma.audio 2.1.0</a></li>
+<li><a href="#plasma.csharp">plasma.csharp 1.3.0</a></li>
+<li><a href="#plasma.diversion">plasma.diversion 0.2.0</a></li>
+<li><a href="#plasma.eos">plasma.eos 1.1.0</a></li>
+<li><a href="#plasma.fluid">plasma.fluid 0.3.0</a></li>
+<li><a href="#plasma.fmod">plasma.fmod 1.2.0</a></li>
+<li><a href="#plasma.gamecomponents">plasma.gamecomponents 1.2.0</a></li>
+<li><a href="#plasma.gameui">plasma.gameui 1.3.0</a></li>
+<li><a href="#plasma.jolt">plasma.jolt 1.2.0</a></li>
+<li><a href="#plasma.kraut">plasma.kraut 1.4.0</a></li>
+<li><a href="#plasma.materialx">plasma.materialx 0.2.0</a></li>
+<li><a href="#plasma.mcp">plasma.mcp 1.2.0</a></li>
+<li><a href="#plasma.miniaudio">plasma.miniaudio 1.2.0</a></li>
+<li><a href="#plasma.modeling">plasma.modeling 0.2.0</a></li>
+<li><a href="#plasma.networking">plasma.networking 1.3.0</a></li>
+<li><a href="#plasma.openxr">plasma.openxr 1.2.0</a></li>
+<li><a href="#plasma.particles">plasma.particles 1.8.0</a></li>
+<li><a href="#plasma.procgen">plasma.procgen 1.2.0</a></li>
+<li><a href="#plasma.renderdoc">plasma.renderdoc 1.2.0</a></li>
+<li><a href="#plasma.rmlui">plasma.rmlui 1.2.0</a></li>
+<li><a href="#plasma.sequencer">plasma.sequencer 0.2.0</a></li>
+<li><a href="#plasma.steam">plasma.steam 1.1.0</a></li>
+<li><a href="#plasma.terrain">plasma.terrain 1.2.0</a></li>
+<li><a href="#plasma.usd">plasma.usd 0.2.0</a></li>
+<li><a href="#plasma.vegetation">plasma.vegetation 0.3.0</a></li>
+<li><a href="#plasma.visualscript">plasma.visualscript 1.3.0</a></li>
+<li><a href="#plasma.water">plasma.water 1.2.0</a></li>
+<li><a href="#plasma.xboxcontroller">plasma.xboxcontroller 1.2.0</a></li>
+</ul></nav>
+<section id="plasma.ai"><h2>plasma.ai 1.2.0</h2><p class="meta">Previous: 1.1.11</p><ul>
+<li>Migrated AI Behavior, Archetype and EQS Query asset windows to the engine UI, including consideration cards, score preview, behavior stacks and perception views.</li>
+<li>Moved AI project settings and EQS preview controls to the engine UI; document changes continue to update the running engine preview.</li>
+</ul></section>
+<section id="plasma.amplitude"><h2>plasma.amplitude 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Migrated the audio control collection editor and Amplitude project settings dialog to the engine UI.</li>
+<li>Updated editor integration and packaged editor icons for the Qt-free editor.</li>
+</ul></section>
+<section id="plasma.angelscript"><h2>plasma.angelscript 1.2.0</h2><p class="meta">Previous: 1.1.8</p><ul>
+<li>Migrated the AngelScript asset document window to the engine UI.</li>
+<li>Updated editor registration and packaged editor icons for the Qt-free editor.</li>
+</ul></section>
+<section id="plasma.audio"><h2>plasma.audio 2.1.0</h2><p class="meta">Previous: First registry release</p><ul>
+<li>First registry release of PlasmaAudio, an event-based audio package built on miniaudio with mixer buses, snapshots and DSP.</li>
+<li>Includes clip, event, attenuation, mixer, music and bank authoring windows, waveform and event timeline views, auditioning and mixer console controls.</li>
+<li>Includes packed audio banks, streaming, ADPCM and Opus codec support, loudness measurement and music playback.</li>
+<li>Adds audio profiling, event logs, capture/debug views and platform audio configuration. The separate legacy plasma.miniaudio package remains available.</li>
+</ul></section>
+<section id="plasma.csharp"><h2>plasma.csharp 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Migrated the C# project asset window to the engine UI.</li>
+<li>Corrected component packaging so editor icons ship with assets and the DotNet tool payload is not duplicated.</li>
+</ul></section>
+<section id="plasma.diversion"><h2>plasma.diversion 0.2.0</h2><p class="meta">Previous: First registry release</p><ul>
+<li>First registry release of the Diversion source-control integration, using the local Diversion agent and CLI with sign-in managed by Diversion.</li>
+<li>Adds Changes, Conflicts, History and Locks panels, file difference indicators and source-control actions.</li>
+<li>Includes workspace status polling, branch/history queries, collaborator changes and project ignore-file support.</li>
+<li>Ships the optional Diversion MCP companion alongside the editor plugin.</li>
+</ul></section>
+<section id="plasma.eos"><h2>plasma.eos 1.1.0</h2><p class="meta">Previous: 1.0.6</p><ul>
+<li>Rebuilt the Epic Online Services integration against EOS SDK 1.19.2.1.</li>
+<li>Updated engine compatibility and native SDK payloads for 0.11.0; public package headers are unchanged from 1.0.6.</li>
+</ul></section>
+<section id="plasma.fluid"><h2>plasma.fluid 0.3.0</h2><p class="meta">Previous: 0.2.0</p><ul>
+<li>Rebuilt the fluid runtime and editor integration for engine 0.11.0.</li>
+<li>Refreshed the native SDK payload; public package headers are unchanged from 0.2.0.</li>
+</ul></section>
+<section id="plasma.fmod"><h2>plasma.fmod 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Migrated sound-bank and sound-event document windows to the engine UI, including their preview panels.</li>
+<li>Moved FMOD project settings into an engine UI dialog and packaged editor icon resources for the new editor.</li>
+</ul></section>
+<section id="plasma.gamecomponents"><h2>plasma.gamecomponents 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Rebuilt the game components runtime and editor integration for engine 0.11.0.</li>
+<li>Refreshed the native SDK payload; public package headers are unchanged from 1.1.9.</li>
+</ul></section>
+<section id="plasma.gameui"><h2>plasma.gameui 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Migrated UI document, font and style editors to the engine UI, including canvas, hierarchy, palette, properties, bindings, states and animation panels.</li>
+<li>Migrated Figma import and import-report dialogs to the engine UI.</li>
+<li>Ships the engine-built GameUi runtime and import library so package consumers use the same implementation as the 0.11.0 editor.</li>
+</ul></section>
+<section id="plasma.jolt"><h2>plasma.jolt 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Migrated collision-mesh and destructible-mesh asset windows to the engine UI.</li>
+<li>Moved Jolt project settings and name prompts to native editor dialogs; refreshed the public SDK and Jolt include payload.</li>
+</ul></section>
+<section id="plasma.kraut"><h2>plasma.kraut 1.4.0</h2><p class="meta">Previous: 1.3.8</p><ul>
+<li>Migrated the Kraut tree editor and its document panels to the engine UI.</li>
+<li>Fixed four malformed localized branch labels.</li>
+<li>Removed the declaration of an absent Linux runtime component from this Windows release package.</li>
+</ul></section>
+<section id="plasma.materialx"><h2>plasma.materialx 0.2.0</h2><p class="meta">Previous: 0.1.8</p><ul>
+<li>Rebuilt MaterialX integration for engine 0.11.0.</li>
+<li>Refreshed the native SDK payload; public package headers are unchanged from 0.1.8.</li>
+</ul></section>
+<section id="plasma.mcp"><h2>plasma.mcp 1.2.0</h2><p class="meta">Previous: 1.1.8</p><ul>
+<li>Replaced Qt networking and timers with nonblocking sockets polled by the engine editor UI runtime.</li>
+<li>Streams GPU dump viewer files in chunks, limiting buffering when clients read slowly.</li>
+<li>Keeps the server bound to loopback, uses exclusive port binding and protects connection handling during nested modal editor calls.</li>
+</ul></section>
+<section id="plasma.miniaudio"><h2>plasma.miniaudio 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Migrated legacy sound, event and mixer editors to the engine UI, including event deck, timeline and mixer views.</li>
+<li>Moved the legacy audio event resource implementation into this package so existing events continue to work after the engine-side implementation was removed.</li>
+<li>Shuts down the audio preview service before unloading the editor DLL, fixing the shutdown deadlock caused by its device thread under the Windows loader lock.</li>
+</ul></section>
+<section id="plasma.modeling"><h2>plasma.modeling 0.2.0</h2><p class="meta">Previous: 0.1.6</p><ul>
+<li>Migrated the Modeling panel, brush marking menu and viewport mode/measurement overlays to the engine UI.</li>
+<li>Preserves mode-sensitive controls, texture editing and undoable document edits in the new panel.</li>
+<li>Includes the Modeling MCP companion DLL in the editor component.</li>
+</ul></section>
+<section id="plasma.networking"><h2>plasma.networking 1.3.0</h2><p class="meta">Previous: 1.2.6</p><ul>
+<li>Migrated the network profile asset window to the engine UI.</li>
+<li>Updated replication property-row decoration and editor integration for the new property grid.</li>
+</ul></section>
+<section id="plasma.openxr"><h2>plasma.openxr 1.2.0</h2><p class="meta">Previous: 1.1.10</p><ul>
+<li>Rebuilt OpenXR integration for engine 0.11.0.</li>
+<li>Refreshed the native SDK payload; public package headers are unchanged from 1.1.10.</li>
+</ul></section>
+<section id="plasma.particles"><h2>plasma.particles 1.8.0</h2><p class="meta">Previous: 1.3.8</p><ul>
+<li>Reworked the effect graph for the engine UI: system context stacks show blocks in execution order, with expand/collapse, enable toggles, drag reordering and undoable inline value editing.</li>
+<li>Added typed operator wires and a graph compiler that folds constants, evaluates per-frame inputs once per simulation step and compiles per-particle expressions into runtime programs.</li>
+<li>Added Set Attribute blocks in Initialize and Update, custom particle attributes and Kill If blocks; graph programs can read particle streams and sample gradients and curves.</li>
+<li>Added per-particle wiring for drag, gravity factor, attraction force, scene-force influence, size-curve scale and gradient tint.</li>
+<li>Added GPU execution of supported graph programs, including supported Set Attribute and Kill If updates, with explicit lowering diagnostics for unsupported graphs or block ordering.</li>
+<li>Expanded particle events with velocity, color and size payloads, inherited values for event-driven spawning, and multiple named collision/death events.</li>
+<li>Added event relationship information in the graph, warnings for unmatched event listeners and information about delayed GPU event delivery.</li>
+<li>Added a live value spy with sample count, minimum/average/maximum, histogram and particle tinting; supported GPU values are read back with a delay.</li>
+<li>Added deterministic preview timeline scrubbing and single-frame stepping by restarting and resimulating with a fixed seed.</li>
+<li>Added preview motion modes and reporting for blackboard entries missing from the preview world.</li>
+<li>Added conversion of legacy 1.3 logic blocks into operator graphs and attribute/kill blocks, with conversion notices and diagnostics for expressions that cannot compile.</li>
+<li>Expanded particle runtime tests and CPU/GPU program reference coverage.</li>
+</ul></section>
+<section id="plasma.procgen"><h2>plasma.procgen 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Migrated procedural graph asset windows and graph interaction to the engine UI.</li>
+<li>Updated node-manager/editor integration and packaged icons for the Qt-free editor.</li>
+</ul></section>
+<section id="plasma.renderdoc"><h2>plasma.renderdoc 1.2.0</h2><p class="meta">Previous: 1.1.8</p><ul>
+<li>Rebuilt RenderDoc integration for engine 0.11.0.</li>
+<li>Refreshed the native SDK payload; public package headers are unchanged from 1.1.8.</li>
+</ul></section>
+<section id="plasma.rmlui"><h2>plasma.rmlui 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Migrated the RmlUi asset document window to the engine UI.</li>
+<li>Updated the package&#x27;s editor integration and native SDK payload for engine 0.11.0.</li>
+</ul></section>
+<section id="plasma.sequencer"><h2>plasma.sequencer 0.2.0</h2><p class="meta">Previous: 0.1.8</p><ul>
+<li>Migrated sequence authoring to the engine UI, including scene viewport/tree, transport, binding outliner, track lanes, curve and event editors.</li>
+<li>Introduced the engine UI sequence model and track view, retaining row selection while key-only changes repaint the timeline.</li>
+<li>Migrated sequence render settings, preferences and thumbnail caching into the new editor integration.</li>
+</ul></section>
+<section id="plasma.steam"><h2>plasma.steam 1.1.0</h2><p class="meta">Previous: 1.0.5</p><ul>
+<li>Rebuilt the Steam integration against Steamworks SDK 1.65.</li>
+<li>Updated engine compatibility and native SDK payloads for 0.11.0; public package headers are unchanged from 1.0.5.</li>
+</ul></section>
+<section id="plasma.terrain"><h2>plasma.terrain 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Updated terrain editor integration to the Qt-free editor API.</li>
+<li>Removed a redundant TerrainSystem base-class alias and rebuilt runtime/editor binaries and SDK libraries for 0.11.0.</li>
+</ul></section>
+<section id="plasma.usd"><h2>plasma.usd 0.2.0</h2><p class="meta">Previous: 0.1.0</p><ul>
+<li>Migrated USD Live panels and World Partition import to the engine UI, including prim selection, variant controls, validation and scan progress.</li>
+<li>Moved stage reading and scanning onto workers for the nonmodal import dialog, which closes with its scene.</li>
+<li>Updated USD property-grid integration and JSON handling for the Qt-free editor.</li>
+<li>Corrected the editor component to include USD/TBB runtime DLLs, plugin resources and licenses, fixing missing-dependency load failures. Engine 0.11.0 also clears translation lookups before unloading plugins to avoid the USD shutdown crash.</li>
+</ul></section>
+<section id="plasma.vegetation"><h2>plasma.vegetation 0.3.0</h2><p class="meta">Previous: 0.2.0</p><ul>
+<li>Migrated grass-type and vegetation-type asset windows to the engine UI.</li>
+<li>Migrated the vegetation painting panel and updated brush input integration for the new editor.</li>
+</ul></section>
+<section id="plasma.visualscript"><h2>plasma.visualscript 1.3.0</h2><p class="meta">Previous: 1.2.8</p><ul>
+<li>Migrated VisualScript document windows and graph views to the engine UI, including function and variable editing.</li>
+<li>Updated class/library asset metadata and graph actions for the new editor.</li>
+<li>Restored node-registry subsystem startup/shutdown with the reflected-type-manager dependency, fixing the null registry when opening VisualScript documents.</li>
+</ul></section>
+<section id="plasma.water"><h2>plasma.water 1.2.0</h2><p class="meta">Previous: 1.1.9</p><ul>
+<li>Migrated Water Profile authoring to engine UI panels for presets, properties, preview controls/status and diagnostics.</li>
+<li>Includes the engine-drawn 2D schematic, 3D runtime preview controls and preset comparison/apply workflow.</li>
+<li>Updated viewport interaction to the new editor input API.</li>
+</ul></section>
+<section id="plasma.xboxcontroller"><h2>plasma.xboxcontroller 1.2.0</h2><p class="meta">Previous: 1.1.8</p><ul>
+<li>Rebuilt Xbox controller integration for engine 0.11.0.</li>
+<li>Refreshed the native SDK payload; public package headers are unchanged from 1.1.8.</li>
+</ul></section>
+</body></html>

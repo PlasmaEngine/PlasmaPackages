@@ -166,6 +166,7 @@ Recast and Detour are compiled into the plugin, so there is nothing else to inst
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"48df21076548b071f004b05d42d30f31382f3c2784082c66d29f9dc7e0fbcdd4"}
 		string %BannerSha{"52c560424c549d3af058f27e9634077c266280f38226ad247fc67ab9391fb8b5"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650. AI Archetype document-type registration verified."}
 		Component { string %Name{"editor-win64"} string %Sha256{"258129fcdace03b39027b2cc52ca11114763d4a476af6bec0c1065633d330b2d"} int32 %Bytes{548108} }
 		Component { string %Name{"icon"} string %Sha256{"48df21076548b071f004b05d42d30f31382f3c2784082c66d29f9dc7e0fbcdd4"} int32 %Bytes{164146} }
 		Component { string %Name{"banner"} string %Sha256{"52c560424c549d3af058f27e9634077c266280f38226ad247fc67ab9391fb8b5"} int32 %Bytes{317751} }
@@ -236,6 +237,12 @@ Recast and Detour are compiled into the plugin, so there is nothing else to inst
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"7d95a05faf9cfdf69171f4a170b66619b91a9135591de7ca2ead09dac0a36f3b"}
 		string %BannerSha{"80b3ccbe902f351c20d3efd03af43ce416a0d0e7d7ced05001fb04007a27b93c"}
+		string %Changelog{"plasma.ai 1.2.0 (previous: 1.1.11)
+
+- Migrated AI Behavior, Archetype and EQS Query asset windows to the engine UI, including consideration cards, score preview, behavior stacks and perception views.
+- Moved AI project settings and EQS preview controls to the engine UI; document changes continue to update the running engine preview.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"sdk-win64"} string %Sha256{"076a05877d69a0e2b5360cf503003e572c01e69ace500c456e519448ba047e98"} int32 %Bytes{388892} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"3457008ac633591b3d3a82fae96063ade081ddcf78f4669e88f233308104fb2b"} int32 %Bytes{1088279} }
 		Component { string %Name{"editor-win64"} string %Sha256{"3a9042e16ed844a55f093683caa40df34a6e0259203c75c5be3642af782b204c"} int32 %Bytes{547570} }
@@ -353,6 +360,7 @@ Plays sound through the engine's audio system, so it replaces rather than accomp
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"cf7b0c3d091b9e693731be6efbe8e3284f7d298829de986ae90cd5b0fc56625c"}
 		string %BannerSha{"f246af5451d8b2a57bf6ccce8eeca6df9ae37ec7fa57e4d26fd9294aebfd63c1"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650. Includes the required samplerate.dll and its license."}
 		Component { string %Name{"runtime-win64"} string %Sha256{"38f50fa0052dfed11471f988fd4680ee7771eb901645f4f63f472cefa5acfd5a"} int32 %Bytes{2092000} }
 		Component { string %Name{"assets"} string %Sha256{"661e62b11e0234809852347ad5c77e6060c2c2cf515db880983973df693e0ffe"} int32 %Bytes{73089} }
 		Component { string %Name{"manifest"} string %Sha256{"9a5a67c5196738ac048bf62b5f178cc0185f983a46064cea4f0bece62ada58ca"} int32 %Bytes{3119} }
@@ -459,6 +467,12 @@ Plays sound through the engine's audio system, so it replaces rather than accomp
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"6ca1117736fc23b050900ebce3ada900ae081a52ed9a0e119325dbd28615aeb5"}
 		string %BannerSha{"a67bcf4e88b1ac6497690994ef85f9226cdef0c8e8efaefe68ba0041392a2456"}
+		string %Changelog{"plasma.amplitude 1.2.0 (previous: 1.1.9)
+
+- Migrated the audio control collection editor and Amplitude project settings dialog to the engine UI.
+- Updated editor integration and packaged editor icons for the Qt-free editor.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"sdk-win64"} string %Sha256{"34b4819766c9c3b69ac4a1da0f0d715acbd08f5d59fe075448339fa41b825a3d"} int32 %Bytes{39410} }
 		Component { string %Name{"manifest"} string %Sha256{"3830b217df86f99aad6269531f03a58323e33587c3320af521a399c0a53d66c2"} int32 %Bytes{4237} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"3fc0c7bb062c7dcc06190e3c8673743d8177af2383ec82391f3c4654b516cb58"} int32 %Bytes{2090771} }
@@ -559,6 +573,7 @@ The AngelScript library is compiled into the plugin, so there is nothing else to
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"2ec6b2127f05ab7a5f9c8405b127ae006a082bba40f32322bf079a137d8feddd"}
 		string %BannerSha{"a0b6746220ba61d9adb6baf67ca793aa37ff2289b1acb96769c87f93d65ede90"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"editor-win64"} string %Sha256{"066c85e9f25c74a7cdc39a792fe4e5890a3e3846011f23ac6c3d16806b4b9875"} int32 %Bytes{1266673} }
 		Component { string %Name{"icon"} string %Sha256{"2ec6b2127f05ab7a5f9c8405b127ae006a082bba40f32322bf079a137d8feddd"} int32 %Bytes{143464} }
@@ -665,6 +680,12 @@ The AngelScript library is compiled into the plugin, so there is nothing else to
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"35d56c739f2722607cbb3aa730cc162a293be9e738d47d19f6e1bb71f8c31172"}
 		string %BannerSha{"241f5e7550ee1d3bb6647da90dd91b899f8d39e3b217e7604a912853c4681c25"}
+		string %Changelog{"plasma.angelscript 1.2.0 (previous: 1.1.8)
+
+- Migrated the AngelScript asset document window to the engine UI.
+- Updated editor registration and packaged editor icons for the Qt-free editor.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"0a0f5dace55efde69d4965f04ed20c986d0d9a882049b1894521e3748814f16b"} int32 %Bytes{51331} }
 		Component { string %Name{"banner"} string %Sha256{"241f5e7550ee1d3bb6647da90dd91b899f8d39e3b217e7604a912853c4681c25"} int32 %Bytes{51731} }
@@ -695,6 +716,14 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"156397f6c4b1fa9daf3e864645b85741ddc15a44cada8d79d349366bdaa0ff6c"}
 		string %BannerSha{"d86c8f11eba56c4f3df7084557e4a3a336f0be6ad7567ec5af5bfd5220b476ec"}
+		string %Changelog{"plasma.audio 2.1.0 (previous: first registry release)
+
+- First registry release of PlasmaAudio, an event-based audio package built on miniaudio with mixer buses, snapshots and DSP.
+- Includes clip, event, attenuation, mixer, music and bank authoring windows, waveform and event timeline views, auditioning and mixer console controls.
+- Includes packed audio banks, streaming, ADPCM and Opus codec support, loudness measurement and music playback.
+- Adds audio profiling, event logs, capture/debug views and platform audio configuration. The separate legacy plasma.miniaudio package remains available.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"assets"} string %Sha256{"034c91fa056dfa553d6dcd816b1093b3817c0bd75e621741f865c8028b1df91c"} int32 %Bytes{38583} }
 		Component { string %Name{"icon"} string %Sha256{"156397f6c4b1fa9daf3e864645b85741ddc15a44cada8d79d349366bdaa0ff6c"} int32 %Bytes{35720} }
 		Component { string %Name{"tool"} string %Sha256{"2524350be1d182390add1c1211c20b2daabb8715c6e57ed217f77d41619239ab"} int32 %Bytes{10512} }
@@ -846,6 +875,7 @@ The .NET runtime itself is an optional component. Install it and the package is 
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"932804454888ec51da9bcf7b69e18eedd5c80b1b503cfb05b3155abd2afeaa98"}
 		string %BannerSha{"cc042884d7a1bd5755511c51e713ac11bdc7ab32f7ad4e50e9ef38e2fd769c12"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650. Uses release-compatible source, excluding development-only engine interfaces unavailable in 0.9.1."}
 		Component { string %Name{"editor-win64"} string %Sha256{"1f04a42bd8a661d2ec7017111cf9ae7f5137a4d10ec48a79fc6c3489619c96f3"} int32 %Bytes{263658} }
 		Component { string %Name{"manifest"} string %Sha256{"404832d714bdacf03a8d23d73446be42d94123531bb1627e6dfeed5e3357da66"} int32 %Bytes{12477} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"558efef8c59e434e3c8407924aefcfb87fd424c470e821008a6e6fc9b76346a1"} int32 %Bytes{680141} }
@@ -934,6 +964,12 @@ The .NET runtime itself is an optional component. Install it and the package is 
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"344a9d430c0f6f573b55e7c311516ea3a40ada6bb6ed8ca30ce486b7984429e7"}
 		string %BannerSha{"9483edf25d160c3cebf49fa17e17057d980529041456ae0489fdd02f71f17fa4"}
+		string %Changelog{"plasma.csharp 1.3.0 (previous: 1.2.2)
+
+- Migrated the C# project asset window to the engine UI.
+- Corrected component packaging so editor icons ship with assets and the DotNet tool payload is not duplicated.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"assets"} string %Sha256{"06a9c153de97365c119d18c8ac164a9802f43d78ec5c5593c845742761724231"} int32 %Bytes{518} }
 		Component { string %Name{"manifest"} string %Sha256{"1c2647ec18637598ff05619103201c02ea9a14e1e3ca33512a0c16fcc2a172db"} int32 %Bytes{14958} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"33a516ab6fda87917188bc77291fded3ea97a735fca02d7d105030809b3a56b7"} int32 %Bytes{41939} }
@@ -964,6 +1000,14 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"(none)"}
 		string %BannerSha{"(none)"}
+		string %Changelog{"plasma.diversion 0.2.0 (previous: first registry release)
+
+- First registry release of the Diversion source-control integration, using the local Diversion agent and CLI with sign-in managed by Diversion.
+- Adds Changes, Conflicts, History and Locks panels, file difference indicators and source-control actions.
+- Includes workspace status polling, branch/history queries, collaborator changes and project ignore-file support.
+- Ships the optional Diversion MCP companion alongside the editor plugin.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"sdk-win64"} string %Sha256{"0314b7c1b832ea719c64eef586393922ff2a7d7333bed6c713fdf5b2cfca53a6"} int32 %Bytes{33607} }
 		Component { string %Name{"localization"} string %Sha256{"5ddfddb7790286f11a334c425165697c3fc14c7a411ee3d08ce0e5f67f52e69e"} int32 %Bytes{468} }
 		Component { string %Name{"editor-win64"} string %Sha256{"7f00010ba35c4d698db03cf521e00ca4a752ae6d06a4db8c1c5a3fa19d3647c4"} int32 %Bytes{466388} }
@@ -1088,6 +1132,12 @@ Product, sandbox, deployment and client ids come from the 'eos' block of Runtime
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"873f6bcc94c573cd26c35ba60482cd51190525648b49001e0a2b0cc3b268b13e"}
 		string %BannerSha{"2d59e76c63eac5a4b86c156226e6baae1b9b04d9db99ff1bc7fd4fa5ccbde74f"}
+		string %Changelog{"plasma.eos 1.1.0 (previous: 1.0.6)
+
+- Rebuilt the Epic Online Services integration against EOS SDK 1.19.2.1.
+- Updated engine compatibility and native SDK payloads for 0.11.0; public package headers are unchanged from 1.0.6.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"sdk-win64"} string %Sha256{"19a05df1f103e2e41936e86ce7417cc4b25db7e084113b6b99491f72e9669bc0"} int32 %Bytes{21514} }
 		Component { string %Name{"banner"} string %Sha256{"2d59e76c63eac5a4b86c156226e6baae1b9b04d9db99ff1bc7fd4fa5ccbde74f"} int32 %Bytes{45582} }
 		Component { string %Name{"icon"} string %Sha256{"873f6bcc94c573cd26c35ba60482cd51190525648b49001e0a2b0cc3b268b13e"} int32 %Bytes{25298} }
@@ -1132,6 +1182,12 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"ee4b45fe3a64b4a8776ba924e91a9e2e767eff216f7dff00a655c7e7cce3bce4"}
 		string %BannerSha{"74452ad80df4ddc77281f340920c215c6ad9734bc471b21670c540a90dc17b90"}
+		string %Changelog{"plasma.fluid 0.3.0 (previous: 0.2.0)
+
+- Rebuilt the fluid runtime and editor integration for engine 0.11.0.
+- Refreshed the native SDK payload; public package headers are unchanged from 0.2.0.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"assets"} string %Sha256{"04771383e071224f89eaadb2cefa5daf9730bfb2452e23194cf80ffd7aa1f807"} int32 %Bytes{51591} }
 		Component { string %Name{"manifest"} string %Sha256{"214385949270f243394cb183026a5dd348a643196c5e5979dec296825dd2c3fe"} int32 %Bytes{3873} }
@@ -1248,6 +1304,7 @@ Building against a different FMOD version is supported: set FMOD_SDK_PATH to you
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"80012749ad95dd6a5ad703e751d3a005b89a84b5b47dc1c4105eb548a96795cd"}
 		string %BannerSha{"9e43279759b3abb361ca40368e9dfe93b983d4d26aad0d6609f8660bdc5833ec"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"editor-win64"} string %Sha256{"101f71df8018e257c01b0cf0b1c043b553ed43f762f2162df0b55abbb59fb7ac"} int32 %Bytes{155259} }
 		Component { string %Name{"icon"} string %Sha256{"80012749ad95dd6a5ad703e751d3a005b89a84b5b47dc1c4105eb548a96795cd"} int32 %Bytes{2291} }
 		Component { string %Name{"banner"} string %Sha256{"9e43279759b3abb361ca40368e9dfe93b983d4d26aad0d6609f8660bdc5833ec"} int32 %Bytes{7378} }
@@ -1354,6 +1411,12 @@ Building against a different FMOD version is supported: set FMOD_SDK_PATH to you
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"43a41e71af71cb85dcf42a136c8990addc1be2a690f6307a572fc608024abf86"}
 		string %BannerSha{"1e0a3343f0426a6a837e6c45ee2c2f987bc10308c17917d01fed42c94470e5e0"}
+		string %Changelog{"plasma.fmod 1.2.0 (previous: 1.1.9)
+
+- Migrated sound-bank and sound-event document windows to the engine UI, including their preview panels.
+- Moved FMOD project settings into an engine UI dialog and packaged editor icon resources for the new editor.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"runtime-win64"} string %Sha256{"0c5ae27d2e29855c9415177d5f4ca6073495fa300f1f47fb4739313491cd889a"} int32 %Bytes{188023} }
 		Component { string %Name{"banner"} string %Sha256{"1e0a3343f0426a6a837e6c45ee2c2f987bc10308c17917d01fed42c94470e5e0"} int32 %Bytes{41974} }
 		Component { string %Name{"icon"} string %Sha256{"43a41e71af71cb85dcf42a136c8990addc1be2a690f6307a572fc608024abf86"} int32 %Bytes{26999} }
@@ -1464,6 +1527,7 @@ FreeType ships with the package under the FreeType License; plTextMeshComponent 
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"2608c95d55a95f8e132b2c4a01008b04a732c0cc1d391b24dd93582688804886"}
 		string %BannerSha{"3a81e41ce8eec1aea7adb52432de8f5262c74ffa7280f5d50a8c614c2c243379"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"icon"} string %Sha256{"2608c95d55a95f8e132b2c4a01008b04a732c0cc1d391b24dd93582688804886"} int32 %Bytes{193824} }
 		Component { string %Name{"banner"} string %Sha256{"3a81e41ce8eec1aea7adb52432de8f5262c74ffa7280f5d50a8c614c2c243379"} int32 %Bytes{323923} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"7ffdc3bb697b18a9496c8ea3eb708d458a7ca3023b64b7a9dfdabb684067f950"} int32 %Bytes{803193} }
@@ -1564,6 +1628,12 @@ FreeType ships with the package under the FreeType License; plTextMeshComponent 
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"ef44d8b55108540de93047b182202e5468d3bc5e3f586a2ba8a0f04a1924fed5"}
 		string %BannerSha{"c8c8924f167c95e1e7a2b4cff4f468c3935d5da13fc337b0826d0577958ed55b"}
+		string %Changelog{"plasma.gamecomponents 1.2.0 (previous: 1.1.9)
+
+- Rebuilt the game components runtime and editor integration for engine 0.11.0.
+- Refreshed the native SDK payload; public package headers are unchanged from 1.1.9.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"sdk-win64"} string %Sha256{"23a511c2ff8b056e11aac17d83914e3b1e092632f6852a22aedc986784e93f47"} int32 %Bytes{65453} }
 		Component { string %Name{"manifest"} string %Sha256{"2bb1c48d615a455a82b465ccf5365e8d0552107c7ccca47722ec72ae53edb2c2"} int32 %Bytes{3637} }
 		Component { string %Name{"assets"} string %Sha256{"8f900fc788366ee35b42a6dede20e52c5d265786a999e16fff18f585061e644c"} int32 %Bytes{77747} }
@@ -1682,6 +1752,7 @@ FreeType ships with the package under the FreeType License; the font asset uses 
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"3d2563d2cd2f5f9c7a3df346dbc212ffb5c849a8faa5aca6b4092717106add23"}
 		string %BannerSha{"af96496eade6e7d975239c1f3bf183fa43590360d4538ce22ecbce049271a0d0"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"manifest"} string %Sha256{"0eeb5e6a90e9b2341555ed0bb59ef5b5b0fcc77ffe868361cfe956be4e79aa88"} int32 %Bytes{2399} }
 		Component { string %Name{"editor-win64"} string %Sha256{"1e1b7ad70f43a5a64f3793fd3ed054cae1dd1e4c29f2a1526cf763eacba70178"} int32 %Bytes{805286} }
@@ -1775,6 +1846,13 @@ FreeType ships with the package under the FreeType License; the font asset uses 
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"8717967488f23bd840f0632ed2e6fc993f09f92b8861c2f9abf353f398f89a50"}
 		string %BannerSha{"bc66d13063f5ecdad7a52b57ff91a8964faacad7893d36305a9f04ef29332c01"}
+		string %Changelog{"plasma.gameui 1.3.0 (previous: 1.2.2)
+
+- Migrated UI document, font and style editors to the engine UI, including canvas, hierarchy, palette, properties, bindings, states and animation panels.
+- Migrated Figma import and import-report dialogs to the engine UI.
+- Ships the engine-built GameUi runtime and import library so package consumers use the same implementation as the 0.11.0 editor.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"02710da7ee2ff5464d44b631ffffc165d48c02010c17a374e6a179ac26a67ed3"} int32 %Bytes{93945} }
 		Component { string %Name{"manifest"} string %Sha256{"770df4039605fdfca41d55837a7d2394642c8c3851c147bff78ada83596d3b0b"} int32 %Bytes{5845} }
@@ -1896,6 +1974,7 @@ Jolt is compiled into the plugin, so there is nothing else to install."}
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"19cee3c37468280e8608b83200d223a3619269b60ad6a870af2f5dd469634038"}
 		string %BannerSha{"7a7ba335d17b2fac509db4428d5020debd9af0f10e62f7bf9d5de1e6f4a7b4e8"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"editor-win64"} string %Sha256{"155b1346637fe3ed6bc64ca7d5680c808244a3cd0f536f1ae85688c3ed168fb3"} int32 %Bytes{2662464} }
 		Component { string %Name{"icon"} string %Sha256{"19cee3c37468280e8608b83200d223a3619269b60ad6a870af2f5dd469634038"} int32 %Bytes{2476836} }
@@ -2008,6 +2087,12 @@ Jolt is compiled into the plugin, so there is nothing else to install."}
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"e62068e93acbed9bb8ed3bcce19cc77fc3e286d325c3a63510725b265f8f3443"}
 		string %BannerSha{"76d8c57e489527cf8cf3e2bea5129a2d5b643ca50896b8c4135caf50afa26dc9"}
+		string %Changelog{"plasma.jolt 1.2.0 (previous: 1.1.9)
+
+- Migrated collision-mesh and destructible-mesh asset windows to the engine UI.
+- Moved Jolt project settings and name prompts to native editor dialogs; refreshed the public SDK and Jolt include payload.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"2508ec003b23dd09bbacb462612d2d20d57777a6e0ff2213e18023a3520fb7ea"} int32 %Bytes{1643871} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"2704b8438277955b51db6d1cbbd226d4f0a65c728c433e9ec17e22d3e2b17e96"} int32 %Bytes{1935564} }
@@ -2115,6 +2200,7 @@ Package
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"c3bd931897258b99d840f20f346bdaffc48d265e542d57d85adaf2236c645b79"}
 		string %BannerSha{"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"banner"} string %Sha256{"7474033819c7dd9932960cc7ea52cb5c784426877b36b3f03b9724d30458b49c"} int32 %Bytes{19687} }
 		Component { string %Name{"localization"} string %Sha256{"93a4a2017bdf724a42e23485018ffdd8a9df45bc0ccefbdf2aed71b3924b30cb"} int32 %Bytes{6419} }
@@ -2233,6 +2319,13 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"54143436ddf2443f283a7f1e501335cee9217d7323cd9895ceb68f84a3fc0d66"}
 		string %BannerSha{"7685f5a9ed4560b3fb2902872670e6b0cad8da649608fefa48af6036309949ec"}
+		string %Changelog{"plasma.kraut 1.4.0 (previous: 1.3.8)
+
+- Migrated the Kraut tree editor and its document panels to the engine UI.
+- Fixed four malformed localized branch labels.
+- Removed the declaration of an absent Linux runtime component from this Windows release package.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"tool"} string %Sha256{"1f94cf575a3e7cf8a43e7ec962f02c78abfdfb5cae58a90016be81f4b3ae5658"} int32 %Bytes{8831} }
 		Component { string %Name{"manifest"} string %Sha256{"38b67bced6213cb78f7fa0b29e5390169c6c3f403df56213a899f418156fe6e9"} int32 %Bytes{7906} }
@@ -2296,6 +2389,7 @@ Package
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"72801806542a59ed9c314c97520f0dc9bbb345efa02da7a55f95495d3f5cad8a"}
 		string %BannerSha{"39c376752e3d15fd134933bde2a36ad588c8de1d69b241a769f6e09217de6a78"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"banner"} string %Sha256{"39c376752e3d15fd134933bde2a36ad588c8de1d69b241a769f6e09217de6a78"} int32 %Bytes{121773} }
 		Component { string %Name{"assets"} string %Sha256{"4bcccef78e9c19439168c84ee9ada42e98d81561a54217d1517c29f44dbe628a"} int32 %Bytes{240559} }
 		Component { string %Name{"editor-win64"} string %Sha256{"5c91c2b185ff7894779b701eae8cd69d10f4856d99c2378d466d322d1ca061a8"} int32 %Bytes{658890} }
@@ -2396,6 +2490,12 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"a7ea415a10fcf5c5a68e065708bc5558d15a0ac97b063c45a6a7692dfbd8f259"}
 		string %BannerSha{"2981d2d4669203b6e843739dd26b4b66bca2361ac72ab1b0add1539b45de1fd5"}
+		string %Changelog{"plasma.materialx 0.2.0 (previous: 0.1.8)
+
+- Rebuilt MaterialX integration for engine 0.11.0.
+- Refreshed the native SDK payload; public package headers are unchanged from 0.1.8.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"banner"} string %Sha256{"2981d2d4669203b6e843739dd26b4b66bca2361ac72ab1b0add1539b45de1fd5"} int32 %Bytes{46545} }
 		Component { string %Name{"assets"} string %Sha256{"4bcccef78e9c19439168c84ee9ada42e98d81561a54217d1517c29f44dbe628a"} int32 %Bytes{240559} }
 		Component { string %Name{"manifest"} string %Sha256{"605f2638ec4d506c51d15e4b9fb8649583e06384cfff21e099495c345db72dea"} int32 %Bytes{15862} }
@@ -2436,6 +2536,7 @@ Package
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"(none)"}
 		string %BannerSha{"(none)"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"editor-win64"} string %Sha256{"09996ac555a0b338a32336f65f481cd2896adfc33a83e45e594d7180d2c026a8"} int32 %Bytes{356837} }
 		Component { string %Name{"manifest"} string %Sha256{"3b644d6e2ed5a357e5f2a71020b1df7e3e9ef19f2f1ec77b4842c6e4a8e08de4"} int32 %Bytes{1471} }
 	}
@@ -2520,6 +2621,13 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"ac574119043d7adbf166c5391f37c7b095e22cb5c31d8301e395601ba2cf5041"}
 		string %BannerSha{"0a850dc0ef0554f82823c6720ce818c262a03118f0efc2a4eaaad8d210cb9260"}
+		string %Changelog{"plasma.mcp 1.2.0 (previous: 1.1.8)
+
+- Replaced Qt networking and timers with nonblocking sockets polled by the engine editor UI runtime.
+- Streams GPU dump viewer files in chunks, limiting buffering when clients read slowly.
+- Keeps the server bound to loopback, uses exclusive port binding and protects connection handling during nested modal editor calls.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"editor-win64"} string %Sha256{"019e0e7939924a1cc17a1d0fdb9239c0e7e71f27bfed3b8fb917824be9b9a01a"} int32 %Bytes{343815} }
 		Component { string %Name{"banner"} string %Sha256{"0a850dc0ef0554f82823c6720ce818c262a03118f0efc2a4eaaad8d210cb9260"} int32 %Bytes{45132} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"19bda669986198dd841ce3829cffdc098a249b8ea9af9b358877577931e057aa"} int32 %Bytes{25266} }
@@ -2632,6 +2740,7 @@ MiniAudio is compiled into the plugin, so there is nothing else to install."}
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"ac8412a172d0a281ae4eb17d46921b861bf07f2d1b9e73cbf974cc2b68a82007"}
 		string %BannerSha{"4563c3411885a467f56d8df2173d07083d569a72dcf40543d67e48e461a2cca3"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"assets"} string %Sha256{"034c91fa056dfa553d6dcd816b1093b3817c0bd75e621741f865c8028b1df91c"} int32 %Bytes{38583} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"215565837760a12206d5e698166374cb6b560dcea2272b9f54bd4ce3dbbb3f7f"} int32 %Bytes{383500} }
 		Component { string %Name{"manifest"} string %Sha256{"2780aafb8a473c74d92b577a35758a02a1ba149dde82638c09aebab3ad41300b"} int32 %Bytes{2128} }
@@ -2738,6 +2847,13 @@ MiniAudio is compiled into the plugin, so there is nothing else to install."}
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"0d0c604d66e72a8f6a5659db2ddaf261ecf28709ef11cf19a93fc342663d3dd5"}
 		string %BannerSha{"30cd17bca864a484c2ee0e714b79b11fcb5313cb0dd8ac5403d53c03fa00cf54"}
+		string %Changelog{"plasma.miniaudio 1.2.0 (previous: 1.1.9)
+
+- Migrated legacy sound, event and mixer editors to the engine UI, including event deck, timeline and mixer views.
+- Moved the legacy audio event resource implementation into this package so existing events continue to work after the engine-side implementation was removed.
+- Shuts down the audio preview service before unloading the editor DLL, fixing the shutdown deadlock caused by its device thread under the Windows loader lock.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"assets"} string %Sha256{"034c91fa056dfa553d6dcd816b1093b3817c0bd75e621741f865c8028b1df91c"} int32 %Bytes{38583} }
 		Component { string %Name{"icon"} string %Sha256{"0d0c604d66e72a8f6a5659db2ddaf261ecf28709ef11cf19a93fc342663d3dd5"} int32 %Bytes{9621} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"2734e02395e75b529c1c966f79f986ece97d407d11e29020badb77c9f8fa4fff"} int32 %Bytes{739499} }
@@ -2787,6 +2903,13 @@ Currently P1 of the plan: blockout parity with per-face material slots. Sub-obje
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"d45739e0408b3ecd4a6bcd7007d3befff5559cb9f25e4719a4ed7c9d143be973"}
 		string %BannerSha{"39f0f712ea77a605522c5804547a18f2bccde40747db036175fe1104048995c5"}
+		string %Changelog{"plasma.modeling 0.2.0 (previous: 0.1.6)
+
+- Migrated the Modeling panel, brush marking menu and viewport mode/measurement overlays to the engine UI.
+- Preserves mode-sensitive controls, texture editing and undoable document edits in the new panel.
+- Includes the Modeling MCP companion DLL in the editor component.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"tool"} string %Sha256{"27a6852bb82d38380291752d3b21c06a5ded4511ef32528da5b0f57c73779a52"} int32 %Bytes{45153} }
 		Component { string %Name{"assets"} string %Sha256{"28b5304ca6681f10bdf7c315980f5ed745e608a34397404db143b3a81fc0c9cd"} int32 %Bytes{28340} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"29ee958b877cb37fa162ccf9b107001e7ac4108b67b18ba79ecf550aaf60c38d"} int32 %Bytes{227595} }
@@ -2903,6 +3026,7 @@ Physics-aware, so it expects the Jolt plugin to be enabled. Jolt ships with the 
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"c0bed0d3a1199af0eb76023349610048a90415b3c38317176619ee9825483201"}
 		string %BannerSha{"32547ce3497fad5c3d5412521362f0bd3dd6002c31d0c3c43c8c1513390b047b"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650. Uses release-compatible source, excluding development-only engine interfaces unavailable in 0.9.1."}
 		Requires { string %Id{"plasma.jolt"} string %Range{"^1.0"} }
 		Component { string %Name{"manifest"} string %Sha256{"1bf02b60f194151b0a610395274fea5ac6e67fc573d509e28763b41369c9ce9f"} int32 %Bytes{2308} }
 		Component { string %Name{"editor-win64"} string %Sha256{"1f6737dd721ce20d56808333e17b5c48a9dc616b39040bed0b366168f2e8c3a1"} int32 %Bytes{62659} }
@@ -3027,6 +3151,12 @@ Physics-aware, so it expects the Jolt plugin to be enabled. Jolt ships with the 
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"9b2c4ed6f7464bb8c5332ccaac9b96c1cd646484777afd29874e6ddf92297f2e"}
 		string %BannerSha{"59a2fdc49cca6d3e147513f0081d07f503c2380e9765e5a38e077cd12bf569ec"}
+		string %Changelog{"plasma.networking 1.3.0 (previous: 1.2.6)
+
+- Migrated the network profile asset window to the engine UI.
+- Updated replication property-row decoration and editor integration for the new property grid.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.jolt"} string %Range{"^1.0"} }
 		Component { string %Name{"tool"} string %Sha256{"0ff62a01d9324b58a752de6955b7b6a8a19c1d92a51328a22f8135b9cdc69afb"} int32 %Bytes{4020} }
 		Component { string %Name{"manifest"} string %Sha256{"1acbfdd7badcd1fe9d99fd6c93938e9640e525ef05875aadb5caf000f897098b"} int32 %Bytes{4703} }
@@ -3150,6 +3280,7 @@ The OpenXR loader ships with the package. A runtime for the headset - SteamVR, O
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"f954170feb0e9d75d5383c4162e1193948607abe49c2382c934b3c60e418ef07"}
 		string %BannerSha{"59664fa46794eff99d2a5b3dfcf08c17b69ee680491645ddf9c3e3bc1e64806b"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"manifest"} string %Sha256{"25bf35105ad21c90b1499a5a28398bc06ac2f8bff021e182c0920081f1f7209a"} int32 %Bytes{2436} }
 		Component { string %Name{"banner"} string %Sha256{"59664fa46794eff99d2a5b3dfcf08c17b69ee680491645ddf9c3e3bc1e64806b"} int32 %Bytes{18387} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"da54ed514801d62a352784f0e961113171c51da8bbe3c0764c4d3f3aaaae0139"} int32 %Bytes{476432} }
@@ -3228,6 +3359,12 @@ The OpenXR loader ships with the package. A runtime for the headset - SteamVR, O
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"1f62d765474b6821b2b7028f106b0001d9ac2a92c8e5031efa87113c0fb0f294"}
 		string %BannerSha{"aa0a93421fff9a6cecac6ea7ce2f5f184279136d4a937ea1c2c6487b9aaf999e"}
+		string %Changelog{"plasma.openxr 1.2.0 (previous: 1.1.10)
+
+- Rebuilt OpenXR integration for engine 0.11.0.
+- Refreshed the native SDK payload; public package headers are unchanged from 1.1.10.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"icon"} string %Sha256{"1f62d765474b6821b2b7028f106b0001d9ac2a92c8e5031efa87113c0fb0f294"} int32 %Bytes{32064} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"a146ed76c6224ed0eb70d1bff6d9e448048a3b01de46f0cafdd6bcb5e3d4be0a"} int32 %Bytes{537887} }
 		Component { string %Name{"banner"} string %Sha256{"aa0a93421fff9a6cecac6ea7ce2f5f184279136d4a937ea1c2c6487b9aaf999e"} int32 %Bytes{46088} }
@@ -3345,6 +3482,7 @@ The particle shaders ship with the engine, so installing this needs nothing furt
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"f787059e29e3973bfe61e5542c2cc11527c3beddbca33cd246566b9d53746366"}
 		string %BannerSha{"d912e7c05feca9706d216f193af21cf1740fe37187c9c8797b4414e4a572074f"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"5ff0d5a3afc1c8f4cc360608258c49ffc9e3dcda4c258305eb717a9783b5b036"} int32 %Bytes{900018} }
 		Component { string %Name{"editor-win64"} string %Sha256{"7fcb879ce7b4668a96c865279fc26fc09151bcdc42da22b64e3c8912318443f9"} int32 %Bytes{380681} }
@@ -3457,6 +3595,22 @@ The particle shaders ship with the engine, so installing this needs nothing furt
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"3b97187bb13cf2f8d8d5a5c6be873e5e8222e7df91853139c72dcffa563ea996"}
 		string %BannerSha{"dbd8bd83ab4a34da1910b83a7178067e1c7652147f35087dbc070aad3360961a"}
+		string %Changelog{"plasma.particles 1.8.0 (previous: 1.3.8)
+
+- Reworked the effect graph for the engine UI: system context stacks show blocks in execution order, with expand/collapse, enable toggles, drag reordering and undoable inline value editing.
+- Added typed operator wires and a graph compiler that folds constants, evaluates per-frame inputs once per simulation step and compiles per-particle expressions into runtime programs.
+- Added Set Attribute blocks in Initialize and Update, custom particle attributes and Kill If blocks; graph programs can read particle streams and sample gradients and curves.
+- Added per-particle wiring for drag, gravity factor, attraction force, scene-force influence, size-curve scale and gradient tint.
+- Added GPU execution of supported graph programs, including supported Set Attribute and Kill If updates, with explicit lowering diagnostics for unsupported graphs or block ordering.
+- Expanded particle events with velocity, color and size payloads, inherited values for event-driven spawning, and multiple named collision/death events.
+- Added event relationship information in the graph, warnings for unmatched event listeners and information about delayed GPU event delivery.
+- Added a live value spy with sample count, minimum/average/maximum, histogram and particle tinting; supported GPU values are read back with a delay.
+- Added deterministic preview timeline scrubbing and single-frame stepping by restarting and resimulating with a fixed seed.
+- Added preview motion modes and reporting for blackboard entries missing from the preview world.
+- Added conversion of legacy 1.3 logic blocks into operator graphs and attribute/kill blocks, with conversion notices and diagnostics for expressions that cannot compile.
+- Expanded particle runtime tests and CPU/GPU program reference coverage.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"manifest"} string %Sha256{"201671cebc7045176b1c8107be4289d1ac874d04db9eb47c1e26e3af2ff3e608"} int32 %Bytes{8325} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"2d36012a5aac59921c4b6effee730358db6dd9fefc9472412b10191a78e5d492"} int32 %Bytes{297370} }
@@ -3571,6 +3725,7 @@ Package
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"91d189872ddf6dfa32752f5d422e785c494ded2262af627b8e071d44beb7d5b8"}
 		string %BannerSha{"74c8246b8f2b68d0dec54ba898aafc3972ca421a8513cdb89294b96155edd767"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650. Uses release-compatible source, excluding development-only engine interfaces unavailable in 0.9.1."}
 		Component { string %Name{"banner"} string %Sha256{"74c8246b8f2b68d0dec54ba898aafc3972ca421a8513cdb89294b96155edd767"} int32 %Bytes{319600} }
 		Component { string %Name{"manifest"} string %Sha256{"7b41cf4e7240d57e0eea1dca4d6b7297a30ca17d92fd14f266c1b2be21feac19"} int32 %Bytes{2298} }
 		Component { string %Name{"editor-win64"} string %Sha256{"8426db9955e2b022f646f81c90c34914d0554f2d0ea26a4157932b1572ad1ca3"} int32 %Bytes{211492} }
@@ -3677,6 +3832,12 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"f4d0f6147b481c7aab78c41757b1f42de8b71d99a0daad396c315ba190667700"}
 		string %BannerSha{"738d9ef9c09ac9956a77047f28cd5169b369c0821e5d87093df0bd967eecac76"}
+		string %Changelog{"plasma.procgen 1.2.0 (previous: 1.1.9)
+
+- Migrated procedural graph asset windows and graph interaction to the engine UI.
+- Updated node-manager/editor integration and packaged icons for the Qt-free editor.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"tool"} string %Sha256{"152aa35970c504b36edd5b1031eb41b64b749e4cdd88b3fde3c4a7452ce25ed5"} int32 %Bytes{8945} }
 		Component { string %Name{"editor-win64"} string %Sha256{"2252a94e8c7874acc2776882385703ae4d0f4a9822e85d16b5ef3c4266c61b74"} int32 %Bytes{189954} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"5a840b4eb136912890857b8c869ced1085f8df9ca33445ddc939c557e6e4b7da"} int32 %Bytes{44988} }
@@ -3771,6 +3932,7 @@ Package
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"1a71d8d6b7d4ce6c0db892bfa985c30502382c5f0257f1a74e3f81dec55fb5d9"}
 		string %BannerSha{"c7bc02245e24a41d4c22d544e44e141c2743bbe5f535c1eec370e19dc4fbe3b8"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"icon"} string %Sha256{"1a71d8d6b7d4ce6c0db892bfa985c30502382c5f0257f1a74e3f81dec55fb5d9"} int32 %Bytes{5463} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"68cdc36bb16e2ca3c4d21ee617ad08cb0d07b1de698b56f9d14f824a6a3b8cef"} int32 %Bytes{22986} }
 		Component { string %Name{"manifest"} string %Sha256{"6f2bbf358f6f785600ed55c3cf92336a11b763b59c050c4cf461692102450cdf"} int32 %Bytes{2730} }
@@ -3871,6 +4033,12 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"68aa99d64e04b5de2d358a220f61d4d22d5c47adaf5e5f8cf8d8c3a7b4bd641b"}
 		string %BannerSha{"4ed86ca7fd25425c01d2f565e23af4c8cfbf91b1fa7019142365fa82096e5352"}
+		string %Changelog{"plasma.renderdoc 1.2.0 (previous: 1.1.8)
+
+- Rebuilt RenderDoc integration for engine 0.11.0.
+- Refreshed the native SDK payload; public package headers are unchanged from 1.1.8.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"runtime-win64"} string %Sha256{"3e65e06cef4c76177694c66db9a3200426db580c018c1aaec8ea94061f4e101b"} int32 %Bytes{22882} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"449cdd7325238d3b46b70298bf0a6d5a24f80a154298ccae4417e595da233221"} int32 %Bytes{13879} }
 		Component { string %Name{"banner"} string %Sha256{"4ed86ca7fd25425c01d2f565e23af4c8cfbf91b1fa7019142365fa82096e5352"} int32 %Bytes{39256} }
@@ -3989,6 +4157,7 @@ Self-contained: RmlUi and its SVG support are compiled into the plugin, and the 
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"06170fc136b7ca9e65882b0dff0df89e27c5aab90e4b10d8de32f4dcee8e8981"}
 		string %BannerSha{"53e756735924f5ae5da4d67b5decbd39f739720006cc8246c17a2ec2531f41ae"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"icon"} string %Sha256{"06170fc136b7ca9e65882b0dff0df89e27c5aab90e4b10d8de32f4dcee8e8981"} int32 %Bytes{54005} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"0d5de7d9c4b24249ac504ebbd0ef690fe1b231ac9fb5d321bab5d8e327f990b2"} int32 %Bytes{2139476} }
@@ -4101,6 +4270,12 @@ Self-contained: RmlUi and its SVG support are compiled into the plugin, and the 
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"ef7fe6bd2dc1a77ab83aa594a080ea465ac4bfd3e9f6d56032b1f980a13834a3"}
 		string %BannerSha{"1dae90758b59989423564e26763046fa6b6fc7f84fd162d8bf57ec273cd23253"}
+		string %Changelog{"plasma.rmlui 1.2.0 (previous: 1.1.9)
+
+- Migrated the RmlUi asset document window to the engine UI.
+- Updated the package's editor integration and native SDK payload for engine 0.11.0.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"16febd756301bd26b5d9b3ebc954d908eca9c46f56645dabcc6930c64a5a32a9"} int32 %Bytes{2135589} }
 		Component { string %Name{"banner"} string %Sha256{"1dae90758b59989423564e26763046fa6b6fc7f84fd162d8bf57ec273cd23253"} int32 %Bytes{41927} }
@@ -4161,6 +4336,7 @@ Currently a work-in-progress skeleton: the Sequence asset type, an empty timelin
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"(none)"}
 		string %BannerSha{"(none)"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"runtime-win64"} string %Sha256{"6e89f724af7c382816bbbbc96eb08925eb12c39d89e239dc546e14403dabb0f2"} int32 %Bytes{163091} }
 		Component { string %Name{"editor-win64"} string %Sha256{"826e3e3fbbd86c989214c355320ee656f3f1542358c950743a9c3c2e8c2cd07b"} int32 %Bytes{604885} }
 		Component { string %Name{"manifest"} string %Sha256{"84263f413516ef9f0242b0c5b3379b53dbe2511efec47ef5181e2477472b6681"} int32 %Bytes{2269} }
@@ -4251,6 +4427,13 @@ Currently a work-in-progress skeleton: the Sequence asset type, an empty timelin
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"7f3652f7bb1a8dad6d504b6a7100199f1d57ed604f6dc8ef798cdeaaf814ef82"}
 		string %BannerSha{"55f63852fb9143fb98dc0a82adfd388097533c7d1189263151a066838151ce1b"}
+		string %Changelog{"plasma.sequencer 0.2.0 (previous: 0.1.8)
+
+- Migrated sequence authoring to the engine UI, including scene viewport/tree, transport, binding outliner, track lanes, curve and event editors.
+- Introduced the engine UI sequence model and track view, retaining row selection while key-only changes repaint the timeline.
+- Migrated sequence render settings, preferences and thumbnail caching into the new editor integration.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"sdk-win64"} string %Sha256{"0b742edc53ea8e77991ae0f901bc008a322fe816aee28f69a3df5c91bb3af543"} int32 %Bytes{55769} }
 		Component { string %Name{"manifest"} string %Sha256{"1e9a81b31b0e232bf0932af1787b3fcc7eddd15b31d655261b281c72874e738c"} int32 %Bytes{3928} }
 		Component { string %Name{"banner"} string %Sha256{"55f63852fb9143fb98dc0a82adfd388097533c7d1189263151a066838151ce1b"} int32 %Bytes{44481} }
@@ -4378,6 +4561,12 @@ Configure the app id in RuntimeConfigs/PlatformServices.ddl (backend block 'stea
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"77fcd36be3776cd0528c30a99d5b7ad7f1aaadeee6c40de67aa95fa4c3167dcd"}
 		string %BannerSha{"226279f15ea279ac4e11ff4971f33b8a9af5ed97052c6f9e41c3acb38e64bd2a"}
+		string %Changelog{"plasma.steam 1.1.0 (previous: 1.0.5)
+
+- Rebuilt the Steam integration against Steamworks SDK 1.65.
+- Updated engine compatibility and native SDK payloads for 0.11.0; public package headers are unchanged from 1.0.5.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"banner"} string %Sha256{"226279f15ea279ac4e11ff4971f33b8a9af5ed97052c6f9e41c3acb38e64bd2a"} int32 %Bytes{42900} }
 		Component { string %Name{"manifest"} string %Sha256{"7494df69f2903ae5b454ccf5e4ead0e3ff132ae74817d92a50165264833de7dd"} int32 %Bytes{2809} }
 		Component { string %Name{"icon"} string %Sha256{"77fcd36be3776cd0528c30a99d5b7ad7f1aaadeee6c40de67aa95fa4c3167dcd"} int32 %Bytes{36782} }
@@ -4490,6 +4679,7 @@ The terrain shaders ship with the engine, so installing this needs nothing furth
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"de92ccfd6bd7bc6d59e60f695183992f5e7efef35aac58b2eba988b66560e4d5"}
 		string %BannerSha{"a8900e3b7a74f9cf66970f2f2973e9a9d43e08d96472eba3d5350a93cf430b4f"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"editor-win64"} string %Sha256{"303bcc39e216dcae7a5f1eedf1e57db96a1a3f83b82fb936a8c49e9a1ca03e3d"} int32 %Bytes{11517} }
 		Component { string %Name{"assets"} string %Sha256{"582408b55b2e00bc8d82f6cce777b33ccb72393bf2824e2ae15626d4a2c335d4"} int32 %Bytes{70657} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"7decada94121229e36d0b720f6e7014fd30ca9f74d7f257d9c996f7aac5be3ea"} int32 %Bytes{198501} }
@@ -4596,6 +4786,12 @@ The terrain shaders ship with the engine, so installing this needs nothing furth
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"b4da956b7c5176b8c032a37d61f7cc88561ee34f53765ae1f418339d133c050b"}
 		string %BannerSha{"15253bdc9de5c334b8746e91d229f577cbf23addd4794cf23a3260f44bba3685"}
+		string %Changelog{"plasma.terrain 1.2.0 (previous: 1.1.9)
+
+- Updated terrain editor integration to the Qt-free editor API.
+- Removed a redundant TerrainSystem base-class alias and rebuilt runtime/editor binaries and SDK libraries for 0.11.0.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"banner"} string %Sha256{"15253bdc9de5c334b8746e91d229f577cbf23addd4794cf23a3260f44bba3685"} int32 %Bytes{37208} }
 		Component { string %Name{"manifest"} string %Sha256{"4d19a9ee630cd1cf96d5f1a910807f7612f28ad8b6f4dabce34033e65a02f55d"} int32 %Bytes{4087} }
 		Component { string %Name{"assets"} string %Sha256{"582408b55b2e00bc8d82f6cce777b33ccb72393bf2824e2ae15626d4a2c335d4"} int32 %Bytes{70657} }
@@ -4641,6 +4837,14 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"1a9b214098a1f3e980cc7899b9f950a6f5887dfface64a576426f75a2d2f66c9"}
 		string %BannerSha{"fff569659828751448ecdd2d16f48f3a0df0a6e4d5768bffcfaa49c410b3f194"}
+		string %Changelog{"plasma.usd 0.2.0 (previous: 0.1.0)
+
+- Migrated USD Live panels and World Partition import to the engine UI, including prim selection, variant controls, validation and scan progress.
+- Moved stage reading and scanning onto workers for the nonmodal import dialog, which closes with its scene.
+- Updated USD property-grid integration and JSON handling for the Qt-free editor.
+- Corrected the editor component to include USD/TBB runtime DLLs, plugin resources and licenses, fixing missing-dependency load failures. Engine 0.11.0 also clears translation lookups before unloading plugins to avoid the USD shutdown crash.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"tool"} string %Sha256{"0778ee629eeb01e870efb0e8ec6bccaac10b20d91c9eda0389aea1f3d55e6a3a"} int32 %Bytes{5429} }
 		Component { string %Name{"icon"} string %Sha256{"1a9b214098a1f3e980cc7899b9f950a6f5887dfface64a576426f75a2d2f66c9"} int32 %Bytes{34630} }
 		Component { string %Name{"manifest"} string %Sha256{"54cdf8692a8edeb036768e47699877418b4ff58e8f983b48f0bc2f5c0e7bd2bc"} int32 %Bytes{67905} }
@@ -4759,6 +4963,12 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"ba1bb8c01432e6593c724d58a0b088758be8da46d9d934a3656ef06e10abe2a1"}
 		string %BannerSha{"8ebf11663969a85b2e75ecea8cc4bbe559a345ab5d852a4f7b958ba3f9dc120e"}
+		string %Changelog{"plasma.vegetation 0.3.0 (previous: 0.2.0)
+
+- Migrated grass-type and vegetation-type asset windows to the engine UI.
+- Migrated the vegetation painting panel and updated brush input integration for the new editor.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"editor-win64"} string %Sha256{"114897944c9cade0f70efaf24bb2a9afc8aa45a21c2942aaa7833ed957351ac0"} int32 %Bytes{354287} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"2fcea43c03caf7c52e24b62c63bf560b2f405068b2aa9348a8172a8595e8c57b"} int32 %Bytes{101215} }
@@ -4858,6 +5068,7 @@ Package
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"3d5fa2b337e27caf6e48aa069596e63086852f0aa408b7e4c810603575841b58"}
 		string %BannerSha{"15803fb9b391c4f1902233fa8db8eafb6a4a76d7e0ce2f5fa20b9fefcecf7e60"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"banner"} string %Sha256{"15803fb9b391c4f1902233fa8db8eafb6a4a76d7e0ce2f5fa20b9fefcecf7e60"} int32 %Bytes{322531} }
 		Component { string %Name{"icon"} string %Sha256{"3d5fa2b337e27caf6e48aa069596e63086852f0aa408b7e4c810603575841b58"} int32 %Bytes{190549} }
@@ -4964,6 +5175,13 @@ Package
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"7ed81a9f3b29d02b98c62163dd130236ea7746cbd60a2e6f5517528d8a96770e"}
 		string %BannerSha{"67f70c6fdaaf6e969c2cad742d13bd35895d1bcd8809b43bc1b8b1b09b362747"}
+		string %Changelog{"plasma.visualscript 1.3.0 (previous: 1.2.8)
+
+- Migrated VisualScript document windows and graph views to the engine UI, including function and variable editing.
+- Updated class/library asset metadata and graph actions for the new editor.
+- Restored node-registry subsystem startup/shutdown with the reflected-type-manager dependency, fixing the null registry when opening VisualScript documents.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
 		Component { string %Name{"manifest"} string %Sha256{"17d1288721b7f0ad4be08537d09658a9ffa8d61a13260182c888bc2d207cbac2"} int32 %Bytes{3975} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"3dfb4be99823dab0caad64aa4214b0ff8c9e2b38a19e97e95b957645e871dc12"} int32 %Bytes{222853} }
@@ -5079,6 +5297,7 @@ The water shaders and the default Ocean/River/Lake profiles ship with the engine
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"ac2a9910bd88e980e1bb4b89b1ed52f6d8c479fd64fbf92a2f4c38f62a88c59c"}
 		string %BannerSha{"12291564ba9d015b49471bd24e04cda4595312950dfd62826501b93342511b52"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"banner"} string %Sha256{"12291564ba9d015b49471bd24e04cda4595312950dfd62826501b93342511b52"} int32 %Bytes{38458} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"75682bcddbf40c1e942d587e4b6b5cb846ed02ecdd764e9e3535b5c8b803253d"} int32 %Bytes{447165} }
 		Component { string %Name{"assets"} string %Sha256{"a73c8dfc041ba7eea9f436919563e2b052d1c8ead2035247c87a14f252a806e0"} int32 %Bytes{44447} }
@@ -5185,6 +5404,13 @@ The water shaders and the default Ocean/River/Lake profiles ship with the engine
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"36b6ada5a31c22df6934c857ff88688496df2c0e868693d7fb335f507f55a453"}
 		string %BannerSha{"e4738313c2d5d58debfcad7e15c3278028217dc9cf70ca96430081711fe1a9b4"}
+		string %Changelog{"plasma.water 1.2.0 (previous: 1.1.9)
+
+- Migrated Water Profile authoring to engine UI panels for presets, properties, preview controls/status and diagnostics.
+- Includes the engine-drawn 2D schematic, 3D runtime preview controls and preset comparison/apply workflow.
+- Updated viewport interaction to the new editor input API.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"tool"} string %Sha256{"074e233ce9dfd34aac35fa3773d4f7c7a8838aa6641c6e8c4c70f0a7b02582eb"} int32 %Bytes{3434} }
 		Component { string %Name{"manifest"} string %Sha256{"21837a68b979cc952267a6df01e89d96dcbccfe975241266e396676817d8b470"} int32 %Bytes{5998} }
 		Component { string %Name{"editor-win64"} string %Sha256{"2b859a495a0e3603fbed34795fec3d3790a9e5e14b5b2524a4c43fb8bec589b2"} int32 %Bytes{303069} }
@@ -5277,6 +5503,7 @@ Windows only, and binds to the system XInput library - nothing to install."}
 		string %AbiTag{"win64-msvc19-0.9.1-abi2-dev"}
 		string %IconSha{"c2cdf56b31166b51ebf277089fcdfd84dbd837075ceb3b18694fcd903d57485d"}
 		string %BannerSha{"0c200adddf5426e6ccc63a975ad17a8396fe63ad0de86df99644ec275bad0efc"}
+		string %Changelog{"Rebuilt against the installed PlasmaEngine 0.9.1 release SDK. Validated plugin loading and package archive contents with that release. Published by registry deployment 34955394650."}
 		Component { string %Name{"manifest"} string %Sha256{"03efb75aa4c9f06ece619d089702ebea4d656c794aaee3dd2c6924a375aa0e91"} int32 %Bytes{1703} }
 		Component { string %Name{"banner"} string %Sha256{"0c200adddf5426e6ccc63a975ad17a8396fe63ad0de86df99644ec275bad0efc"} int32 %Bytes{28770} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"6c600308eb30026920ec8aa627a31b8d14d5510a958072273694f53faaf284e4"} int32 %Bytes{26316} }
@@ -5371,6 +5598,12 @@ Windows only, and binds to the system XInput library - nothing to install."}
 		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
 		string %IconSha{"5609648af86915deb784881eeefbfec52eeb1ab38d7012b7d51f03ed3284ac27"}
 		string %BannerSha{"2df8b48b20ab35bc6d1087a798a0882ef4fb8a9025d607c729eba1ba004d507e"}
+		string %Changelog{"plasma.xboxcontroller 1.2.0 (previous: 1.1.8)
+
+- Rebuilt Xbox controller integration for engine 0.11.0.
+- Refreshed the native SDK payload; public package headers are unchanged from 1.1.8.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.
+- Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."}
 		Component { string %Name{"sdk-win64"} string %Sha256{"1256a43f38abaa9709645658e0d40d32df2d495d2c01cad9df565c5fbb39ebaa"} int32 %Bytes{3254} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"26e2afc3ba268db7447927df6e0ea35f75b7f403c734b093d3728c0f0a4d7d07"} int32 %Bytes{26144} }
 		Component { string %Name{"banner"} string %Sha256{"2df8b48b20ab35bc6d1087a798a0882ef4fb8a9025d607c729eba1ba004d507e"} int32 %Bytes{54254} }

@@ -1,0 +1,251 @@
+{
+  "engineVersion": "0.11.0",
+  "comparison": "Compared with each package's latest previously approved registry release. These notes describe the published 0.11.0 artifacts; adding notes does not replace their blobs.",
+  "commonChanges": [
+    "Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev.",
+    "Refreshed package SDK headers and import libraries from the release build; native packages require rebuilding project C++ code against this engine and these package versions."
+  ],
+  "packages": [
+    {
+      "id": "plasma.ai", "previousVersion": "1.1.11", "version": "1.2.0",
+      "changes": [
+        "Migrated AI Behavior, Archetype and EQS Query asset windows to the engine UI, including consideration cards, score preview, behavior stacks and perception views.",
+        "Moved AI project settings and EQS preview controls to the engine UI; document changes continue to update the running engine preview."
+      ]
+    },
+    {
+      "id": "plasma.amplitude", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Migrated the audio control collection editor and Amplitude project settings dialog to the engine UI.",
+        "Updated editor integration and packaged editor icons for the Qt-free editor."
+      ]
+    },
+    {
+      "id": "plasma.angelscript", "previousVersion": "1.1.8", "version": "1.2.0",
+      "changes": [
+        "Migrated the AngelScript asset document window to the engine UI.",
+        "Updated editor registration and packaged editor icons for the Qt-free editor."
+      ]
+    },
+    {
+      "id": "plasma.audio", "previousVersion": null, "version": "2.1.0",
+      "changes": [
+        "First registry release of PlasmaAudio, an event-based audio package built on miniaudio with mixer buses, snapshots and DSP.",
+        "Includes clip, event, attenuation, mixer, music and bank authoring windows, waveform and event timeline views, auditioning and mixer console controls.",
+        "Includes packed audio banks, streaming, ADPCM and Opus codec support, loudness measurement and music playback.",
+        "Adds audio profiling, event logs, capture/debug views and platform audio configuration. The separate legacy plasma.miniaudio package remains available."
+      ]
+    },
+    {
+      "id": "plasma.csharp", "previousVersion": "1.2.2", "version": "1.3.0",
+      "changes": [
+        "Migrated the C# project asset window to the engine UI.",
+        "Corrected component packaging so editor icons ship with assets and the DotNet tool payload is not duplicated."
+      ]
+    },
+    {
+      "id": "plasma.diversion", "previousVersion": null, "version": "0.2.0",
+      "changes": [
+        "First registry release of the Diversion source-control integration, using the local Diversion agent and CLI with sign-in managed by Diversion.",
+        "Adds Changes, Conflicts, History and Locks panels, file difference indicators and source-control actions.",
+        "Includes workspace status polling, branch/history queries, collaborator changes and project ignore-file support.",
+        "Ships the optional Diversion MCP companion alongside the editor plugin."
+      ]
+    },
+    {
+      "id": "plasma.eos", "previousVersion": "1.0.6", "version": "1.1.0",
+      "changes": [
+        "Rebuilt the Epic Online Services integration against EOS SDK 1.19.2.1.",
+        "Updated engine compatibility and native SDK payloads for 0.11.0; public package headers are unchanged from 1.0.6."
+      ]
+    },
+    {
+      "id": "plasma.fluid", "previousVersion": "0.2.0", "version": "0.3.0",
+      "changes": [
+        "Rebuilt the fluid runtime and editor integration for engine 0.11.0.",
+        "Refreshed the native SDK payload; public package headers are unchanged from 0.2.0."
+      ]
+    },
+    {
+      "id": "plasma.fmod", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Migrated sound-bank and sound-event document windows to the engine UI, including their preview panels.",
+        "Moved FMOD project settings into an engine UI dialog and packaged editor icon resources for the new editor."
+      ]
+    },
+    {
+      "id": "plasma.gamecomponents", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Rebuilt the game components runtime and editor integration for engine 0.11.0.",
+        "Refreshed the native SDK payload; public package headers are unchanged from 1.1.9."
+      ]
+    },
+    {
+      "id": "plasma.gameui", "previousVersion": "1.2.2", "version": "1.3.0",
+      "changes": [
+        "Migrated UI document, font and style editors to the engine UI, including canvas, hierarchy, palette, properties, bindings, states and animation panels.",
+        "Migrated Figma import and import-report dialogs to the engine UI.",
+        "Ships the engine-built GameUi runtime and import library so package consumers use the same implementation as the 0.11.0 editor."
+      ]
+    },
+    {
+      "id": "plasma.jolt", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Migrated collision-mesh and destructible-mesh asset windows to the engine UI.",
+        "Moved Jolt project settings and name prompts to native editor dialogs; refreshed the public SDK and Jolt include payload."
+      ]
+    },
+    {
+      "id": "plasma.kraut", "previousVersion": "1.3.8", "version": "1.4.0",
+      "changes": [
+        "Migrated the Kraut tree editor and its document panels to the engine UI.",
+        "Fixed four malformed localized branch labels.",
+        "Removed the declaration of an absent Linux runtime component from this Windows release package."
+      ]
+    },
+    {
+      "id": "plasma.materialx", "previousVersion": "0.1.8", "version": "0.2.0",
+      "changes": [
+        "Rebuilt MaterialX integration for engine 0.11.0.",
+        "Refreshed the native SDK payload; public package headers are unchanged from 0.1.8."
+      ]
+    },
+    {
+      "id": "plasma.mcp", "previousVersion": "1.1.8", "version": "1.2.0",
+      "changes": [
+        "Replaced Qt networking and timers with nonblocking sockets polled by the engine editor UI runtime.",
+        "Streams GPU dump viewer files in chunks, limiting buffering when clients read slowly.",
+        "Keeps the server bound to loopback, uses exclusive port binding and protects connection handling during nested modal editor calls."
+      ]
+    },
+    {
+      "id": "plasma.miniaudio", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Migrated legacy sound, event and mixer editors to the engine UI, including event deck, timeline and mixer views.",
+        "Moved the legacy audio event resource implementation into this package so existing events continue to work after the engine-side implementation was removed.",
+        "Shuts down the audio preview service before unloading the editor DLL, fixing the shutdown deadlock caused by its device thread under the Windows loader lock."
+      ]
+    },
+    {
+      "id": "plasma.modeling", "previousVersion": "0.1.6", "version": "0.2.0",
+      "changes": [
+        "Migrated the Modeling panel, brush marking menu and viewport mode/measurement overlays to the engine UI.",
+        "Preserves mode-sensitive controls, texture editing and undoable document edits in the new panel.",
+        "Includes the Modeling MCP companion DLL in the editor component."
+      ]
+    },
+    {
+      "id": "plasma.networking", "previousVersion": "1.2.6", "version": "1.3.0",
+      "changes": [
+        "Migrated the network profile asset window to the engine UI.",
+        "Updated replication property-row decoration and editor integration for the new property grid."
+      ]
+    },
+    {
+      "id": "plasma.openxr", "previousVersion": "1.1.10", "version": "1.2.0",
+      "changes": [
+        "Rebuilt OpenXR integration for engine 0.11.0.",
+        "Refreshed the native SDK payload; public package headers are unchanged from 1.1.10."
+      ]
+    },
+    {
+      "id": "plasma.particles", "previousVersion": "1.3.8", "version": "1.8.0",
+      "changes": [
+        "Reworked the effect graph for the engine UI: system context stacks show blocks in execution order, with expand/collapse, enable toggles, drag reordering and undoable inline value editing.",
+        "Added typed operator wires and a graph compiler that folds constants, evaluates per-frame inputs once per simulation step and compiles per-particle expressions into runtime programs.",
+        "Added Set Attribute blocks in Initialize and Update, custom particle attributes and Kill If blocks; graph programs can read particle streams and sample gradients and curves.",
+        "Added per-particle wiring for drag, gravity factor, attraction force, scene-force influence, size-curve scale and gradient tint.",
+        "Added GPU execution of supported graph programs, including supported Set Attribute and Kill If updates, with explicit lowering diagnostics for unsupported graphs or block ordering.",
+        "Expanded particle events with velocity, color and size payloads, inherited values for event-driven spawning, and multiple named collision/death events.",
+        "Added event relationship information in the graph, warnings for unmatched event listeners and information about delayed GPU event delivery.",
+        "Added a live value spy with sample count, minimum/average/maximum, histogram and particle tinting; supported GPU values are read back with a delay.",
+        "Added deterministic preview timeline scrubbing and single-frame stepping by restarting and resimulating with a fixed seed.",
+        "Added preview motion modes and reporting for blackboard entries missing from the preview world.",
+        "Added conversion of legacy 1.3 logic blocks into operator graphs and attribute/kill blocks, with conversion notices and diagnostics for expressions that cannot compile.",
+        "Expanded particle runtime tests and CPU/GPU program reference coverage."
+      ]
+    },
+    {
+      "id": "plasma.procgen", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Migrated procedural graph asset windows and graph interaction to the engine UI.",
+        "Updated node-manager/editor integration and packaged icons for the Qt-free editor."
+      ]
+    },
+    {
+      "id": "plasma.renderdoc", "previousVersion": "1.1.8", "version": "1.2.0",
+      "changes": [
+        "Rebuilt RenderDoc integration for engine 0.11.0.",
+        "Refreshed the native SDK payload; public package headers are unchanged from 1.1.8."
+      ]
+    },
+    {
+      "id": "plasma.rmlui", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Migrated the RmlUi asset document window to the engine UI.",
+        "Updated the package's editor integration and native SDK payload for engine 0.11.0."
+      ]
+    },
+    {
+      "id": "plasma.sequencer", "previousVersion": "0.1.8", "version": "0.2.0",
+      "changes": [
+        "Migrated sequence authoring to the engine UI, including scene viewport/tree, transport, binding outliner, track lanes, curve and event editors.",
+        "Introduced the engine UI sequence model and track view, retaining row selection while key-only changes repaint the timeline.",
+        "Migrated sequence render settings, preferences and thumbnail caching into the new editor integration."
+      ]
+    },
+    {
+      "id": "plasma.steam", "previousVersion": "1.0.5", "version": "1.1.0",
+      "changes": [
+        "Rebuilt the Steam integration against Steamworks SDK 1.65.",
+        "Updated engine compatibility and native SDK payloads for 0.11.0; public package headers are unchanged from 1.0.5."
+      ]
+    },
+    {
+      "id": "plasma.terrain", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Updated terrain editor integration to the Qt-free editor API.",
+        "Removed a redundant TerrainSystem base-class alias and rebuilt runtime/editor binaries and SDK libraries for 0.11.0."
+      ]
+    },
+    {
+      "id": "plasma.usd", "previousVersion": "0.1.0", "version": "0.2.0",
+      "changes": [
+        "Migrated USD Live panels and World Partition import to the engine UI, including prim selection, variant controls, validation and scan progress.",
+        "Moved stage reading and scanning onto workers for the nonmodal import dialog, which closes with its scene.",
+        "Updated USD property-grid integration and JSON handling for the Qt-free editor.",
+        "Corrected the editor component to include USD/TBB runtime DLLs, plugin resources and licenses, fixing missing-dependency load failures. Engine 0.11.0 also clears translation lookups before unloading plugins to avoid the USD shutdown crash."
+      ]
+    },
+    {
+      "id": "plasma.vegetation", "previousVersion": "0.2.0", "version": "0.3.0",
+      "changes": [
+        "Migrated grass-type and vegetation-type asset windows to the engine UI.",
+        "Migrated the vegetation painting panel and updated brush input integration for the new editor."
+      ]
+    },
+    {
+      "id": "plasma.visualscript", "previousVersion": "1.2.8", "version": "1.3.0",
+      "changes": [
+        "Migrated VisualScript document windows and graph views to the engine UI, including function and variable editing.",
+        "Updated class/library asset metadata and graph actions for the new editor.",
+        "Restored node-registry subsystem startup/shutdown with the reflected-type-manager dependency, fixing the null registry when opening VisualScript documents."
+      ]
+    },
+    {
+      "id": "plasma.water", "previousVersion": "1.1.9", "version": "1.2.0",
+      "changes": [
+        "Migrated Water Profile authoring to engine UI panels for presets, properties, preview controls/status and diagnostics.",
+        "Includes the engine-drawn 2D schematic, 3D runtime preview controls and preset comparison/apply workflow.",
+        "Updated viewport interaction to the new editor input API."
+      ]
+    },
+    {
+      "id": "plasma.xboxcontroller", "previousVersion": "1.1.8", "version": "1.2.0",
+      "changes": [
+        "Rebuilt Xbox controller integration for engine 0.11.0.",
+        "Refreshed the native SDK payload; public package headers are unchanged from 1.1.8."
+      ]
+    }
+  ]
+}

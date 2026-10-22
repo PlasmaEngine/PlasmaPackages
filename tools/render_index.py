@@ -164,6 +164,7 @@ def from_baserow(cfg, token):
             "minEngine": v.get("MinEngine") or "", "maxEngine": v.get("MaxEngine") or "",
             "abiTag": v.get("AbiTag") or "", "iconSha": v.get("IconSha") or "",
             "bannerSha": v.get("BannerSha") or "",
+            "changelog": v.get("Changelog") or "",
             "requires": json.loads(v.get("Requires") or "[]"),
             "components": comps,
         })
@@ -226,6 +227,7 @@ def from_seed(cfg):
             "version": p.get("Version") or "", "channel": "stable",
             "minEngine": p.get("MinEngineVersion") or "", "maxEngine": p.get("MaxEngineVersion") or "",
             "abiTag": p.get("AbiTag") or "", "iconSha": icon, "bannerSha": banner,
+            "changelog": p.get("Changelog") or "",
             "requires": d.get("requires", []), "components": comps,
         })
     return entries, revoked, None
@@ -274,6 +276,8 @@ def render(cfg, entries, revoked, stamp=None):
                 L.append('\t\tstring %%IconSha{"%s"}' % esc(v["iconSha"]))
             if v.get("bannerSha"):
                 L.append('\t\tstring %%BannerSha{"%s"}' % esc(v["bannerSha"]))
+            if v.get("changelog"):
+                L.append('\t\tstring %%Changelog{"%s"}' % esc(v["changelog"]))
             for r in sorted(v.get("requires", []), key=lambda x: x.get("id", "")):
                 L.append('\t\tRequires { string %%Id{"%s"} string %%Range{"%s"} }'
                          % (esc(r.get("id", "")), esc(r.get("range", ""))))
