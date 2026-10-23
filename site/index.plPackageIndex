@@ -1863,6 +1863,32 @@ FreeType ships with the package under the FreeType License; the font asset uses 
 		Component { string %Name{"assets"} string %Sha256{"cff340bbbec262fe56ffb758aeaa4f8d0e7d829522b9ec8f81fa05893e36e353"} int32 %Bytes{2717} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"e8445cfe8720967922804ce23b67b95a84d68a55ce8ed3bbcea866ec430dac78"} int32 %Bytes{1135170} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.1"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.11.0"}
+		string %MaxEngine{"0.11.0"}
+		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
+		string %IconSha{"8717967488f23bd840f0632ed2e6fc993f09f92b8861c2f9abf353f398f89a50"}
+		string %BannerSha{"bc66d13063f5ecdad7a52b57ff91a8964faacad7893d36305a9f04ef29332c01"}
+		string %Changelog{"Game UI 1.3.1 (previous: 1.3.0)
+
+- Fix soft/broken text throughout the editor when Game UI is installed: its mounted text shader now matches the corrected PlasmaEngine 0.11.0 shader.
+- Restore pixel-footprint sampling of small glyph strokes instead of the older single-sample smoothing.
+- Native binaries and SDK components are unchanged; compatible with PlasmaEngine 0.11.0.
+- Verified in the installed 0.11.0 editor using package-tool captures, including Shatterfall weapon, sight and attachment documents."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"02710da7ee2ff5464d44b631ffffc165d48c02010c17a374e6a179ac26a67ed3"} int32 %Bytes{93945} }
+		Component { string %Name{"manifest"} string %Sha256{"4c37a001cbc0cbde7f027c00a1cee2d8e8f8cea6b5bb5768536936c3e41f0e8f"} int32 %Bytes{5847} }
+		Component { string %Name{"assets"} string %Sha256{"7e74da7d16d9b91f1039e60bad170e702f7ed3c7d3ceabd9a96da407380de90f"} int32 %Bytes{2775} }
+		Component { string %Name{"icon"} string %Sha256{"8717967488f23bd840f0632ed2e6fc993f09f92b8861c2f9abf353f398f89a50"} int32 %Bytes{20584} }
+		Component { string %Name{"tool"} string %Sha256{"9be6e2144b524b26ea6140bb780f088b987bf01c01293b43d74b1c3d9a36135f"} int32 %Bytes{11254} }
+		Component { string %Name{"editor-win64"} string %Sha256{"a5fef1683904cd7ab11bea1b29be0c3b7ff16220ee0c6d7412b4e9a0512ff315"} int32 %Bytes{892623} }
+		Component { string %Name{"banner"} string %Sha256{"bc66d13063f5ecdad7a52b57ff91a8964faacad7893d36305a9f04ef29332c01"} int32 %Bytes{34704} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"e8445cfe8720967922804ce23b67b95a84d68a55ce8ed3bbcea866ec430dac78"} int32 %Bytes{1135170} }
+	}
 }
 
 Package

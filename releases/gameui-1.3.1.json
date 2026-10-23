@@ -1,0 +1,49 @@
+{
+  "id": "plasma.gameui",
+  "version": "1.3.1",
+  "previousVersion": "1.3.0",
+  "engineVersion": "0.11.0",
+  "changelog": "Game UI 1.3.1 (previous: 1.3.0)\n\n- Fix soft/broken text throughout the editor when Game UI is installed: its mounted text shader now matches the corrected PlasmaEngine 0.11.0 shader.\n- Restore pixel-footprint sampling of small glyph strokes instead of the older single-sample smoothing.\n- Native binaries and SDK components are unchanged; compatible with PlasmaEngine 0.11.0.\n- Verified in the installed 0.11.0 editor using package-tool captures, including Shatterfall weapon, sight and attachment documents.",
+  "components": [
+    {
+      "name": "assets",
+      "sha256": "7e74da7d16d9b91f1039e60bad170e702f7ed3c7d3ceabd9a96da407380de90f",
+      "bytes": 2775
+    },
+    {
+      "name": "manifest",
+      "sha256": "4c37a001cbc0cbde7f027c00a1cee2d8e8f8cea6b5bb5768536936c3e41f0e8f",
+      "bytes": 5847
+    },
+    {
+      "name": "runtime-win64",
+      "sha256": "e8445cfe8720967922804ce23b67b95a84d68a55ce8ed3bbcea866ec430dac78",
+      "bytes": 1135170
+    },
+    {
+      "name": "editor-win64",
+      "sha256": "a5fef1683904cd7ab11bea1b29be0c3b7ff16220ee0c6d7412b4e9a0512ff315",
+      "bytes": 892623
+    },
+    {
+      "name": "icon",
+      "sha256": "8717967488f23bd840f0632ed2e6fc993f09f92b8861c2f9abf353f398f89a50",
+      "bytes": 20584
+    },
+    {
+      "name": "banner",
+      "sha256": "bc66d13063f5ecdad7a52b57ff91a8964faacad7893d36305a9f04ef29332c01",
+      "bytes": 34704
+    },
+    {
+      "name": "tool",
+      "sha256": "9be6e2144b524b26ea6140bb780f088b987bf01c01293b43d74b1c3d9a36135f",
+      "bytes": 11254
+    },
+    {
+      "name": "sdk-win64",
+      "sha256": "02710da7ee2ff5464d44b631ffffc165d48c02010c17a374e6a179ac26a67ed3",
+      "bytes": 93945
+    }
+  ]
+}
