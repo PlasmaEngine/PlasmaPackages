@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Plugin 1.3.0 — encounter director and AI debugger</title>
+<style>body{max-width:860px;margin:40px auto;padding:0 24px;font:16px/1.65 system-ui;background:#10131a;color:#d9e0ec}a{color:#c89af0}h1{color:#fff;line-height:1.25}li{margin:12px 0}</style></head>
+<body><a href="../index.html">Plasma Packages</a><h1>AI Plugin 1.3.0</h1>
+<p>Encounter director, AI debugger and runtime fixes for PlasmaEngine 0.11.0. Previous package: AI Plugin 1.2.0.</p>
+<ul>
+<li>New encounter director. <code>plAiEncounterDirectorComponent</code> paces waves (<code>plAiEncounterWaveComponent</code> children) against an authored pacing curve and the measured combat intensity: engaged agents, player stimuli and reported damage.</li>
+<li>Waves trigger on encounter start, another wave cleared or down to N alive, a time, a calm period or script. A wave is held while intensity is above the pacing target. Waves release your existing spawners by message (<code>plMsgAiEncounterWave</code>), a reflected function (default <code>Activate</code>) or <code>plSpawnComponent</code>, so spawners need no changes.</li>
+<li>New AI Debugger and Encounter panels in the scene editor, served by the new <code>plEnginePluginAi</code> engine-process plugin. The AI Debugger shows per-agent decisions, perception and navigation. The Encounter panel shows a pacing chart, a waves table and an intensity breakdown. The viewport toolbar has an AI overlays menu.</li>
+<li>AI asset validation with quick fixes, a live score preview in behavior assets, and archetype Senses, Reactivity and Scoring settings.</li>
+<li>Perception: sense profiles (hearing, damage, custom), alert levels, <code>plAiStimulusSourceComponent</code> and squad sharing fixes. Scoring uses the geometric mean of considerations.</li>
+<li>Navigation and tactics: 64-bit navmesh poly refs, navmesh sector builds on worker threads, nav blockers that restore ground and close links, voxel obstacles and clearance, cover claims that survive navmesh changes, smart object release fixes, and EQS query capture and replay.</li>
+<li>The native ABI changed (64-bit poly refs and component layouts). Rebuild game C++ that links <code>plAiPlugin</code> against the 1.3.0 headers.</li>
+</ul>
+<p>Update <code>plasma.ai</code> to <strong>1.3.0</strong>, rebuild your project's C++ code and restart the editor.</p>
+<p>Verified with AiSemanticsTests (271 checks, 0 failures). All plugin DLLs load against the 0.11.0 SDK.</p>
+<p><a href="0.11.0.html">All engine 0.11.0 package changelists</a></p></body></html>

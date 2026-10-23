@@ -252,6 +252,36 @@ Recast and Detour are compiled into the plugin, so there is nothing else to inst
 		Component { string %Name{"tool"} string %Sha256{"9f0d564e7f5956c44878e26da5e253dfa237131b3e52b8409ee1b1005ad1a80b"} int32 %Bytes{13475} }
 		Component { string %Name{"assets"} string %Sha256{"da861e22c263db2a25f4c1b93c4f157eb20de3e4fd2626b3f540d77a5181d078"} int32 %Bytes{136808} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.11.0"}
+		string %MaxEngine{"0.11.0"}
+		string %AbiTag{"win64-msvc19-0.11.0-abi6-dev"}
+		string %IconSha{"7d95a05faf9cfdf69171f4a170b66619b91a9135591de7ca2ead09dac0a36f3b"}
+		string %BannerSha{"80b3ccbe902f351c20d3efd03af43ce416a0d0e7d7ced05001fb04007a27b93c"}
+		string %Changelog{"AI Plugin 1.3.0 (previous: 1.2.0)
+
+- New encounter director: plAiEncounterDirectorComponent paces waves (plAiEncounterWaveComponent children) against an authored pacing curve and the measured combat intensity (engaged agents, player stimuli, reported damage).
+- Waves trigger on encounter start, another wave cleared or down to N alive, a time, a calm period or script, and are held while intensity is above the pacing target. They release existing spawners by message (plMsgAiEncounterWave), a reflected function (default \"Activate\") or plSpawnComponent, so no spawner changes are needed.
+- New AI Debugger and Encounter panels in the scene editor, served by the new plEnginePluginAi engine-process plugin: per-agent decisions, perception and navigation; pacing chart, waves table and intensity breakdown; AI overlays menu in the viewport toolbar.
+- AI asset validation with quick fixes; live score preview in behavior assets; archetype Senses, Reactivity and Scoring settings.
+- Perception: sense profiles (hearing, damage, custom), alert levels, plAiStimulusSourceComponent, squad sharing fixes. Scoring uses a geometric mean of considerations.
+- Navigation and tactics: 64-bit navmesh poly refs, navmesh sector builds on workers, nav blockers restore ground and close links, voxel obstacles and clearance, cover claims survive navmesh changes, smart object release fixes, EQS query capture and replay.
+- Fixes: archetype hot reload no longer asserts for agents without an archetype; world shutdown, stimulus processing and state deserialization hardening.
+- Native ABI changed (64-bit poly refs, component layouts): rebuild game C++ that links plAiPlugin against these headers.
+- Built for PlasmaEngine 0.11.0, Windows x64 Development, ABI win64-msvc19-0.11.0-abi6-dev. Verified with AiSemanticsTests (271 checks, 0 failures); all plugin DLLs load against the 0.11.0 SDK."}
+		Component { string %Name{"editor-win64"} string %Sha256{"2c6dbbcc775d017ed9b594f95d9ed00a9c8abda0ed15e57222e73899a77ab0fb"} int32 %Bytes{1033456} }
+		Component { string %Name{"icon"} string %Sha256{"7d95a05faf9cfdf69171f4a170b66619b91a9135591de7ca2ead09dac0a36f3b"} int32 %Bytes{32881} }
+		Component { string %Name{"banner"} string %Sha256{"80b3ccbe902f351c20d3efd03af43ce416a0d0e7d7ced05001fb04007a27b93c"} int32 %Bytes{35926} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"8c37369f0271ce6952f1446269b82b8f99ea956e770ee0bb9787b61dbdf5b725"} int32 %Bytes{1267578} }
+		Component { string %Name{"assets"} string %Sha256{"8c9b6fb3b16807d5f080e32f26f643be083892db54a57e536d87bdc9c1108f16"} int32 %Bytes{174693} }
+		Component { string %Name{"tool"} string %Sha256{"929420b81f7a9baded3d2817730a3240894f71b4a30693dbf539f53a51f0e681"} int32 %Bytes{15131} }
+		Component { string %Name{"manifest"} string %Sha256{"b63d2664ed7b31c0a73251defaaf95c32a7bbca9f49d778d909b7225ced2cbbe"} int32 %Bytes{10608} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"d8d4409f1e152e7b58edd26cb4ec0a42510b06ffdd77a35e43d300501675779c"} int32 %Bytes{463287} }
+	}
 }
 
 Package
