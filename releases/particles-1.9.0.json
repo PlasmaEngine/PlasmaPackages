@@ -1,0 +1,49 @@
+{
+  "id": "plasma.particles",
+  "version": "1.9.0",
+  "previousVersion": "1.8.1",
+  "engineVersion": "0.11.1",
+  "changelog": "Particles 1.9.0 (previous: 1.8.1)\n\n- Per-axis size: Random Size and Size Curve have a Per Axis mode, and Set Attribute a Size Scale target. Quads use X/Y, meshes X/Y/Z, trails and ribbons X as width.\n- Set Attribute targets Rotation (degrees) and Facing, and a Custom Facing quad orientation, for sparks and shards. New Spinning Embers template; Sparks now stretch along their velocity.\n- Emissive map, colour, intensity and colour parameter on quads, trails and ribbons, plus a per-particle Emissive target. Six-way effects move their Texture-as-emissive into the emissive map.\n- Soft Edge and Camera Fade distances per render type (defaults unchanged); the soft edge now also fades Blend Add.\n- Distortion fixed: its texture and strength show in the editor, and distortion particles are drawn after all transparents so heat haze bends fire and smoke too. Without a texture they bend like a lens.\n- The quad, trail and ribbon shaders ship in the package. GPU systems using the new size, rotation or emissive targets fall back to the CPU with a reason.\n- Compatible with PlasmaEngine 0.11.1.",
+  "components": [
+    {
+      "name": "assets",
+      "sha256": "c2f2b0614f8aeefdf1edaa4fb4c06633fe3cf09e6e2401bbb7e247fad7e8a361",
+      "bytes": 36487
+    },
+    {
+      "name": "manifest",
+      "sha256": "e1ccd713b2b4531a355689908ac60d069917614eda45d1e16619f13e6225a659",
+      "bytes": 9090
+    },
+    {
+      "name": "runtime-win64",
+      "sha256": "d9dd739b5cf525f880c91851ac16d3e5cb00fc1b7b1228fcf4518aee3fc289c5",
+      "bytes": 1115867
+    },
+    {
+      "name": "editor-win64",
+      "sha256": "24a3d79c175f62a5757fa38e341a95cff94fd7a1fc2e15a4c75391f9d179823f",
+      "bytes": 689583
+    },
+    {
+      "name": "icon",
+      "sha256": "3b97187bb13cf2f8d8d5a5c6be873e5e8222e7df91853139c72dcffa563ea996",
+      "bytes": 52268
+    },
+    {
+      "name": "banner",
+      "sha256": "dbd8bd83ab4a34da1910b83a7178067e1c7652147f35087dbc070aad3360961a",
+      "bytes": 48672
+    },
+    {
+      "name": "tool",
+      "sha256": "b98a81cb8d99fa04d4884ece89b2cb1900a1fef348e9f0e4b7b7da5a3a286553",
+      "bytes": 7118
+    },
+    {
+      "name": "sdk-win64",
+      "sha256": "f4062e860714aeeb50bc4b27664b771e2d4611acd9601423213c375fcc611876",
+      "bytes": 307481
+    }
+  ]
+}

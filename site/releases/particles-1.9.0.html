@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Particles 1.9.0 — per-axis size, rotation, emissive, depth blending and distortion</title>
+<style>body{max-width:860px;margin:40px auto;padding:0 24px;font:16px/1.65 system-ui;background:#10131a;color:#d9e0ec}a{color:#c89af0}h1{color:#fff;line-height:1.25}li{margin:12px 0}</style></head>
+<body><a href="../index.html">Plasma Packages</a><h1>Particles 1.9.0</h1>
+<p>VFX artist requests for PlasmaEngine 0.11.1: per-axis size, rotation and facing, emissive maps, adjustable depth blending and working distortion. Previous package: Particles 1.8.1.</p>
+<ul>
+<li>Per-axis size. Random Size and Size Curve have a <strong>Per Axis</strong> mode, and Set Attribute a <strong>Size Scale</strong> target. The drawn size is Size times the X/Y/Z multipliers: quads use X and Y, meshes X, Y and Z, trails and ribbons X as their width.</li>
+<li>Rotation and facing. Set Attribute can write <strong>Rotation</strong> (degrees; Add in Update is degrees per second) and <strong>Facing</strong>. The new <strong>Custom Facing</strong> quad orientation faces the Facing direction every frame. The Sparks template now stretches along the velocity, and a new Spinning Embers template is in the graph's templates.</li>
+<li>Emissive map. Quads, trails and ribbons have an <strong>Emissive Map</strong> with colour, intensity and an optional effect colour parameter, added on top of the lit colour so fire cores keep glowing in shadow. Set Attribute's <strong>Emissive</strong> target multiplies it per particle. Six-way effects that used the Texture slot as their emissive are moved to the emissive map when opened or loaded.</li>
+<li>Depth blending. <strong>Soft Edge Distance</strong> and <strong>Camera Fade Distance</strong> are now set per render type; the defaults (0.1 m and 0.5 m) match earlier versions. The soft edge now also fades Blend Add particles, which used to keep a hard line on the floor.</li>
+<li>Distortion. The Distortion Texture and Distortion Strength fields show again for the Distortion render mode. Distortion particles are drawn by their own pass after all transparent objects, so heat haze bends fire and smoke in front of it, and without a texture they bend like a lens.</li>
+<li>The quad, trail and ribbon shaders now ship in the package and take the place of the engine's copies. GPU systems that use the new size, rotation or emissive targets, per-axis sizes or Custom Facing run on the CPU and say why.</li>
+</ul>
+<p>Update <code>plasma.particles</code> to <strong>1.9.0</strong> and restart the editor. Existing effects keep their look; reopen six-way effects once so the emissive move is saved.</p>
+<p>All plugins build against the 0.11.1 SDK and the changed shaders compile for DX12.</p>
+<p><a href="0.11.1.html">All engine 0.11.1 package changelists</a></p></body></html>
