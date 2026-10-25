@@ -1,0 +1,70 @@
+{
+  "engineVersion": "0.11.1",
+  "comparison": "Compared with each package's latest previously approved registry release. These notes describe the published 0.11.1 artifacts; adding notes does not replace their blobs.",
+  "commonChanges": [
+    "Built for PlasmaEngine 0.11.1, Windows x64 Development, ABI win64-msvc19-0.11.1-abi6-dev. Packages built for 0.11.0 do not load in 0.11.1.",
+    "Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions."
+  ],
+  "packages": [
+    {"id": "plasma.ai", "previousVersion": "1.3.0", "version": "1.4.0", "changes": [
+      "Navigation blockers gain a Carve mode; blocked polygons are highlighted and floor reach is shown.",
+      "Sector status views, a per-team threat map and squad orders, with the squad map showing the navmesh sectors, other squads and agents.",
+      "Utility AI decision, perception and EQS improvements, and updated AI asset editors."
+    ]},
+    {"id": "plasma.amplitude", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.angelscript", "previousVersion": "1.2.0", "version": "1.2.1", "changes": [
+      "Uses the engine's shared script tools: problems, breakpoints, call stack and variables in the Scripts panel, live reload reports, tagged script fields and project checks.",
+      "Adds the plasma-script-debug VS Code extension: VS Code attaches to the editor's debug adapter for breakpoints, stepping and variables.",
+      "Opening a script from the editor opens it in VS Code at the right line; script paths are reported relative to the project."
+    ]},
+    {"id": "plasma.audio", "previousVersion": "2.1.0", "version": "2.1.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.cameras", "previousVersion": null, "version": "1.0.0", "changes": [
+      "First release of Gameplay Cameras: a camera director, camera views and modifiers, and multi-subject framing.",
+      "Takes over the third-person view, head bone and camera shake components from Game Components, with their names and saved data unchanged."
+    ]},
+    {"id": "plasma.csharp", "previousVersion": "1.3.0", "version": "1.3.1", "changes": [
+      "Uses the engine's shared script tools: problems (including background builds), debugging, live reload reports, script fields and project checks.",
+      "C# script classes have their own asset type, and classes keep their type across an in-place reload.",
+      "Fixed project builds failing on the script documentation line of generated projects, and stale error counts after a successful build."
+    ]},
+    {"id": "plasma.diversion", "previousVersion": "0.2.0", "version": "0.2.1", "changes": [
+      "The Changes panel and branch handling list every pending local change of the newest snapshot."
+    ]},
+    {"id": "plasma.eos", "previousVersion": "1.1.0", "version": "1.1.1", "changes": ["Rebuilt for engine 0.11.1 with EOS SDK 1.19.2.1; no functional changes."]},
+    {"id": "plasma.fluid", "previousVersion": "0.3.0", "version": "0.3.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.fmod", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.gamecomponents", "previousVersion": "1.2.0", "version": "2.0.0", "changes": [
+      "The third-person view, head bone and camera shake components moved to Gameplay Cameras (plasma.cameras), with their names and saved data unchanged.",
+      "Requires plasma.cameras; the editor offers to add it to projects that are missing it."
+    ]},
+    {"id": "plasma.gameui", "previousVersion": "1.3.1", "version": "1.4.0", "changes": [
+      "Text fitting and layout tools in the UI document editor, with new text fit views and icons.",
+      "UI localization support in the document editor and font asset improvements.",
+      "Matches the engine's game UI text layout, backdrop blur and depth testing."
+    ]},
+    {"id": "plasma.jolt", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.kraut", "previousVersion": "1.4.0", "version": "1.4.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.materialx", "previousVersion": "0.2.0", "version": "0.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.mcp", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.modeling", "previousVersion": "0.2.0", "version": "0.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.networking", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.openxr", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.particles", "previousVersion": "1.8.0", "version": "1.8.1", "changes": [
+      "The colour gradient asset preview shows a particle effect whose colour over lifetime is the edited gradient."
+    ]},
+    {"id": "plasma.procgen", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.renderdoc", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.rmlui", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.sequencer", "previousVersion": "0.2.0", "version": "0.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.steam", "previousVersion": "1.1.0", "version": "1.1.1", "changes": ["Rebuilt for engine 0.11.1 with Steamworks 1.65; no functional changes."]},
+    {"id": "plasma.terrain", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.usd", "previousVersion": "0.2.0", "version": "0.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.vegetation", "previousVersion": "0.3.0", "version": "0.3.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.visualscript", "previousVersion": "1.3.0", "version": "1.3.1", "changes": [
+      "Uses the engine's shared script tools: problems on nodes, node breakpoints and stepping, and debugging from VS Code.",
+      "While the game runs, graphs show the active flow on their wires and each node's time per frame or per run, with the graph total in the breadcrumb."
+    ]},
+    {"id": "plasma.water", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]},
+    {"id": "plasma.xboxcontroller", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.11.1; no functional changes."]}
+  ]
+}

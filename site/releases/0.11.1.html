@@ -1,0 +1,146 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlasmaEngine 0.11.1 package changelists</title>
+<style>body{max-width:900px;margin:40px auto;padding:0 24px;font:16px/1.65 system-ui;background:#10131a;color:#d9e0ec}a{color:#c89af0}h1,h2{color:#fff;line-height:1.25}section{border-top:1px solid #39404e;margin-top:32px;padding-top:20px}li{margin:8px 0}nav{columns:3;column-width:200px}.meta{color:#a7b4c6}code{font-size:.9em}</style></head><body>
+<a href="../index.html">Plasma Packages</a><h1>PlasmaEngine 0.11.1 package changelists</h1>
+<p>Compared with each package&#x27;s latest previously approved registry release. These notes describe the published 0.11.1 artifacts; adding notes does not replace their blobs.</p><p>All packages in this release:</p><ul>
+<li>Built for PlasmaEngine 0.11.1, Windows x64 Development, ABI win64-msvc19-0.11.1-abi6-dev. Packages built for 0.11.0 do not load in 0.11.1.</li>
+<li>Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.</li>
+</ul><nav><ul>
+<li><a href="#plasma.ai">plasma.ai 1.4.0</a></li>
+<li><a href="#plasma.amplitude">plasma.amplitude 1.2.1</a></li>
+<li><a href="#plasma.angelscript">plasma.angelscript 1.2.1</a></li>
+<li><a href="#plasma.audio">plasma.audio 2.1.1</a></li>
+<li><a href="#plasma.cameras">plasma.cameras 1.0.0</a></li>
+<li><a href="#plasma.csharp">plasma.csharp 1.3.1</a></li>
+<li><a href="#plasma.diversion">plasma.diversion 0.2.1</a></li>
+<li><a href="#plasma.eos">plasma.eos 1.1.1</a></li>
+<li><a href="#plasma.fluid">plasma.fluid 0.3.1</a></li>
+<li><a href="#plasma.fmod">plasma.fmod 1.2.1</a></li>
+<li><a href="#plasma.gamecomponents">plasma.gamecomponents 2.0.0</a></li>
+<li><a href="#plasma.gameui">plasma.gameui 1.4.0</a></li>
+<li><a href="#plasma.jolt">plasma.jolt 1.2.1</a></li>
+<li><a href="#plasma.kraut">plasma.kraut 1.4.1</a></li>
+<li><a href="#plasma.materialx">plasma.materialx 0.2.1</a></li>
+<li><a href="#plasma.mcp">plasma.mcp 1.2.1</a></li>
+<li><a href="#plasma.modeling">plasma.modeling 0.2.1</a></li>
+<li><a href="#plasma.networking">plasma.networking 1.3.1</a></li>
+<li><a href="#plasma.openxr">plasma.openxr 1.2.1</a></li>
+<li><a href="#plasma.particles">plasma.particles 1.8.1</a></li>
+<li><a href="#plasma.procgen">plasma.procgen 1.2.1</a></li>
+<li><a href="#plasma.renderdoc">plasma.renderdoc 1.2.1</a></li>
+<li><a href="#plasma.rmlui">plasma.rmlui 1.2.1</a></li>
+<li><a href="#plasma.sequencer">plasma.sequencer 0.2.1</a></li>
+<li><a href="#plasma.steam">plasma.steam 1.1.1</a></li>
+<li><a href="#plasma.terrain">plasma.terrain 1.2.1</a></li>
+<li><a href="#plasma.usd">plasma.usd 0.2.1</a></li>
+<li><a href="#plasma.vegetation">plasma.vegetation 0.3.1</a></li>
+<li><a href="#plasma.visualscript">plasma.visualscript 1.3.1</a></li>
+<li><a href="#plasma.water">plasma.water 1.2.1</a></li>
+<li><a href="#plasma.xboxcontroller">plasma.xboxcontroller 1.2.1</a></li>
+</ul></nav>
+<section id="plasma.ai"><h2>plasma.ai 1.4.0</h2><p class="meta">Previous: 1.3.0</p><ul>
+<li>Navigation blockers gain a Carve mode; blocked polygons are highlighted and floor reach is shown.</li>
+<li>Sector status views, a per-team threat map and squad orders, with the squad map showing the navmesh sectors, other squads and agents.</li>
+<li>Utility AI decision, perception and EQS improvements, and updated AI asset editors.</li>
+</ul></section>
+<section id="plasma.amplitude"><h2>plasma.amplitude 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.angelscript"><h2>plasma.angelscript 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Uses the engine&#x27;s shared script tools: problems, breakpoints, call stack and variables in the Scripts panel, live reload reports, tagged script fields and project checks.</li>
+<li>Adds the plasma-script-debug VS Code extension: VS Code attaches to the editor&#x27;s debug adapter for breakpoints, stepping and variables.</li>
+<li>Opening a script from the editor opens it in VS Code at the right line; script paths are reported relative to the project.</li>
+</ul></section>
+<section id="plasma.audio"><h2>plasma.audio 2.1.1</h2><p class="meta">Previous: 2.1.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.cameras"><h2>plasma.cameras 1.0.0</h2><p class="meta">Previous: First registry release</p><ul>
+<li>First release of Gameplay Cameras: a camera director, camera views and modifiers, and multi-subject framing.</li>
+<li>Takes over the third-person view, head bone and camera shake components from Game Components, with their names and saved data unchanged.</li>
+</ul></section>
+<section id="plasma.csharp"><h2>plasma.csharp 1.3.1</h2><p class="meta">Previous: 1.3.0</p><ul>
+<li>Uses the engine&#x27;s shared script tools: problems (including background builds), debugging, live reload reports, script fields and project checks.</li>
+<li>C# script classes have their own asset type, and classes keep their type across an in-place reload.</li>
+<li>Fixed project builds failing on the script documentation line of generated projects, and stale error counts after a successful build.</li>
+</ul></section>
+<section id="plasma.diversion"><h2>plasma.diversion 0.2.1</h2><p class="meta">Previous: 0.2.0</p><ul>
+<li>The Changes panel and branch handling list every pending local change of the newest snapshot.</li>
+</ul></section>
+<section id="plasma.eos"><h2>plasma.eos 1.1.1</h2><p class="meta">Previous: 1.1.0</p><ul>
+<li>Rebuilt for engine 0.11.1 with EOS SDK 1.19.2.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.fluid"><h2>plasma.fluid 0.3.1</h2><p class="meta">Previous: 0.3.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.fmod"><h2>plasma.fmod 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.gamecomponents"><h2>plasma.gamecomponents 2.0.0</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>The third-person view, head bone and camera shake components moved to Gameplay Cameras (plasma.cameras), with their names and saved data unchanged.</li>
+<li>Requires plasma.cameras; the editor offers to add it to projects that are missing it.</li>
+</ul></section>
+<section id="plasma.gameui"><h2>plasma.gameui 1.4.0</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Text fitting and layout tools in the UI document editor, with new text fit views and icons.</li>
+<li>UI localization support in the document editor and font asset improvements.</li>
+<li>Matches the engine&#x27;s game UI text layout, backdrop blur and depth testing.</li>
+</ul></section>
+<section id="plasma.jolt"><h2>plasma.jolt 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.kraut"><h2>plasma.kraut 1.4.1</h2><p class="meta">Previous: 1.4.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.materialx"><h2>plasma.materialx 0.2.1</h2><p class="meta">Previous: 0.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.mcp"><h2>plasma.mcp 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.modeling"><h2>plasma.modeling 0.2.1</h2><p class="meta">Previous: 0.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.networking"><h2>plasma.networking 1.3.1</h2><p class="meta">Previous: 1.3.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.openxr"><h2>plasma.openxr 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.particles"><h2>plasma.particles 1.8.1</h2><p class="meta">Previous: 1.8.0</p><ul>
+<li>The colour gradient asset preview shows a particle effect whose colour over lifetime is the edited gradient.</li>
+</ul></section>
+<section id="plasma.procgen"><h2>plasma.procgen 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.renderdoc"><h2>plasma.renderdoc 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.rmlui"><h2>plasma.rmlui 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.sequencer"><h2>plasma.sequencer 0.2.1</h2><p class="meta">Previous: 0.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.steam"><h2>plasma.steam 1.1.1</h2><p class="meta">Previous: 1.1.0</p><ul>
+<li>Rebuilt for engine 0.11.1 with Steamworks 1.65; no functional changes.</li>
+</ul></section>
+<section id="plasma.terrain"><h2>plasma.terrain 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.usd"><h2>plasma.usd 0.2.1</h2><p class="meta">Previous: 0.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.vegetation"><h2>plasma.vegetation 0.3.1</h2><p class="meta">Previous: 0.3.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.visualscript"><h2>plasma.visualscript 1.3.1</h2><p class="meta">Previous: 1.3.0</p><ul>
+<li>Uses the engine&#x27;s shared script tools: problems on nodes, node breakpoints and stepping, and debugging from VS Code.</li>
+<li>While the game runs, graphs show the active flow on their wires and each node&#x27;s time per frame or per run, with the graph total in the breadcrumb.</li>
+</ul></section>
+<section id="plasma.water"><h2>plasma.water 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+<section id="plasma.xboxcontroller"><h2>plasma.xboxcontroller 1.2.1</h2><p class="meta">Previous: 1.2.0</p><ul>
+<li>Rebuilt for engine 0.11.1; no functional changes.</li>
+</ul></section>
+</body></html>
