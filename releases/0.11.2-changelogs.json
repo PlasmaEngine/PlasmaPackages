@@ -1,0 +1,268 @@
+{
+ "engineVersion": "0.11.2",
+ "comparison": "Compared with each package's latest previously approved registry release. These notes describe the published 0.11.2 artifacts; adding notes does not replace their blobs.",
+ "commonChanges": [
+  "Built for PlasmaEngine 0.11.2, Windows x64 Development, ABI win64-msvc19-0.11.2-abi6-dev. Packages built for 0.11.1 do not load in 0.11.2.",
+  "Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions."
+ ],
+ "packages": [
+  {
+   "id": "plasma.ai",
+   "previousVersion": "1.4.0",
+   "version": "1.4.1",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.amplitude",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.angelscript",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.audio",
+   "previousVersion": "2.1.1",
+   "version": "2.1.2",
+   "changes": [
+    "Switching the audio output device keeps sounds playing from the same position on the new device.",
+    "Banks with corrupt, truncated or missing files are rejected and reported as failed instead of crashing or appearing loaded.",
+    "A bank counts as ready only when every event, clip and nested event it needs has loaded.",
+    "Stopping a sound with an invalid voice stops it immediately."
+   ]
+  },
+  {
+   "id": "plasma.cameras",
+   "previousVersion": "1.0.0",
+   "version": "1.0.1",
+   "changes": [
+    "The top-down view's script function RotateStep is renamed RotateBySteps; update scripts and Visual Script nodes that call it.",
+    "Adds a user manual for the camera package."
+   ]
+  },
+  {
+   "id": "plasma.csharp",
+   "previousVersion": "1.3.1",
+   "version": "1.3.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.diversion",
+   "previousVersion": "0.2.1",
+   "version": "0.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.eos",
+   "previousVersion": "1.1.1",
+   "version": "1.1.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.fluid",
+   "previousVersion": "0.3.1",
+   "version": "0.3.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.fmod",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.gamecomponents",
+   "previousVersion": "2.0.0",
+   "version": "2.0.1",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.gameui",
+   "previousVersion": "1.4.0",
+   "version": "1.4.1",
+   "changes": [
+    "XAML import parses key times and durations strictly; empty fields, extra fields, text and overflow read as 0."
+   ]
+  },
+  {
+   "id": "plasma.jolt",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Contact messages are queued and delivered after the physics step, so gameplay code reacting to collisions can no longer crash or deadlock the solver.",
+    "Breakable slabs, ragdolls and queued impulses handle deleted components safely, and ragdoll impulses only reach bodies the ragdoll owns.",
+    "A capsule with zero cylinder height works as a sphere, and a rope with too few pieces for its fixed anchors reports an error.",
+    "Collision mesh and heightfield caching no longer evicts newer meshes or shares tiles between empty IDs, and raycast queries are no longer capped at 256 hits."
+   ]
+  },
+  {
+   "id": "plasma.kraut",
+   "previousVersion": "1.4.1",
+   "version": "1.4.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.materialx",
+   "previousVersion": "0.2.1",
+   "version": "0.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.mcp",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.modeling",
+   "previousVersion": "0.2.1",
+   "version": "0.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.networking",
+   "previousVersion": "1.3.1",
+   "version": "1.3.2",
+   "changes": [
+    "Kicking a client, disconnecting during event dispatch or stopping the session from a callback no longer uses freed connection data.",
+    "Connections that never finish the handshake are dropped after a configurable timeout (default 10 s).",
+    "RPCs and object writes are authorised against the exact target component and its owner; scene components without an owner no longer accept remote writes.",
+    "Incoming messages, spawns and variants are bounds-checked: packet and variant sizes are capped and unregistered prefab IDs are rejected."
+   ]
+  },
+  {
+   "id": "plasma.openxr",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.particles",
+   "previousVersion": "1.9.0",
+   "version": "1.9.1",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.procgen",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.renderdoc",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.rmlui",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.sequencer",
+   "previousVersion": "0.2.1",
+   "version": "0.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.steam",
+   "previousVersion": "1.1.1",
+   "version": "1.1.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.terrain",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.usd",
+   "previousVersion": "0.2.1",
+   "version": "0.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.vegetation",
+   "previousVersion": "0.3.1",
+   "version": "0.3.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.visualscript",
+   "previousVersion": "1.3.1",
+   "version": "1.3.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.water",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.xboxcontroller",
+   "previousVersion": "1.2.1",
+   "version": "1.2.2",
+   "changes": [
+    "Rebuilt for engine 0.11.2; no functional changes."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1258 @@
+{
+  "engineVersion": "0.11.2",
+  "abi": "win64-msvc19-0.11.2-abi6-dev",
+  "platform": "Windows x64 Development",
+  "packages": [
+    {
+      "id": "plasma.ai",
+      "version": "1.4.1",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "8c9b6fb3b16807d5f080e32f26f643be083892db54a57e536d87bdc9c1108f16",
+          "bytes": 174693
+        },
+        {
+          "name": "manifest",
+          "sha256": "afe881ac17516b64f47c324789ccc79b40b3de98e21305ad64ab7e38b1047367",
+          "bytes": 10831
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "7df0f00c18ffd398a69acc1e126a91fef97e45649fa493acd80411398a1ef5bc",
+          "bytes": 1378739
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "dd4b0f769dbf4c7f83062a2545b6bad16e73a00debbb74eb1143ed278413655c",
+          "bytes": 1087321
+        },
+        {
+          "name": "icon",
+          "sha256": "7d95a05faf9cfdf69171f4a170b66619b91a9135591de7ca2ead09dac0a36f3b",
+          "bytes": 32881
+        },
+        {
+          "name": "banner",
+          "sha256": "80b3ccbe902f351c20d3efd03af43ce416a0d0e7d7ced05001fb04007a27b93c",
+          "bytes": 35926
+        },
+        {
+          "name": "tool",
+          "sha256": "88d9ef2238caa984d5dd91a2c1029bd3e569d7a822f4abdda2b4121ed85f4463",
+          "bytes": 15611
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "19166e7fb75baa836f0eea40390e1f7be448a99c8edb5a21b505c3fd5bb42786",
+          "bytes": 486994
+        }
+      ]
+    },
+    {
+      "id": "plasma.amplitude",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "661e62b11e0234809852347ad5c77e6060c2c2cf515db880983973df693e0ffe",
+          "bytes": 73089
+        },
+        {
+          "name": "manifest",
+          "sha256": "4dd7388ed51c4cdc460e9328eaaadd2374512329a760224e28166b203ea93790",
+          "bytes": 4238
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "dc65b94d281437d4bf0fabb365c55e8d2e4fdbe7d79da2a3a090013607b25c32",
+          "bytes": 2090978
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "42a9b50800a01af5a9c4625b576004833d39dd7d8f1c522b8e8ba3f4077948b5",
+          "bytes": 129826
+        },
+        {
+          "name": "icon",
+          "sha256": "6ca1117736fc23b050900ebce3ada900ae081a52ed9a0e119325dbd28615aeb5",
+          "bytes": 27119
+        },
+        {
+          "name": "banner",
+          "sha256": "a67bcf4e88b1ac6497690994ef85f9226cdef0c8e8efaefe68ba0041392a2456",
+          "bytes": 45155
+        },
+        {
+          "name": "tool",
+          "sha256": "d0467c4bde0bd093fb18f53914158c10675bef57ab823803ea48e04d633e252e",
+          "bytes": 172464
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "34b4819766c9c3b69ac4a1da0f0d715acbd08f5d59fe075448339fa41b825a3d",
+          "bytes": 39410
+        }
+      ]
+    },
+    {
+      "id": "plasma.angelscript",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "013b20408d05b1ebd0ffa34d60f9d646e3c089b60f5769a5a2dbc5cdb3fcb3d6",
+          "bytes": 3490
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "968cdee33527e242f73795118d64bce7b40c3346c24cc8b7fb562f46745e03e9",
+          "bytes": 893190
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "d0f0eaa8b74fe8b9cfee28df43f095444f3f8b7e51b34ef8391577a4d737585f",
+          "bytes": 1260391
+        },
+        {
+          "name": "tool",
+          "sha256": "9f500d98f03ad28801ff7e377e6e361d89ab0a1c8c29d6265637614e686aec7a",
+          "bytes": 6240
+        },
+        {
+          "name": "icon",
+          "sha256": "35d56c739f2722607cbb3aa730cc162a293be9e738d47d19f6e1bb71f8c31172",
+          "bytes": 27329
+        },
+        {
+          "name": "banner",
+          "sha256": "241f5e7550ee1d3bb6647da90dd91b899f8d39e3b217e7604a912853c4681c25",
+          "bytes": 51731
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "bcdd9c227daab5419a4d88ea842f0b1e02f39ec49f53df6f3c9b267d45f1a3b2",
+          "bytes": 56620
+        }
+      ]
+    },
+    {
+      "id": "plasma.audio",
+      "version": "2.1.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "034c91fa056dfa553d6dcd816b1093b3817c0bd75e621741f865c8028b1df91c",
+          "bytes": 38583
+        },
+        {
+          "name": "manifest",
+          "sha256": "b3f64311997d4bf3187b6b76d7b6d5c5d68542fa8d41802a9884d5c6172f66c7",
+          "bytes": 10772
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "6aad2b9c4d5becfdb24413fca853c063d42f4bf10e16c851065cd719d03f9d99",
+          "bytes": 1036001
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "195bd1b629b3e610c919fd254f513848cbc10d48f1cc0dc91f3fd9ad66bb06ef",
+          "bytes": 1214636
+        },
+        {
+          "name": "tool",
+          "sha256": "2524350be1d182390add1c1211c20b2daabb8715c6e57ed217f77d41619239ab",
+          "bytes": 10512
+        },
+        {
+          "name": "icon",
+          "sha256": "156397f6c4b1fa9daf3e864645b85741ddc15a44cada8d79d349366bdaa0ff6c",
+          "bytes": 35720
+        },
+        {
+          "name": "banner",
+          "sha256": "d86c8f11eba56c4f3df7084557e4a3a336f0be6ad7567ec5af5bfd5220b476ec",
+          "bytes": 46009
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "528e59daad61c2b2155c78731bb15e5840c98cb5cf205c76441277b8aad155ea",
+          "bytes": 1200614
+        }
+      ]
+    },
+    {
+      "id": "plasma.cameras",
+      "version": "1.0.1",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "bb966ee26158720a775a5ca66be802953d86cff3a35bffca865d035b91988964",
+          "bytes": 108577
+        },
+        {
+          "name": "manifest",
+          "sha256": "fa455391ad3a5df80bac50c301ad887e211b9fff6098277efd234e87ac33c1c2",
+          "bytes": 5087
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "f82970a96490ce04596c7c8e8d20bfc412ac50d8fcd0e23e17d4ebd0eadd52ac",
+          "bytes": 403955
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "ce3aca1955c30b2f678ef998877139ea3852ae5dc46ef4db5acf60baa2202348",
+          "bytes": 24916
+        },
+        {
+          "name": "tool",
+          "sha256": "e59d4ebabe27457c084b471541981f71c976a5f24c23737e0158ec71db7f4516",
+          "bytes": 7841
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "3f95a80b9dc5602cb50d21c74c2894580963f1b92c43e24c4a6de3809edbd0f8",
+          "bytes": 86850
+        }
+      ]
+    },
+    {
+      "id": "plasma.csharp",
+      "version": "1.3.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "cad71784a2c3039008e013cb64f02f7929d31bf128bc8fe40c72880588fb23ad",
+          "bytes": 15048
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "eff3aabe9ecb8f863fbe81b2196f9f47efa7619755bc7f35135f7b87dbcacb1b",
+          "bytes": 14860201
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "560e469d3ef0247428c9ae92ce5b34d9cc06dcaf248b5aa9aaa123e4bc337d96",
+          "bytes": 412378
+        },
+        {
+          "name": "assets",
+          "sha256": "06a9c153de97365c119d18c8ac164a9802f43d78ec5c5593c845742761724231",
+          "bytes": 518
+        },
+        {
+          "name": "icon",
+          "sha256": "344a9d430c0f6f573b55e7c311516ea3a40ada6bb6ed8ca30ce486b7984429e7",
+          "bytes": 33353
+        },
+        {
+          "name": "banner",
+          "sha256": "9483edf25d160c3cebf49fa17e17057d980529041456ae0489fdd02f71f17fa4",
+          "bytes": 50064
+        },
+        {
+          "name": "tool",
+          "sha256": "72989ef53ff4bdae5275c2e62932af1f3366026ac88716d94cbd0916aa4d1581",
+          "bytes": 36835802
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "8ca4020713c61ef440b1cdf26448c8a3b4cb358b83feab48bad7e2107bc9aca3",
+          "bytes": 43839
+        }
+      ]
+    },
+    {
+      "id": "plasma.diversion",
+      "version": "0.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "d52fc6ffa92e4af860ce091b58ae971172d4eaa4afab8610a6230969df254403",
+          "bytes": 2792
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "5aa335caf0338885c0077d8d47b47cbcc85dca51f13fdd3b84e699f16374bb38",
+          "bytes": 468601
+        },
+        {
+          "name": "localization",
+          "sha256": "5ddfddb7790286f11a334c425165697c3fc14c7a411ee3d08ce0e5f67f52e69e",
+          "bytes": 468
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "4280dba36330406677eb928401671806eab64ca184a270443dcc170a00f3d699",
+          "bytes": 33718
+        }
+      ]
+    },
+    {
+      "id": "plasma.eos",
+      "version": "1.1.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "f542fc8c95acc9b8b01a945f599de5c0809ad4a5ace3fe69289e635f7e9c1aa8",
+          "bytes": 2876
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "4a11ce52a92bae41991a6a1dc977276db2f3f8bd36fe07b0f786b6c0ee7ccb4b",
+          "bytes": 153227
+        },
+        {
+          "name": "icon",
+          "sha256": "873f6bcc94c573cd26c35ba60482cd51190525648b49001e0a2b0cc3b268b13e",
+          "bytes": 25298
+        },
+        {
+          "name": "banner",
+          "sha256": "2d59e76c63eac5a4b86c156226e6baae1b9b04d9db99ff1bc7fd4fa5ccbde74f",
+          "bytes": 45582
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "19a05df1f103e2e41936e86ce7417cc4b25db7e084113b6b99491f72e9669bc0",
+          "bytes": 21514
+        }
+      ]
+    },
+    {
+      "id": "plasma.fluid",
+      "version": "0.3.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "04771383e071224f89eaadb2cefa5daf9730bfb2452e23194cf80ffd7aa1f807",
+          "bytes": 51591
+        },
+        {
+          "name": "manifest",
+          "sha256": "a4681e77ddcaacc47dac2ea592702cd7be5cbf3b75208f2e20edf637225fef1f",
+          "bytes": 3873
+        },
+        {
+          "name": "icon",
+          "sha256": "ee4b45fe3a64b4a8776ba924e91a9e2e767eff216f7dff00a655c7e7cce3bce4",
+          "bytes": 37177
+        },
+        {
+          "name": "banner",
+          "sha256": "74452ad80df4ddc77281f340920c215c6ad9734bc471b21670c540a90dc17b90",
+          "bytes": 43532
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "acb59af748405b6e1778359d97ba015d95642863eda29ad806877ad61f601c37",
+          "bytes": 326675
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "79aaa0bcc5667fe9414f1d754ad0300d14d0b469ac2776ceae6bde5be3e0ab4d",
+          "bytes": 42677
+        }
+      ]
+    },
+    {
+      "id": "plasma.fmod",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "f6d4a61f5bcdfc9fd5f0bee3d317dcb9c154af567a4e16ff6b1a09f7e3e2f6a1",
+          "bytes": 38523
+        },
+        {
+          "name": "manifest",
+          "sha256": "0312d01f4e967b86593cc36f342619dd252949d1fa5bd5e9f8f7c1f75b1f7ff1",
+          "bytes": 4534
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "381891b0e48eb794c24b0d2702d4cc131119f8e602a7c5ffa55a46dec705f924",
+          "bytes": 188095
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "f70e917c6999c7e5c7b9bf92ee8e75e77f32fff6661df123aed03347235e7621",
+          "bytes": 164902
+        },
+        {
+          "name": "icon",
+          "sha256": "43a41e71af71cb85dcf42a136c8990addc1be2a690f6307a572fc608024abf86",
+          "bytes": 26999
+        },
+        {
+          "name": "banner",
+          "sha256": "1e0a3343f0426a6a837e6c45ee2c2f987bc10308c17917d01fed42c94470e5e0",
+          "bytes": 41974
+        },
+        {
+          "name": "tool",
+          "sha256": "51e35e2c899c0f2a673153d580c1b82214633fc234753f2162439ae0220f2982",
+          "bytes": 6388
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "b80451eaf5731ff8d0e8370f22e7efd4e6b32e37735ac78c537550d791f3a7be",
+          "bytes": 46153
+        }
+      ]
+    },
+    {
+      "id": "plasma.gamecomponents",
+      "version": "2.0.1",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "bf9947c0f2dfdb1d8b0ef432e0c3c1a551e418e522694b639b08676327e6025f",
+          "bytes": 61207
+        },
+        {
+          "name": "manifest",
+          "sha256": "3a9fbc0b6fe818dd0d98228ddbe633569421d9ad7caac077006968acae4a43a1",
+          "bytes": 3686
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "d7b14a53cb79227a4a997c34051bb965b59de663815c7c33da0a0ad1c12e2f92",
+          "bytes": 750168
+        },
+        {
+          "name": "icon",
+          "sha256": "ef44d8b55108540de93047b182202e5468d3bc5e3f586a2ba8a0f04a1924fed5",
+          "bytes": 31881
+        },
+        {
+          "name": "banner",
+          "sha256": "c8c8924f167c95e1e7a2b4cff4f468c3935d5da13fc337b0826d0577958ed55b",
+          "bytes": 45660
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "71720b913b7fa4a0a99f8d8e935c3d4d8f7bdd8e644c4eb295d203c046ed85db",
+          "bytes": 55777
+        }
+      ]
+    },
+    {
+      "id": "plasma.gameui",
+      "version": "1.4.1",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "f9b94522ce77ca8f085bc41cdc7cc717c65c2c116d647caac904ce616632819f",
+          "bytes": 6086
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "088b94f03a6a370b1c116b85cae2ea75f67dc60781aabb29d693f06d6243eac4",
+          "bytes": 1228267
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "1446cb255d2d2f0b95a9e74006f4be309f9f8ed39b72e31715fc4e47a2b44b59",
+          "bytes": 967136
+        },
+        {
+          "name": "icon",
+          "sha256": "8717967488f23bd840f0632ed2e6fc993f09f92b8861c2f9abf353f398f89a50",
+          "bytes": 20584
+        },
+        {
+          "name": "banner",
+          "sha256": "bc66d13063f5ecdad7a52b57ff91a8964faacad7893d36305a9f04ef29332c01",
+          "bytes": 34704
+        },
+        {
+          "name": "tool",
+          "sha256": "bb779a46824b57d11655d693ffbb7a54696833e0de69cf33a214ff561ecff47d",
+          "bytes": 12245
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "93e824355ff73bb25e46dda38928555b4d0637050a2766c3d2bb45ce6af520fc",
+          "bytes": 107925
+        }
+      ]
+    },
+    {
+      "id": "plasma.jolt",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "9f4c12440628d77790e10ba17e396505bee1bb033175c0d45a7137f40d750500",
+          "bytes": 322620
+        },
+        {
+          "name": "manifest",
+          "sha256": "2a520a6a3b3b4018490fdb4201d706e28fabf84f42e82b6cdd40ed47d3586d46",
+          "bytes": 39461
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "d9eb2107f2da9faf2193b37cf6f6652512c6ee31930f331cbd1c13526866214a",
+          "bytes": 1943203
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "50cbb2a9c359f0ab046c5a1b3ab760bd3e4b49fa865e580cb3aae6f1e5918155",
+          "bytes": 2621553
+        },
+        {
+          "name": "icon",
+          "sha256": "e62068e93acbed9bb8ed3bcce19cc77fc3e286d325c3a63510725b265f8f3443",
+          "bytes": 132842
+        },
+        {
+          "name": "banner",
+          "sha256": "76d8c57e489527cf8cf3e2bea5129a2d5b643ca50896b8c4135caf50afa26dc9",
+          "bytes": 60513
+        },
+        {
+          "name": "tool",
+          "sha256": "4980d8a4cb4c45c53d6579777a1b3b1d9d1c0a337c5c4b74e05ce6c6e55a59d3",
+          "bytes": 35933
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "e20980cc1de48cd005777fe120c941102155db635ba010d69d14cb1b89242a56",
+          "bytes": 1646234
+        }
+      ]
+    },
+    {
+      "id": "plasma.kraut",
+      "version": "1.4.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "46011d6f7d2ad4a1fcbcfe989658530f026e87b0cb16260af0402a6e876de998",
+          "bytes": 7908
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "75382361c405c5f0c12e437074eca7cb10ccf40eaf8a4573bf4bbc17523a3b5a",
+          "bytes": 355498
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "a6d995697be72a10b728e8e6ffc8e515cb2709fd4b1cf5155626f73918684386",
+          "bytes": 198772
+        },
+        {
+          "name": "assets",
+          "sha256": "93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92",
+          "bytes": 26124
+        },
+        {
+          "name": "localization",
+          "sha256": "d251f0eaf755945b6c74b84f2b464151a7e124c5e0dcce89d3a6db9a4d26ba56",
+          "bytes": 6443
+        },
+        {
+          "name": "icon",
+          "sha256": "54143436ddf2443f283a7f1e501335cee9217d7323cd9895ceb68f84a3fc0d66",
+          "bytes": 27619
+        },
+        {
+          "name": "banner",
+          "sha256": "7685f5a9ed4560b3fb2902872670e6b0cad8da649608fefa48af6036309949ec",
+          "bytes": 39648
+        },
+        {
+          "name": "tool",
+          "sha256": "1f94cf575a3e7cf8a43e7ec962f02c78abfdfb5cae58a90016be81f4b3ae5658",
+          "bytes": 8831
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "3d0c7e94fbd84e1930c60ebfae3bd8bf21ec25ffb582eeb60be152b0360c7f42",
+          "bytes": 157999
+        }
+      ]
+    },
+    {
+      "id": "plasma.materialx",
+      "version": "0.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "01c2df364feb0ecf35c680c1ec28de685ce98015f5ca7ae0aa2638877ac77cde",
+          "bytes": 15859
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "26c2a8cf377bf3f3928862e12a27f06e97e034da01dae2e3eef4710cb5d8a8e8",
+          "bytes": 658516
+        },
+        {
+          "name": "icon",
+          "sha256": "a7ea415a10fcf5c5a68e065708bc5558d15a0ac97b063c45a6a7692dfbd8f259",
+          "bytes": 58064
+        },
+        {
+          "name": "banner",
+          "sha256": "2981d2d4669203b6e843739dd26b4b66bca2361ac72ab1b0add1539b45de1fd5",
+          "bytes": 46545
+        },
+        {
+          "name": "assets",
+          "sha256": "4bcccef78e9c19439168c84ee9ada42e98d81561a54217d1517c29f44dbe628a",
+          "bytes": 240559
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "8821f3634df7822813e31dca5c83428c978259fdf9aea4a83f08330d5c6a77a9",
+          "bytes": 139890
+        }
+      ]
+    },
+    {
+      "id": "plasma.mcp",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "e092545d63a15a619cba8bc0164a727a06bd0601cf1d739fd156d2cf2d4d691d",
+          "bytes": 2502
+        },
+        {
+          "name": "icon",
+          "sha256": "ac574119043d7adbf166c5391f37c7b095e22cb5c31d8301e395601ba2cf5041",
+          "bytes": 36689
+        },
+        {
+          "name": "banner",
+          "sha256": "0a850dc0ef0554f82823c6720ce818c262a03118f0efc2a4eaaad8d210cb9260",
+          "bytes": 45132
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "3926d77a3753723f95bdc64b2ab80c3b430860680d9cee9e4c63c883a2e1244e",
+          "bytes": 344133
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "19bda669986198dd841ce3829cffdc098a249b8ea9af9b358877577931e057aa",
+          "bytes": 25266
+        }
+      ]
+    },
+    {
+      "id": "plasma.modeling",
+      "version": "0.2.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "28b5304ca6681f10bdf7c315980f5ed745e608a34397404db143b3a81fc0c9cd",
+          "bytes": 28340
+        },
+        {
+          "name": "manifest",
+          "sha256": "69ec4246ca00fd0302cfa0bb8de96eb463cb98f08008a0577e0357191bfe723f",
+          "bytes": 9593
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "aa93aa1e0e1bf4ec630a68eed79c24bddb3f41e99bb7cbf4f5d1915add43e1fb",
+          "bytes": 227632
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "6159cc0ef6bddfcab6cc1113376dc28508d73c591fd5b09c9218ac6c0117c90e",
+          "bytes": 456720
+        },
+        {
+          "name": "icon",
+          "sha256": "d45739e0408b3ecd4a6bcd7007d3befff5559cb9f25e4719a4ed7c9d143be973",
+          "bytes": 26458
+        },
+        {
+          "name": "banner",
+          "sha256": "39f0f712ea77a605522c5804547a18f2bccde40747db036175fe1104048995c5",
+          "bytes": 38184
+        },
+        {
+          "name": "tool",
+          "sha256": "27a6852bb82d38380291752d3b21c06a5ded4511ef32528da5b0f57c73779a52",
+          "bytes": 45153
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "4a76fb788c17b706ff3e45d3af1e7a44278e2881ff0be7c4b72813c428b07967",
+          "bytes": 82958
+        }
+      ]
+    },
+    {
+      "id": "plasma.networking",
+      "version": "1.3.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "66cea35ab6c106ecc475698f7c227f7eb1aa2c25c2706d02f7c66ca9a20a692c",
+          "bytes": 4751
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "69bcc0686058cbfaad84f655c56e0af5d1e3c3583a3293288bb264e0cc7ce7bb",
+          "bytes": 557993
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "68e19c77552be1a102a88e000593f64059487c070678407ebdd71071b16df2d1",
+          "bytes": 56743
+        },
+        {
+          "name": "tool",
+          "sha256": "0ff62a01d9324b58a752de6955b7b6a8a19c1d92a51328a22f8135b9cdc69afb",
+          "bytes": 4020
+        },
+        {
+          "name": "icon",
+          "sha256": "9b2c4ed6f7464bb8c5332ccaac9b96c1cd646484777afd29874e6ddf92297f2e",
+          "bytes": 50344
+        },
+        {
+          "name": "banner",
+          "sha256": "59a2fdc49cca6d3e147513f0081d07f503c2380e9765e5a38e077cd12bf569ec",
+          "bytes": 52727
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "3065dd6c0f56e72f61f3a3769af379bb49cabbec06fec6ab8ce70dad205002ef",
+          "bytes": 137849
+        }
+      ]
+    },
+    {
+      "id": "plasma.openxr",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "a43412a5fc5b0ef3503f8baba6f85f80129e3f870afd155be3d91550a223194b",
+          "bytes": 2960
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "d39ec93f46b1a6aada5d42d3cec9d21195f519f94921cf281ad0f7a5e6ddc318",
+          "bytes": 537335
+        },
+        {
+          "name": "icon",
+          "sha256": "1f62d765474b6821b2b7028f106b0001d9ac2a92c8e5031efa87113c0fb0f294",
+          "bytes": 32064
+        },
+        {
+          "name": "banner",
+          "sha256": "aa0a93421fff9a6cecac6ea7ce2f5f184279136d4a937ea1c2c6487b9aaf999e",
+          "bytes": 46088
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "e56ebe013132a86ecd354711e3c97be219d9decc8ee9782312ca67fd562eb041",
+          "bytes": 19311
+        }
+      ]
+    },
+    {
+      "id": "plasma.particles",
+      "version": "1.9.1",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "c2f2b0614f8aeefdf1edaa4fb4c06633fe3cf09e6e2401bbb7e247fad7e8a361",
+          "bytes": 36487
+        },
+        {
+          "name": "manifest",
+          "sha256": "c734b77cd556d931a83d5ebaf957cda3a48a1be25a59b93e07217d775f2c379c",
+          "bytes": 9095
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "727373e5ce5a9078090ea883d4b2de56ef9984a5181987c42c0b076ca07f6124",
+          "bytes": 1115884
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "b5d118306131c707c016eb7b6a9497111b8e4ffc7d76fa5127617a72701fa795",
+          "bytes": 688205
+        },
+        {
+          "name": "icon",
+          "sha256": "3b97187bb13cf2f8d8d5a5c6be873e5e8222e7df91853139c72dcffa563ea996",
+          "bytes": 52268
+        },
+        {
+          "name": "banner",
+          "sha256": "dbd8bd83ab4a34da1910b83a7178067e1c7652147f35087dbc070aad3360961a",
+          "bytes": 48672
+        },
+        {
+          "name": "tool",
+          "sha256": "b98a81cb8d99fa04d4884ece89b2cb1900a1fef348e9f0e4b7b7da5a3a286553",
+          "bytes": 7118
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "f4062e860714aeeb50bc4b27664b771e2d4611acd9601423213c375fcc611876",
+          "bytes": 307481
+        }
+      ]
+    },
+    {
+      "id": "plasma.procgen",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "9d3facc7899b09dd99ba11116856268faa855b94ca4e1ce3539ff7963a3aa69d",
+          "bytes": 74773
+        },
+        {
+          "name": "manifest",
+          "sha256": "838a1a44745cc31d13aa29904254b45fbc26dbf90d656a4bc56a378543c9ee13",
+          "bytes": 3827
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "2bd7a2c0e0043e587a35fc3f0bd6152ff2949fb2028fee9ceb96fb90e8c844d5",
+          "bytes": 315924
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "e61a5a05f2a3e20e28f8eb039d0b8ebc483b7fc29951d36450d978cac4df4194",
+          "bytes": 189827
+        },
+        {
+          "name": "icon",
+          "sha256": "f4d0f6147b481c7aab78c41757b1f42de8b71d99a0daad396c315ba190667700",
+          "bytes": 22894
+        },
+        {
+          "name": "banner",
+          "sha256": "738d9ef9c09ac9956a77047f28cd5169b369c0821e5d87093df0bd967eecac76",
+          "bytes": 42497
+        },
+        {
+          "name": "tool",
+          "sha256": "152aa35970c504b36edd5b1031eb41b64b749e4cdd88b3fde3c4a7452ce25ed5",
+          "bytes": 8945
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "5a840b4eb136912890857b8c869ced1085f8df9ca33445ddc939c557e6e4b7da",
+          "bytes": 44988
+        }
+      ]
+    },
+    {
+      "id": "plasma.renderdoc",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "2a45a1a6a768d49fbf8b3fe08ce53d24278470e76c555b0d5a5fe68d0df2097a",
+          "bytes": 2962
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "a3dc2132a8e290cc5192c298111c0457a52f7657e4b50093d35844a7119a8537",
+          "bytes": 22886
+        },
+        {
+          "name": "icon",
+          "sha256": "68aa99d64e04b5de2d358a220f61d4d22d5c47adaf5e5f8cf8d8c3a7b4bd641b",
+          "bytes": 18672
+        },
+        {
+          "name": "banner",
+          "sha256": "4ed86ca7fd25425c01d2f565e23af4c8cfbf91b1fa7019142365fa82096e5352",
+          "bytes": 39256
+        },
+        {
+          "name": "tool",
+          "sha256": "d4354e2163bd84dede6cba5ea15beab9ec81abcd15eae839b0e274a9380e4053",
+          "bytes": 9591367
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "449cdd7325238d3b46b70298bf0a6d5a24f80a154298ccae4417e595da233221",
+          "bytes": 13879
+        }
+      ]
+    },
+    {
+      "id": "plasma.rmlui",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "6f27b95642e314785d15fc7c3929d601ec3c02784c031c1f0af7335dd5ef6055",
+          "bytes": 726647
+        },
+        {
+          "name": "manifest",
+          "sha256": "7ee4b1340d349f2ec6a308b7542781fca44c27b50996837b42477ae667277297",
+          "bytes": 11755
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "3a0375bd507f20777935bbe7f3c499f2f4fa62ebec3a31be84ad90d03a30a2f6",
+          "bytes": 2135590
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "53de3c32517de85db957a3672ced8ef7903db41c399601a3259a571f3f940fb9",
+          "bytes": 3137199
+        },
+        {
+          "name": "icon",
+          "sha256": "ef7fe6bd2dc1a77ab83aa594a080ea465ac4bfd3e9f6d56032b1f980a13834a3",
+          "bytes": 62650
+        },
+        {
+          "name": "banner",
+          "sha256": "1dae90758b59989423564e26763046fa6b6fc7f84fd162d8bf57ec273cd23253",
+          "bytes": 41927
+        },
+        {
+          "name": "tool",
+          "sha256": "3abd3bdf69aadaa6a385be5e5700be3cb4249eef39d5c29af83210eb97966634",
+          "bytes": 1850
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "c61a6f968ded0047a255e12817a65b347b18eb7d34ea12565c516a5076f45517",
+          "bytes": 237269
+        }
+      ]
+    },
+    {
+      "id": "plasma.sequencer",
+      "version": "0.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "a0053fccf8fe0e48d40a52e5bd1b210bd2df8eaae69adccf35bd954ff4a0751f",
+          "bytes": 3923
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "1027e3c6b757e44b72577ee1d68366928ba6ca56c3691dc77a30d2532ad34a6e",
+          "bytes": 162548
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "88c67e38912b284d4e5bd2ed0e6004df6b47e8f34523c871dc236aecc8ab691d",
+          "bytes": 571172
+        },
+        {
+          "name": "icon",
+          "sha256": "7f3652f7bb1a8dad6d504b6a7100199f1d57ed604f6dc8ef798cdeaaf814ef82",
+          "bytes": 30074
+        },
+        {
+          "name": "banner",
+          "sha256": "55f63852fb9143fb98dc0a82adfd388097533c7d1189263151a066838151ce1b",
+          "bytes": 44481
+        },
+        {
+          "name": "tool",
+          "sha256": "816ea79a675e8fe163d6afc2114ba8367c00de01ad757be932b1cb1139e565c2",
+          "bytes": 1052
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "0b742edc53ea8e77991ae0f901bc008a322fe816aee28f69a3df5c91bb3af543",
+          "bytes": 55769
+        }
+      ]
+    },
+    {
+      "id": "plasma.steam",
+      "version": "1.1.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "27d54aa155703c9a4c52bba6af1b4471219e20ca5dcc29f89a6959145cd710cc",
+          "bytes": 2810
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "681d1b6cdcfa062b9e15be7b8e7c27a3677f794ef577b6bf998806eea6c3e942",
+          "bytes": 117728
+        },
+        {
+          "name": "icon",
+          "sha256": "77fcd36be3776cd0528c30a99d5b7ad7f1aaadeee6c40de67aa95fa4c3167dcd",
+          "bytes": 36782
+        },
+        {
+          "name": "banner",
+          "sha256": "226279f15ea279ac4e11ff4971f33b8a9af5ed97052c6f9e41c3acb38e64bd2a",
+          "bytes": 42900
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "ec111d771ab4274a2032008c69454ee2e2542cb8e5a7db54c97526a1a9efa11d",
+          "bytes": 14188
+        }
+      ]
+    },
+    {
+      "id": "plasma.terrain",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "582408b55b2e00bc8d82f6cce777b33ccb72393bf2824e2ae15626d4a2c335d4",
+          "bytes": 70657
+        },
+        {
+          "name": "manifest",
+          "sha256": "83e2e47ceaa2fb701701c5c5c75be095993828c907e00d365e0b5cde85adee3d",
+          "bytes": 4084
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "27510c6f29462ab8455a5917992c899576fa37d8e2553297701e154021d6cadc",
+          "bytes": 197362
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "41c479069f9e8cf8f9151c540ed36bcc9cf8e8d6a429ece404f1c0320714142d",
+          "bytes": 15155
+        },
+        {
+          "name": "tool",
+          "sha256": "cf2b272552f3ad80dbe6e000cf2650c4398786814db56139419d5546f7644518",
+          "bytes": 2866
+        },
+        {
+          "name": "icon",
+          "sha256": "b4da956b7c5176b8c032a37d61f7cc88561ee34f53765ae1f418339d133c050b",
+          "bytes": 28504
+        },
+        {
+          "name": "banner",
+          "sha256": "15253bdc9de5c334b8746e91d229f577cbf23addd4794cf23a3260f44bba3685",
+          "bytes": 37208
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "d239b919833b2dc6fcb6f0c9cc57c3ad8a59b48c26ea9947083e085621d19601",
+          "bytes": 37291
+        }
+      ]
+    },
+    {
+      "id": "plasma.usd",
+      "version": "0.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "ccf0f90cb5441503fb277f7083443024f8b1d6f0c2885eb327e577253eb3e756",
+          "bytes": 67892
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "2ce1ba51cf36ffae7b9a1d8083b20f73dc728308b0bd37e90dab576a238e8a46",
+          "bytes": 8701453
+        },
+        {
+          "name": "icon",
+          "sha256": "1a9b214098a1f3e980cc7899b9f950a6f5887dfface64a576426f75a2d2f66c9",
+          "bytes": 34630
+        },
+        {
+          "name": "banner",
+          "sha256": "fff569659828751448ecdd2d16f48f3a0df0a6e4d5768bffcfaa49c410b3f194",
+          "bytes": 41241
+        },
+        {
+          "name": "tool",
+          "sha256": "0778ee629eeb01e870efb0e8ec6bccaac10b20d91c9eda0389aea1f3d55e6a3a",
+          "bytes": 5429
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "0da90420b58e75f1446683b7057dc2a44d908fcde0627a74e82ec00a27d15258",
+          "bytes": 3081693
+        }
+      ]
+    },
+    {
+      "id": "plasma.vegetation",
+      "version": "0.3.2",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "6f1a5286a8744a9b324654f1aaba0c1f985b530395d9ac6841f0f3b24c20b6e1",
+          "bytes": 35115
+        },
+        {
+          "name": "manifest",
+          "sha256": "46b4245a9de2f719f98d0c47fb9d667b777148955670e3b8b30007fae8b0bf20",
+          "bytes": 5523
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "e8b2d72b1101b79d9dcb86e7c1b29aab5ce4d300442c696e9d47d6db5fdcc032",
+          "bytes": 377198
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "ede05940d3a3986306a6a09bb3aa3b5a39dbfdec8f864f6426d605b01e36070c",
+          "bytes": 354090
+        },
+        {
+          "name": "icon",
+          "sha256": "ba1bb8c01432e6593c724d58a0b088758be8da46d9d934a3656ef06e10abe2a1",
+          "bytes": 36620
+        },
+        {
+          "name": "banner",
+          "sha256": "8ebf11663969a85b2e75ecea8cc4bbe559a345ab5d852a4f7b958ba3f9dc120e",
+          "bytes": 43621
+        },
+        {
+          "name": "tool",
+          "sha256": "5afd548203b4fa7c6a1f41b31316a45e513d1ab19491eb30a4335a8280ce5730",
+          "bytes": 5099
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "2fcea43c03caf7c52e24b62c63bf560b2f405068b2aa9348a8172a8595e8c57b",
+          "bytes": 101215
+        }
+      ]
+    },
+    {
+      "id": "plasma.visualscript",
+      "version": "1.3.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "cab009fc8637eb512719d1bc5fada10fec95cc0b8d07f65b977f702e9c8983fd",
+          "bytes": 4083
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "6fc0d26568534111ac61c1fa1f871085ade693e9e3549503754871a3e17f781b",
+          "bytes": 235060
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "95ac486e2f3cac88543f30198462fbdaacedc5339d54d5d9c29d38ab9261ecab",
+          "bytes": 472124
+        },
+        {
+          "name": "icon",
+          "sha256": "7ed81a9f3b29d02b98c62163dd130236ea7746cbd60a2e6f5517528d8a96770e",
+          "bytes": 35907
+        },
+        {
+          "name": "banner",
+          "sha256": "67f70c6fdaaf6e969c2cad742d13bd35895d1bcd8809b43bc1b8b1b09b362747",
+          "bytes": 45332
+        },
+        {
+          "name": "tool",
+          "sha256": "568f46b9114aeb977ab856a54e40428f4178ed904ec6c4458797754747a0ec36",
+          "bytes": 7859
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "5308ad8b2d5378cdd019e74caf1d2986d993bbef29f55a6636a845bf1d673a64",
+          "bytes": 68424
+        }
+      ]
+    },
+    {
+      "id": "plasma.water",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "edefe07428b2195950f77d0d0299495dd8f3f4090ae60667748abba0304e7a05",
+          "bytes": 5996
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "b1e058447d437eca105904c1a576b2d017fc30c73000c1fe0cb13213dfb0dc07",
+          "bytes": 445533
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "14dcc2ee0fd03afb9fd980d706b97f5c2144597bbb0602edfb2677ecb63bed39",
+          "bytes": 302834
+        },
+        {
+          "name": "tool",
+          "sha256": "074e233ce9dfd34aac35fa3773d4f7c7a8838aa6641c6e8c4c70f0a7b02582eb",
+          "bytes": 3434
+        },
+        {
+          "name": "assets",
+          "sha256": "f012e6606a3d0646df2b9f806e71fae07b8d7c2c8ac2bd2b465d4c3a85aa6d36",
+          "bytes": 44437
+        },
+        {
+          "name": "icon",
+          "sha256": "36b6ada5a31c22df6934c857ff88688496df2c0e868693d7fb335f507f55a453",
+          "bytes": 35132
+        },
+        {
+          "name": "banner",
+          "sha256": "e4738313c2d5d58debfcad7e15c3278028217dc9cf70ca96430081711fe1a9b4",
+          "bytes": 42439
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "f64582184a8e586cd14cbc7f4d1418126ce4a5a58ed9c3d2bf5f0c3f2dd5ba62",
+          "bytes": 89737
+        }
+      ]
+    },
+    {
+      "id": "plasma.xboxcontroller",
+      "version": "1.2.2",
+      "components": [
+        {
+          "name": "manifest",
+          "sha256": "061bbe38f30047eec1145c59c612988efec84ff7b9cac83889fd5acb63ab051f",
+          "bytes": 1885
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "cde527a8087f525d6ab47091a562df1118018a9a0e01537cb1600e95538b3c4b",
+          "bytes": 26145
+        },
+        {
+          "name": "icon",
+          "sha256": "5609648af86915deb784881eeefbfec52eeb1ab38d7012b7d51f03ed3284ac27",
+          "bytes": 75844
+        },
+        {
+          "name": "banner",
+          "sha256": "2df8b48b20ab35bc6d1087a798a0882ef4fb8a9025d607c729eba1ba004d507e",
+          "bytes": 54254
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "1256a43f38abaa9709645658e0d40d32df2d495d2c01cad9df565c5fbb39ebaa",
+          "bytes": 3254
+        }
+      ]
+    }
+  ]
+}
