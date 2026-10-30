@@ -4440,6 +4440,30 @@ The particle shaders ship with the engine, so installing this needs nothing furt
 		Component { string %Name{"banner"} string %Sha256{"dbd8bd83ab4a34da1910b83a7178067e1c7652147f35087dbc070aad3360961a"} int32 %Bytes{48672} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"f4062e860714aeeb50bc4b27664b771e2d4611acd9601423213c375fcc611876"} int32 %Bytes{307481} }
 	}
+
+	Version
+	{
+		string %Version{"1.9.2"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.11.2"}
+		string %MaxEngine{"0.11.2"}
+		string %AbiTag{"win64-msvc19-0.11.2-abi6-dev"}
+		string %IconSha{"3b97187bb13cf2f8d8d5a5c6be873e5e8222e7df91853139c72dcffa563ea996"}
+		string %BannerSha{"dbd8bd83ab4a34da1910b83a7178067e1c7652147f35087dbc070aad3360961a"}
+		string %Changelog{"Particles 1.9.2 (previous: 1.9.1)
+
+- Fix an editor crash after editing a Mesh-type particle effect while it plays: clearing the Mesh with a Material set made the next frame draw a mesh through an invalid handle (assert in the depth pass). Reconfiguring now re-checks the mesh and material, and mesh particles without a valid mesh draw nothing.
+- Compatible with PlasmaEngine 0.11.2."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"manifest"} string %Sha256{"109049ff07e85dc7f693312c8b9a623085cac44709d6e1bd7e40b2cc6599aede"} int32 %Bytes{9098} }
+		Component { string %Name{"icon"} string %Sha256{"3b97187bb13cf2f8d8d5a5c6be873e5e8222e7df91853139c72dcffa563ea996"} int32 %Bytes{52268} }
+		Component { string %Name{"editor-win64"} string %Sha256{"54229116bd742a8a4878f7ce3fab518dee7a91bd4cd86aca063bdb51b89fa339"} int32 %Bytes{693087} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"9097b25e6d7baa673b4519167bfc045a85702cb0272ba72718e18ffe16217874"} int32 %Bytes{1127058} }
+		Component { string %Name{"tool"} string %Sha256{"b98a81cb8d99fa04d4884ece89b2cb1900a1fef348e9f0e4b7b7da5a3a286553"} int32 %Bytes{7118} }
+		Component { string %Name{"assets"} string %Sha256{"c2f2b0614f8aeefdf1edaa4fb4c06633fe3cf09e6e2401bbb7e247fad7e8a361"} int32 %Bytes{36487} }
+		Component { string %Name{"banner"} string %Sha256{"dbd8bd83ab4a34da1910b83a7178067e1c7652147f35087dbc070aad3360961a"} int32 %Bytes{48672} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"f4062e860714aeeb50bc4b27664b771e2d4611acd9601423213c375fcc611876"} int32 %Bytes{307481} }
+	}
 }
 
 Package

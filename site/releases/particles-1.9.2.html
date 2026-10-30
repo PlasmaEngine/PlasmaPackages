@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Particles 1.9.2 — fix a crash after editing a Mesh particle effect</title>
+<style>body{max-width:860px;margin:40px auto;padding:0 24px;font:16px/1.65 system-ui;background:#10131a;color:#d9e0ec}a{color:#c89af0}h1{color:#fff;line-height:1.25}li{margin:12px 0}</style></head>
+<body><a href="../index.html">Plasma Packages</a><h1>Particles 1.9.2</h1>
+<p>A bug fix for PlasmaEngine 0.11.2. Previous package: Particles 1.9.1.</p>
+<ul>
+<li>Fix an editor crash after editing a <strong>Mesh</strong> particle type while the effect plays. Clearing the Mesh while a Material was set made the next frame draw a mesh through an invalid handle, which stopped the editor in the depth pass. Reconfiguring an effect now checks its mesh and material again, and mesh particles without a valid mesh draw nothing.</li>
+</ul>
+<p>Update <code>plasma.particles</code> to <strong>1.9.2</strong> and restart the editor. Assets, templates and shaders are unchanged from 1.9.1.</p>
+<p>All plugins build against the 0.11.2 SDK.</p>
+<p><a href="0.11.2.html">All engine 0.11.2 package changelists</a></p></body></html>
