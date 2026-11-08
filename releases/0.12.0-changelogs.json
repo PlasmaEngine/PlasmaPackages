@@ -1,0 +1,292 @@
+{
+ "engineVersion": "0.12.0",
+ "comparison": "Compared with each package's latest previously approved registry release. These notes describe the published 0.12.0 artifacts; adding notes does not replace their blobs.",
+ "commonChanges": [
+  "Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.",
+  "Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.",
+  "Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."
+ ],
+ "packages": [
+  {
+   "id": "plasma.ai",
+   "previousVersion": "1.4.1",
+   "version": "1.5.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.amplitude",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.angelscript",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.audio",
+   "previousVersion": "2.1.2",
+   "version": "2.2.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.cameras",
+   "previousVersion": "1.0.1",
+   "version": "1.1.0",
+   "changes": [
+    "The camera director tells its camera when it makes a hard cut, so motion blur and temporal anti-aliasing skip the cut frame and no longer smear across the cut.",
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.csharp",
+   "previousVersion": "1.3.2",
+   "version": "1.4.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.diversion",
+   "previousVersion": "0.2.2",
+   "version": "0.3.0",
+   "changes": [
+    "When project checks block a commit, the dialog now has an Open Validation button, which is the default. 'Fix first' is renamed Cancel.",
+    "Commits that pass the project checks include a summary of the checks that ran and any waivers, with their reasons, in the commit message."
+   ]
+  },
+  {
+   "id": "plasma.eos",
+   "previousVersion": "1.1.2",
+   "version": "1.2.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.fluid",
+   "previousVersion": "0.3.2",
+   "version": "0.4.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.fmod",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Fixed a crash at engine shutdown when sound banks were still loaded after FMOD had shut down."
+   ]
+  },
+  {
+   "id": "plasma.gamecomponents",
+   "previousVersion": "2.0.1",
+   "version": "2.1.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.gameui",
+   "previousVersion": "1.4.1",
+   "version": "1.5.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.jolt",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.kraut",
+   "previousVersion": "1.4.2",
+   "version": "1.5.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.materialx",
+   "previousVersion": "0.2.2",
+   "version": "0.3.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.mcp",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.modeling",
+   "previousVersion": "0.2.2",
+   "version": "0.3.0",
+   "changes": [
+    "Breaking: Carve is renamed Bake Cuts. Cutters already cut live, so Bake Cuts only makes the cut permanent and deletes the cutter. The action ID changed from Modeling.Carve to Modeling.BakeCuts, so custom shortcuts bound to the old ID must be rebound. The MCP brush operation 'carve' is now 'bake_cuts'.",
+    "Breaking: Snap To Grid is on by default, so new drawing and edits land on grid points unless you switch it off.",
+    "Cutters now accept any closed shape. A cutter that is not convex, for example after you move one of its vertices or extrude a face, is split into convex pieces automatically, so you no longer need to run Decompose on it first.",
+    "Rooms: a cutter that passes through the walls of inside-out brushes opens one passage between them, with walls that face into the passage. A cutter through a single wall makes an alcove. Materials on the passage sides are kept when you bake.",
+    "New Snap To Grid option (Alt+G, also in the Modeling panel). It snaps drawing, moving, extruding, clipping and pivot edits to the grid. The grid step follows the editor's translation snap, or 0.25 m while editor snapping is off.",
+    "Dragging a material over brush faces now previews it on the face under the cursor. Dropping a material on one face no longer changes every face that uses the default material slot.",
+    "Cutters are drawn with a transparent material tinted by the object's colour.",
+    "Fixed brushes that kept showing their old mesh after an edit, and fixed brush data that could become invalid after other brushes in the scene were deleted.",
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.networking",
+   "previousVersion": "1.3.2",
+   "version": "1.4.0",
+   "changes": [
+    "Breaking: A second Platform-driver peer in the same process now fails to start because the platform transport is already in use. It no longer falls back to ENet silently.",
+    "Breaking: C++ API: the public plNetworkPeer::m_Peers list and m_iHostID member were removed. Use plNetworkPeer::GetPeerCount() instead.",
+    "Networked properties: a change held back by the send rate is now sent on a later update. Before, it could be dropped.",
+    "Networked transforms on scene objects that nobody owns are now simulated and sent by the host or dedicated server.",
+    "When a host stops, it sends its last queued messages and disconnects every client right away, so clients no longer wait for a timeout.",
+    "Several network peers can now run independently in one process, for example a host and its clients during testing. A host that fails to start listening releases its socket at once.",
+    "Added a two-client replication test suite and a bandwidth test suite with byte limits per client.",
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.openxr",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.particles",
+   "previousVersion": "1.9.2",
+   "version": "1.10.0",
+   "changes": [
+    "Breaking: Function nodes now take angles in degrees by default. Existing function nodes load with Radians switched on, so saved effects behave as before.",
+    "New effect graph nodes: split and combine vector and colour, swizzle, distance, cross, reflect, project, rotate about axis, power, step, smooth step, inverse lerp, atan2, math constants, logic and not, random range, random integer and random vector, vector noise, and local and world space transforms. Function and math nodes gain trig, exp, log, rounding, sign, reciprocal, square, degree and radian conversion, and modulo.",
+    "New Curve Over Life and Gradient Over Life nodes driven by normalized age, age or speed, with size, opacity and emissive presets. They can use curve and gradient assets. New graph inputs include remaining life, effect scale and axes, and the camera's forward, right and up directions.",
+    "New Masked render mode that clips at an Alpha Cutoff and draws with opaque geometry, with optional shadow casting. New Surface (PBR) lighting mode with roughness, metallic, specular and an optional ORM map. Adds a Blood template that uses it.",
+    "Distortion particles now work, with a distortion texture and strength setting. The Particles.ShowDistortion CVar shows the offsets they add up.",
+    "Quads facing their particle direction keep their orientation when a particle slows down, controlled by the new Min Speed and Turn Smoothing settings. Emitter-direction facing can sample the direction live or at spawn. Normal-mapped particles are now lit correctly.",
+    "Fixed emitter axes in prefabs and local-space effects, and fixed trail issues. The effect preview has a stage and a Backdrop menu with Stage, Floor and None options.",
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.procgen",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.renderdoc",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.rmlui",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.sequencer",
+   "previousVersion": "0.2.2",
+   "version": "0.3.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.steam",
+   "previousVersion": "1.1.2",
+   "version": "1.2.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  },
+  {
+   "id": "plasma.terrain",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.usd",
+   "previousVersion": "0.2.2",
+   "version": "0.3.0",
+   "changes": [
+    "Breaking: Lights in existing linked stages can change brightness or orientation after the light conversion fixes. Check scenes that use rectangle, disk, sphere or spot lights.",
+    "Large live-linked stages appear sooner: each mesh first shows a quick, coarse preview, which is replaced by full-quality geometry when it is ready. Existing geometry stays visible while an edited mesh rebuilds.",
+    "Meshes are cached and shared: identical geometry used by different prims, material bindings or live links is built once and reused. Finished meshes are saved while the rest of the stage is still importing.",
+    "All imported meshes now get tangents that match the engine's own mesh import, so editing a material binding or normal map no longer rebuilds the geometry. Geometry conversion is faster, and the number of parallel mesh and texture builds now follows available memory to avoid paging.",
+    "USD light import fixes: rectangle and disk lights face the right way, area-light intensity keeps its source units, spotlight power accounts for its cone, and an optional light range is read. Lights from some third-party exporters now get the correct brightness.",
+    "Fixed USD meshes that could render fully bright depending on draw order. Removing a prim now also destroys its child objects.",
+    "The partition import dialog has a Select all / Select none button that covers collapsed branches, and the live view shows streaming progress."
+   ]
+  },
+  {
+   "id": "plasma.vegetation",
+   "previousVersion": "0.3.2",
+   "version": "0.4.0",
+   "changes": [
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.visualscript",
+   "previousVersion": "1.3.2",
+   "version": "1.4.0",
+   "changes": [
+    "When you drag a wire onto empty canvas, the node palette ranks the suggestions by data type: exact matches first, then nodes that convert the value, then nodes that accept any value.",
+    "The node palette shows pin type names without the engine prefix, for example RigidBodyComponent.",
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.water",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Caustics on surfaces below the water use the sun's contact shadow from the engine's new contact shadows pass, which replaces the screen-space shadow pass they read before.",
+    "Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only."
+   ]
+  },
+  {
+   "id": "plasma.xboxcontroller",
+   "previousVersion": "1.2.2",
+   "version": "1.3.0",
+   "changes": [
+    "Rebuilt for engine 0.12.0; no functional changes."
+   ]
+  }
+ ]
+}

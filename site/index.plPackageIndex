@@ -332,6 +332,35 @@ Recast and Detour are compiled into the plugin, so there is nothing else to inst
 		Component { string %Name{"manifest"} string %Sha256{"afe881ac17516b64f47c324789ccc79b40b3de98e21305ad64ab7e38b1047367"} int32 %Bytes{10831} }
 		Component { string %Name{"editor-win64"} string %Sha256{"dd4b0f769dbf4c7f83062a2545b6bad16e73a00debbb74eb1143ed278413655c"} int32 %Bytes{1087321} }
 	}
+
+	Version
+	{
+		string %Version{"1.5.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"7d95a05faf9cfdf69171f4a170b66619b91a9135591de7ca2ead09dac0a36f3b"}
+		string %BannerSha{"80b3ccbe902f351c20d3efd03af43ce416a0d0e7d7ced05001fb04007a27b93c"}
+		string %Changelog{"plasma.ai 1.5.0 (previous: 1.4.1)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"editor-win64"} string %Sha256{"0b61d77f16f9940b88e877586b7676f9f36bfacfb295e1ff90b7a46d38c37ecb"} int32 %Bytes{1067593} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"65d636ebf47eb573c5a169e3654e1e03425d43364822bfad4c6c3c6ace692e2d"} int32 %Bytes{486568} }
+		Component { string %Name{"icon"} string %Sha256{"7d95a05faf9cfdf69171f4a170b66619b91a9135591de7ca2ead09dac0a36f3b"} int32 %Bytes{32881} }
+		Component { string %Name{"banner"} string %Sha256{"80b3ccbe902f351c20d3efd03af43ce416a0d0e7d7ced05001fb04007a27b93c"} int32 %Bytes{35926} }
+		Component { string %Name{"tool"} string %Sha256{"88d9ef2238caa984d5dd91a2c1029bd3e569d7a822f4abdda2b4121ed85f4463"} int32 %Bytes{15611} }
+		Component { string %Name{"assets"} string %Sha256{"8c9b6fb3b16807d5f080e32f26f643be083892db54a57e536d87bdc9c1108f16"} int32 %Bytes{174693} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"90c5b4d5c103e6f367c6b55a7974b18efe952bf3f66b8efd2adce55170281363"} int32 %Bytes{7771750} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"d41b3e00ce4ac998fbf69f914904cb71b461a8bb052a12a9e54c55fb20c79f79"} int32 %Bytes{2088128} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"e9152949d48a3ae015e7d720893d926b2255d2205014ec1172be00c0e741113d"} int32 %Bytes{319391} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"e9152949d48a3ae015e7d720893d926b2255d2205014ec1172be00c0e741113d"} int32 %Bytes{319391} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"f215fa4fc4dca49b53218c1426fdb8c743700e12a3d7a752e45b967287da06de"} int32 %Bytes{1349984} }
+		Component { string %Name{"manifest"} string %Sha256{"f492dd3b06ce1084e694eb6c61e76f4bfbcb5c12d58baad7b7fcb55958f11be7"} int32 %Bytes{10976} }
+	}
 }
 
 Package
@@ -610,6 +639,31 @@ Plays sound through the engine's audio system, so it replaces rather than accomp
 		Component { string %Name{"tool"} string %Sha256{"d0467c4bde0bd093fb18f53914158c10675bef57ab823803ea48e04d633e252e"} int32 %Bytes{172464} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"dc65b94d281437d4bf0fabb365c55e8d2e4fdbe7d79da2a3a090013607b25c32"} int32 %Bytes{2090978} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"6ca1117736fc23b050900ebce3ada900ae081a52ed9a0e119325dbd28615aeb5"}
+		string %BannerSha{"a67bcf4e88b1ac6497690994ef85f9226cdef0c8e8efaefe68ba0041392a2456"}
+		string %Changelog{"plasma.amplitude 1.3.0 (previous: 1.2.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"sdk-win64"} string %Sha256{"10174ff9b6e55fb4b7d37487ac788b022b8ed230f15e80dbdcf33a2e1a3fa857"} int32 %Bytes{39365} }
+		Component { string %Name{"assets"} string %Sha256{"661e62b11e0234809852347ad5c77e6060c2c2cf515db880983973df693e0ffe"} int32 %Bytes{73089} }
+		Component { string %Name{"icon"} string %Sha256{"6ca1117736fc23b050900ebce3ada900ae081a52ed9a0e119325dbd28615aeb5"} int32 %Bytes{27119} }
+		Component { string %Name{"banner"} string %Sha256{"a67bcf4e88b1ac6497690994ef85f9226cdef0c8e8efaefe68ba0041392a2456"} int32 %Bytes{45155} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"cda6822228144c1f42f6601641928dad53e8f586355ccdebd8c4905225c06881"} int32 %Bytes{2081791} }
+		Component { string %Name{"tool"} string %Sha256{"d0467c4bde0bd093fb18f53914158c10675bef57ab823803ea48e04d633e252e"} int32 %Bytes{172464} }
+		Component { string %Name{"manifest"} string %Sha256{"e13dad2ad44b6e7cc30e41642e58c2770c97184a3d32422b1f8bfda3dcd943a2"} int32 %Bytes{4238} }
+		Component { string %Name{"editor-win64"} string %Sha256{"f012abf08f16552dd1045675fb15de2d2a45cbf7bb0eec079181c77437dba2dc"} int32 %Bytes{115444} }
+	}
 }
 
 Package
@@ -873,6 +927,35 @@ The AngelScript library is compiled into the plugin, so there is nothing else to
 		Component { string %Name{"sdk-win64"} string %Sha256{"bcdd9c227daab5419a4d88ea842f0b1e02f39ec49f53df6f3c9b267d45f1a3b2"} int32 %Bytes{56620} }
 		Component { string %Name{"editor-win64"} string %Sha256{"d0f0eaa8b74fe8b9cfee28df43f095444f3f8b7e51b34ef8391577a4d737585f"} int32 %Bytes{1260391} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"35d56c739f2722607cbb3aa730cc162a293be9e738d47d19f6e1bb71f8c31172"}
+		string %BannerSha{"241f5e7550ee1d3bb6647da90dd91b899f8d39e3b217e7604a912853c4681c25"}
+		string %Changelog{"plasma.angelscript 1.3.0 (previous: 1.2.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"banner"} string %Sha256{"241f5e7550ee1d3bb6647da90dd91b899f8d39e3b217e7604a912853c4681c25"} int32 %Bytes{51731} }
+		Component { string %Name{"icon"} string %Sha256{"35d56c739f2722607cbb3aa730cc162a293be9e738d47d19f6e1bb71f8c31172"} int32 %Bytes{27329} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"40f70f246927ad17190c6da3ddddfd3103e6a4b56db2e8aa8fb29b7d17e87afa"} int32 %Bytes{882325} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"6f1b4c1e1bdf5525b8b8c5b97fb56da6bb5c3888ed30cd4f11408c8e19887abc"} int32 %Bytes{3036034} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"9858117e076f1a60e4ee25e81c4b70e52074c889c7995dc254d6bf946cf6cbce"} int32 %Bytes{1219684} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"9b5b1cb969ac2f4c4302029aa43250909979b6efce0eeb37541f78d70b9fd5e7"} int32 %Bytes{31237} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"9b5b1cb969ac2f4c4302029aa43250909979b6efce0eeb37541f78d70b9fd5e7"} int32 %Bytes{31237} }
+		Component { string %Name{"tool"} string %Sha256{"9f500d98f03ad28801ff7e377e6e361d89ab0a1c8c29d6265637614e686aec7a"} int32 %Bytes{6240} }
+		Component { string %Name{"editor-win64"} string %Sha256{"b3f10c2a7423c8ab1228569beb9cbecb4bc2a2f39b9ca5e68287889751354ced"} int32 %Bytes{1254527} }
+		Component { string %Name{"manifest"} string %Sha256{"b93076058312f9a28f59931d0247444f04a6ad09d416728b30fc9164dff37b48"} int32 %Bytes{3626} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"bcdd9c227daab5419a4d88ea842f0b1e02f39ec49f53df6f3c9b267d45f1a3b2"} int32 %Bytes{56620} }
+	}
 }
 
 Package
@@ -962,6 +1045,35 @@ Package
 		Component { string %Name{"manifest"} string %Sha256{"b3f64311997d4bf3187b6b76d7b6d5c5d68542fa8d41802a9884d5c6172f66c7"} int32 %Bytes{10772} }
 		Component { string %Name{"banner"} string %Sha256{"d86c8f11eba56c4f3df7084557e4a3a336f0be6ad7567ec5af5bfd5220b476ec"} int32 %Bytes{46009} }
 	}
+
+	Version
+	{
+		string %Version{"2.2.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"156397f6c4b1fa9daf3e864645b85741ddc15a44cada8d79d349366bdaa0ff6c"}
+		string %BannerSha{"d86c8f11eba56c4f3df7084557e4a3a336f0be6ad7567ec5af5bfd5220b476ec"}
+		string %Changelog{"plasma.audio 2.2.0 (previous: 2.1.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"assets"} string %Sha256{"034c91fa056dfa553d6dcd816b1093b3817c0bd75e621741f865c8028b1df91c"} int32 %Bytes{38583} }
+		Component { string %Name{"icon"} string %Sha256{"156397f6c4b1fa9daf3e864645b85741ddc15a44cada8d79d349366bdaa0ff6c"} int32 %Bytes{35720} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"251c32efece895453ac5825c9fb388d80d726892a19e7133ae32c5801f95cecc"} int32 %Bytes{1466448} }
+		Component { string %Name{"tool"} string %Sha256{"2524350be1d182390add1c1211c20b2daabb8715c6e57ed217f77d41619239ab"} int32 %Bytes{10512} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"277100cfd8636401d7c666a9e08a89e8c391f5464ecbabb269fac53640bfafbb"} int32 %Bytes{1063582} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"277100cfd8636401d7c666a9e08a89e8c391f5464ecbabb269fac53640bfafbb"} int32 %Bytes{1063582} }
+		Component { string %Name{"manifest"} string %Sha256{"27ce48da11ea4e96c70a7d36598294c7ebda241bd4dc5b03c1b9ec279e0a5c14"} int32 %Bytes{10926} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"3d39cd0663bd946aae6e32c18752df495bc4b280349e2f49f1403f9a7cf8c717"} int32 %Bytes{4341920} }
+		Component { string %Name{"editor-win64"} string %Sha256{"72e259ab6fe610c8788d3bf404cda57e0133864326556b1714bf901c68b5f9c4"} int32 %Bytes{1183581} }
+		Component { string %Name{"banner"} string %Sha256{"d86c8f11eba56c4f3df7084557e4a3a336f0be6ad7567ec5af5bfd5220b476ec"} int32 %Bytes{46009} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"ed3f5cd9e24fea0a9b704ce9c76a8a42a646375807448faf6cde52ba1a17f967"} int32 %Bytes{1200480} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"f3cb37b313ad274449ae4adbe4cb77836f8669152b683776c67a3b2dcaddfee2"} int32 %Bytes{1047201} }
+	}
 }
 
 Package
@@ -1020,6 +1132,34 @@ The third-person view, head bone and camera shake components used to ship with G
 		Component { string %Name{"tool"} string %Sha256{"e59d4ebabe27457c084b471541981f71c976a5f24c23737e0158ec71db7f4516"} int32 %Bytes{7841} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"f82970a96490ce04596c7c8e8d20bfc412ac50d8fcd0e23e17d4ebd0eadd52ac"} int32 %Bytes{403955} }
 		Component { string %Name{"manifest"} string %Sha256{"fa455391ad3a5df80bac50c301ad887e211b9fff6098277efd234e87ac33c1c2"} int32 %Bytes{5087} }
+	}
+
+	Version
+	{
+		string %Version{"1.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{""}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"(none)"}
+		string %BannerSha{"(none)"}
+		string %Changelog{"plasma.cameras 1.1.0 (previous: 1.0.1)
+
+- The camera director tells its camera when it makes a hard cut, so motion blur and temporal anti-aliasing skip the cut frame and no longer smear across the cut.
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"sdk-linux64"} string %Sha256{"0c1b1d86960ac86bd6e31b45f75dd1fdbfd8bda2c562ad2926fe39a865f19c76"} int32 %Bytes{36687} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"0c1b1d86960ac86bd6e31b45f75dd1fdbfd8bda2c562ad2926fe39a865f19c76"} int32 %Bytes{36687} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"24c3c964444a3d259d9ab5e6f37d5e2e8673de7dc8277664d4b5e564709ad12f"} int32 %Bytes{660422} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"4e6e94ef41227ebb8faa10f69d6f64e50995e595a71d6a9e025a08e919f6625a"} int32 %Bytes{2301070} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"5b82c03d92eb4d1cb0ea4a2e22037b03bbcd3620af79b8a791ddc3fbac8bf6b8"} int32 %Bytes{400927} }
+		Component { string %Name{"editor-win64"} string %Sha256{"b9bb2783facda7a57306641b3184601689cbef41eb870604dc858e5c523c3da0"} int32 %Bytes{24335} }
+		Component { string %Name{"assets"} string %Sha256{"bb966ee26158720a775a5ca66be802953d86cff3a35bffca865d035b91988964"} int32 %Bytes{108577} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"be2b40e5b31ddce51619aa485b0a40d5b03b1b0203a723cd274cb229542b0470"} int32 %Bytes{86533} }
+		Component { string %Name{"tool"} string %Sha256{"e59d4ebabe27457c084b471541981f71c976a5f24c23737e0158ec71db7f4516"} int32 %Bytes{7841} }
+		Component { string %Name{"manifest"} string %Sha256{"f0b6a6b83e6d9582fbfee8d8b8b8c60235f18ce8339fbc97fd79d40ab909807c"} int32 %Bytes{5221} }
 	}
 }
 
@@ -1317,6 +1457,31 @@ The .NET runtime itself is an optional component. Install it and the package is 
 		Component { string %Name{"manifest"} string %Sha256{"cad71784a2c3039008e013cb64f02f7929d31bf128bc8fe40c72880588fb23ad"} int32 %Bytes{15048} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"eff3aabe9ecb8f863fbe81b2196f9f47efa7619755bc7f35135f7b87dbcacb1b"} int32 %Bytes{14860201} }
 	}
+
+	Version
+	{
+		string %Version{"1.4.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"344a9d430c0f6f573b55e7c311516ea3a40ada6bb6ed8ca30ce486b7984429e7"}
+		string %BannerSha{"9483edf25d160c3cebf49fa17e17057d980529041456ae0489fdd02f71f17fa4"}
+		string %Changelog{"plasma.csharp 1.4.0 (previous: 1.3.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"assets"} string %Sha256{"06a9c153de97365c119d18c8ac164a9802f43d78ec5c5593c845742761724231"} int32 %Bytes{518} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"0be1ce8140cff4b1839cc64d664f334048da99d0c858b3154edcda90b5b58532"} int32 %Bytes{43724} }
+		Component { string %Name{"icon"} string %Sha256{"344a9d430c0f6f573b55e7c311516ea3a40ada6bb6ed8ca30ce486b7984429e7"} int32 %Bytes{33353} }
+		Component { string %Name{"editor-win64"} string %Sha256{"4f0c50c00e3ff5478e6a203223e44c7e17c70ce884b045c70a5c558ae0ee0f24"} int32 %Bytes{406048} }
+		Component { string %Name{"tool"} string %Sha256{"72989ef53ff4bdae5275c2e62932af1f3366026ac88716d94cbd0916aa4d1581"} int32 %Bytes{36835802} bool %Optional{true} string %Label{"Bundled .NET 10 runtime (77 MB)"} }
+		Component { string %Name{"banner"} string %Sha256{"9483edf25d160c3cebf49fa17e17057d980529041456ae0489fdd02f71f17fa4"} int32 %Bytes{50064} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"cc6c0dffdee74cf2a9d9c6ad190dd35b533cc54df4bcbcb3db097b234f4db777"} int32 %Bytes{14861399} }
+		Component { string %Name{"manifest"} string %Sha256{"ce6499acedaaea88b5a56de346786882dbcd56565edebc41dc473c8d20c7d36a"} int32 %Bytes{15047} }
+	}
 }
 
 Package
@@ -1390,6 +1555,28 @@ Package
 		Component { string %Name{"editor-win64"} string %Sha256{"5aa335caf0338885c0077d8d47b47cbcc85dca51f13fdd3b84e699f16374bb38"} int32 %Bytes{468601} }
 		Component { string %Name{"localization"} string %Sha256{"5ddfddb7790286f11a334c425165697c3fc14c7a411ee3d08ce0e5f67f52e69e"} int32 %Bytes{468} }
 		Component { string %Name{"manifest"} string %Sha256{"d52fc6ffa92e4af860ce091b58ae971172d4eaa4afab8610a6230969df254403"} int32 %Bytes{2792} }
+	}
+
+	Version
+	{
+		string %Version{"0.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{""}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"(none)"}
+		string %BannerSha{"(none)"}
+		string %Changelog{"plasma.diversion 0.3.0 (previous: 0.2.2)
+
+- When project checks block a commit, the dialog now has an Open Validation button, which is the default. 'Fix first' is renamed Cancel.
+- Commits that pass the project checks include a summary of the checks that ran and any waivers, with their reasons, in the commit message.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"manifest"} string %Sha256{"2cfab14015120b79688015506d1e0cbc623db489ca9b3ac2c1ff738b3f3ebfd7"} int32 %Bytes{2793} }
+		Component { string %Name{"editor-win64"} string %Sha256{"4194c392547f42c8ce620e07ade489e9e0256d0af3e5ea0b4c232f1a31602347"} int32 %Bytes{465250} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"4280dba36330406677eb928401671806eab64ca184a270443dcc170a00f3d699"} int32 %Bytes{33718} }
+		Component { string %Name{"localization"} string %Sha256{"5ddfddb7790286f11a334c425165697c3fc14c7a411ee3d08ce0e5f67f52e69e"} int32 %Bytes{468} }
 	}
 }
 
@@ -1564,6 +1751,28 @@ Product, sandbox, deployment and client ids come from the 'eos' block of Runtime
 		Component { string %Name{"icon"} string %Sha256{"873f6bcc94c573cd26c35ba60482cd51190525648b49001e0a2b0cc3b268b13e"} int32 %Bytes{25298} }
 		Component { string %Name{"manifest"} string %Sha256{"f542fc8c95acc9b8b01a945f599de5c0809ad4a5ace3fe69289e635f7e9c1aa8"} int32 %Bytes{2876} }
 	}
+
+	Version
+	{
+		string %Version{"1.2.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"873f6bcc94c573cd26c35ba60482cd51190525648b49001e0a2b0cc3b268b13e"}
+		string %BannerSha{"2d59e76c63eac5a4b86c156226e6baae1b9b04d9db99ff1bc7fd4fa5ccbde74f"}
+		string %Changelog{"plasma.eos 1.2.0 (previous: 1.1.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"manifest"} string %Sha256{"16b856427db388d8134f8e8f05eafed467848fa54f8540a9ab5d6eff9d01a6f7"} int32 %Bytes{2878} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"2886e39d522420e80f5ea6c667b00492f2725840bbcf640bfd50b8d362cf6c44"} int32 %Bytes{156136} }
+		Component { string %Name{"banner"} string %Sha256{"2d59e76c63eac5a4b86c156226e6baae1b9b04d9db99ff1bc7fd4fa5ccbde74f"} int32 %Bytes{45582} }
+		Component { string %Name{"icon"} string %Sha256{"873f6bcc94c573cd26c35ba60482cd51190525648b49001e0a2b0cc3b268b13e"} int32 %Bytes{25298} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"9a695a7b1999071da2f577107800837dfd0b4b7b07970c40e990b0192af241a4"} int32 %Bytes{21449} }
+	}
 }
 
 Package
@@ -1661,6 +1870,34 @@ Package
 		Component { string %Name{"manifest"} string %Sha256{"a4681e77ddcaacc47dac2ea592702cd7be5cbf3b75208f2e20edf637225fef1f"} int32 %Bytes{3873} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"acb59af748405b6e1778359d97ba015d95642863eda29ad806877ad61f601c37"} int32 %Bytes{326675} }
 		Component { string %Name{"icon"} string %Sha256{"ee4b45fe3a64b4a8776ba924e91a9e2e767eff216f7dff00a655c7e7cce3bce4"} int32 %Bytes{37177} }
+	}
+
+	Version
+	{
+		string %Version{"0.4.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"ee4b45fe3a64b4a8776ba924e91a9e2e767eff216f7dff00a655c7e7cce3bce4"}
+		string %BannerSha{"74452ad80df4ddc77281f340920c215c6ad9734bc471b21670c540a90dc17b90"}
+		string %Changelog{"plasma.fluid 0.4.0 (previous: 0.3.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"assets"} string %Sha256{"04771383e071224f89eaadb2cefa5daf9730bfb2452e23194cf80ffd7aa1f807"} int32 %Bytes{51591} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"1ad209720fd915f936f869b92351903c8b8b1821f152fee6a4fb4dfa387cbad3"} int32 %Bytes{42712} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"21bc0d1598a7a16438e4b5b9902d99536ed4eda264cc3523a85f1199dc8ad2db"} int32 %Bytes{540544} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"7341ba22fcaa6e316bc61f34576c464b5d83a727163cab7fea9bd98a00629bb0"} int32 %Bytes{24535} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"7341ba22fcaa6e316bc61f34576c464b5d83a727163cab7fea9bd98a00629bb0"} int32 %Bytes{24535} }
+		Component { string %Name{"banner"} string %Sha256{"74452ad80df4ddc77281f340920c215c6ad9734bc471b21670c540a90dc17b90"} int32 %Bytes{43532} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"8e4c38d7e8e428498887eba0946a2ef7c8f010c4a075a6e42c3cbfa63330efb9"} int32 %Bytes{289643} }
+		Component { string %Name{"manifest"} string %Sha256{"8fcbb39e11760649c14370204381fa19425ef82261c3487e13d82bb956beab36"} int32 %Bytes{4008} }
+		Component { string %Name{"icon"} string %Sha256{"ee4b45fe3a64b4a8776ba924e91a9e2e767eff216f7dff00a655c7e7cce3bce4"} int32 %Bytes{37177} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"ff8c4e48e93e2c242cdac19791aff15fa72648186a84eb24863d6a05a7c00df0"} int32 %Bytes{1773325} }
 	}
 }
 
@@ -1940,6 +2177,31 @@ Building against a different FMOD version is supported: set FMOD_SDK_PATH to you
 		Component { string %Name{"assets"} string %Sha256{"f6d4a61f5bcdfc9fd5f0bee3d317dcb9c154af567a4e16ff6b1a09f7e3e2f6a1"} int32 %Bytes{38523} }
 		Component { string %Name{"editor-win64"} string %Sha256{"f70e917c6999c7e5c7b9bf92ee8e75e77f32fff6661df123aed03347235e7621"} int32 %Bytes{164902} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"43a41e71af71cb85dcf42a136c8990addc1be2a690f6307a572fc608024abf86"}
+		string %BannerSha{"1e0a3343f0426a6a837e6c45ee2c2f987bc10308c17917d01fed42c94470e5e0"}
+		string %Changelog{"plasma.fmod 1.3.0 (previous: 1.2.2)
+
+- Fixed a crash at engine shutdown when sound banks were still loaded after FMOD had shut down.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"sdk-win64"} string %Sha256{"041b3e83c007e89fc64eb7ea4e0ee706b8c17a48bc67e877922749151b488c9b"} int32 %Bytes{45964} }
+		Component { string %Name{"banner"} string %Sha256{"1e0a3343f0426a6a837e6c45ee2c2f987bc10308c17917d01fed42c94470e5e0"} int32 %Bytes{41974} }
+		Component { string %Name{"icon"} string %Sha256{"43a41e71af71cb85dcf42a136c8990addc1be2a690f6307a572fc608024abf86"} int32 %Bytes{26999} }
+		Component { string %Name{"manifest"} string %Sha256{"4dd442b529b5e30a74e9c33d1e390ae0b70326af7be2ed5496ca4f08fb40953d"} int32 %Bytes{4536} }
+		Component { string %Name{"tool"} string %Sha256{"51e35e2c899c0f2a673153d580c1b82214633fc234753f2162439ae0220f2982"} int32 %Bytes{6388} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"c75cdfb808e784e79ef9e1aeef43b9d1a3a827871a70c58667f9ad7b413043ff"} int32 %Bytes{189028} }
+		Component { string %Name{"editor-win64"} string %Sha256{"cb44337dfd71267e186d0f1fc6abfe3216a724500b6bfd81e252926ee2558a8d"} int32 %Bytes{156919} }
+		Component { string %Name{"assets"} string %Sha256{"f6d4a61f5bcdfc9fd5f0bee3d317dcb9c154af567a4e16ff6b1a09f7e3e2f6a1"} int32 %Bytes{38523} }
+	}
 }
 
 Package
@@ -2201,6 +2463,34 @@ FreeType ships with the package under the FreeType License; plTextMeshComponent 
 		Component { string %Name{"banner"} string %Sha256{"c8c8924f167c95e1e7a2b4cff4f468c3935d5da13fc337b0826d0577958ed55b"} int32 %Bytes{45660} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"d7b14a53cb79227a4a997c34051bb965b59de663815c7c33da0a0ad1c12e2f92"} int32 %Bytes{750168} }
 		Component { string %Name{"icon"} string %Sha256{"ef44d8b55108540de93047b182202e5468d3bc5e3f586a2ba8a0f04a1924fed5"} int32 %Bytes{31881} }
+	}
+
+	Version
+	{
+		string %Version{"2.1.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"ef44d8b55108540de93047b182202e5468d3bc5e3f586a2ba8a0f04a1924fed5"}
+		string %BannerSha{"c8c8924f167c95e1e7a2b4cff4f468c3935d5da13fc337b0826d0577958ed55b"}
+		string %Changelog{"plasma.gamecomponents 2.1.0 (previous: 2.0.1)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.cameras"} string %Range{"^1.0"} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"16c232544d1922e9b5e5fc4d88c21ff04abba3bd558b1f3653e5c71c81d06bb8"} int32 %Bytes{689150} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"2304895d81c9d56407ce37716b2a93be2d36b67c8e6bf03a9b411848297bb058"} int32 %Bytes{2278250} }
+		Component { string %Name{"manifest"} string %Sha256{"39f6234958358069e43853321caafff5d7886a77412655bf005772997ff7bfe7"} int32 %Bytes{3821} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"b6f045fcb91746862b625fa9f4218fd082e89ff824b15f778cb5a44e49d3096c"} int32 %Bytes{23943} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"b6f045fcb91746862b625fa9f4218fd082e89ff824b15f778cb5a44e49d3096c"} int32 %Bytes{23943} }
+		Component { string %Name{"assets"} string %Sha256{"bf9947c0f2dfdb1d8b0ef432e0c3c1a551e418e522694b639b08676327e6025f"} int32 %Bytes{61207} }
+		Component { string %Name{"banner"} string %Sha256{"c8c8924f167c95e1e7a2b4cff4f468c3935d5da13fc337b0826d0577958ed55b"} int32 %Bytes{45660} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"e0e1edc4d9ac3c4be14657fe089223c776e5e9f117d4c539f9017957121f8307"} int32 %Bytes{55720} }
+		Component { string %Name{"icon"} string %Sha256{"ef44d8b55108540de93047b182202e5468d3bc5e3f586a2ba8a0f04a1924fed5"} int32 %Bytes{31881} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"fba4c11f203b3ee471d4178300391095654c23c0a2bc3f9aead17634fc8b78c4"} int32 %Bytes{996489} }
 	}
 }
 
@@ -2500,6 +2790,35 @@ FreeType ships with the package under the FreeType License; the font asset uses 
 		Component { string %Name{"banner"} string %Sha256{"bc66d13063f5ecdad7a52b57ff91a8964faacad7893d36305a9f04ef29332c01"} int32 %Bytes{34704} }
 		Component { string %Name{"manifest"} string %Sha256{"f9b94522ce77ca8f085bc41cdc7cc717c65c2c116d647caac904ce616632819f"} int32 %Bytes{6086} }
 	}
+
+	Version
+	{
+		string %Version{"1.5.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"8717967488f23bd840f0632ed2e6fc993f09f92b8861c2f9abf353f398f89a50"}
+		string %BannerSha{"bc66d13063f5ecdad7a52b57ff91a8964faacad7893d36305a9f04ef29332c01"}
+		string %Changelog{"plasma.gameui 1.5.0 (previous: 1.4.1)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"editor-win64"} string %Sha256{"01fc405c47b6c8fcf1bd15acd445a6b557c95f02b99205c1b2b4b4a7e20c9167"} int32 %Bytes{969546} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"17a6f12b05f633ab6693b23fe69f6fdf7e1610b3185cb81c94cc0fc321ada9dc"} int32 %Bytes{1237844} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"44045be624163d02fe86181bef0ce089080b1ff2fd3da9e9bfd9a31328160ecb"} int32 %Bytes{111953} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"5deed8b1a91a330e41605b540926ad6b5886e2319d3384dcc4cee1bca839f8dc"} int32 %Bytes{3944507} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"7900089c4c6d4b7f5646d0c8dd577b36f1526deb9a4a43743c6432dbb765994d"} int32 %Bytes{1650561} }
+		Component { string %Name{"icon"} string %Sha256{"8717967488f23bd840f0632ed2e6fc993f09f92b8861c2f9abf353f398f89a50"} int32 %Bytes{20584} }
+		Component { string %Name{"tool"} string %Sha256{"bb779a46824b57d11655d693ffbb7a54696833e0de69cf33a214ff561ecff47d"} int32 %Bytes{12245} }
+		Component { string %Name{"manifest"} string %Sha256{"bb94e331478c79a0d0dab268792678105577e2512f945c839c0c4fbc42b9cf58"} int32 %Bytes{6229} }
+		Component { string %Name{"banner"} string %Sha256{"bc66d13063f5ecdad7a52b57ff91a8964faacad7893d36305a9f04ef29332c01"} int32 %Bytes{34704} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"f1e3c12609fa545cc12196e7332fdd1d8fc4dacdec4124bd7d01d4a496053d00"} int32 %Bytes{54517} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"f1e3c12609fa545cc12196e7332fdd1d8fc4dacdec4124bd7d01d4a496053d00"} int32 %Bytes{54517} }
+	}
 }
 
 Package
@@ -2793,6 +3112,36 @@ Jolt is compiled into the plugin, so there is nothing else to install."}
 		Component { string %Name{"sdk-win64"} string %Sha256{"e20980cc1de48cd005777fe120c941102155db635ba010d69d14cb1b89242a56"} int32 %Bytes{1646234} }
 		Component { string %Name{"icon"} string %Sha256{"e62068e93acbed9bb8ed3bcce19cc77fc3e286d325c3a63510725b265f8f3443"} int32 %Bytes{132842} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"e62068e93acbed9bb8ed3bcce19cc77fc3e286d325c3a63510725b265f8f3443"}
+		string %BannerSha{"76d8c57e489527cf8cf3e2bea5129a2d5b643ca50896b8c4135caf50afa26dc9"}
+		string %Changelog{"plasma.jolt 1.3.0 (previous: 1.2.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"29655593f17c27e5b17a05a5178003fe2b51be12790c111bec7cb0ab2097b5a1"} int32 %Bytes{1544410} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"29655593f17c27e5b17a05a5178003fe2b51be12790c111bec7cb0ab2097b5a1"} int32 %Bytes{1544410} }
+		Component { string %Name{"manifest"} string %Sha256{"48c1b85167bdf60982aad6874eabf47624102767829094ce92ce88103e16e94b"} int32 %Bytes{39612} }
+		Component { string %Name{"tool"} string %Sha256{"4980d8a4cb4c45c53d6579777a1b3b1d9d1c0a337c5c4b74e05ce6c6e55a59d3"} int32 %Bytes{35933} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"5325de82f7b0d8d77c3bebd67729be5c103a184e0bc90b42f6581b009fe352cb"} int32 %Bytes{1645878} }
+		Component { string %Name{"banner"} string %Sha256{"76d8c57e489527cf8cf3e2bea5129a2d5b643ca50896b8c4135caf50afa26dc9"} int32 %Bytes{60513} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"86ac3a2caa93eb217dd9bc8166cdf939a4fe09942fbb1dd78f907bce78c52f23"} int32 %Bytes{5541057} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"9be7babb8f0813dfcd377ee5d0223f07c60469c637cff7efee4a8e3d03411ded"} int32 %Bytes{16227628} }
+		Component { string %Name{"assets"} string %Sha256{"9f4c12440628d77790e10ba17e396505bee1bb033175c0d45a7137f40d750500"} int32 %Bytes{322620} }
+		Component { string %Name{"editor-win64"} string %Sha256{"a1095e920a6cc170a2128ac2b8ef9b093c523f6b6da027c711c0f4d75a4fee29"} int32 %Bytes{2585872} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"d1923191158f230f203b05cef617195dfbbc136ebed2b47531a0bb11a5e533c4"} int32 %Bytes{1846948} }
+		Component { string %Name{"icon"} string %Sha256{"e62068e93acbed9bb8ed3bcce19cc77fc3e286d325c3a63510725b265f8f3443"} int32 %Bytes{132842} }
+	}
 }
 
 Package
@@ -3079,6 +3428,37 @@ Package
 		Component { string %Name{"runtime-win64"} string %Sha256{"a6d995697be72a10b728e8e6ffc8e515cb2709fd4b1cf5155626f73918684386"} int32 %Bytes{198772} }
 		Component { string %Name{"localization"} string %Sha256{"d251f0eaf755945b6c74b84f2b464151a7e124c5e0dcce89d3a6db9a4d26ba56"} int32 %Bytes{6443} }
 	}
+
+	Version
+	{
+		string %Version{"1.5.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"54143436ddf2443f283a7f1e501335cee9217d7323cd9895ceb68f84a3fc0d66"}
+		string %BannerSha{"7685f5a9ed4560b3fb2902872670e6b0cad8da649608fefa48af6036309949ec"}
+		string %Changelog{"plasma.kraut 1.5.0 (previous: 1.4.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"editor-win64"} string %Sha256{"074e25fbab21f9f4c41fced935580b0e2616aaad1ea4d277a6bd45b2108b5659"} int32 %Bytes{341706} }
+		Component { string %Name{"tool"} string %Sha256{"1f94cf575a3e7cf8a43e7ec962f02c78abfdfb5cae58a90016be81f4b3ae5658"} int32 %Bytes{8831} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"27e693461358e14193dc28854c500a94b570225421263959ce0b3cc8d3db5879"} int32 %Bytes{149046} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"27e693461358e14193dc28854c500a94b570225421263959ce0b3cc8d3db5879"} int32 %Bytes{149046} }
+		Component { string %Name{"icon"} string %Sha256{"54143436ddf2443f283a7f1e501335cee9217d7323cd9895ceb68f84a3fc0d66"} int32 %Bytes{27619} }
+		Component { string %Name{"banner"} string %Sha256{"7685f5a9ed4560b3fb2902872670e6b0cad8da649608fefa48af6036309949ec"} int32 %Bytes{39648} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"79f558a493435071e1ac91aff3bf18db8c026506b37abaa640692f509c575ca7"} int32 %Bytes{321101} }
+		Component { string %Name{"assets"} string %Sha256{"93e974a8f13659802cd74e07b6ddfa001d25b1c53038d8d3b42ebeb72ef77a92"} int32 %Bytes{26124} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"c239a6503010af4ee7e9cf5e6f66a9914006960aa308dd856f6f032b7b0d42c2"} int32 %Bytes{191809} }
+		Component { string %Name{"localization"} string %Sha256{"d251f0eaf755945b6c74b84f2b464151a7e124c5e0dcce89d3a6db9a4d26ba56"} int32 %Bytes{6443} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"d52aa2aaa6a1bda44f9b3aab69463edcfcebcaa0d73f54615804d99ff102a6f5"} int32 %Bytes{1161424} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"d85d3d33321e25c9f577ee6c5c4054ae41548b4d937e102f5e83754d152196fb"} int32 %Bytes{158025} }
+		Component { string %Name{"manifest"} string %Sha256{"fa2ddef8ce11f333ec6091cc245533f584665ba5a1cfe5ca5c8514a5b3573d5c"} int32 %Bytes{8054} }
+	}
 }
 
 Package
@@ -3289,6 +3669,29 @@ Package
 		Component { string %Name{"sdk-win64"} string %Sha256{"8821f3634df7822813e31dca5c83428c978259fdf9aea4a83f08330d5c6a77a9"} int32 %Bytes{139890} }
 		Component { string %Name{"icon"} string %Sha256{"a7ea415a10fcf5c5a68e065708bc5558d15a0ac97b063c45a6a7692dfbd8f259"} int32 %Bytes{58064} }
 	}
+
+	Version
+	{
+		string %Version{"0.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"a7ea415a10fcf5c5a68e065708bc5558d15a0ac97b063c45a6a7692dfbd8f259"}
+		string %BannerSha{"2981d2d4669203b6e843739dd26b4b66bca2361ac72ab1b0add1539b45de1fd5"}
+		string %Changelog{"plasma.materialx 0.3.0 (previous: 0.2.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"banner"} string %Sha256{"2981d2d4669203b6e843739dd26b4b66bca2361ac72ab1b0add1539b45de1fd5"} int32 %Bytes{46545} }
+		Component { string %Name{"assets"} string %Sha256{"4bcccef78e9c19439168c84ee9ada42e98d81561a54217d1517c29f44dbe628a"} int32 %Bytes{240559} }
+		Component { string %Name{"editor-win64"} string %Sha256{"6415f668b30e0c2dca8d64d9f6f93af0601c3d4ec25e9403c0296dcc80a6d1ce"} int32 %Bytes{658938} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"8821f3634df7822813e31dca5c83428c978259fdf9aea4a83f08330d5c6a77a9"} int32 %Bytes{139890} }
+		Component { string %Name{"icon"} string %Sha256{"a7ea415a10fcf5c5a68e065708bc5558d15a0ac97b063c45a6a7692dfbd8f259"} int32 %Bytes{58064} }
+		Component { string %Name{"manifest"} string %Sha256{"ab5d127ff930f6aa244a59001586a20bf1616965a478cfc60fd75b732df06e94"} int32 %Bytes{15858} }
+	}
 }
 
 Package
@@ -3462,6 +3865,28 @@ Package
 		Component { string %Name{"icon"} string %Sha256{"ac574119043d7adbf166c5391f37c7b095e22cb5c31d8301e395601ba2cf5041"} int32 %Bytes{36689} }
 		Component { string %Name{"manifest"} string %Sha256{"e092545d63a15a619cba8bc0164a727a06bd0601cf1d739fd156d2cf2d4d691d"} int32 %Bytes{2502} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"ac574119043d7adbf166c5391f37c7b095e22cb5c31d8301e395601ba2cf5041"}
+		string %BannerSha{"0a850dc0ef0554f82823c6720ce818c262a03118f0efc2a4eaaad8d210cb9260"}
+		string %Changelog{"plasma.mcp 1.3.0 (previous: 1.2.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"manifest"} string %Sha256{"03d589fefe2090f70ed027835b38df4428d90a762a0bc4aed3bb7fda8a7f6c62"} int32 %Bytes{2501} }
+		Component { string %Name{"banner"} string %Sha256{"0a850dc0ef0554f82823c6720ce818c262a03118f0efc2a4eaaad8d210cb9260"} int32 %Bytes{45132} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"294fe41c7daa33d30bc5afc513454a88f67f3bcc47b5cf5b32f817becd07b794"} int32 %Bytes{25274} }
+		Component { string %Name{"icon"} string %Sha256{"ac574119043d7adbf166c5391f37c7b095e22cb5c31d8301e395601ba2cf5041"} int32 %Bytes{36689} }
+		Component { string %Name{"editor-win64"} string %Sha256{"f95f8aa5a73fc9f353a01f9c500a8b9f3974692f6a43819f041729b056255485"} int32 %Bytes{305364} }
+	}
 }
 
 Package
@@ -3564,6 +3989,43 @@ Currently P1 of the plan: blockout parity with per-face material slots. Sub-obje
 		Component { string %Name{"editor-win64"} string %Sha256{"6159cc0ef6bddfcab6cc1113376dc28508d73c591fd5b09c9218ac6c0117c90e"} int32 %Bytes{456720} }
 		Component { string %Name{"manifest"} string %Sha256{"69ec4246ca00fd0302cfa0bb8de96eb463cb98f08008a0577e0357191bfe723f"} int32 %Bytes{9593} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"aa93aa1e0e1bf4ec630a68eed79c24bddb3f41e99bb7cbf4f5d1915add43e1fb"} int32 %Bytes{227632} }
+		Component { string %Name{"icon"} string %Sha256{"d45739e0408b3ecd4a6bcd7007d3befff5559cb9f25e4719a4ed7c9d143be973"} int32 %Bytes{26458} }
+	}
+
+	Version
+	{
+		string %Version{"0.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"d45739e0408b3ecd4a6bcd7007d3befff5559cb9f25e4719a4ed7c9d143be973"}
+		string %BannerSha{"39f0f712ea77a605522c5804547a18f2bccde40747db036175fe1104048995c5"}
+		string %Changelog{"plasma.modeling 0.3.0 (previous: 0.2.2)
+
+- Breaking: Carve is renamed Bake Cuts. Cutters already cut live, so Bake Cuts only makes the cut permanent and deletes the cutter. The action ID changed from Modeling.Carve to Modeling.BakeCuts, so custom shortcuts bound to the old ID must be rebound. The MCP brush operation 'carve' is now 'bake_cuts'.
+- Breaking: Snap To Grid is on by default, so new drawing and edits land on grid points unless you switch it off.
+- Cutters now accept any closed shape. A cutter that is not convex, for example after you move one of its vertices or extrude a face, is split into convex pieces automatically, so you no longer need to run Decompose on it first.
+- Rooms: a cutter that passes through the walls of inside-out brushes opens one passage between them, with walls that face into the passage. A cutter through a single wall makes an alcove. Materials on the passage sides are kept when you bake.
+- New Snap To Grid option (Alt+G, also in the Modeling panel). It snaps drawing, moving, extruding, clipping and pivot edits to the grid. The grid step follows the editor's translation snap, or 0.25 m while editor snapping is off.
+- Dragging a material over brush faces now previews it on the face under the cursor. Dropping a material on one face no longer changes every face that uses the default material slot.
+- Cutters are drawn with a transparent material tinted by the object's colour.
+- Fixed brushes that kept showing their old mesh after an edit, and fixed brush data that could become invalid after other brushes in the scene were deleted.
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"runtime-macos64"} string %Sha256{"1b6403f4502339f32f2cc8e36f4a53bd0468021a5e2f8e1704195c670bad9686"} int32 %Bytes{434803} }
+		Component { string %Name{"tool"} string %Sha256{"27a6852bb82d38380291752d3b21c06a5ded4511ef32528da5b0f57c73779a52"} int32 %Bytes{45153} }
+		Component { string %Name{"assets"} string %Sha256{"28b5304ca6681f10bdf7c315980f5ed745e608a34397404db143b3a81fc0c9cd"} int32 %Bytes{28340} }
+		Component { string %Name{"editor-win64"} string %Sha256{"36721b1ea793c18b453b2aeb78b9b6ba4ba3775e6a5c2002776087b8fa172355"} int32 %Bytes{458027} }
+		Component { string %Name{"banner"} string %Sha256{"39f0f712ea77a605522c5804547a18f2bccde40747db036175fe1104048995c5"} int32 %Bytes{38184} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"8008ee311ef14e3f600c8c0385ab01422840391fcd85071b93ce8af006cff88f"} int32 %Bytes{249545} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"9db0405c9e131419b2dde0a051ecdff4289ddfa2f78a711a8bff37cb32d89c9a"} int32 %Bytes{47886} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"9db0405c9e131419b2dde0a051ecdff4289ddfa2f78a711a8bff37cb32d89c9a"} int32 %Bytes{47886} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"b89a35b1acb988554a43a2cf8d94cde8d48c054db7f2a4294475c159a0a6d356"} int32 %Bytes{1357385} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"bf2c220f816f23ea4cdfd02aed4ab8376ecb14482aff89d2bc4c369c3e657b90"} int32 %Bytes{88466} }
+		Component { string %Name{"manifest"} string %Sha256{"c7424542c1a67e11648ca7685dbdddbb96d118e9bc2f3e3cab6770fa4b678ba0"} int32 %Bytes{9737} }
 		Component { string %Name{"icon"} string %Sha256{"d45739e0408b3ecd4a6bcd7007d3befff5559cb9f25e4719a4ed7c9d143be973"} int32 %Bytes{26458} }
 	}
 }
@@ -3864,6 +4326,42 @@ Physics-aware, so it expects the Jolt plugin to be enabled. Jolt ships with the 
 		Component { string %Name{"runtime-win64"} string %Sha256{"69bcc0686058cbfaad84f655c56e0af5d1e3c3583a3293288bb264e0cc7ce7bb"} int32 %Bytes{557993} }
 		Component { string %Name{"icon"} string %Sha256{"9b2c4ed6f7464bb8c5332ccaac9b96c1cd646484777afd29874e6ddf92297f2e"} int32 %Bytes{50344} }
 	}
+
+	Version
+	{
+		string %Version{"1.4.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"9b2c4ed6f7464bb8c5332ccaac9b96c1cd646484777afd29874e6ddf92297f2e"}
+		string %BannerSha{"59a2fdc49cca6d3e147513f0081d07f503c2380e9765e5a38e077cd12bf569ec"}
+		string %Changelog{"plasma.networking 1.4.0 (previous: 1.3.2)
+
+- Breaking: A second Platform-driver peer in the same process now fails to start because the platform transport is already in use. It no longer falls back to ENet silently.
+- Breaking: C++ API: the public plNetworkPeer::m_Peers list and m_iHostID member were removed. Use plNetworkPeer::GetPeerCount() instead.
+- Networked properties: a change held back by the send rate is now sent on a later update. Before, it could be dropped.
+- Networked transforms on scene objects that nobody owns are now simulated and sent by the host or dedicated server.
+- When a host stops, it sends its last queued messages and disconnects every client right away, so clients no longer wait for a timeout.
+- Several network peers can now run independently in one process, for example a host and its clients during testing. A host that fails to start listening releases its socket at once.
+- Added a two-client replication test suite and a bandwidth test suite with byte limits per client.
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.jolt"} string %Range{"^1.0"} }
+		Component { string %Name{"tool"} string %Sha256{"0ff62a01d9324b58a752de6955b7b6a8a19c1d92a51328a22f8135b9cdc69afb"} int32 %Bytes{4020} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"424d9ec59d3ec20460d5801ed2006dca5e39131a9398331262379353f59d2e48"} int32 %Bytes{488084} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"42ff4cf7eb74160a9da91762d6d731c7fe655651df04d8806df8d2dd834bd2b9"} int32 %Bytes{62221} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"42ff4cf7eb74160a9da91762d6d731c7fe655651df04d8806df8d2dd834bd2b9"} int32 %Bytes{62221} }
+		Component { string %Name{"banner"} string %Sha256{"59a2fdc49cca6d3e147513f0081d07f503c2380e9765e5a38e077cd12bf569ec"} int32 %Bytes{52727} }
+		Component { string %Name{"icon"} string %Sha256{"9b2c4ed6f7464bb8c5332ccaac9b96c1cd646484777afd29874e6ddf92297f2e"} int32 %Bytes{50344} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"a9490ee57f377270c24eb3e54296d43fa4825d93cc00b0f50f7416e1bfe96b19"} int32 %Bytes{924775} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"b00610db831fa1a6bf1537bfd748e2e6a0ddb6ac233b9c1e938474f6b46fe2cc"} int32 %Bytes{138077} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"c28c67dba9088a4d40ea29a74e029915e2778e5b3db55edf22d92e37f6058aea"} int32 %Bytes{3279500} }
+		Component { string %Name{"manifest"} string %Sha256{"c41f772b48f1a851dfaf8aea901d24614118a5d007c6f2d26bbcdc32a421ec6f"} int32 %Bytes{4898} }
+		Component { string %Name{"editor-win64"} string %Sha256{"e9c4a2d5ce29e7805907888d51b2e3a7d854cac4990051bc1aa2d09caa54c3e9"} int32 %Bytes{52985} }
+	}
 }
 
 Package
@@ -4111,6 +4609,28 @@ The OpenXR loader ships with the package. A runtime for the headset - SteamVR, O
 		Component { string %Name{"runtime-win64"} string %Sha256{"d39ec93f46b1a6aada5d42d3cec9d21195f519f94921cf281ad0f7a5e6ddc318"} int32 %Bytes{537335} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"e56ebe013132a86ecd354711e3c97be219d9decc8ee9782312ca67fd562eb041"} int32 %Bytes{19311} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"1f62d765474b6821b2b7028f106b0001d9ac2a92c8e5031efa87113c0fb0f294"}
+		string %BannerSha{"aa0a93421fff9a6cecac6ea7ce2f5f184279136d4a937ea1c2c6487b9aaf999e"}
+		string %Changelog{"plasma.openxr 1.3.0 (previous: 1.2.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"icon"} string %Sha256{"1f62d765474b6821b2b7028f106b0001d9ac2a92c8e5031efa87113c0fb0f294"} int32 %Bytes{32064} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"205f47894fe29b1ada6159e0b4f3a5688bce4e8e8a8a240db06211111fdbe112"} int32 %Bytes{527618} }
+		Component { string %Name{"manifest"} string %Sha256{"34c6e6f8585707673a345656ca447f3a2fa8623784ce5c7bed36ec79b032bb1f"} int32 %Bytes{2959} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"7394ce810faa93e7d5411f2c0f9dbc81b1588c744ded74ebeaf79362f6411d91"} int32 %Bytes{19286} }
+		Component { string %Name{"banner"} string %Sha256{"aa0a93421fff9a6cecac6ea7ce2f5f184279136d4a937ea1c2c6487b9aaf999e"} int32 %Bytes{46088} }
+	}
 }
 
 Package
@@ -4175,6 +4695,43 @@ The particle shaders ship with the engine, so installing this needs nothing furt
 		Component { string %Name{"banner"} string %Sha256{"d912e7c05feca9706d216f193af21cf1740fe37187c9c8797b4414e4a572074f"} int32 %Bytes{321259} }
 		Component { string %Name{"assets"} string %Sha256{"f1d932607d509fa941ea00737224eb237f014166d3a8701349fc5f8212d68afb"} int32 %Bytes{12433} }
 		Component { string %Name{"icon"} string %Sha256{"f787059e29e3973bfe61e5542c2cc11527c3beddbca33cd246566b9d53746366"} int32 %Bytes{173512} }
+	}
+
+	Version
+	{
+		string %Version{"1.10.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"3b97187bb13cf2f8d8d5a5c6be873e5e8222e7df91853139c72dcffa563ea996"}
+		string %BannerSha{"dbd8bd83ab4a34da1910b83a7178067e1c7652147f35087dbc070aad3360961a"}
+		string %Changelog{"plasma.particles 1.10.0 (previous: 1.9.2)
+
+- Breaking: Function nodes now take angles in degrees by default. Existing function nodes load with Radians switched on, so saved effects behave as before.
+- New effect graph nodes: split and combine vector and colour, swizzle, distance, cross, reflect, project, rotate about axis, power, step, smooth step, inverse lerp, atan2, math constants, logic and not, random range, random integer and random vector, vector noise, and local and world space transforms. Function and math nodes gain trig, exp, log, rounding, sign, reciprocal, square, degree and radian conversion, and modulo.
+- New Curve Over Life and Gradient Over Life nodes driven by normalized age, age or speed, with size, opacity and emissive presets. They can use curve and gradient assets. New graph inputs include remaining life, effect scale and axes, and the camera's forward, right and up directions.
+- New Masked render mode that clips at an Alpha Cutoff and draws with opaque geometry, with optional shadow casting. New Surface (PBR) lighting mode with roughness, metallic, specular and an optional ORM map. Adds a Blood template that uses it.
+- Distortion particles now work, with a distortion texture and strength setting. The Particles.ShowDistortion CVar shows the offsets they add up.
+- Quads facing their particle direction keep their orientation when a particle slows down, controlled by the new Min Speed and Turn Smoothing settings. Emitter-direction facing can sample the direction live or at spawn. Normal-mapped particles are now lit correctly.
+- Fixed emitter axes in prefabs and local-space effects, and fixed trail issues. The effect preview has a stage and a Backdrop menu with Stage, Floor and None options.
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"07df48add0493778cec7b260cc16a46b146a835dbcb148804c2cfbfb2d0c71c5"} int32 %Bytes{326651} }
+		Component { string %Name{"tool"} string %Sha256{"3b3a961935304bdfdd4f62b5bbc4ccd64cb4aabe90334f87f87f12bdb6302fae"} int32 %Bytes{7122} }
+		Component { string %Name{"icon"} string %Sha256{"3b97187bb13cf2f8d8d5a5c6be873e5e8222e7df91853139c72dcffa563ea996"} int32 %Bytes{52268} }
+		Component { string %Name{"assets"} string %Sha256{"45cbc085652a8609f89ec1556ac2c8b9959ea47a787e9a95c7ef5ebbd354b1e0"} int32 %Bytes{42440} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"8075cd6674555bb1227306becdd40d83ee75fdfdb8d5cb0954098af008f7cfd9"} int32 %Bytes{1754206} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"a896331347e91ca29a6c3d16957086b18f3408eaefbcbf03dc81f0adde110d04"} int32 %Bytes{1162570} }
+		Component { string %Name{"manifest"} string %Sha256{"c8a651535f9b134cea7afe07473ec285d2aa9833a2859b95971092144a28e508"} int32 %Bytes{9325} }
+		Component { string %Name{"banner"} string %Sha256{"dbd8bd83ab4a34da1910b83a7178067e1c7652147f35087dbc070aad3360961a"} int32 %Bytes{48672} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"de570a7557736246f063e17251126bcb689488d175b666502bd124a59aa81005"} int32 %Bytes{7618050} }
+		Component { string %Name{"editor-win64"} string %Sha256{"f45dccc2ab0f140d639d15e714a172b29f16d8ebbcdf7865b5c0275d3da1349c"} int32 %Bytes{824958} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"ff2ed5b9d6923eb27753fbde8a7c3d6f588623c3e3700d18f94e39faff0d2fa9"} int32 %Bytes{154233} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"ff2ed5b9d6923eb27753fbde8a7c3d6f588623c3e3700d18f94e39faff0d2fa9"} int32 %Bytes{154233} }
 	}
 
 	Version
@@ -4738,6 +5295,35 @@ Package
 		Component { string %Name{"editor-win64"} string %Sha256{"e61a5a05f2a3e20e28f8eb039d0b8ebc483b7fc29951d36450d978cac4df4194"} int32 %Bytes{189827} }
 		Component { string %Name{"icon"} string %Sha256{"f4d0f6147b481c7aab78c41757b1f42de8b71d99a0daad396c315ba190667700"} int32 %Bytes{22894} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"f4d0f6147b481c7aab78c41757b1f42de8b71d99a0daad396c315ba190667700"}
+		string %BannerSha{"738d9ef9c09ac9956a77047f28cd5169b369c0821e5d87093df0bd967eecac76"}
+		string %Changelog{"plasma.procgen 1.3.0 (previous: 1.2.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"tool"} string %Sha256{"152aa35970c504b36edd5b1031eb41b64b749e4cdd88b3fde3c4a7452ce25ed5"} int32 %Bytes{8945} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"477c546fbf14bb3bf466d9eb180678c75b591291591f580fcfbc4852b688e34b"} int32 %Bytes{44987} }
+		Component { string %Name{"banner"} string %Sha256{"738d9ef9c09ac9956a77047f28cd5169b369c0821e5d87093df0bd967eecac76"} int32 %Bytes{42497} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"81e654bf1d7e311126e289604c79b3ce0c5c55afdf1ad89f9f0adb4b4a3ba481"} int32 %Bytes{316751} }
+		Component { string %Name{"manifest"} string %Sha256{"91624c8b41cba02b49ead1e817d3b2e7f427c15da2bc4b096e4c12fbe2c194e2"} int32 %Bytes{3971} }
+		Component { string %Name{"editor-win64"} string %Sha256{"9befd68a55ef81879eb94eeeede639cd0fc3718a5e8ce6f288ab9a52c2493c3e"} int32 %Bytes{183932} }
+		Component { string %Name{"assets"} string %Sha256{"9d3facc7899b09dd99ba11116856268faa855b94ca4e1ce3539ff7963a3aa69d"} int32 %Bytes{74773} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"d3e2603a1ca7620bfa7d98e1d1d754d296723f05411e8aea04b519c1063f9921"} int32 %Bytes{22995} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"d3e2603a1ca7620bfa7d98e1d1d754d296723f05411e8aea04b519c1063f9921"} int32 %Bytes{22995} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"e2a35e82741684cbfd4ff1274895b539e856e452cdeed59d15a426d582edc843"} int32 %Bytes{1868158} }
+		Component { string %Name{"icon"} string %Sha256{"f4d0f6147b481c7aab78c41757b1f42de8b71d99a0daad396c315ba190667700"} int32 %Bytes{22894} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"f8ff7c42a844b377379a82ecb31d071b17fe9589b6b8840802b92c458b124fc3"} int32 %Bytes{603845} }
+	}
 }
 
 Package
@@ -4980,6 +5566,29 @@ Package
 		Component { string %Name{"icon"} string %Sha256{"68aa99d64e04b5de2d358a220f61d4d22d5c47adaf5e5f8cf8d8c3a7b4bd641b"} int32 %Bytes{18672} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"a3dc2132a8e290cc5192c298111c0457a52f7657e4b50093d35844a7119a8537"} int32 %Bytes{22886} }
 		Component { string %Name{"tool"} string %Sha256{"d4354e2163bd84dede6cba5ea15beab9ec81abcd15eae839b0e274a9380e4053"} int32 %Bytes{9591367} bool %Optional{true} string %Label{"RenderDoc capture library (26 MB)"} }
+	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"68aa99d64e04b5de2d358a220f61d4d22d5c47adaf5e5f8cf8d8c3a7b4bd641b"}
+		string %BannerSha{"4ed86ca7fd25425c01d2f565e23af4c8cfbf91b1fa7019142365fa82096e5352"}
+		string %Changelog{"plasma.renderdoc 1.3.0 (previous: 1.2.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"sdk-win64"} string %Sha256{"449cdd7325238d3b46b70298bf0a6d5a24f80a154298ccae4417e595da233221"} int32 %Bytes{13879} }
+		Component { string %Name{"banner"} string %Sha256{"4ed86ca7fd25425c01d2f565e23af4c8cfbf91b1fa7019142365fa82096e5352"} int32 %Bytes{39256} }
+		Component { string %Name{"icon"} string %Sha256{"68aa99d64e04b5de2d358a220f61d4d22d5c47adaf5e5f8cf8d8c3a7b4bd641b"} int32 %Bytes{18672} }
+		Component { string %Name{"manifest"} string %Sha256{"b5fb2e3d1ac95ffb17e4246e7e0cdebd0a310960c49dab734c1a8757fa58600b"} int32 %Bytes{2961} }
+		Component { string %Name{"tool"} string %Sha256{"d4354e2163bd84dede6cba5ea15beab9ec81abcd15eae839b0e274a9380e4053"} int32 %Bytes{9591367} bool %Optional{true} string %Label{"RenderDoc capture library (26 MB)"} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"ee055a5974736c36b1cb0ddab5d1a328213306e048ed5a8bd9fac41d75a5031f"} int32 %Bytes{22849} }
 	}
 }
 
@@ -5271,6 +5880,36 @@ Self-contained: RmlUi and its SVG support are compiled into the plugin, and the 
 		Component { string %Name{"sdk-win64"} string %Sha256{"c61a6f968ded0047a255e12817a65b347b18eb7d34ea12565c516a5076f45517"} int32 %Bytes{237269} }
 		Component { string %Name{"icon"} string %Sha256{"ef7fe6bd2dc1a77ab83aa594a080ea465ac4bfd3e9f6d56032b1f980a13834a3"} int32 %Bytes{62650} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"ef7fe6bd2dc1a77ab83aa594a080ea465ac4bfd3e9f6d56032b1f980a13834a3"}
+		string %BannerSha{"1dae90758b59989423564e26763046fa6b6fc7f84fd162d8bf57ec273cd23253"}
+		string %Changelog{"plasma.rmlui 1.3.0 (previous: 1.2.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"banner"} string %Sha256{"1dae90758b59989423564e26763046fa6b6fc7f84fd162d8bf57ec273cd23253"} int32 %Bytes{41927} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"203e684d60bfb6535b3016d90ef1b70cdfb42c0b6cfe354e53b51bf98fcfdbca"} int32 %Bytes{12374893} }
+		Component { string %Name{"tool"} string %Sha256{"3abd3bdf69aadaa6a385be5e5700be3cb4249eef39d5c29af83210eb97966634"} int32 %Bytes{1850} }
+		Component { string %Name{"assets"} string %Sha256{"6f27b95642e314785d15fc7c3929d601ec3c02784c031c1f0af7335dd5ef6055"} int32 %Bytes{726647} }
+		Component { string %Name{"editor-win64"} string %Sha256{"8fbf6346743129e8b7a7cc2e440210a95fad780181d848423630a4bd98dee670"} int32 %Bytes{3133290} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"92825803b606d977449de540afcebdd01f2a85353e48387e0ce29ded8a1ce132"} int32 %Bytes{3310871} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"983544f3ed32fe0d008a40e4d94a5af0a93754f9f6d72664ec885692ae6ba258"} int32 %Bytes{2106712} }
+		Component { string %Name{"manifest"} string %Sha256{"a877a1864f1bd8ad485f591152622bfc34f67b05d5fbdcd08c5aad3a5e268e33"} int32 %Bytes{11906} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"b2da00228ad2326ae7a4aa6aafa3fc29220bf9a1fa372294f5aec580f892871e"} int32 %Bytes{220165} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"b2da00228ad2326ae7a4aa6aafa3fc29220bf9a1fa372294f5aec580f892871e"} int32 %Bytes{220165} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"e45dc8c52d210a40cff51bf526db34d0b8df3faae3f61b16b8f9f2c278ab1a20"} int32 %Bytes{236975} }
+		Component { string %Name{"icon"} string %Sha256{"ef7fe6bd2dc1a77ab83aa594a080ea465ac4bfd3e9f6d56032b1f980a13834a3"} int32 %Bytes{62650} }
+	}
 }
 
 Package
@@ -5473,6 +6112,34 @@ Currently a work-in-progress skeleton: the Sequence asset type, an empty timelin
 		Component { string %Name{"editor-win64"} string %Sha256{"88c67e38912b284d4e5bd2ed0e6004df6b47e8f34523c871dc236aecc8ab691d"} int32 %Bytes{571172} }
 		Component { string %Name{"manifest"} string %Sha256{"a0053fccf8fe0e48d40a52e5bd1b210bd2df8eaae69adccf35bd954ff4a0751f"} int32 %Bytes{3923} }
 	}
+
+	Version
+	{
+		string %Version{"0.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"7f3652f7bb1a8dad6d504b6a7100199f1d57ed604f6dc8ef798cdeaaf814ef82"}
+		string %BannerSha{"55f63852fb9143fb98dc0a82adfd388097533c7d1189263151a066838151ce1b"}
+		string %Changelog{"plasma.sequencer 0.3.0 (previous: 0.2.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"sdk-linux64"} string %Sha256{"1b73fb5db6613e8eb31efdb9b93cb061cb38276e3cf4470f4043b9e82adf09d8"} int32 %Bytes{44510} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"1b73fb5db6613e8eb31efdb9b93cb061cb38276e3cf4470f4043b9e82adf09d8"} int32 %Bytes{44510} }
+		Component { string %Name{"editor-win64"} string %Sha256{"45a9741adcebf004dbe4649ea174e834a90cd97ce060452f76fa42b083710904"} int32 %Bytes{532764} }
+		Component { string %Name{"banner"} string %Sha256{"55f63852fb9143fb98dc0a82adfd388097533c7d1189263151a066838151ce1b"} int32 %Bytes{44481} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"621e6213cd3d8a6ffa92363aa1a8c445972a4ca455c530db67aa7166bfab9244"} int32 %Bytes{153075} }
+		Component { string %Name{"icon"} string %Sha256{"7f3652f7bb1a8dad6d504b6a7100199f1d57ed604f6dc8ef798cdeaaf814ef82"} int32 %Bytes{30074} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"808c5b9b5e07086e87b17d746fe1f51ced44a9c4a536cd5479557465d0dd33bd"} int32 %Bytes{55657} }
+		Component { string %Name{"tool"} string %Sha256{"816ea79a675e8fe163d6afc2114ba8367c00de01ad757be932b1cb1139e565c2"} int32 %Bytes{1052} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"8450d26df11cc74dc1a65eed5f11b9849dab45098d4f21991c77b9baeda2bc66"} int32 %Bytes{760613} }
+		Component { string %Name{"manifest"} string %Sha256{"a2ec5881695b255ef505b2cb3a66eca0b2ced2203626c9a56fecac70554ef280"} int32 %Bytes{4071} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"fbaabbc80d72cc4b61d8d5b2ff6ef8f227c90807cf8e3bbc9424889948d23f7b"} int32 %Bytes{222794} }
+	}
 }
 
 Package
@@ -5645,6 +6312,28 @@ Configure the app id in RuntimeConfigs/PlatformServices.ddl (backend block 'stea
 		Component { string %Name{"runtime-win64"} string %Sha256{"681d1b6cdcfa062b9e15be7b8e7c27a3677f794ef577b6bf998806eea6c3e942"} int32 %Bytes{117728} }
 		Component { string %Name{"icon"} string %Sha256{"77fcd36be3776cd0528c30a99d5b7ad7f1aaadeee6c40de67aa95fa4c3167dcd"} int32 %Bytes{36782} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"ec111d771ab4274a2032008c69454ee2e2542cb8e5a7db54c97526a1a9efa11d"} int32 %Bytes{14188} }
+	}
+
+	Version
+	{
+		string %Version{"1.2.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"77fcd36be3776cd0528c30a99d5b7ad7f1aaadeee6c40de67aa95fa4c3167dcd"}
+		string %BannerSha{"226279f15ea279ac4e11ff4971f33b8a9af5ed97052c6f9e41c3acb38e64bd2a"}
+		string %Changelog{"plasma.steam 1.2.0 (previous: 1.1.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"banner"} string %Sha256{"226279f15ea279ac4e11ff4971f33b8a9af5ed97052c6f9e41c3acb38e64bd2a"} int32 %Bytes{42900} }
+		Component { string %Name{"manifest"} string %Sha256{"40c77df35134cfb4cdafc54b93b6b866ce8cb2ed904443e0dcec1289b05577d8"} int32 %Bytes{2811} }
+		Component { string %Name{"icon"} string %Sha256{"77fcd36be3776cd0528c30a99d5b7ad7f1aaadeee6c40de67aa95fa4c3167dcd"} int32 %Bytes{36782} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"df71c77d854220132e010796854de03e3d87c779feae672531c42b430f130233"} int32 %Bytes{118109} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"e3a881c8103acae277f7059a9f19b26acec71aad5187d1ad53e1a7b9b332a17b"} int32 %Bytes{14166} }
 	}
 }
 
@@ -5922,6 +6611,35 @@ The terrain shaders ship with the engine, so installing this needs nothing furth
 		Component { string %Name{"tool"} string %Sha256{"cf2b272552f3ad80dbe6e000cf2650c4398786814db56139419d5546f7644518"} int32 %Bytes{2866} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"d239b919833b2dc6fcb6f0c9cc57c3ad8a59b48c26ea9947083e085621d19601"} int32 %Bytes{37291} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"b4da956b7c5176b8c032a37d61f7cc88561ee34f53765ae1f418339d133c050b"}
+		string %BannerSha{"15253bdc9de5c334b8746e91d229f577cbf23addd4794cf23a3260f44bba3685"}
+		string %Changelog{"plasma.terrain 1.3.0 (previous: 1.2.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"banner"} string %Sha256{"15253bdc9de5c334b8746e91d229f577cbf23addd4794cf23a3260f44bba3685"} int32 %Bytes{37208} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"35c70baf5513de08c61f35163bccc6e51752908c481c511ac694f6119a7a2354"} int32 %Bytes{37254} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"4938b91ff5c92de0fc8ab2b7663c3acdd7d0b50ad1c959449f9974dad6220f57"} int32 %Bytes{303101} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"4ce2ab3c05a733eab3f693ccb4f8ced914baa2509d95ce612e9723657c580624"} int32 %Bytes{1043443} }
+		Component { string %Name{"assets"} string %Sha256{"582408b55b2e00bc8d82f6cce777b33ccb72393bf2824e2ae15626d4a2c335d4"} int32 %Bytes{70657} }
+		Component { string %Name{"icon"} string %Sha256{"b4da956b7c5176b8c032a37d61f7cc88561ee34f53765ae1f418339d133c050b"} int32 %Bytes{28504} }
+		Component { string %Name{"tool"} string %Sha256{"cf2b272552f3ad80dbe6e000cf2650c4398786814db56139419d5546f7644518"} int32 %Bytes{2866} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"e0991f9f968f68dad8b29a3442e9febae5524e7fba05a4899a4424ec6627b2c0"} int32 %Bytes{173437} }
+		Component { string %Name{"manifest"} string %Sha256{"ea2cd38684651d1a0f307ec41e16c8053ad35fe7a7a3c3154e47b246937c05b6"} int32 %Bytes{4227} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"ee22bcc93dbfa4c90f5402ea3903acfd6826f4fabdd4b6cdade30883ca3f0204"} int32 %Bytes{17445} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"ee22bcc93dbfa4c90f5402ea3903acfd6826f4fabdd4b6cdade30883ca3f0204"} int32 %Bytes{17445} }
+		Component { string %Name{"editor-win64"} string %Sha256{"f0d929d848d7a43863c7fac66cb1359ff22b6ee00c4bbe22f6f6ee3e38fb2f82"} int32 %Bytes{14783} }
+	}
 }
 
 Package
@@ -6015,6 +6733,35 @@ Package
 		Component { string %Name{"icon"} string %Sha256{"1a9b214098a1f3e980cc7899b9f950a6f5887dfface64a576426f75a2d2f66c9"} int32 %Bytes{34630} }
 		Component { string %Name{"editor-win64"} string %Sha256{"2ce1ba51cf36ffae7b9a1d8083b20f73dc728308b0bd37e90dab576a238e8a46"} int32 %Bytes{8701453} }
 		Component { string %Name{"manifest"} string %Sha256{"ccf0f90cb5441503fb277f7083443024f8b1d6f0c2885eb327e577253eb3e756"} int32 %Bytes{67892} }
+		Component { string %Name{"banner"} string %Sha256{"fff569659828751448ecdd2d16f48f3a0df0a6e4d5768bffcfaa49c410b3f194"} int32 %Bytes{41241} }
+	}
+
+	Version
+	{
+		string %Version{"0.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"1a9b214098a1f3e980cc7899b9f950a6f5887dfface64a576426f75a2d2f66c9"}
+		string %BannerSha{"fff569659828751448ecdd2d16f48f3a0df0a6e4d5768bffcfaa49c410b3f194"}
+		string %Changelog{"plasma.usd 0.3.0 (previous: 0.2.2)
+
+- Breaking: Lights in existing linked stages can change brightness or orientation after the light conversion fixes. Check scenes that use rectangle, disk, sphere or spot lights.
+- Large live-linked stages appear sooner: each mesh first shows a quick, coarse preview, which is replaced by full-quality geometry when it is ready. Existing geometry stays visible while an edited mesh rebuilds.
+- Meshes are cached and shared: identical geometry used by different prims, material bindings or live links is built once and reused. Finished meshes are saved while the rest of the stage is still importing.
+- All imported meshes now get tangents that match the engine's own mesh import, so editing a material binding or normal map no longer rebuilds the geometry. Geometry conversion is faster, and the number of parallel mesh and texture builds now follows available memory to avoid paging.
+- USD light import fixes: rectangle and disk lights face the right way, area-light intensity keeps its source units, spotlight power accounts for its cone, and an optional light range is read. Lights from some third-party exporters now get the correct brightness.
+- Fixed USD meshes that could render fully bright depending on draw order. Removing a prim now also destroys its child objects.
+- The partition import dialog has a Select all / Select none button that covers collapsed branches, and the live view shows streaming progress.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"tool"} string %Sha256{"0778ee629eeb01e870efb0e8ec6bccaac10b20d91c9eda0389aea1f3d55e6a3a"} int32 %Bytes{5429} }
+		Component { string %Name{"icon"} string %Sha256{"1a9b214098a1f3e980cc7899b9f950a6f5887dfface64a576426f75a2d2f66c9"} int32 %Bytes{34630} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"2d886cd938876ea9d8852e3f02fade9435e531c9845f99ce196d4dcd9a92f0bd"} int32 %Bytes{3085778} }
+		Component { string %Name{"manifest"} string %Sha256{"7e960f34addd427fee085e76a15ad7d0a42fa0adb8bb95b4f920536e88c3930c"} int32 %Bytes{82309} }
+		Component { string %Name{"editor-win64"} string %Sha256{"a30c420fc3b805e43dba97f0d8aaac852eaf17ff2e188082815f0c070fd17322"} int32 %Bytes{12466530} }
 		Component { string %Name{"banner"} string %Sha256{"fff569659828751448ecdd2d16f48f3a0df0a6e4d5768bffcfaa49c410b3f194"} int32 %Bytes{41241} }
 	}
 }
@@ -6193,6 +6940,36 @@ Package
 		Component { string %Name{"icon"} string %Sha256{"ba1bb8c01432e6593c724d58a0b088758be8da46d9d934a3656ef06e10abe2a1"} int32 %Bytes{36620} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"e8b2d72b1101b79d9dcb86e7c1b29aab5ce4d300442c696e9d47d6db5fdcc032"} int32 %Bytes{377198} }
 		Component { string %Name{"editor-win64"} string %Sha256{"ede05940d3a3986306a6a09bb3aa3b5a39dbfdec8f864f6426d605b01e36070c"} int32 %Bytes{354090} }
+	}
+
+	Version
+	{
+		string %Version{"0.4.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"ba1bb8c01432e6593c724d58a0b088758be8da46d9d934a3656ef06e10abe2a1"}
+		string %BannerSha{"8ebf11663969a85b2e75ecea8cc4bbe559a345ab5d852a4f7b958ba3f9dc120e"}
+		string %Changelog{"plasma.vegetation 0.4.0 (previous: 0.3.2)
+
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"2719949836415c18f30a870d22ea7bba10e10fa7164f02d647e68916189f850e"} int32 %Bytes{598784} }
+		Component { string %Name{"editor-win64"} string %Sha256{"390eaa849db8eaa45dfa0dad7982dd4ba14f50aae85085b22c6526b7b8636af1"} int32 %Bytes{319844} }
+		Component { string %Name{"tool"} string %Sha256{"5afd548203b4fa7c6a1f41b31316a45e513d1ab19491eb30a4335a8280ce5730"} int32 %Bytes{5099} }
+		Component { string %Name{"assets"} string %Sha256{"6f1a5286a8744a9b324654f1aaba0c1f985b530395d9ac6841f0f3b24c20b6e1"} int32 %Bytes{35115} }
+		Component { string %Name{"banner"} string %Sha256{"8ebf11663969a85b2e75ecea8cc4bbe559a345ab5d852a4f7b958ba3f9dc120e"} int32 %Bytes{43621} }
+		Component { string %Name{"manifest"} string %Sha256{"ae21d8a8fc539dfc68ca019f63f9a0603b62581c043c4d1d691fedd4fedf4270"} int32 %Bytes{5666} }
+		Component { string %Name{"icon"} string %Sha256{"ba1bb8c01432e6593c724d58a0b088758be8da46d9d934a3656ef06e10abe2a1"} int32 %Bytes{36620} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"d2eecc470805198f9ec40ada25569e8ff2d7e5c963200ec57698192c5a0c3e11"} int32 %Bytes{332776} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"d55ef5759a206df34b5e94481ffc3fd633c5ce9d48b6bc69290141979f515d00"} int32 %Bytes{53698} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"d55ef5759a206df34b5e94481ffc3fd633c5ce9d48b6bc69290141979f515d00"} int32 %Bytes{53698} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"dafe752750417deac16806e49fb8984ae57b70c72982eef80aad022559006fb0"} int32 %Bytes{2184981} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"eda41c26108db44c23f3d90e21178ef950401ff17fb5dc9c874cb732e7860405"} int32 %Bytes{101184} }
 	}
 }
 
@@ -6454,6 +7231,37 @@ Package
 		Component { string %Name{"icon"} string %Sha256{"7ed81a9f3b29d02b98c62163dd130236ea7746cbd60a2e6f5517528d8a96770e"} int32 %Bytes{35907} }
 		Component { string %Name{"editor-win64"} string %Sha256{"95ac486e2f3cac88543f30198462fbdaacedc5339d54d5d9c29d38ab9261ecab"} int32 %Bytes{472124} }
 		Component { string %Name{"manifest"} string %Sha256{"cab009fc8637eb512719d1bc5fada10fec95cc0b8d07f65b977f702e9c8983fd"} int32 %Bytes{4083} }
+	}
+
+	Version
+	{
+		string %Version{"1.4.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"7ed81a9f3b29d02b98c62163dd130236ea7746cbd60a2e6f5517528d8a96770e"}
+		string %BannerSha{"67f70c6fdaaf6e969c2cad742d13bd35895d1bcd8809b43bc1b8b1b09b362747"}
+		string %Changelog{"plasma.visualscript 1.4.0 (previous: 1.3.2)
+
+- When you drag a wire onto empty canvas, the node palette ranks the suggestions by data type: exact matches first, then nodes that convert the value, then nodes that accept any value.
+- The node palette shows pin type names without the engine prefix, for example RigidBodyComponent.
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Requires { string %Id{"plasma.assets"} string %Range{"^1.0"} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"0737a91543555e5923a74e47117aaaf17872407131b885e056a44e12b99137f1"} int32 %Bytes{1183703} }
+		Component { string %Name{"manifest"} string %Sha256{"190665ce3d41c4f17e79cf4beff04a76b80d43d499b15f12d22b97b8dfff4455"} int32 %Bytes{4228} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"32fd1cdecfdb619962a54a6895dc72ffbef9b102f4ce25ea14bd61a349f9f1d8"} int32 %Bytes{379959} }
+		Component { string %Name{"tool"} string %Sha256{"568f46b9114aeb977ab856a54e40428f4178ed904ec6c4458797754747a0ec36"} int32 %Bytes{7859} }
+		Component { string %Name{"editor-win64"} string %Sha256{"64f6b59b5c62065241f78989045e0cb6e6c9321c39d9c0ba9551d154b03b4df6"} int32 %Bytes{429686} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"676b43288046d8658b517603cbb02089d9ba0cb3c801e6a8bcc81c51da53c59a"} int32 %Bytes{68726} }
+		Component { string %Name{"banner"} string %Sha256{"67f70c6fdaaf6e969c2cad742d13bd35895d1bcd8809b43bc1b8b1b09b362747"} int32 %Bytes{45332} }
+		Component { string %Name{"icon"} string %Sha256{"7ed81a9f3b29d02b98c62163dd130236ea7746cbd60a2e6f5517528d8a96770e"} int32 %Bytes{35907} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"9efcdedf6f1d40844e4436aecacd881c553bec0f10959e76b830965e73465c6e"} int32 %Bytes{46653} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"9efcdedf6f1d40844e4436aecacd881c553bec0f10959e76b830965e73465c6e"} int32 %Bytes{46653} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"a7d387bf0043782dafc59a9d75b631e5c810ed13114cd8fe853fe3fc85685802"} int32 %Bytes{208380} }
 	}
 }
 
@@ -6732,6 +7540,36 @@ The water shaders and the default Ocean/River/Lake profiles ship with the engine
 		Component { string %Name{"assets"} string %Sha256{"f012e6606a3d0646df2b9f806e71fae07b8d7c2c8ac2bd2b465d4c3a85aa6d36"} int32 %Bytes{44437} }
 		Component { string %Name{"sdk-win64"} string %Sha256{"f64582184a8e586cd14cbc7f4d1418126ce4a5a58ed9c3d2bf5f0c3f2dd5ba62"} int32 %Bytes{89737} }
 	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"36b6ada5a31c22df6934c857ff88688496df2c0e868693d7fb335f507f55a453"}
+		string %BannerSha{"e4738313c2d5d58debfcad7e15c3278028217dc9cf70ca96430081711fe1a9b4"}
+		string %Changelog{"plasma.water 1.3.0 (previous: 1.2.2)
+
+- Caustics on surfaces below the water use the sun's contact shadow from the engine's new contact shadows pass, which replaces the screen-space shadow pass they read before.
+- Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"tool"} string %Sha256{"074e233ce9dfd34aac35fa3773d4f7c7a8838aa6641c6e8c4c70f0a7b02582eb"} int32 %Bytes{3434} }
+		Component { string %Name{"assets"} string %Sha256{"0cf32de441be6cbb1f08c60f5b2fe066919e7548c4530d273115e6bb2863ee20"} int32 %Bytes{44468} }
+		Component { string %Name{"icon"} string %Sha256{"36b6ada5a31c22df6934c857ff88688496df2c0e868693d7fb335f507f55a453"} int32 %Bytes{35132} }
+		Component { string %Name{"manifest"} string %Sha256{"3b0e9b39a6952ca4f04f27cbf76e04e3145f2e7c73796b8843a62c7be4445068"} int32 %Bytes{6132} }
+		Component { string %Name{"runtime-linux64"} string %Sha256{"3d02bc37a8d67715ea93131c9b10c4a72487e921910b0cb1d5573b1aafb6a72a"} int32 %Bytes{2303226} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"80cc392dc8f1086a5e7a45623b104dce1aa9186adc8e5071b2a3645810f9e4ea"} int32 %Bytes{444701} }
+		Component { string %Name{"runtime-macos64"} string %Sha256{"810df9fc71b6141d43c26508d6433698ad3366caab84a2253f5d5a58dd540f04"} int32 %Bytes{712251} }
+		Component { string %Name{"sdk-linux64"} string %Sha256{"a8fd398c570dcb1bbc45d71594f6f36ded9270e146f683492a1288b71d519f0d"} int32 %Bytes{43983} }
+		Component { string %Name{"sdk-macos64"} string %Sha256{"a8fd398c570dcb1bbc45d71594f6f36ded9270e146f683492a1288b71d519f0d"} int32 %Bytes{43983} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"ad54efda3822eb01721ed1a4330b67f6071cbb4b02f841a27ab6af060861e735"} int32 %Bytes{89515} }
+		Component { string %Name{"editor-win64"} string %Sha256{"dfdd06b8a44ed2396155ea351158c34ca34fb30f84fdbf13056d31c424ad9393"} int32 %Bytes{294094} }
+		Component { string %Name{"banner"} string %Sha256{"e4738313c2d5d58debfcad7e15c3278028217dc9cf70ca96430081711fe1a9b4"} int32 %Bytes{42439} }
+	}
 }
 
 Package
@@ -6963,6 +7801,28 @@ Windows only, and binds to the system XInput library - nothing to install."}
 		Component { string %Name{"banner"} string %Sha256{"2df8b48b20ab35bc6d1087a798a0882ef4fb8a9025d607c729eba1ba004d507e"} int32 %Bytes{54254} }
 		Component { string %Name{"icon"} string %Sha256{"5609648af86915deb784881eeefbfec52eeb1ab38d7012b7d51f03ed3284ac27"} int32 %Bytes{75844} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"cde527a8087f525d6ab47091a562df1118018a9a0e01537cb1600e95538b3c4b"} int32 %Bytes{26145} }
+	}
+
+	Version
+	{
+		string %Version{"1.3.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.0"}
+		string %MaxEngine{"0.12.0"}
+		string %AbiTag{"win64-msvc19-0.12.0-abi7-dev"}
+		string %IconSha{"5609648af86915deb784881eeefbfec52eeb1ab38d7012b7d51f03ed3284ac27"}
+		string %BannerSha{"2df8b48b20ab35bc6d1087a798a0882ef4fb8a9025d607c729eba1ba004d507e"}
+		string %Changelog{"plasma.xboxcontroller 1.3.0 (previous: 1.2.2)
+
+- Rebuilt for engine 0.12.0; no functional changes.
+- Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev)."}
+		Component { string %Name{"banner"} string %Sha256{"2df8b48b20ab35bc6d1087a798a0882ef4fb8a9025d607c729eba1ba004d507e"} int32 %Bytes{54254} }
+		Component { string %Name{"icon"} string %Sha256{"5609648af86915deb784881eeefbfec52eeb1ab38d7012b7d51f03ed3284ac27"} int32 %Bytes{75844} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"c63163fdfce5b75046395579bc4b4ee250f84b9f217153917114d07e38807b65"} int32 %Bytes{3255} }
+		Component { string %Name{"manifest"} string %Sha256{"dd63aa6bf6b7b05465d22fe12adcdcc871f0b1501bc2a3c9c26bc04ae5265a42"} int32 %Bytes{1889} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"ea314a8f1410da4924183d340a901e0b613038afd97d35c930d7687a6b1fd5e4"} int32 %Bytes{25954} }
 	}
 }
 

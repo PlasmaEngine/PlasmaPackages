@@ -1,0 +1,169 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlasmaEngine 0.12.0 package changelists</title>
+<style>body{max-width:900px;margin:40px auto;padding:0 24px;font:16px/1.65 system-ui;background:#10131a;color:#d9e0ec}a{color:#c89af0}h1,h2{color:#fff;line-height:1.25}section{border-top:1px solid #39404e;margin-top:32px;padding-top:20px}li{margin:8px 0}nav{columns:3;column-width:200px}.meta{color:#a7b4c6}code{font-size:.9em}</style></head><body>
+<a href="../index.html">Plasma Packages</a><h1>PlasmaEngine 0.12.0 package changelists</h1>
+<p>Compared with each package&#x27;s latest previously approved registry release. These notes describe the published 0.12.0 artifacts; adding notes does not replace their blobs.</p><p>All packages in this release:</p><ul>
+<li>Built for PlasmaEngine 0.12.0, Windows x64 Development, ABI win64-msvc19-0.12.0-abi7-dev. Packages built for 0.11.x do not load in 0.12.0.</li>
+<li>Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.</li>
+<li>Linux and macOS components carry their own ABI tag (linux64-clang18-0.12.0-abi7-dev, macosarm64-clang17-0.12.0-abi7-dev).</li>
+</ul><nav><ul>
+<li><a href="#plasma.ai">plasma.ai 1.5.0</a></li>
+<li><a href="#plasma.amplitude">plasma.amplitude 1.3.0</a></li>
+<li><a href="#plasma.angelscript">plasma.angelscript 1.3.0</a></li>
+<li><a href="#plasma.audio">plasma.audio 2.2.0</a></li>
+<li><a href="#plasma.cameras">plasma.cameras 1.1.0</a></li>
+<li><a href="#plasma.csharp">plasma.csharp 1.4.0</a></li>
+<li><a href="#plasma.diversion">plasma.diversion 0.3.0</a></li>
+<li><a href="#plasma.eos">plasma.eos 1.2.0</a></li>
+<li><a href="#plasma.fluid">plasma.fluid 0.4.0</a></li>
+<li><a href="#plasma.fmod">plasma.fmod 1.3.0</a></li>
+<li><a href="#plasma.gamecomponents">plasma.gamecomponents 2.1.0</a></li>
+<li><a href="#plasma.gameui">plasma.gameui 1.5.0</a></li>
+<li><a href="#plasma.jolt">plasma.jolt 1.3.0</a></li>
+<li><a href="#plasma.kraut">plasma.kraut 1.5.0</a></li>
+<li><a href="#plasma.materialx">plasma.materialx 0.3.0</a></li>
+<li><a href="#plasma.mcp">plasma.mcp 1.3.0</a></li>
+<li><a href="#plasma.modeling">plasma.modeling 0.3.0</a></li>
+<li><a href="#plasma.networking">plasma.networking 1.4.0</a></li>
+<li><a href="#plasma.openxr">plasma.openxr 1.3.0</a></li>
+<li><a href="#plasma.particles">plasma.particles 1.10.0</a></li>
+<li><a href="#plasma.procgen">plasma.procgen 1.3.0</a></li>
+<li><a href="#plasma.renderdoc">plasma.renderdoc 1.3.0</a></li>
+<li><a href="#plasma.rmlui">plasma.rmlui 1.3.0</a></li>
+<li><a href="#plasma.sequencer">plasma.sequencer 0.3.0</a></li>
+<li><a href="#plasma.steam">plasma.steam 1.2.0</a></li>
+<li><a href="#plasma.terrain">plasma.terrain 1.3.0</a></li>
+<li><a href="#plasma.usd">plasma.usd 0.3.0</a></li>
+<li><a href="#plasma.vegetation">plasma.vegetation 0.4.0</a></li>
+<li><a href="#plasma.visualscript">plasma.visualscript 1.4.0</a></li>
+<li><a href="#plasma.water">plasma.water 1.3.0</a></li>
+<li><a href="#plasma.xboxcontroller">plasma.xboxcontroller 1.3.0</a></li>
+</ul></nav>
+<section id="plasma.ai"><h2>plasma.ai 1.5.0</h2><p class="meta">Previous: 1.4.1</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.amplitude"><h2>plasma.amplitude 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+<section id="plasma.angelscript"><h2>plasma.angelscript 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.audio"><h2>plasma.audio 2.2.0</h2><p class="meta">Previous: 2.1.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.cameras"><h2>plasma.cameras 1.1.0</h2><p class="meta">Previous: 1.0.1</p><ul>
+<li>The camera director tells its camera when it makes a hard cut, so motion blur and temporal anti-aliasing skip the cut frame and no longer smear across the cut.</li>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.csharp"><h2>plasma.csharp 1.4.0</h2><p class="meta">Previous: 1.3.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+<section id="plasma.diversion"><h2>plasma.diversion 0.3.0</h2><p class="meta">Previous: 0.2.2</p><ul>
+<li>When project checks block a commit, the dialog now has an Open Validation button, which is the default. &#x27;Fix first&#x27; is renamed Cancel.</li>
+<li>Commits that pass the project checks include a summary of the checks that ran and any waivers, with their reasons, in the commit message.</li>
+</ul></section>
+<section id="plasma.eos"><h2>plasma.eos 1.2.0</h2><p class="meta">Previous: 1.1.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+<section id="plasma.fluid"><h2>plasma.fluid 0.4.0</h2><p class="meta">Previous: 0.3.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.fmod"><h2>plasma.fmod 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Fixed a crash at engine shutdown when sound banks were still loaded after FMOD had shut down.</li>
+</ul></section>
+<section id="plasma.gamecomponents"><h2>plasma.gamecomponents 2.1.0</h2><p class="meta">Previous: 2.0.1</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.gameui"><h2>plasma.gameui 1.5.0</h2><p class="meta">Previous: 1.4.1</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.jolt"><h2>plasma.jolt 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.kraut"><h2>plasma.kraut 1.5.0</h2><p class="meta">Previous: 1.4.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.materialx"><h2>plasma.materialx 0.3.0</h2><p class="meta">Previous: 0.2.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+<section id="plasma.mcp"><h2>plasma.mcp 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+<section id="plasma.modeling"><h2>plasma.modeling 0.3.0</h2><p class="meta">Previous: 0.2.2</p><ul>
+<li>Breaking: Carve is renamed Bake Cuts. Cutters already cut live, so Bake Cuts only makes the cut permanent and deletes the cutter. The action ID changed from Modeling.Carve to Modeling.BakeCuts, so custom shortcuts bound to the old ID must be rebound. The MCP brush operation &#x27;carve&#x27; is now &#x27;bake_cuts&#x27;.</li>
+<li>Breaking: Snap To Grid is on by default, so new drawing and edits land on grid points unless you switch it off.</li>
+<li>Cutters now accept any closed shape. A cutter that is not convex, for example after you move one of its vertices or extrude a face, is split into convex pieces automatically, so you no longer need to run Decompose on it first.</li>
+<li>Rooms: a cutter that passes through the walls of inside-out brushes opens one passage between them, with walls that face into the passage. A cutter through a single wall makes an alcove. Materials on the passage sides are kept when you bake.</li>
+<li>New Snap To Grid option (Alt+G, also in the Modeling panel). It snaps drawing, moving, extruding, clipping and pivot edits to the grid. The grid step follows the editor&#x27;s translation snap, or 0.25 m while editor snapping is off.</li>
+<li>Dragging a material over brush faces now previews it on the face under the cursor. Dropping a material on one face no longer changes every face that uses the default material slot.</li>
+<li>Cutters are drawn with a transparent material tinted by the object&#x27;s colour.</li>
+<li>Fixed brushes that kept showing their old mesh after an edit, and fixed brush data that could become invalid after other brushes in the scene were deleted.</li>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.networking"><h2>plasma.networking 1.4.0</h2><p class="meta">Previous: 1.3.2</p><ul>
+<li>Breaking: A second Platform-driver peer in the same process now fails to start because the platform transport is already in use. It no longer falls back to ENet silently.</li>
+<li>Breaking: C++ API: the public plNetworkPeer::m_Peers list and m_iHostID member were removed. Use plNetworkPeer::GetPeerCount() instead.</li>
+<li>Networked properties: a change held back by the send rate is now sent on a later update. Before, it could be dropped.</li>
+<li>Networked transforms on scene objects that nobody owns are now simulated and sent by the host or dedicated server.</li>
+<li>When a host stops, it sends its last queued messages and disconnects every client right away, so clients no longer wait for a timeout.</li>
+<li>Several network peers can now run independently in one process, for example a host and its clients during testing. A host that fails to start listening releases its socket at once.</li>
+<li>Added a two-client replication test suite and a bandwidth test suite with byte limits per client.</li>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.openxr"><h2>plasma.openxr 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+<section id="plasma.particles"><h2>plasma.particles 1.10.0</h2><p class="meta">Previous: 1.9.2</p><ul>
+<li>Breaking: Function nodes now take angles in degrees by default. Existing function nodes load with Radians switched on, so saved effects behave as before.</li>
+<li>New effect graph nodes: split and combine vector and colour, swizzle, distance, cross, reflect, project, rotate about axis, power, step, smooth step, inverse lerp, atan2, math constants, logic and not, random range, random integer and random vector, vector noise, and local and world space transforms. Function and math nodes gain trig, exp, log, rounding, sign, reciprocal, square, degree and radian conversion, and modulo.</li>
+<li>New Curve Over Life and Gradient Over Life nodes driven by normalized age, age or speed, with size, opacity and emissive presets. They can use curve and gradient assets. New graph inputs include remaining life, effect scale and axes, and the camera&#x27;s forward, right and up directions.</li>
+<li>New Masked render mode that clips at an Alpha Cutoff and draws with opaque geometry, with optional shadow casting. New Surface (PBR) lighting mode with roughness, metallic, specular and an optional ORM map. Adds a Blood template that uses it.</li>
+<li>Distortion particles now work, with a distortion texture and strength setting. The Particles.ShowDistortion CVar shows the offsets they add up.</li>
+<li>Quads facing their particle direction keep their orientation when a particle slows down, controlled by the new Min Speed and Turn Smoothing settings. Emitter-direction facing can sample the direction live or at spawn. Normal-mapped particles are now lit correctly.</li>
+<li>Fixed emitter axes in prefabs and local-space effects, and fixed trail issues. The effect preview has a stage and a Backdrop menu with Stage, Floor and None options.</li>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.procgen"><h2>plasma.procgen 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.renderdoc"><h2>plasma.renderdoc 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+<section id="plasma.rmlui"><h2>plasma.rmlui 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.sequencer"><h2>plasma.sequencer 0.3.0</h2><p class="meta">Previous: 0.2.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.steam"><h2>plasma.steam 1.2.0</h2><p class="meta">Previous: 1.1.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+<section id="plasma.terrain"><h2>plasma.terrain 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.usd"><h2>plasma.usd 0.3.0</h2><p class="meta">Previous: 0.2.2</p><ul>
+<li>Breaking: Lights in existing linked stages can change brightness or orientation after the light conversion fixes. Check scenes that use rectangle, disk, sphere or spot lights.</li>
+<li>Large live-linked stages appear sooner: each mesh first shows a quick, coarse preview, which is replaced by full-quality geometry when it is ready. Existing geometry stays visible while an edited mesh rebuilds.</li>
+<li>Meshes are cached and shared: identical geometry used by different prims, material bindings or live links is built once and reused. Finished meshes are saved while the rest of the stage is still importing.</li>
+<li>All imported meshes now get tangents that match the engine&#x27;s own mesh import, so editing a material binding or normal map no longer rebuilds the geometry. Geometry conversion is faster, and the number of parallel mesh and texture builds now follows available memory to avoid paging.</li>
+<li>USD light import fixes: rectangle and disk lights face the right way, area-light intensity keeps its source units, spotlight power accounts for its cone, and an optional light range is read. Lights from some third-party exporters now get the correct brightness.</li>
+<li>Fixed USD meshes that could render fully bright depending on draw order. Removing a prim now also destroys its child objects.</li>
+<li>The partition import dialog has a Select all / Select none button that covers collapsed branches, and the live view shows streaming progress.</li>
+</ul></section>
+<section id="plasma.vegetation"><h2>plasma.vegetation 0.4.0</h2><p class="meta">Previous: 0.3.2</p><ul>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.visualscript"><h2>plasma.visualscript 1.4.0</h2><p class="meta">Previous: 1.3.2</p><ul>
+<li>When you drag a wire onto empty canvas, the node palette ranks the suggestions by data type: exact matches first, then nodes that convert the value, then nodes that accept any value.</li>
+<li>The node palette shows pin type names without the engine prefix, for example RigidBodyComponent.</li>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.water"><h2>plasma.water 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Caustics on surfaces below the water use the sun&#x27;s contact shadow from the engine&#x27;s new contact shadows pass, which replaces the screen-space shadow pass they read before.</li>
+<li>Adds Linux x64 and macOS (Apple silicon) runtime and SDK components, for games and players on those platforms; the editor plugins stay Windows only.</li>
+</ul></section>
+<section id="plasma.xboxcontroller"><h2>plasma.xboxcontroller 1.3.0</h2><p class="meta">Previous: 1.2.2</p><ul>
+<li>Rebuilt for engine 0.12.0; no functional changes.</li>
+</ul></section>
+</body></html>

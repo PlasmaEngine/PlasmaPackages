@@ -54,9 +54,11 @@ EXPECTED = {
     "components": {
         "Sha256":   ("text",          True,  None),
         "Version":  ("link_row",      True,  None),
-        "Name":     ("single_select", True,  ["manifest", "editor-win64", "runtime-win64",
+        "Name":     ("single_select", True,  ["manifest", "editor-win64", "runtime-win64", "sdk-win64",
+                                              "runtime-linux64", "sdk-linux64", "runtime-macos64", "sdk-macos64",
+                                              "runtime-android-arm64",
                                               "assets", "localization", "icon", "banner"]),
-        "Platform": ("single_select", True,  ["any", "win64"]),
+        "Platform": ("single_select", True,  ["any", "win64", "linux64", "macos64", "android-arm64"]),
         "Bytes":    ("number",        True,  None),
         "Optional": ("boolean",       False, None),
         "Label":    ("text",          False, None),
