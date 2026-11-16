@@ -1,0 +1,71 @@
+{
+  "engineVersion": "0.12.1",
+  "comparison": "Compared with each package's latest previously approved registry release. These notes describe the published 0.12.1 artifacts; adding notes does not replace their blobs.",
+  "commonChanges": [
+    "Built for PlasmaEngine 0.12.1, Windows x64 Development, ABI win64-msvc19-0.12.1-abi7-dev. Packages built for 0.12.0 do not load in 0.12.1.",
+    "Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.",
+    "This release has Windows components only. Linux and macOS games stay on the 0.12.0 packages until those platforms are rebuilt."
+  ],
+  "packages": [
+    {"id": "plasma.ai", "previousVersion": "1.5.0", "version": "1.5.1", "changes": [
+      "Faction relations can be one-way: an entry for team A towards team B wins over the entry for B towards A, so two entries give different attitudes in each direction whatever their order. A single entry still applies both ways."
+    ]},
+    {"id": "plasma.amplitude", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.angelscript", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.audio", "previousVersion": "2.2.0", "version": "2.2.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.cameras", "previousVersion": "1.1.0", "version": "1.1.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.csharp", "previousVersion": "1.4.0", "version": "1.4.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.diversion", "previousVersion": "0.3.0", "version": "0.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.eos", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.fluid", "previousVersion": "0.4.0", "version": "0.4.1", "changes": [
+      "Gas volumes can drive the engine's volumetric clouds as a weather map: a free boundary, outflow drains, drains that keep their gas, ring emitters, an ambient density field, temperature dissipation and a density weight.",
+      "A gas volume with an ambient field stays awake, and FluidTime and FluidDeltaTime stand still while the solver sleeps.",
+      "Fixes the volume table upload reading past the end of its data."
+    ]},
+    {"id": "plasma.fmod", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.gamecomponents", "previousVersion": "2.1.0", "version": "2.1.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.gameui", "previousVersion": "1.5.0", "version": "1.5.1", "changes": ["Rebuilt for engine 0.12.1; ships the engine's 0.12.1 Game UI runtime."]},
+    {"id": "plasma.jolt", "previousVersion": "1.3.0", "version": "1.3.1", "changes": [
+      "Collision mesh previews no longer keep unused collision meshes loaded.",
+      "Collision meshes with one or two triangles cook instead of being rejected.",
+      "Destructible meshes are rebuilt once for the engine's new meshlet levels of detail."
+    ]},
+    {"id": "plasma.kraut", "previousVersion": "1.5.0", "version": "1.5.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.materialx", "previousVersion": "0.3.0", "version": "0.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.mcp", "previousVersion": "1.3.0", "version": "1.3.1", "changes": [
+      "object_modify accepts a plain number of seconds for time properties."
+    ]},
+    {"id": "plasma.modeling", "previousVersion": "0.3.0", "version": "0.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.networking", "previousVersion": "1.4.0", "version": "1.4.1", "changes": [
+      "Projects that use networking with Jolt physics build again: the package's SDK config adds the Jolt headers' folder to the include path."
+    ]},
+    {"id": "plasma.openxr", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.particles", "previousVersion": "1.10.0", "version": "1.10.1", "changes": [
+      "The distortion pass is added to render pipelines by the engine, so it works in every pipeline without edits and costs nothing when no effect uses it."
+    ]},
+    {"id": "plasma.procgen", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.renderdoc", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.rmlui", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.sequencer", "previousVersion": "0.3.0", "version": "0.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.steam", "previousVersion": "1.2.0", "version": "1.2.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.terrain", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.usd", "previousVersion": "0.3.0", "version": "0.3.1", "changes": [
+      "The USD live link and UsdInspect write their streaming mesh proxies in the engine's new multi-level format."
+    ]},
+    {"id": "plasma.vegetation", "previousVersion": "0.4.0", "version": "0.4.1", "changes": [
+      "Grass culling and contact AO are added to render pipelines by the engine, with no pipeline edits.",
+      "Nearby trees no longer vanish into a level of detail the shader has faded out: LOD selection uses the view's aspect ratio as the shader does and follows every camera move."
+    ]},
+    {"id": "plasma.visualscript", "previousVersion": "1.4.0", "version": "1.4.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]},
+    {"id": "plasma.water", "previousVersion": "1.3.0", "version": "2.0.0", "changes": [
+      "Needs engine 0.12.1: water adds its passes to render pipelines itself, so it shows with no pipeline edits, costs nothing without water, and a pass that fails no longer takes the frame down.",
+      "Joined rivers and lakes are one seamless mesh, and a river reaches the ocean through an apron; ocean rings share their seams.",
+      "Waves from real FFT cascades, with the detail a mesh cannot show added per pixel; foam stays behind its wave and river detail follows the flow.",
+      "The sun is shadowed on water, lakes reflect their shores, and shallow water keeps its surface.",
+      "Four more water looks: Tropical Lagoon, North Sea, Mountain Lake and Muddy River.",
+      "plWaterWorldModule::RaycastSurface finds where a ray crosses the water surface, from above or below, for gameplay hits.",
+      "Editing a river or lake spline no longer stalls the editor, large lakes mesh again, lakes that rivers join mesh in about half the time, and river mouths at the ocean no longer leave gaps."
+    ]},
+    {"id": "plasma.xboxcontroller", "previousVersion": "1.3.0", "version": "1.3.1", "changes": ["Rebuilt for engine 0.12.1; no functional changes."]}
+  ]
+}
