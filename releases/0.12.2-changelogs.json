@@ -9,6 +9,7 @@
   "packages": [
     {"id": "plasma.ai", "previousVersion": "1.5.1", "version": "1.5.2", "changes": [
       "An agent pushed off its path corridor, by physics or a teleport, searches a new path from where it is instead of asserting.",
+      "An object that is no agent, such as a player or a turret, states its team through the stimulus source it makes its noises with.",
       "Unity builds compile: runtime file-local helpers and the legacy behaviour score no longer share names, and the editor plugin builds its views without unity batches."
     ]},
     {"id": "plasma.amplitude", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
