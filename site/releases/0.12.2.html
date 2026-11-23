@@ -1,0 +1,177 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlasmaEngine 0.12.2 package changelists</title>
+<style>body{max-width:900px;margin:40px auto;padding:0 24px;font:16px/1.65 system-ui;background:#10131a;color:#d9e0ec}a{color:#c89af0}h1,h2{color:#fff;line-height:1.25}section{border-top:1px solid #39404e;margin-top:32px;padding-top:20px}li{margin:8px 0}nav{columns:3;column-width:200px}.meta{color:#a7b4c6}code{font-size:.9em}</style></head><body>
+<a href="../index.html">Plasma Packages</a><h1>PlasmaEngine 0.12.2 package changelists</h1>
+<p>Compared with each package&#x27;s latest previously approved registry release. These notes describe the published 0.12.2 artifacts; adding notes does not replace their blobs.</p><p>All packages in this release:</p><ul>
+<li>Built for PlasmaEngine 0.12.2, Windows x64 Development, ABI win64-msvc19-0.12.2-abi7-dev. Packages built for 0.12.1 do not load in 0.12.2.</li>
+<li>Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.</li>
+<li>This release has Windows components only. Linux and macOS games stay on the 0.12.0 packages until those platforms are rebuilt.</li>
+</ul><nav><ul>
+<li><a href="#plasma.ai">plasma.ai 1.5.2</a></li>
+<li><a href="#plasma.amplitude">plasma.amplitude 1.3.2</a></li>
+<li><a href="#plasma.angelscript">plasma.angelscript 1.3.2</a></li>
+<li><a href="#plasma.audio">plasma.audio 2.2.2</a></li>
+<li><a href="#plasma.cameras">plasma.cameras 1.1.2</a></li>
+<li><a href="#plasma.csharp">plasma.csharp 1.4.2</a></li>
+<li><a href="#plasma.diversion">plasma.diversion 0.3.2</a></li>
+<li><a href="#plasma.eos">plasma.eos 1.2.2</a></li>
+<li><a href="#plasma.fluid">plasma.fluid 0.4.2</a></li>
+<li><a href="#plasma.fmod">plasma.fmod 1.3.2</a></li>
+<li><a href="#plasma.fsr">plasma.fsr 1.0.0</a></li>
+<li><a href="#plasma.gamecomponents">plasma.gamecomponents 2.1.2</a></li>
+<li><a href="#plasma.gameui">plasma.gameui 1.5.2</a></li>
+<li><a href="#plasma.jolt">plasma.jolt 1.3.2</a></li>
+<li><a href="#plasma.kraut">plasma.kraut 1.5.2</a></li>
+<li><a href="#plasma.materialx">plasma.materialx 0.3.2</a></li>
+<li><a href="#plasma.mcp">plasma.mcp 1.3.2</a></li>
+<li><a href="#plasma.modeling">plasma.modeling 0.3.2</a></li>
+<li><a href="#plasma.networking">plasma.networking 1.4.2</a></li>
+<li><a href="#plasma.openxr">plasma.openxr 1.3.2</a></li>
+<li><a href="#plasma.particles">plasma.particles 1.10.2</a></li>
+<li><a href="#plasma.procgen">plasma.procgen 1.3.2</a></li>
+<li><a href="#plasma.renderdoc">plasma.renderdoc 1.3.2</a></li>
+<li><a href="#plasma.rmlui">plasma.rmlui 1.3.2</a></li>
+<li><a href="#plasma.sequencer">plasma.sequencer 0.3.2</a></li>
+<li><a href="#plasma.steam">plasma.steam 1.2.2</a></li>
+<li><a href="#plasma.terrain">plasma.terrain 1.4.0</a></li>
+<li><a href="#plasma.usd">plasma.usd 0.4.0</a></li>
+<li><a href="#plasma.vegetation">plasma.vegetation 0.4.2</a></li>
+<li><a href="#plasma.visualscript">plasma.visualscript 1.4.2</a></li>
+<li><a href="#plasma.water">plasma.water 2.0.1</a></li>
+<li><a href="#plasma.xboxcontroller">plasma.xboxcontroller 1.3.2</a></li>
+<li><a href="#plasma.xess">plasma.xess 1.0.0</a></li>
+<li><a href="#plasma.xrtoolkit">plasma.xrtoolkit 1.0.0</a></li>
+</ul></nav>
+<section id="plasma.ai"><h2>plasma.ai 1.5.2</h2><p class="meta">Previous: 1.5.1</p><ul>
+<li>An agent pushed off its path corridor, by physics or a teleport, searches a new path from where it is instead of asserting.</li>
+<li>Unity builds compile: runtime file-local helpers and the legacy behaviour score no longer share names, and the editor plugin builds its views without unity batches.</li>
+</ul></section>
+<section id="plasma.amplitude"><h2>plasma.amplitude 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.angelscript"><h2>plasma.angelscript 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.audio"><h2>plasma.audio 2.2.2</h2><p class="meta">Previous: 2.2.1</p><ul>
+<li>Unity builds compile: the editor plugin builds its windows without unity batches, and the clip loader&#x27;s counting reader has its own name.</li>
+</ul></section>
+<section id="plasma.cameras"><h2>plasma.cameras 1.1.2</h2><p class="meta">Previous: 1.1.1</p><ul>
+<li>Camera modifier helpers are shared from one header, so the plugin builds with unity builds on.</li>
+</ul></section>
+<section id="plasma.csharp"><h2>plasma.csharp 1.4.2</h2><p class="meta">Previous: 1.4.1</p><ul>
+<li>Engine calls are typed: generated bindings pass arguments in stack memory with no argument arrays, boxing or pinned buffers (0 bytes per call, was 432), resolve through a per-snapshot call plan without the binding lock, and return small values inline.</li>
+<li>Exposed fields can be typed engine components: the editor shows an object picker and the script receives that object&#x27;s component.</li>
+<li>Typed blackboard keys (BlackboardKey&lt;T&gt;), a Variant struct for &#x27;any value&#x27; slots without boxing, and engine lists as Variant[], so SpawnPrefab, multi-result queries and params-style functions are generated.</li>
+<li>[KeepOnReload] carries marked members across a full reload by name.</li>
+<li>Timers and game-time waits (After, Every, Delay, NextFrame, Until, Run); async continuations, including Task.Delay, resume in the script&#x27;s Update and are dropped when it goes away.</li>
+<li>Maths helpers: dot, cross, lerp, slerp, quaternion and transform operations, time and angle arithmetic, System.Numerics conversions.</li>
+<li>Save-game, settings and platform clients created in a script callback belong to that script and are disposed with it.</li>
+<li>The generator reports lifecycle methods that never run, misplaced inspector attributes and [PlasmaScript] on structs (PLCS010-PLCS012).</li>
+<li>Update dispatch takes no lock and makes no allocation in the common case; the handle registry looks objects up through an identity index (20000 objects: 25 us to 62 ns).</li>
+<li>Stability fixes for unload and retire, self-deleting scripts, stale handles, variant vectors, console command world access, source filtering and package path repair.</li>
+</ul></section>
+<section id="plasma.diversion"><h2>plasma.diversion 0.3.2</h2><p class="meta">Previous: 0.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.eos"><h2>plasma.eos 1.2.2</h2><p class="meta">Previous: 1.2.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.fluid"><h2>plasma.fluid 0.4.2</h2><p class="meta">Previous: 0.4.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.fmod"><h2>plasma.fmod 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.fsr"><h2>plasma.fsr 1.0.0</h2><p class="meta">Previous: First registry release</p><ul>
+<li>First release: AMD FidelityFX Super Resolution as a backend of the engine&#x27;s upscaler framework, on D3D12 and Vulkan.</li>
+<li>Select it with Rendering.Upscaler = FSR or in the game settings; it can be installed beside other upscaler packages.</li>
+</ul></section>
+<section id="plasma.gamecomponents"><h2>plasma.gamecomponents 2.1.2</h2><p class="meta">Previous: 2.1.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.gameui"><h2>plasma.gameui 1.5.2</h2><p class="meta">Previous: 1.5.1</p><ul>
+<li>The editor plugin builds with unity builds off, as its views reuse file-local names.</li>
+<li>Ships the engine 0.12.2 plGameUiPlugin runtime.</li>
+</ul></section>
+<section id="plasma.jolt"><h2>plasma.jolt 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Collision filtering includes BodyFilter from the Jolt include root.</li>
+</ul></section>
+<section id="plasma.kraut"><h2>plasma.kraut 1.5.2</h2><p class="meta">Previous: 1.5.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.materialx"><h2>plasma.materialx 0.3.2</h2><p class="meta">Previous: 0.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.mcp"><h2>plasma.mcp 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.modeling"><h2>plasma.modeling 0.3.2</h2><p class="meta">Previous: 0.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.networking"><h2>plasma.networking 1.4.2</h2><p class="meta">Previous: 1.4.1</p><ul>
+<li>Every peer sends and receives through a simulating driver with seeded per-peer conditions; net_sim presets persist and reorder works without jitter.</li>
+<li>Servers send only to admitted clients through one send API, outgoing messages queue first in first out, and the replication tick runs on a fixed accumulator.</li>
+<li>Spawned components are named by object and slot, spawns carry initial state, clients hold state and RPCs until components start, and one owner lookup decides authority, including the host&#x27;s.</li>
+<li>RPCs follow one routing table for every target and caller, arguments are converted before a call and a mistyped call is dropped.</li>
+<li>Stopping ends the session&#x27;s objects and time sync, a leaving client&#x27;s objects go with it, and disconnect and shutdown reasons reach the other side.</li>
+<li>NetworkTest covers spawn, ownership, RPC routing, blackboards, level travel, client-owned state, lifecycle and every simulator preset.</li>
+</ul></section>
+<section id="plasma.openxr"><h2>plasma.openxr 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Capability reporting, refresh rate, eye gaze, visibility mask, composition layers, passthrough, render models and project-defined action maps.</li>
+<li>Vive, Cosmos and Focus 3 profiles drive the grip value from the squeeze button, and controller pose validity changes are logged.</li>
+</ul></section>
+<section id="plasma.particles"><h2>plasma.particles 1.10.2</h2><p class="meta">Previous: 1.10.1</p><ul>
+<li>The particle shaders match the engine&#x27;s copies again: order-independent transparency for CPU particles and the PBR energy changes to lit particles, which the 1.10.1 shaders hid by shadowing the engine&#x27;s.</li>
+</ul></section>
+<section id="plasma.procgen"><h2>plasma.procgen 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.renderdoc"><h2>plasma.renderdoc 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.rmlui"><h2>plasma.rmlui 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.sequencer"><h2>plasma.sequencer 0.3.2</h2><p class="meta">Previous: 0.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.steam"><h2>plasma.steam 1.2.2</h2><p class="meta">Previous: 1.2.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.terrain"><h2>plasma.terrain 1.4.0</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Heightfield layer maps with 32 layers, terrain published for edge-blended meshes, motion vectors, a Brush2D height offset, and virtual shadow map pages invalidated after a heightfield bake.</li>
+</ul></section>
+<section id="plasma.usd"><h2>plasma.usd 0.4.0</h2><p class="meta">Previous: 0.3.1</p><ul>
+<li>Composite tree reader: USD trees with instanced parts, a skinned core and bind joints become foliage composite sources for Foliage Composite assets.</li>
+<li>UsdInspect --foliage-composite reads and builds a tree and reports part DAG roots and sway bounds.</li>
+<li>USD Live connector for 3ds Max 2024 and later, with detection, install and launch from the Apps tab.</li>
+</ul></section>
+<section id="plasma.vegetation"><h2>plasma.vegetation 0.4.2</h2><p class="meta">Previous: 0.4.1</p><ul>
+<li>Vegetation cells draw foliage composite types natively: instanced part meshes near the camera, the merged mesh beyond, with parts, part shadows and bones limited by distance.</li>
+<li>Composite trees share per-tile wind variants and promote to their own bone instances near the camera, under touch or when pinned, keeping their bend as they switch.</li>
+<li>Far foliage: a merged voxel shell for middle distances and impostors toward the horizon, both off by default (Vegetation.CellShell.Enabled, Vegetation.Impostor.Enabled).</li>
+<li>Vegetation is persistent ray tracing content, and Vegetation Types get a Ray Tracing group (Affects GI, Ray Tracing Mesh, Ray Tracing Range).</li>
+<li>Fill mode scatters the checked plants over a rectangle or the whole layer with Poisson-disk spacing, Clearing mode paints areas Paint and Fill keep out of, and Fill also runs headless.</li>
+<li>Vegetation Types carry Density Weight and Clearing Avoidance (type file v3; v2 loads with the old behaviour).</li>
+<li>Layers re-register only the chunks a change touched, so strokes and fills on large layers stay interactive.</li>
+<li>Vegetation cell batches are not pickable, so clicks and the brush reach the surface under the trees and hover picking stays cheap.</li>
+</ul></section>
+<section id="plasma.visualscript"><h2>plasma.visualscript 1.4.2</h2><p class="meta">Previous: 1.4.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.water"><h2>plasma.water 2.0.1</h2><p class="meta">Previous: 2.0.0</p><ul>
+<li>Water debug overlays all start off in the editor, and the bodies overlay keeps each mesh edge once instead of rebuilding three lines per triangle every frame.</li>
+</ul></section>
+<section id="plasma.xboxcontroller"><h2>plasma.xboxcontroller 1.3.2</h2><p class="meta">Previous: 1.3.1</p><ul>
+<li>Rebuilt for engine 0.12.2; no functional changes.</li>
+</ul></section>
+<section id="plasma.xess"><h2>plasma.xess 1.0.0</h2><p class="meta">Previous: First registry release</p><ul>
+<li>First release: Intel XeSS as a backend of the engine&#x27;s upscaler framework, on D3D12.</li>
+<li>Select it with Rendering.Upscaler = XeSS or in the game settings; runtime messages and execute errors go to the log.</li>
+</ul></section>
+<section id="plasma.xrtoolkit"><h2>plasma.xrtoolkit 1.0.0</h2><p class="meta">Previous: First registry release</p><ul>
+<li>First release: grabbable, hand, pointer, teleport and turn components for OpenXR projects.</li>
+<li>Hands throw at hand speed, pull distant grabbables with a wrist flick to catch them, and push loose physics objects; Vive trackpad turning only on click.</li>
+</ul></section>
+</body></html>

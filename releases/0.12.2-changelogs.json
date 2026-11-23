@@ -1,0 +1,91 @@
+{
+  "engineVersion": "0.12.2",
+  "comparison": "Compared with each package's latest previously approved registry release. These notes describe the published 0.12.2 artifacts; adding notes does not replace their blobs.",
+  "commonChanges": [
+    "Built for PlasmaEngine 0.12.2, Windows x64 Development, ABI win64-msvc19-0.12.2-abi7-dev. Packages built for 0.12.1 do not load in 0.12.2.",
+    "Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.",
+    "This release has Windows components only. Linux and macOS games stay on the 0.12.0 packages until those platforms are rebuilt."
+  ],
+  "packages": [
+    {"id": "plasma.ai", "previousVersion": "1.5.1", "version": "1.5.2", "changes": [
+      "An agent pushed off its path corridor, by physics or a teleport, searches a new path from where it is instead of asserting.",
+      "Unity builds compile: runtime file-local helpers and the legacy behaviour score no longer share names, and the editor plugin builds its views without unity batches."
+    ]},
+    {"id": "plasma.amplitude", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.angelscript", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.audio", "previousVersion": "2.2.1", "version": "2.2.2", "changes": ["Unity builds compile: the editor plugin builds its windows without unity batches, and the clip loader's counting reader has its own name."]},
+    {"id": "plasma.cameras", "previousVersion": "1.1.1", "version": "1.1.2", "changes": ["Camera modifier helpers are shared from one header, so the plugin builds with unity builds on."]},
+    {"id": "plasma.csharp", "previousVersion": "1.4.1", "version": "1.4.2", "changes": [
+      "Engine calls are typed: generated bindings pass arguments in stack memory with no argument arrays, boxing or pinned buffers (0 bytes per call, was 432), resolve through a per-snapshot call plan without the binding lock, and return small values inline.",
+      "Exposed fields can be typed engine components: the editor shows an object picker and the script receives that object's component.",
+      "Typed blackboard keys (BlackboardKey<T>), a Variant struct for 'any value' slots without boxing, and engine lists as Variant[], so SpawnPrefab, multi-result queries and params-style functions are generated.",
+      "[KeepOnReload] carries marked members across a full reload by name.",
+      "Timers and game-time waits (After, Every, Delay, NextFrame, Until, Run); async continuations, including Task.Delay, resume in the script's Update and are dropped when it goes away.",
+      "Maths helpers: dot, cross, lerp, slerp, quaternion and transform operations, time and angle arithmetic, System.Numerics conversions.",
+      "Save-game, settings and platform clients created in a script callback belong to that script and are disposed with it.",
+      "The generator reports lifecycle methods that never run, misplaced inspector attributes and [PlasmaScript] on structs (PLCS010-PLCS012).",
+      "Update dispatch takes no lock and makes no allocation in the common case; the handle registry looks objects up through an identity index (20000 objects: 25 us to 62 ns).",
+      "Stability fixes for unload and retire, self-deleting scripts, stale handles, variant vectors, console command world access, source filtering and package path repair."
+    ]},
+    {"id": "plasma.diversion", "previousVersion": "0.3.1", "version": "0.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.eos", "previousVersion": "1.2.1", "version": "1.2.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.fluid", "previousVersion": "0.4.1", "version": "0.4.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.fmod", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.fsr", "previousVersion": "", "version": "1.0.0", "changes": [
+      "First release: AMD FidelityFX Super Resolution as a backend of the engine's upscaler framework, on D3D12 and Vulkan.",
+      "Select it with Rendering.Upscaler = FSR or in the game settings; it can be installed beside other upscaler packages."
+    ]},
+    {"id": "plasma.gamecomponents", "previousVersion": "2.1.1", "version": "2.1.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.gameui", "previousVersion": "1.5.1", "version": "1.5.2", "changes": ["The editor plugin builds with unity builds off, as its views reuse file-local names.", "Ships the engine 0.12.2 plGameUiPlugin runtime."]},
+    {"id": "plasma.jolt", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Collision filtering includes BodyFilter from the Jolt include root."]},
+    {"id": "plasma.kraut", "previousVersion": "1.5.1", "version": "1.5.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.materialx", "previousVersion": "0.3.1", "version": "0.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.mcp", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.modeling", "previousVersion": "0.3.1", "version": "0.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.networking", "previousVersion": "1.4.1", "version": "1.4.2", "changes": [
+      "Every peer sends and receives through a simulating driver with seeded per-peer conditions; net_sim presets persist and reorder works without jitter.",
+      "Servers send only to admitted clients through one send API, outgoing messages queue first in first out, and the replication tick runs on a fixed accumulator.",
+      "Spawned components are named by object and slot, spawns carry initial state, clients hold state and RPCs until components start, and one owner lookup decides authority, including the host's.",
+      "RPCs follow one routing table for every target and caller, arguments are converted before a call and a mistyped call is dropped.",
+      "Stopping ends the session's objects and time sync, a leaving client's objects go with it, and disconnect and shutdown reasons reach the other side.",
+      "NetworkTest covers spawn, ownership, RPC routing, blackboards, level travel, client-owned state, lifecycle and every simulator preset."
+    ]},
+    {"id": "plasma.openxr", "previousVersion": "1.3.1", "version": "1.3.2", "changes": [
+      "Capability reporting, refresh rate, eye gaze, visibility mask, composition layers, passthrough, render models and project-defined action maps.",
+      "Vive, Cosmos and Focus 3 profiles drive the grip value from the squeeze button, and controller pose validity changes are logged."
+    ]},
+    {"id": "plasma.particles", "previousVersion": "1.10.1", "version": "1.10.2", "changes": ["The particle shaders match the engine's copies again: order-independent transparency for CPU particles and the PBR energy changes to lit particles, which the 1.10.1 shaders hid by shadowing the engine's."]},
+    {"id": "plasma.procgen", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.renderdoc", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.rmlui", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.sequencer", "previousVersion": "0.3.1", "version": "0.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.steam", "previousVersion": "1.2.1", "version": "1.2.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.terrain", "previousVersion": "1.3.1", "version": "1.4.0", "changes": ["Heightfield layer maps with 32 layers, terrain published for edge-blended meshes, motion vectors, a Brush2D height offset, and virtual shadow map pages invalidated after a heightfield bake."]},
+    {"id": "plasma.usd", "previousVersion": "0.3.1", "version": "0.4.0", "changes": [
+      "Composite tree reader: USD trees with instanced parts, a skinned core and bind joints become foliage composite sources for Foliage Composite assets.",
+      "UsdInspect --foliage-composite reads and builds a tree and reports part DAG roots and sway bounds.",
+      "USD Live connector for 3ds Max 2024 and later, with detection, install and launch from the Apps tab."
+    ]},
+    {"id": "plasma.vegetation", "previousVersion": "0.4.1", "version": "0.4.2", "changes": [
+      "Vegetation cells draw foliage composite types natively: instanced part meshes near the camera, the merged mesh beyond, with parts, part shadows and bones limited by distance.",
+      "Composite trees share per-tile wind variants and promote to their own bone instances near the camera, under touch or when pinned, keeping their bend as they switch.",
+      "Far foliage: a merged voxel shell for middle distances and impostors toward the horizon, both off by default (Vegetation.CellShell.Enabled, Vegetation.Impostor.Enabled).",
+      "Vegetation is persistent ray tracing content, and Vegetation Types get a Ray Tracing group (Affects GI, Ray Tracing Mesh, Ray Tracing Range).",
+      "Fill mode scatters the checked plants over a rectangle or the whole layer with Poisson-disk spacing, Clearing mode paints areas Paint and Fill keep out of, and Fill also runs headless.",
+      "Vegetation Types carry Density Weight and Clearing Avoidance (type file v3; v2 loads with the old behaviour).",
+      "Layers re-register only the chunks a change touched, so strokes and fills on large layers stay interactive.",
+      "Vegetation cell batches are not pickable, so clicks and the brush reach the surface under the trees and hover picking stays cheap."
+    ]},
+    {"id": "plasma.visualscript", "previousVersion": "1.4.1", "version": "1.4.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.water", "previousVersion": "2.0.0", "version": "2.0.1", "changes": ["Water debug overlays all start off in the editor, and the bodies overlay keeps each mesh edge once instead of rebuilding three lines per triangle every frame."]},
+    {"id": "plasma.xboxcontroller", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
+    {"id": "plasma.xess", "previousVersion": "", "version": "1.0.0", "changes": [
+      "First release: Intel XeSS as a backend of the engine's upscaler framework, on D3D12.",
+      "Select it with Rendering.Upscaler = XeSS or in the game settings; runtime messages and execute errors go to the log."
+    ]},
+    {"id": "plasma.xrtoolkit", "previousVersion": "", "version": "1.0.0", "changes": [
+      "First release: grabbable, hand, pointer, teleport and turn components for OpenXR projects.",
+      "Hands throw at hand speed, pull distant grabbables with a wrist flick to catch them, and push loose physics objects; Vive trackpad turning only on click."
+    ]}
+  ]
+}
