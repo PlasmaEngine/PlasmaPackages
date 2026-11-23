@@ -404,6 +404,47 @@
       ]
     },
     {
+      "id": "plasma.fps",
+      "version": "1.0.0",
+      "components": [
+        {
+          "name": "assets",
+          "sha256": "377d9a9924ca58e122ee09dd9a275e417106316689a82e86020c16489ad11553",
+          "bytes": 110429
+        },
+        {
+          "name": "manifest",
+          "sha256": "137f64a92ee6dde1ebaa1c234a89a033ddff390b028fca92ff40dee9a174045f",
+          "bytes": 8733
+        },
+        {
+          "name": "runtime-win64",
+          "sha256": "d97cdd92aa22070a45ebb5c229aae52327ec5f99d9ce6fb15a55b5334149616b",
+          "bytes": 1229349
+        },
+        {
+          "name": "editor-win64",
+          "sha256": "bdc2ba668b86731f61b26c6ef72d3275c400c975cd5c616105160395b9a60564",
+          "bytes": 614797
+        },
+        {
+          "name": "tool",
+          "sha256": "fa944163e895d87a2b1ad7806fa8268730d0c05b579afd404c55e715d397cae0",
+          "bytes": 10624
+        },
+        {
+          "name": "localization",
+          "sha256": "1b7a14746f6386f4b8e73b0506f9606ab434a1f36532f85a2c00d6fbedea9777",
+          "bytes": 577
+        },
+        {
+          "name": "sdk-win64",
+          "sha256": "be8a11e79b53ad2a22af5f40cc632f908992085422bd04bdb0c16ce4db2a4a9c",
+          "bytes": 266063
+        }
+      ]
+    },
+    {
       "id": "plasma.fsr",
       "version": "1.0.0",
       "components": [

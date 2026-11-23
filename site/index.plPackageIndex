@@ -399,6 +399,7 @@ Recast and Detour are compiled into the plugin, so there is nothing else to inst
 		string %Changelog{"plasma.ai 1.5.2 (previous: 1.5.1)
 
 - An agent pushed off its path corridor, by physics or a teleport, searches a new path from where it is instead of asserting.
+- An object that is no agent, such as a player or a turret, states its team through the stimulus source it makes its noises with.
 - Unity builds compile: runtime file-local helpers and the legacy behaviour score no longer share names, and the editor plugin builds its views without unity batches.
 - Built for PlasmaEngine 0.12.2, Windows x64 Development, ABI win64-msvc19-0.12.2-abi7-dev. Packages built for 0.12.1 do not load in 0.12.2.
 - Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
@@ -2693,6 +2694,50 @@ Building against a different FMOD version is supported: set FMOD_SDK_PATH to you
 		Component { string %Name{"manifest"} string %Sha256{"b133084068027aef558e06f188d256465fc65e76770b425598d1c7ee357a4214"} int32 %Bytes{4536} }
 		Component { string %Name{"runtime-win64"} string %Sha256{"c3c0a362e43cbbd6d1222dd286b681192bc2e72dac1637472bc5df1c5b351b80"} int32 %Bytes{192865} }
 		Component { string %Name{"assets"} string %Sha256{"f6d4a61f5bcdfc9fd5f0bee3d317dcb9c154af567a4e16ff6b1a09f7e3e2f6a1"} int32 %Bytes{38523} }
+	}
+}
+
+Package
+{
+	string %Id{"plasma.fps"}
+	string %DisplayName{"FPS Framework"}
+	string %Category{"Gameplay"}
+	string %Publisher{"PlasmaTechnology"}
+	string %License{"MIT"}
+	string %Description{"A first-person shooter framework: FPS movement (walk, sprint, crouch, slope-aware slide, jump, fall damage, ladders, mantle, swim, stamina, lean), health and armour with damage types, hit zones and ragdoll death, data-driven weapons (hitscan with penetration, bouncing/fused projectiles, melee, select-fire/alt-fire, spread, recoil patterns, damage falloff, reload, ADS camera zoom), inventory with weapon drops and world visuals, pickups, Use interaction, a procedural wall-retracting viewmodel, aspect-aware HUD with markers/scoreboard/accessibility, gamepad aim assist, spatial AI with squad firing budgets and optional navigation hooks, layered character animation, multi-squad waves and objective modes (Deathmatch, TDM, Waves, Domination, KOTH, Elimination), multiplayer authority hooks, and Weapon Lab / Movement / Waves / Damage Trace editor tools.
+
+Built on the engine's packages rather than beside them: Jolt Physics (character, ragdolls, triggers), Gameplay Cameras, AI (navigation, perception, squads, cover, encounters), Game UI (HUD and menus) and Particles (effects)."}
+	string %Provides{"bundle:Fps"}
+
+	Version
+	{
+		string %Version{"1.0.0"}
+		string %Channel{"stable"}
+		string %MinEngine{"0.12.2"}
+		string %MaxEngine{""}
+		string %AbiTag{"win64-msvc19-0.12.2-abi7-dev"}
+		string %IconSha{"(none)"}
+		string %BannerSha{"(none)"}
+		string %Changelog{"plasma.fps 1.0.0 (previous: first registry release)
+
+- First release: an FPS framework with a physics character, health and damage, data-driven weapons, inventory, pickups, Use interaction, a viewmodel and an aspect-aware HUD.
+- AI bots move on plasma.ai navmesh paths with crowd avoidance, take cover and fire within squad budgets; Deathmatch, Team Deathmatch, Waves, Domination, King of the Hill and Elimination game modes.
+- Weapon Lab, Movement, Waves and Damage Trace editor tools. Requires Jolt, Cameras, AI, Game UI and Particles.
+- Built for PlasmaEngine 0.12.2, Windows x64 Development, ABI win64-msvc19-0.12.2-abi7-dev. Packages built for 0.12.1 do not load in 0.12.2.
+- Refreshed package SDK headers and import libraries from the release build; rebuild project C++ code against this engine and these package versions.
+- This release has Windows components only. Linux and macOS games stay on the 0.12.0 packages until those platforms are rebuilt."}
+		Requires { string %Id{"plasma.ai"} string %Range{"^1.5"} }
+		Requires { string %Id{"plasma.cameras"} string %Range{"^1.0"} }
+		Requires { string %Id{"plasma.gameui"} string %Range{"^1.5"} }
+		Requires { string %Id{"plasma.jolt"} string %Range{"^1.0"} }
+		Requires { string %Id{"plasma.particles"} string %Range{"^1.10"} }
+		Component { string %Name{"manifest"} string %Sha256{"137f64a92ee6dde1ebaa1c234a89a033ddff390b028fca92ff40dee9a174045f"} int32 %Bytes{8733} }
+		Component { string %Name{"localization"} string %Sha256{"1b7a14746f6386f4b8e73b0506f9606ab434a1f36532f85a2c00d6fbedea9777"} int32 %Bytes{577} }
+		Component { string %Name{"assets"} string %Sha256{"377d9a9924ca58e122ee09dd9a275e417106316689a82e86020c16489ad11553"} int32 %Bytes{110429} }
+		Component { string %Name{"editor-win64"} string %Sha256{"bdc2ba668b86731f61b26c6ef72d3275c400c975cd5c616105160395b9a60564"} int32 %Bytes{614797} }
+		Component { string %Name{"sdk-win64"} string %Sha256{"be8a11e79b53ad2a22af5f40cc632f908992085422bd04bdb0c16ce4db2a4a9c"} int32 %Bytes{266063} }
+		Component { string %Name{"runtime-win64"} string %Sha256{"d97cdd92aa22070a45ebb5c229aae52327ec5f99d9ce6fb15a55b5334149616b"} int32 %Bytes{1229349} }
+		Component { string %Name{"tool"} string %Sha256{"fa944163e895d87a2b1ad7806fa8268730d0c05b579afd404c55e715d397cae0"} int32 %Bytes{10624} }
 	}
 }
 

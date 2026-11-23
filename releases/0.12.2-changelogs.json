@@ -36,6 +36,11 @@
       "First release: AMD FidelityFX Super Resolution as a backend of the engine's upscaler framework, on D3D12 and Vulkan.",
       "Select it with Rendering.Upscaler = FSR or in the game settings; it can be installed beside other upscaler packages."
     ]},
+    {"id": "plasma.fps", "previousVersion": "", "version": "1.0.0", "changes": [
+      "First release: an FPS framework with a physics character, health and damage, data-driven weapons, inventory, pickups, Use interaction, a viewmodel and an aspect-aware HUD.",
+      "AI bots move on plasma.ai navmesh paths with crowd avoidance, take cover and fire within squad budgets; Deathmatch, Team Deathmatch, Waves, Domination, King of the Hill and Elimination game modes.",
+      "Weapon Lab, Movement, Waves and Damage Trace editor tools. Requires Jolt, Cameras, AI, Game UI and Particles."
+    ]},
     {"id": "plasma.gamecomponents", "previousVersion": "2.1.1", "version": "2.1.2", "changes": ["Rebuilt for engine 0.12.2; no functional changes."]},
     {"id": "plasma.gameui", "previousVersion": "1.5.1", "version": "1.5.2", "changes": ["The editor plugin builds with unity builds off, as its views reuse file-local names.", "Ships the engine 0.12.2 plGameUiPlugin runtime."]},
     {"id": "plasma.jolt", "previousVersion": "1.3.1", "version": "1.3.2", "changes": ["Collision filtering includes BodyFilter from the Jolt include root."]},
